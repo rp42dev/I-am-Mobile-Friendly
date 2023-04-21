@@ -16,23 +16,23 @@ const NavBar = () => {
         setDarkMode(!darkMode)
     }
 
+    const handleClick = (e) => {
+        const active = document.querySelector(".tab-active") || e.target
+        active.className = "tab tab-bordered"
+        e.target.className = "tab tab-bordered tab-active"
+    }
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">I'm Mobile Friendly</a>
             </div>
             <div className="flex-1 hidden lg:flex">
-                <ul className="menu menu-horizontal">
-                    <li>
-                        <a className="">Home</a>
-                    </li>
-                    <li>
-                        <a className="active">About</a>
-                    </li>
-                    <li>
-                        <a className="">Contact</a>
-                    </li>
-                </ul>
+                <div className="tabs">
+                    <a className="tab tab-bordered tab-active" onClick={handleClick}>Home</a>
+                    <a className="tab tab-bordered" onClick={handleClick}>About</a>
+                    <a className="tab tab-bordered" onClick={handleClick}>Contact</a>
+                </div>
             </div>
             <div className="flex-none">
                 <label className="swap swap-rotate">
