@@ -23,15 +23,15 @@ const NavBar = () => {
     }
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar">
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">I'm Mobile Friendly</a>
             </div>
-            <div className="flex-1 hidden lg:flex">
+            <div className="hidden lg:flex me-6">
                 <div className="tabs">
                     <a className="tab tab-bordered tab-active" onClick={handleClick}>Home</a>
-                    <a className="tab tab-bordered" onClick={handleClick}>About</a>
-                    <a className="tab tab-bordered" onClick={handleClick}>Contact</a>
+                    <a className="tab tab-bordered me-6" onClick={handleClick}>About</a>
+                    <a href="#contact" className="btn btn-outline btn-primary">Contact</a>
                 </div>
             </div>
             <div className="flex-none">
