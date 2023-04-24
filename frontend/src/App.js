@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './pages/home';
-import { NavBar, Features, Testimonials, Contact, Footer, ProblemSolution, Why } from './components';
+import { NavBar, Features, Testimonials, Contact, Footer, ProblemSolution, Why, How, Projects } from './components';
 
 function App() {
   return (
@@ -12,12 +11,14 @@ function App() {
           <Home />
         </div>
         <div className="bg-pattern"></div>
-      <ProblemSolution />
-      <Why />
-      <Features />
-      <Testimonials />
-      <Contact />
-      <Footer />
+        <ProblemSolution />
+        <Why />
+        <Features />
+        <Testimonials />
+        <How />
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

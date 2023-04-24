@@ -5,6 +5,8 @@ import Footer from "./Footer";
 import NavBar from "./Navbar";
 import ProblemSolution from "./ProblemSolution";
 import Why from "./Why";
+import How from "./How";
+import Projects from "./Projects";
 
 
-export { Features, Testimonials, Contact, Footer, NavBar, ProblemSolution, Why }
+export { Features, Testimonials, Contact, Footer, NavBar, ProblemSolution, Why, How, Projects };

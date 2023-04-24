@@ -3,16 +3,15 @@ import { PenNib } from "@phosphor-icons/react";
 const Features = () => {
     return (
 
-        <div className="text-center container mx-auto bg-base-200 rounded-md shadow-xl  pb-24 pt-12">
+        <div className="text-center container mx-auto bg-base-200 rounded-md shadow-xl py-24">
             <div className="mx-auto">
-                <div className="w-full px-4 mt-6">
+                <div className="w-full px-4">
                     <h2 className="text-3xl font-extrabold sm:text-4xl">
                         Benefits working with us:
                     </h2>
-                    <p className="text-xl mt-4 max-w-5xl mx-auto">
+                    <p className="text-xl mt-4 max-w-5xl mx-auto hidden lg:block">
                         Choosing Im Mobile Friendly for your website transformation services comes with numerous benefits.
                         Here are some of the benefits you can expect:
-
                     </p>
                 </div>
                 <div className="sm:flex flex-wrap items-center justify-center gap-8">
