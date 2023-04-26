@@ -1,11 +1,13 @@
 import image from '../assets/images/paper-plane-path.svg'
 
+import ContactForm from './ContactForm'
+
 const Contact = () => {
 
     return (
         <div id="contact" className="pb-24">
             <div className="container mx-auto bg-base-200 rounded-md shadow-xl ">
-                <div className="px-4 py-8 sm:px-6 sm:py-12 lg:p-12 xl:p-16 text-center lg:text-left grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center">
+                <div className="px-4 sm:px-6 lg:px-12 xl:px-16 py-24 text-center lg:text-left grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center">
                     <div>
                         <h2 className="text-3xl font-extrabold sm:text-4xl">
                             Contact Us Today and Get a Free Quote
@@ -14,13 +16,7 @@ const Contact = () => {
                             Please fill out the form below and we will get back to you as soon as possible.
                         </p>
 
-                        <form className="grid grid-cols-1 gap-4 w-full max-w-2xl mx-auto lg:mx-0 mt-6">
-                            <input type="text" placeholder="Your Name:" className="input input-bordered w-full" />
-                            <input type="text" placeholder="Your Email:" className="input input-bordered w-full" />
-                            <textarea className="textarea" placeholder="Your Message:"></textarea>
-
-                            <button className="btn btn-primary">Submit</button>
-                        </form>
+                        <ContactForm />
                     </div>
                     <div className="z-10 grid  hidden lg:block">
 
