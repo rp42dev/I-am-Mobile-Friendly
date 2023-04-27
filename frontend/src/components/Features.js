@@ -11,13 +11,13 @@ const data = [
         id: 2,
         icon: <PiggyBank size={32} />,
         title: "Competitive Pricing",
-        text: "We offer competitive pricing for our website transformation services, ensuring that our services are affordable for businesses of all sizes."
+        text: "We offer competitive pricing for our services, ensuring that our services are affordable for businesses of all sizes."
     },
     {
         id: 3,
         icon: <ArrowClockwise size={32} />,
         title: "Fast Turnaround Time",
-        text: "We understand that time is of the essence, and that's why we offer a fast turnaround time for our website transformation services."
+        text: "We understand that time is of the essence, and that's why we offer a fast turnaround time for our services."
     },
 ]
 
@@ -49,8 +49,7 @@ const Features = () => {
                         Benefits working with us:
                     </h2>
                     <p className="text-xl mt-4 max-w-5xl mx-auto hidden lg:block">
-                        Choosing Im Mobile Friendly for your website transformation services comes with numerous benefits.
-                        Here are some of the benefits you can expect:
+                        
                     </p>
                 </div>
                 <div className="sm:flex flex-wrap items-center justify-center gap-8">

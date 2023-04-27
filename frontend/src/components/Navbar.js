@@ -1,6 +1,11 @@
 import { useContext } from 'react';
 import ThemeContext from '../ThemeContext';
 
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
+
 
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext)
@@ -12,14 +17,17 @@ const NavBar = () => {
     }
 
     return (
-        <div className="navbar">
+        <div className="navbar px-4 sm:px-6 lg:px-12 xl:px-16">
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">I'm Mobile Friendly</a>
             </div>
 
             <div className="hidden lg:flex me-6">
                 <div className="tabs">
-                    <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0"><span className={`${theme === 'dark' ? 'text-white' : 'text-primary'}`}>Get started</span></a>
+                 
+                        <Link to="/" className="tab tab-bordered tab-active" onClick={handleClick}>Design</Link>
+                        <Link to="/transform" className="tab tab-bordered" onClick={handleClick}>Transform</Link>
+                    <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0"><span className={`${theme === 'dark' ? 'text-white' : 'text-primary hover:text-white'}`}>Get started</span></a>
                 </div>
             </div>
 

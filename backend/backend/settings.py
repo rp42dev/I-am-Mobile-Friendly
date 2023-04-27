@@ -17,8 +17,6 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = Path(BASE_DIR).parent / 'frontend' / 'build'
 
-print(FRONTEND_DIR)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/

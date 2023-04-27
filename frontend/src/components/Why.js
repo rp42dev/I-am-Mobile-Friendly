@@ -3,7 +3,7 @@ const Why = () => {
         <section className="bg-base pb-24 pt-24">
             <div className="text-center w-full container mx-auto px-4 sm:px-6">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                    Why a <span className="text-primary">Mobile-Friendly</span> Website?
+                    Why a Mobile-Friendly Website?
                 </h2>
                 <p className="text-xl mt-4 max-w-5xl mx-auto">
                     With more than half of the world's population using smartphones, it's crucial to have a mobile-friendly website. If your website is not mobile-friendly, you could lose potential customers and revenue.

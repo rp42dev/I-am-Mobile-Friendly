@@ -1,6 +1,13 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 import Home from './pages/home';
-import { NavBar, Features, Testimonials, Contact, Footer, ProblemSolution, Why, How, Projects, Faq } from './components';
+import Transform from './pages/transform';
+import { NavBar, Footer } from './components';
 import ThemeProvider from './ThemeProvider';
 
 function App() {
@@ -9,18 +16,15 @@ function App() {
       <ThemeProvider>
         <div className="App relative">
           <div className="container mx-auto">
+            <Router>
             <NavBar />
-            <Home />
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/transform' element={<Transform />} />
+              </Routes>
+            </Router>
           </div>
           <div className="bg-pattern"></div>
-          <ProblemSolution />
-          <Why />
-          <Features />
-          <Testimonials />
-          <How />
-          <Projects />
-          <Contact />
-          <Faq />
           <Footer />
         </div>
       </ThemeProvider>

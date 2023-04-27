@@ -7,11 +7,11 @@ const How = () => {
                         <div className="w-full px-4 lg:w-1/2 text-center lg:text-left">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">
                                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                                    Here's How Our <span className="text-primary">Mobile-Friendly</span> Website Services Work!
+                                    Here's How Our Process Works
                                 </h2>
                                 <p className="text-xl mt-4">
-                                    We will transform your website into a mobile-friendly version that will be accessible to everyone, everywhere.
-                                    Our process is simple and effective. Here's how it works in 3 easy steps:
+                                    A mobile-friendly website is a website that is designed to work well on mobile devices, such as smartphones and tablets as well as desktop computers.
+                                    Our process is simple and effective. Here's how the process works from start to finish in 3 easy steps:
                                 </p>
 
                                 <div className="mt-8 mx-auto hidden lg:block">
