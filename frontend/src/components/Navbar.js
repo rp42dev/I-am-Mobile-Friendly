@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import ThemeContext from '../ThemeContext';
 
 import {
@@ -16,6 +16,17 @@ const NavBar = () => {
         e.target.className = "tab tab-bordered tab-active"
     }
 
+    // check url and set active tab
+    useEffect(() => {
+        const url = window.location.href
+        const active = document.querySelector(".tab-active")
+        if (url.includes("transform") && active) {
+            active.className = "tab tab-bordered"
+            document.querySelector(".tab").nextSibling.className = "tab tab-bordered tab-active"
+        }
+    }, [])
+
+
     return (
         <div className="navbar px-4 sm:px-6 lg:px-12 xl:px-16">
             <div className="flex-1">
@@ -24,9 +35,9 @@ const NavBar = () => {
 
             <div className="hidden lg:flex me-6">
                 <div className="tabs">
-                 
-                        <Link to="/" className="tab tab-bordered tab-active" onClick={handleClick}>Design</Link>
-                        <Link to="/transform" className="tab tab-bordered" onClick={handleClick}>Transform</Link>
+
+                    <Link to="/" className="tab tab-bordered tab-active" onClick={handleClick}>Design</Link>
+                    <Link to="/transform" className="tab tab-bordered" onClick={handleClick}>Transform</Link>
                     <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0"><span className={`${theme === 'dark' ? 'text-white' : 'text-primary hover:text-white'}`}>Get started</span></a>
                 </div>
             </div>

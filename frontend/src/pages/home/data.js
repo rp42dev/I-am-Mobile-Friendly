@@ -1,8 +1,8 @@
 const data = [
     {
         id: 1,
-        text: 'Mobile-Friendly website design and develop a mobile-friendly website?",d Development',
-        description: 'Our mobile-friendly website design and develop a mobile-friendly website?",d Development service will help you to increase your website\'s visibility and improve your search engine ranking. Some of the Features of our Mobile-friendly website design and develop a mobile-friendly website?",d Development service include:',
+        text: 'Custom website design and development',
+        description: 'Our mobile-friendly website design and development service will help you to increase your website\'s visibility and improve your search engine ranking. Some of the Features of our Mobile-friendly website design and Development service include:',
         data: [
             {
                 id: 1,

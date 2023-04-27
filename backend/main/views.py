@@ -11,6 +11,11 @@ def index(request):
     pass
     return render(request, 'index.html')
 
+
+def transform(request):
+    return render(request, 'index.html')
+
+
 class ProjectsViewSet(viewsets.ModelViewSet):
     serializer_class = MySerializer
     queryset = Project.objects.all()

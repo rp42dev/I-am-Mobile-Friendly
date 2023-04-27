@@ -3,6 +3,10 @@
     scroll-snap-align: center;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 .bg-pattern {
     position: absolute;

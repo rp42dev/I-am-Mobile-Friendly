@@ -3,6 +3,7 @@ import main.views
 
 urlpatterns = [
     path('', main.views.index),
+    path('transform', main.views.transform),
 ]
 
 
