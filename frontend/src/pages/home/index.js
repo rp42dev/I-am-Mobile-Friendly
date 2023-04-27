@@ -18,7 +18,7 @@ const Home = () => {
                         <div className="max-w-2xl w-full h-full">
 
                             <div className="flex justify-center px-4 py-8 lg:py-0 shadow-inherit">
-                                <img src={image} alt="Hero image" className="hero-img object-contain h-100 w-full" />
+                                <img src={image} alt="Hero image" className="hero-img object-contain h-100 w-full sm:rotate-6" />
                             </div>
 
                         </div>

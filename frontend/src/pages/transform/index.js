@@ -18,7 +18,9 @@ const Transform = (props) => {
                 <div className="max-w-full hero-content flex-col lg:flex-row-reverse justify-between mx-auto ">
                     <div className="max-w-2xl w-full h-full">
 
-                        <div className="flex justify-center px-4 py-8 lg:py-0 shadow-inherit"><img src={image} alt="Hero image" className="hero-img object-contain h-100 w-full" /></div>
+                            <div className="flex justify-center px-4 py-8 lg:py-0 shadow-inherit max-h-screen">
+                                <img src={image} alt="Hero image" className="hero-img object-contain h-100 w-full origin-center sm:rotate-6" />
+                            </div>
 
                     </div>
                     <div className="relative text-center lg:text-left flex-1">
