@@ -13,7 +13,7 @@ PostgreSQL database.
 1. Create a virtual environment and activate it
 2. cd into the backend folder
 3. Install the requirements with `pip install -r requirements.txt`
-4. Create Deployment Settings file with required environment variables
+4. Create production-settings.py file with required environment variables (import settings.py and override the variables you need)
 
 ### Frontend
 
@@ -37,12 +37,17 @@ PostgreSQL database.
 ### Backend
 
 1. cd into the backend folder
-2. Run the server with `gunicorn --bind
+2. Run the server with `python manage.py collectstatic`
+3. Run the server with `gunicorn --bind
 
 ### Frontend
 
 1. cd into the frontend folder
 2. Run the server with `npm run build`
+
+React build files will be in the build folder, 
+django with nginx will serve them, make sure to set the 
+static files path in production-Settings.py, and the nginx config file.
 
 ## Contact
 
