@@ -71,7 +71,7 @@ const ProblemSolution = (props) => {
     const { data } = props;
 
     return (
-        <section id="problem" className="container relative mx-auto bg-base-200 border-base-100 rounded-lg shadow-xl py-24 mb-24">
+        <section id="problem" className="container relative mx-auto bg-base-200 border-base-100 rounded-lg shadow-xl py-24 mb-24 ">
 
             <div className="relative px-4 sm:px-6 lg:px-12 xl:px-16 mt-4">
                 <div className="flex flex-wrap content-center">
