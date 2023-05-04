@@ -1,6 +1,6 @@
 # I-am-Mobile-Friendly
 
-live at [iammobilefriendly.dev](hhttps://iammobilefriendly.dev/)
+live at [iammobilefriendly.dev](https://iammobilefriendly.dev/)
 
 Django REST Framework backend, with a React + tailwind frontend.
 Deployed on Linux Ubuntu with nginx and gunicorn.
