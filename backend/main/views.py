@@ -28,18 +28,23 @@ class SendEmailViewSet(viewsets.ViewSet):
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
-        subject = serializer.validated_data['subject']
+        name = serializer.validated_data['name']
         from_email = serializer.validated_data['fromEmail']
         message = serializer.validated_data['message']
+        
         send_mail(
-            subject,
-            message + ' ' + from_email,
-            from_email,
-            recipient_list=[self.email],
+            subject = 'I am mobile friendly Contact Form Submission',
+            message = f'Name: {name}\nEmail: {from_email}\nMessage: {message}',
+            from_email = self.email,
+            recipient_list = [self.email],
         )
         send_mail(
-            subject=f"Thank you for contacting me, {from_email}",
-            message=f"Thank you for contacting me, {from_email}. I will get back to you as soon as possible.",
+            subject=f"Thank you for contacting me, {name}",
+            message=f"Thank you for contacting me, {name}." 
+                    f"I will get back to you as soon as possible.\n\n"
+                    f"Best regards,\n"
+                    f"Raivis from I am mobile friendly",
+                    
             from_email=self.email,
             recipient_list=[from_email],
         )

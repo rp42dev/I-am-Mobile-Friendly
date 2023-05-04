@@ -9,6 +9,6 @@ class MySerializer(serializers.ModelSerializer):
 
 
 class EmailSerializer(serializers.Serializer):
-    subject = serializers.CharField()
+    name = serializers.CharField()
     message = serializers.CharField()
     fromEmail = serializers.EmailField()
