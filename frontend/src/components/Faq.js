@@ -10,8 +10,8 @@ function Accordion({ title, content }) {
 
     return (
         <div className="my-4 md:my-6 cursor-pointer bg-base-200 rounded-md shadow-lg" onClick={toggleExpanded}>
-            <div className="px-6 text-left items-center h-20 select-none flex justify-between flex-row">
-                <h5 className={`flex-1 text-lg font-semibold text-left ${expanded ? "text-primary" : ""}`}>
+            <div className="px-6 py-4 text-left items-center select-none flex justify-between flex-row">
+                <h5 className={`flex-1 text-md xl:text-lg font-semibold text-left ${expanded ? "text-primary" : ""}`}>
                     {title}
                 </h5>
                 <div className="flex-none pl-2">

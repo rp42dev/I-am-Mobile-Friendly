@@ -18,7 +18,7 @@ import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
 
 const Projects = () => {
     return (
-        <div className="container mx-auto relative pb-24">
+        <div className="container mx-auto relative pb-24 overflow-hidden">
             <div className="container mx-auto w-full px-4 py-4 mt-6 text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                     Recent Projects and Clients
@@ -44,13 +44,14 @@ const Projects = () => {
                 className="swiper"
             >
                 <SwiperSlide>
-                    <a href="https://rp42.dev/" target="_blank" rel="noreferrer">
-                        <img className="img" src={rp42} alt="rp42" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
                     <a href="https://tattooskworkshop.no/" target="_blank" rel="noreferrer">
                         <img className="img" src={tattoo_sk} alt="tattoo_sk" />
+                    </a>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <a href="https://rp42.dev/" target="_blank" rel="noreferrer">
+                        <img className="img" src={rp42} alt="rp42" />
                     </a>
                 </SwiperSlide>
                 <SwiperSlide>
