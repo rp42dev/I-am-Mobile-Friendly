@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <div className="home mx-auto pb-24 px-4 sm:px-6 lg:px-12 xl:px-16">
                 <div className="mt-8 container">
-                    <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto ">
+                    <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
                         <div className="max-w-2xl w-full h-full">
 
                             <div className="flex justify-center px-4 py-8 xl:py-0 shadow-inherit max-h-screen">
