@@ -4,18 +4,18 @@ const Service = (props) => {
     return (
         <>
             <div className="flex flex-wrap content-center absolute -left-0 -top-0 px-1 py-2 bg-primary rounded-tl-lg rounded-br-lg h-24 w-28">
-                <div className="w-full px-4 lg:w-1/2">
+                <div className="w-full px-4 lg:w-1/2 text-white">
                     {props.custom ?
-                        <Devices size={64} />
+                        <Devices size={64} weight="light" />
                         :
-                        <div className="relativew-full px-4 lg:w-1/2">
+                        <div className="relativew-full px-4 lg:w-1/2 ">
 
-                            <div className="absolute left-5 -top-2">
-                                <ArrowArcRight size={56} />
+                            <div className="absolute left-5 -top-2 text-white">
+                                <ArrowArcRight size={56} weight="light" />
                             </div>
 
-                            <div className="absolute left-5 top-5">
-                                <Devices size={64} />
+                            <div className="absolute left-5 top-5 text-white">
+                                <Devices size={64} weight="light" />
                             </div>
                         </div>
                     }
@@ -41,18 +41,18 @@ const Service = (props) => {
 
                         </div>
                         <div className="flex flex-wrap content-center absolute -left-0 -top-0 px-1 py-2 bg-primary rounded-tl-lg rounded-br-lg w-20 h-16">
-                            <div className="relative w-full px-4 lg:w-1/2">
+                            <div className="relative w-full px-4 lg:w-1/2 text-white">
                                 {!props.custom ?
-                                    <Devices size={36} />
+                                    <Devices size={36} weight="light" />
 
                                     :
                                     <>
                                         <div className="absolute -top-8">
-                                            <ArrowArcRight size={36} />
+                                            <ArrowArcRight size={36} weight="light" />
                                         </div>
 
                                         <div className="absolute -top-4">
-                                            <Devices size={42} />
+                                            <Devices size={42} weight="light" />
                                         </div>
                                     </>
 
