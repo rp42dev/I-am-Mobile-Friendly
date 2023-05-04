@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <ThemeProvider>
+        <div className=" bg-base-300">
         <div className="App relative">
           <div className="container mx-auto">
             <Router>
@@ -26,6 +27,7 @@ function App() {
           </div>
           <div className="bg-pattern"></div>
           <Footer />
+        </div>
         </div>
       </ThemeProvider>
     </>
