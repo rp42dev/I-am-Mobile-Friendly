@@ -37,7 +37,7 @@ const How = () => {
                                         </h3>
                                         <p className="text-sm">
 
-                                            We'll discuss your website goals and needs and provide you with a custom quote for your project.
+                                            We'll discuss your website goals and needs and provide you with a custom quote for your project based on your requirements and budget.
                                         </p>
                                     </div>
                                 </li>
@@ -53,7 +53,7 @@ const How = () => {
                                         </h3>
                                         <p className="text-sm">
 
-                                            We'll design and develop your website using cutting-edge technology for optimal performance and readability.
+                                            We'll design and develop your website using cutting-edge technology for optimal performance and readability and ensure it's fully functional and mobile friendly.
                                         </p>
                                     </div>
                                 </li>
@@ -69,7 +69,7 @@ const How = () => {
                                         </h3>
                                         <p className="text-sm">
 
-                                            We'll launch your mobile-friendly website and ensure it's fully functional and user-friendly.
+                                            We'll launch your mobile-friendly website and ensure it's fully functional and optimized for search engines so you can start attracting new customers.
                                         </p>
                                     </div>
                                 </li>
