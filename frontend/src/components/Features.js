@@ -5,19 +5,19 @@ const data = [
         id: 1,
         icon: <PenNib size={32} />,
         title: "Customized Solutions",
-        text: "We will work closely with you to understand your requirements and design a website that is tailored to your business."
+        text: "We will work with you to understand your business needs and provide a customized solution that fits your needs and budget."
     },
     {
         id: 2,
         icon: <PiggyBank size={32} />,
         title: "Competitive Pricing",
-        text: "We offer competitive pricing for our services, ensuring that our services are affordable for businesses of all sizes."
+        text: "Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."
     },
     {
         id: 3,
         icon: <ArrowClockwise size={32} />,
         title: "Fast Turnaround Time",
-        text: "We understand that time is of the essence, and that's why we offer a fast turnaround time for our services."
+        text: "Time is money. We will work hard to ensure that your website is up and running as soon as possible to minimize downtime."
     },
 ]
 
@@ -29,7 +29,7 @@ const Feature = ({ icon, title, text }) => {
                     {icon}
                 </div>
             </div>
-            <h3 className="py-4 text-2xl font-semibold sm:text-xl">
+            <h3 className="py-4 text-xl font-semibold sm:text-2xl">
                 {title}
             </h3>
             <p className="pb-4 text-sm lg:text-md">
@@ -45,7 +45,7 @@ const Features = () => {
         <div className="text-center container mx-auto bg-base-200 rounded-md shadow-xl py-24">
             <div className="mx-auto">
                 <div className="w-full px-4">
-                    <h2 className="text-3xl font-extrabold sm:text-4xl">
+                    <h2 className="text-1xl font-extrabold sm:text-2xl">
                         Benefits working with us:
                     </h2>
                     <p className="text-xl mt-4 max-w-5xl mx-auto hidden lg:block">
