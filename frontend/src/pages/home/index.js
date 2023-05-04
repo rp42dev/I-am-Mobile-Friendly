@@ -22,7 +22,7 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <div className="relative text-center lg:text-left flex-1">
+                        <div className="relative flex-1">
                             <span className="w-20 h-2 mb-12"></span>
                             <h1 className="flex flex-col text-5xl font-black leading-none uppercase font-bebas-neue sm:text-8xl">
                                 Responsive
@@ -30,7 +30,7 @@ const Home = () => {
                                     Website Design & Development
                                 </span>
                             </h1>
-                            <p className="py-6 text-xl max-w-2xl">
+                            <p className="py-6 text-xl max-w-2xl text-left">
 
                                 We design and develop responsive websites that look great on any device.
                                 We offer custom solutions for every budget and timeline so you can get back to running your business without worrying about the technical details.

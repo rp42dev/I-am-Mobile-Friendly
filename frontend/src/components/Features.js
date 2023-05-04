@@ -32,7 +32,7 @@ const Feature = ({ icon, title, text }) => {
             <h3 className="py-4 text-2xl font-semibold sm:text-xl">
                 {title}
             </h3>
-            <p className="pb-4 text-md">
+            <p className="pb-4 text-sm lg:text-md">
                 {text}
             </p>
         </div>

@@ -21,7 +21,7 @@ const Transform = (props) => {
                                 <img src={image} alt="Hero image" className="hero-img object-contain h-100 w-full 2xl:px-20" />
                             </div>
                         </div>
-                        <div className="relative text-center lg:text-left flex-1">
+                        <div className="relative flex-1">
                             <span className="w-20 h-2 mb-12"></span>
                             <h1 className="flex flex-col text-5xl font-black leading-none uppercase font-bebas-neue sm:text-8xl">
                                 Transform

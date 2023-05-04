@@ -4,7 +4,7 @@ const How = () => {
             <section className="container mx-auto bg-base-200 rounded-md shadow-xl py-24 mb-24">
                 <div className="px-4 sm:px-6 lg:px-12 xl:px-16">
                     <div className="flex flex-wrap">
-                        <div className="w-full px-4 lg:w-1/2 text-center lg:text-left">
+                        <div className="w-full px-4 lg:w-1/2">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">
                                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                                     Here's How Our Process Works

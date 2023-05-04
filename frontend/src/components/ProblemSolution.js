@@ -9,7 +9,7 @@ const ProblemSolution = (props) => {
 
             <div className="relative px-4 sm:px-6 lg:px-12 xl:px-16">
                 <div className="flex flex-wrap content-center">
-                    <div className="w-full px-4 lg:w-1/2 text-center lg:text-left">
+                    <div className="w-full px-4 lg:w-1/2">
                         <div className="relative space-y-4">
                             <h4 className="text-3xl font-extrabold sm:text-4xl">
                                 {data[0].text}
