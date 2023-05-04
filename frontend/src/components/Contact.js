@@ -1,4 +1,5 @@
 import image from '../assets/images/paper-plane-path.svg'
+import { LinkedinLogo } from "@phosphor-icons/react";
 
 import ContactForm from './ContactForm'
 
@@ -13,7 +14,8 @@ const Contact = () => {
                             Contact Us Today and Get a Free Quote
                         </h2>
                         <p className="z-20 relative mx-auto lg:mx-0 mt-2 max-w-2xl">
-                            Please fill out the form below and we will get back to you as soon as possible.
+                            Fill out the form below and we will get back to you as soon as possible. Or you can contact me on linked in. Thank you!
+                            <a href="https://www.linkedin.com/in/rp42/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary-focus inline-block -mb-4 ml-2"> <LinkedinLogo size={42} weight="light" /></a>
                         </p>
 
                         <ContactForm />
