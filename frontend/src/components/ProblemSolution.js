@@ -75,7 +75,7 @@ const ProblemSolution = (props) => {
 
             <div className="relative px-4 sm:px-6 lg:px-12 xl:px-16 mt-4">
                 <div className="flex flex-wrap content-center">
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 xl:pr-2">
                         <div className="relative space-y-4">
                             <h4 className="text-3xl font-extrabold sm:text-4xl">
                                 {data[0].text}
@@ -86,7 +86,7 @@ const ProblemSolution = (props) => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 xl:pl-2">
 
                         <ul className="gap-6 mt-8 lg:mt-0 md:grid md:grid-cols-2">
                             {data[0].data.map((item) => {

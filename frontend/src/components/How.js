@@ -4,7 +4,7 @@ const How = () => {
             <section className="container mx-auto bg-base-200 rounded-md shadow-xl py-24 mb-24">
                 <div className="px-4 sm:px-6 lg:px-12 xl:px-16">
                     <div className="flex flex-wrap">
-                        <div className="w-full lg:w-1/2">
+                        <div className="w-full lg:w-1/2 xl:pr-4">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">
                                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                                     Here's How Our Process Works
@@ -23,7 +23,7 @@ const How = () => {
                             </div>
                         </div>
 
-                        <div className="w-full px-4 lg:w-1/2">
+                        <div className="w-full px-4 lg:w-1/2 xl:pl-4">
                             <ul className="space-y-8">
                                 <li className="flex -mx-4">
                                     <div>
@@ -32,10 +32,10 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="text-xl font-semibold">
+                                        <h3 className="text-xl mb-4 font-semibold">
                                             Consultation:
                                         </h3>
-                                        <p className="text-md">
+                                        <p className="text-sm">
 
                                             We'll discuss your website goals and needs and provide you with a custom quote for your project.
                                         </p>
@@ -48,10 +48,10 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="text-xl font-semibold">
+                                        <h3 className="text-xl mb-4 font-semibold">
                                             Design &amp; Development:
                                         </h3>
-                                        <p className="text-md">
+                                        <p className="text-sm">
 
                                             We'll design and develop your website using cutting-edge technology for optimal performance and readability.
                                         </p>
@@ -64,10 +64,10 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="text-xl font-semibold">
+                                        <h3 className="text-xl mb-4 font-semibold">
                                             Launch:
                                         </h3>
-                                        <p className="text-md">
+                                        <p className="text-sm">
 
                                             We'll launch your mobile-friendly website and ensure it's fully functional and user-friendly.
                                         </p>
