@@ -9,7 +9,7 @@ const How = () => {
                                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                                     Here's How Our Process Works
                                 </h2>
-                                <p className="text-xl mt-4">
+                                <p className="text-lg mt-4">
                                     A mobile-friendly website is a website that is designed to work well on mobile devices, such as smartphones and tablets as well as desktop computers.
                                     Our process is simple and effective. Here's how the process works from start to finish in 3 easy steps:
                                 </p>
@@ -32,10 +32,11 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="my-4 text-xl font-semibold">
+                                        <h3 className="text-xl font-semibold">
                                             Consultation:
                                         </h3>
-                                        <p>
+                                        <p className="text-md">
+
                                             We'll discuss your website goals and needs and provide you with a custom quote for your project.
                                         </p>
                                     </div>
@@ -47,10 +48,11 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="my-4 text-xl font-semibold">
+                                        <h3 className="text-xl font-semibold">
                                             Design &amp; Development:
                                         </h3>
-                                        <p>
+                                        <p className="text-md">
+
                                             We'll design and develop your website using cutting-edge technology for optimal performance and readability.
                                         </p>
                                     </div>
@@ -62,19 +64,20 @@ const How = () => {
                                         </span>
                                     </div>
                                     <div className="px-4">
-                                        <h3 className="my-4 text-xl font-semibold">
+                                        <h3 className="text-xl font-semibold">
                                             Launch:
                                         </h3>
-                                        <p>
+                                        <p className="text-md">
+
                                             We'll launch your mobile-friendly website and ensure it's fully functional and user-friendly.
                                         </p>
                                     </div>
                                 </li>
                             </ul>
                             <div className="mt-12 mx-auto block lg:hidden text-center">
-                                 <a href="#contact" className="btn px-4 py-2 bg-primary border-2 border-transparent hover:border-transparent text-md hover:bg-primary-focus focus:bg-primary-focus">
-                                Get started
-                            </a>
+                                <a href="#contact" className="btn px-4 py-2 btn-primary border-2">
+                                    Get started
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 const data = [
     {
         id: 1,
+        custom: true,
         text: 'Custom website design and development',
         description: 'Our mobile-friendly website design and development service will help you to increase your website\'s visibility and improve your search engine ranking. Some of the Features of our Mobile-friendly website design and Development service include:',
         data: [

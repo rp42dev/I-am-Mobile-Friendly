@@ -2,6 +2,7 @@
 const data = [
     {
         id: 1,
+        custom: false,
         text: 'Mobile-Friendly website transformation service',
         description: 'Our mobile-friendly website transformation service will help you to increase your website\'s visibility and improve your search engine ranking. Some of the Features of our Mobile-friendly website transformation service include:',
         data: [

@@ -62,7 +62,7 @@ const Testimonials = () => {
                             <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full" />
                             <h3 className="mt-4 text-2xl font-semibold sm:text-xl">{item.name}</h3>
                             <p className="text-sm font-medium">{item.title}</p>
-                            <p className="max-w-lg mt-4 text-md">{item.description}</p>
+                            <p className="max-w-lg mt-4 text-sm">{item.description}</p>
                             <div className="flex items-center justify-center mt-4 space-x-2">
                                 <img src={star} alt="star" className='w-8 h-8' />
                                 <img src={star} alt="star" className='w-8 h-8' />
