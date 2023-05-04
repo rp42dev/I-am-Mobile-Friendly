@@ -24,7 +24,7 @@ class ProjectsViewSet(viewsets.ModelViewSet):
 
 class SendEmailViewSet(viewsets.ViewSet):
     serializer_class = EmailSerializer
-    email = settings.EMAIL_HOST_USER
+    email = settings.SERVER_EMAIL
 
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
