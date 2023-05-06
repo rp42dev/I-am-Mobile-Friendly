@@ -29,25 +29,47 @@ const MessagePopup = ({ message, setMessage, error, setError }) => {
 
             )}
         </>
-
-
     );
 };
 
-function SendEmailForm() {
+
+
+const ContactForm = () => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [fromEmail, setFromEmail] = useState('');
     const [responseText, setResponseText] = useState('');
     const [errors, setErrors] = useState(false);
 
-
     function handleSubmit(event) {
         event.preventDefault();
+
+        const ValidateEmail = (email) => {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        };
+
+        const ValidateText = (text) => {
+            const re = /[<>{}[\]`]/;
+            return !re.test(text);
+        };
+
         // Your code for sending the email goes here
         if (!name || !message || !fromEmail) {
             setErrors(true);
             setResponseText('Please fill out all fields.');
+            return;
+        } else if (!ValidateEmail(fromEmail)) {
+            setErrors(true);
+            setResponseText('Please enter a valid email address.');
+            return;
+        } else if (!ValidateText(name)) {
+            setErrors(true);
+            setResponseText('Please enter a valid name (/[`<>(){}[]]/) not allowed.');
+            return;
+        } else if (!ValidateText(message)) {
+            setErrors(true);
+            setResponseText('Please enter a valid message (/[`<>(){}[]]/) not allowed.');
             return;
         }
         axios.post('api/send-email/', {
@@ -73,8 +95,8 @@ function SendEmailForm() {
 
     return (
         <>
-            <MessagePopup message={responseText} setMessage={setResponseText} error={errors} setError={setErrors} />
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 w-full max-w-2xl mx-auto lg:mx-0 mt-6">
+        <MessagePopup message={responseText} setMessage={setResponseText} error={errors} setError={setErrors} />
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 w-full max-w-2xl mx-auto lg:mx-0 mt-6" noValidate>
 
                 <input
                     className={`input input-bordered ${errors && !name && 'input-error'}`}
@@ -94,7 +116,6 @@ function SendEmailForm() {
                     onChange={(event) => setFromEmail(event.target.value)}
                 />
                 
-
                 <textarea
                     className={`input input-bordered w-full h-40 ${errors && !message && 'input-error'}`}
                     id="message"
@@ -106,6 +127,6 @@ function SendEmailForm() {
             </form>
         </>
     );
-}
+};
 
-export default SendEmailForm;
+export default ContactForm;
