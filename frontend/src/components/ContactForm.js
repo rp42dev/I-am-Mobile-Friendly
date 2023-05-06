@@ -17,7 +17,7 @@ const MessagePopup = ({ message, setMessage, error, setError }) => {
         }
 
     }, [message, setMessage]);
-
+    console.log(message); 
     return (
         <>
             {message && (
@@ -34,7 +34,6 @@ const MessagePopup = ({ message, setMessage, error, setError }) => {
     );
 };
 
-
 function SendEmailForm() {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
@@ -46,6 +45,11 @@ function SendEmailForm() {
     function handleSubmit(event) {
         event.preventDefault();
         // Your code for sending the email goes here
+        if (!name || !message || !fromEmail) {
+            setErrors(true);
+            setResponseText('Please fill out all fields.');
+            return;
+        }
         axios.post('api/send-email/', {
             subject: `New message from ${name}`,
             name: name,
@@ -73,33 +77,31 @@ function SendEmailForm() {
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 w-full max-w-2xl mx-auto lg:mx-0 mt-6">
 
                 <input
-                    className="input input-bordered w-full"
+                    className={`input input-bordered ${errors && !name && 'input-error'}`}
                     id="name"
                     type="text"
-                    placeholder="Name"
+                    placeholder={`${errors && !name ? 'Please enter your name.' : 'Name'}`}
                     value={name}
                     onChange={(event) => setName(event.target.value)}
                 />
 
-
                 <input
-                    className="input input-bordered w-full"
+                    className={`input input-bordered ${errors && !fromEmail && 'input-error'}`}
                     id="fromEmail"
                     type="email"
-                    placeholder="Email"
+                    placeholder={`${errors && !fromEmail ? 'Please enter your email address.' : 'Email'}`}
                     value={fromEmail}
                     onChange={(event) => setFromEmail(event.target.value)}
                 />
-
+                
 
                 <textarea
-                    className="input input-bordered w-full h-40"
+                    className={`input input-bordered w-full h-40 ${errors && !message && 'input-error'}`}
                     id="message"
-                    placeholder="Your message"
+                    placeholder={`${errors && !message ? 'Please enter your message.' : 'Message'}`}
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
                 ></textarea>
-
                 <button className="btn btn-primary w-full" type="submit">Send</button>
             </form>
         </>

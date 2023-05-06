@@ -74,7 +74,7 @@ const How = () => {
                                     </div>
                                 </li>
                             </ul>
-                            <div className="mt-12 mx-auto block lg:hidden text-center">
+                            <div className="mt-12 mx-auto block lg:hidden ">
                                 <a href="#contact" className="btn px-4 py-2 btn-primary border-2">
                                     Get started
                                 </a>
