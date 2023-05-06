@@ -23,7 +23,7 @@ const data = [
 
 const Feature = ({ icon, title, text }) => {
     return (
-        <div className="w-full px-4 py-4 mt-6 rounded-lg shadow-xl sm:w-1/2 md:w-1/2 lg:w-1/4 bg-base-100 text-center">
+        <div className="w-full px-4 mt-6 sm:w-1/2 md:w-1/2 lg:w-1/4 text-center">
             <div className="flex-shrink-0">
                 <div className="flex items-center justify-center w-12 h-12 mx-auto text-white bg-primary rounded-md">
                     {icon}
@@ -42,11 +42,11 @@ const Feature = ({ icon, title, text }) => {
 const Features = () => {
     return (
 
-        <div className="text-center container mx-auto bg-base-200 rounded-md shadow-xl py-24">
+        <div className="text-center container mx-auto bg-base-200 rounded-md shadow-lg py-24">
             <div className="mx-auto">
                 <div className="w-full px-4">
-                    <h2 className="text-1xl font-extrabold sm:text-2xl">
-                        Benefits working with us:
+                    <h2 className="text-3xl font-extrabold sm:text-4xl">
+                        Benefits working with us
                     </h2>
                     <p className="text-xl mt-4 max-w-5xl mx-auto hidden lg:block">
                         
@@ -54,7 +54,9 @@ const Features = () => {
                 </div>
                 <div className="sm:flex flex-wrap items-center justify-center gap-8">
                     {data.map((item) => {
-                        return <Feature key={item.id} {...item} />
+                        return (<>
+                            <Feature key={item.id} {...item} />
+                        </>)
                     })}
                 </div>
             </div>
