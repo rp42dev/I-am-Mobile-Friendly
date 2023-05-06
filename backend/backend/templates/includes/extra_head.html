@@ -1,0 +1,28 @@
+{% load static %}
+
+<!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+<link rel="icon" href="static/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="manifest" href="{% static 'manifest.json' %}" />
+
+<link rel="apple-touch-icon" href="{% static 'logo192.png' %}" />
+
+{% if request.path == '/' %}
+<title>
+  Budget-Friendly, Mobile-Friendly Website Design and Development Services
+</title>
+<meta
+  name="description"
+  content="I specialize in creating mobile-friendly websites that are both visually appealing and user-friendly. Contact me today for budget-friendly options that won't compromise on quality."
+/>
+{% else %}
+<title>Transform Your Old Website into a Mobile-Friendly Version</title>
+<meta
+  name="description"
+  content="I can transform your old website into a mobile-friendly version, ensuring a seamless user experience across all devices. Upgrade your site today and reach a wider audience. Contact us for professional and affordable solutions."
+/>
+{% endif %}

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import DOMPurify from 'dompurify';
 import axios from 'axios';
 
-import { PaperPlaneTilt } from "@phosphor-icons/react";
+import { PaperPlaneTilt, WarningCircle } from "@phosphor-icons/react";
 
 
 const MessagePopup = ({ message, setMessage, error, setError }) => {
@@ -17,13 +17,12 @@ const MessagePopup = ({ message, setMessage, error, setError }) => {
         }
 
     }, [message, setMessage]);
-    console.log(message); 
     return (
         <>
             {message && (
                 <div className="fixed inset-0 z-50 transition-opacity flex items-center justify-center w-full px-4 py-6 pointer-events-none sm:p-6 sm:items-center sm:justify-center">
                     <div className={`px-4 py-6 max-w-sm w-full bg-base-100 shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden border border-primary ${error ? 'border-red-500' : 'border-green-500'}`}>
-                        <p className="text-center font-medium  px-4 py-4"dangerouslySetInnerHTML={{__html: sanitizedMessage}}></p>
+                        <p className="text-center font-medium  px-4 py-4" dangerouslySetInnerHTML={{ __html: sanitizedMessage }}></p>
                     </div>
                 </div>
 
@@ -79,7 +78,6 @@ const ContactForm = () => {
             fromEmail: fromEmail,
         })
             .then((response) => {
-                console.log(response);
                 setName('');
                 setMessage('');
                 setFromEmail('');
@@ -87,7 +85,6 @@ const ContactForm = () => {
                 setErrors(false);
             })
             .catch((error) => {
-                console.log(error);
                 setErrors(true);
                 setResponseText('Sorry, something went wrong. Please try again later.');
             })
@@ -95,17 +92,18 @@ const ContactForm = () => {
 
     return (
         <>
-        <MessagePopup message={responseText} setMessage={setResponseText} error={errors} setError={setErrors} />
+            <MessagePopup message={responseText} setMessage={setResponseText} error={errors} setError={setErrors} />
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 w-full max-w-2xl mx-auto lg:mx-0 mt-6" noValidate>
-
-                <input
-                    className={`input input-bordered ${errors && !name && 'input-error'}`}
-                    id="name"
-                    type="text"
-                    placeholder={`${errors && !name ? 'Please enter your name.' : 'Name'}`}
-                    value={name}
-                    onChange={(event) => setName(event.target.value)}
-                />
+                <div className="relative w-full">
+                    <input
+                        className={`input w-full input-bordered ${errors && !name && 'input-error'}`}
+                        id="name"
+                        type="text"
+                        placeholder={`${errors && !name ? 'Please enter your name.' : 'Name'}`}
+                        value={name}
+                        onChange={(event) => setName(event.target.value)}
+                    />
+                </div>
 
                 <input
                     className={`input input-bordered ${errors && !fromEmail && 'input-error'}`}
@@ -115,7 +113,7 @@ const ContactForm = () => {
                     value={fromEmail}
                     onChange={(event) => setFromEmail(event.target.value)}
                 />
-                
+
                 <textarea
                     className={`input input-bordered w-full h-40 ${errors && !message && 'input-error'}`}
                     id="message"
@@ -123,7 +121,7 @@ const ContactForm = () => {
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
                 ></textarea>
-                <button className="btn btn-primary w-full" type="submit">Send</button>
+                <button className="btn btn-primary w-full" type="submit">Send &nbsp;<PaperPlaneTilt size={20} /></button>
             </form>
         </>
     );

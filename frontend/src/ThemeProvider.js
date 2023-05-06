@@ -24,6 +24,7 @@ const ThemeProvider = ({ children }) => {
     useEffect(() => {
         localStorage.setItem('theme', theme === lightTheme ? 'light' : 'dark');
         document.querySelector('html').dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === lightTheme ?'#ECEEEE' : '#1f2937' );
     }, [theme]);
 
     // Check if the stored theme is different from the preferred theme and use that instead

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e2a4258.css",
+    "main.js": "/static/js/main.ae34f03c.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/paper-plane-path.svg": "/static/media/paper-plane-path.d3c66d6042d942cfd065b1e8f27d5ec8.svg",
+    "static/media/responsive.webp": "/static/media/responsive.c01bf8979a0724c7804a.webp",
+    "static/media/ed_tattoo.webp": "/static/media/ed_tattoo.3659aecbea705f448609.webp",
+    "static/media/fromladstodads.webp": "/static/media/fromladstodads.f8c561d0e0638ebcdac5.webp",
+    "static/media/tattoo_sk.webp": "/static/media/tattoo_sk.43b8e3820e22c4ab3102.webp",
+    "static/media/transform.webp": "/static/media/transform.2f35ae8b5795b69f79f4.webp",
+    "static/media/rp42.webp": "/static/media/rp42.5b34b8140c071fe3bdf4.webp",
+    "static/media/patern_light.webp": "/static/media/patern_light.fc3abba655b422a39da3.webp",
+    "static/media/ed.webp": "/static/media/ed.f87846c25fa514fc3573.webp",
+    "static/media/jeff.webp": "/static/media/jeff.4ec291cd4b742d8a8661.webp",
+    "static/media/jane.webp": "/static/media/jane.ed5593f59eff05a0d81e.webp",
+    "index.html": "/index.html",
+    "static/media/quote.svg": "/static/media/quote.f4737ad1c838561005c4c4ad45614176.svg",
+    "static/media/star.svg": "/static/media/star.56a546a8dc14fa686bb781508639b5a7.svg",
+    "main.5e2a4258.css.map": "/static/css/main.5e2a4258.css.map",
+    "main.ae34f03c.js.map": "/static/js/main.ae34f03c.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e2a4258.css",
+    "static/js/main.ae34f03c.js"
+  ]
+}
