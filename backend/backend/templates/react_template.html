@@ -1,13 +1,14 @@
-{% load static %}
+{% load static %} {% load custom_filters %}
 
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="" />
-    {% block extra_head %} {% include 'includes/extra_head.html' %} {% endblock%}
-    <script defer="defer" src="/static/js/main.357b71d8.js"></script>
-    <link href="/static/css/main.7892f55f.css" rel="stylesheet" />
+    
+    <script defer src="{{ 'js' | get_static_file }}"></script>
+   
+    <link href="{{ 'css' | get_static_file }}" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -22,6 +23,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
   </body>
 </html>
