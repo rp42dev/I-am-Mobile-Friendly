@@ -1,7 +1,10 @@
+
 from django.urls import path
-import main.views
+from . import views
 
 urlpatterns = [
-    path('', main.views.index),
-    path('transform', main.views.transform),
+    # Other Django URL patterns here
+
+    # Catch-all route for your React app
+    path('', views.react_app_view, name='react_app'),
 ]

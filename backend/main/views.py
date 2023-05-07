@@ -8,13 +8,8 @@ from .serializers import MySerializer, EmailSerializer
 from .models import Project
 
 
-def index(request):
-    pass
-    return render(request, 'index.html')
-
-
-def transform(request):
-    return render(request, 'index.html')
+def react_app_view(request):
+    return render(request, 'react_template.html')
 
 
 class ProjectsViewSet(viewsets.ModelViewSet):

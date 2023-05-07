@@ -67,7 +67,8 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 w-full max-w-2xl mx-auto lg:mx-0 mt-6" noValidate>
                 <div className="relative w-full">
                     <input
-                        className={`input w-full input-bordered ${errors.name && 'input-error'}`}                        id="name"
+                        className={`input w-full input-bordered ${errors.name && 'input-error'}`}
+                        id="name"
                         type="text"
                         placeholder='Name'
                         value={name}

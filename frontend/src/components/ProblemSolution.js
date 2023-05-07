@@ -1,6 +1,8 @@
 import { CheckFat, Devices, ArrowArcRight } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const Service = (props) => {
+    console.log(props.custom)
     return (
         <>
             <div className="flex flex-wrap content-center absolute -left-0 -top-0 px-1 py-2 bg-primary rounded-tl-lg rounded-br-lg h-24 w-28">
@@ -22,7 +24,7 @@ const Service = (props) => {
                 </div>
             </div>
             <div className="flex flex-wrap content-center absolute inset-x-0 -bottom-28 sm-bottom-24 px-1 py-2 rounded-tl-lg rounded-br-lg px-8">
-                <a href="/transform" className="relative px-4 py-4 max-w-7xl mx-auto lg:w-1/2 bg-base-100 hover:bg-base-300 rounded-lg shadow-lg pointer ">
+                <Link to={props.custom ? "/transform"  : "/"} className="relative px-4 py-4 max-w-7xl mx-auto lg:w-1/2 bg-base-100 hover:bg-base-300 rounded-lg shadow-lg pointer ">
                     <div className="">
 
                         <div className="relative mt-14">
@@ -32,11 +34,8 @@ const Service = (props) => {
 
                             <p className="text-sm leading-6">
                                 {props.custom ? "Transform your existing website to a modern, mobile friendly website." : "Build a custom mobile friendly website for your business from scratch."}
-                                {!props.custom ?
-                                    <a href="/" className="text-primary hover:text-primary-focus underline text-lg"> Learn more</a>
-                                    :
-                                    <a href="/transform" className="text-primary hover:text-primary-focus underline text-lg"> Learn more</a>
-                                }
+                                   <br></br> <span className="text-primary hover:text-primary-focus underline text-lgt">Learn More</span>
+                               
                             </p>
 
                         </div>
@@ -60,7 +59,7 @@ const Service = (props) => {
                             </div>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div >
         </>
     )
