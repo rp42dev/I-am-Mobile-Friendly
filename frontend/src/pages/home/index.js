@@ -16,11 +16,9 @@ const Home = () => {
                 <div className="mt-8 container">
                     <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
                         <div className="max-w-2xl w-full h-full">
-
                             <div className="flex justify-center p-0 xl:px-4 py-4 xl:py-0 shadow-inherit max-h-screen">
-                                <img src={image} alt="Hero image" className="hero-img object-contain max-full w-full" />
+                                <img src={image} alt="Hero mobile friendly" className="hero-img object-contain max-full w-full" />
                             </div>
-
                         </div>
                         <div className="relative flex-1">
                             <span className="w-20 h-2 mb-12"></span>
@@ -31,10 +29,8 @@ const Home = () => {
                                 </span>
                             </h1>
                             <p className="py-6 text-xl max-w-2xl text-left">
-
                                 We design and develop responsive websites that look great on any device.
                                 We offer custom solutions for every budget and timeline so you can get back to running your business without worrying about the technical details.
-
                             </p>
                             <div className="mt-8 mx-auto text-center lg:text-left btn-group">
                                 <a href="#contact" className="btn px-4 py-2 btn-primary border-2">
@@ -46,7 +42,6 @@ const Home = () => {
                                         <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
                                     </div>
                                 </a>
-
                             </div>
                         </div>
                     </div>

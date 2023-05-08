@@ -12,7 +12,6 @@ import jeff from '../assets/images/testimonials/jeff.webp';
 import ed from '../assets/images/testimonials/ed.webp';
 import jane from '../assets/images/testimonials/jane.webp';
 import star from '../assets/images/star.svg';
-import quote from '../assets/images/quote.svg';
 
 const data = [
     {
