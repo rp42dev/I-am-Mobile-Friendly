@@ -83,7 +83,6 @@ const How = () => {
                     </div>
                 </div>
             </section>
-
         </>
     )
 

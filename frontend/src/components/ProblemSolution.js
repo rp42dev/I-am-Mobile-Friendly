@@ -2,7 +2,7 @@ import { CheckFat, Devices, ArrowArcRight } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
 const Service = (props) => {
-    console.log(props.custom)
+
     return (
         <>
             <div className="flex flex-wrap content-center absolute -left-0 -top-0 px-1 py-2 bg-primary rounded-tl-lg rounded-br-lg h-24 w-28">

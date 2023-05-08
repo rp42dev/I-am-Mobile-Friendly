@@ -54,9 +54,7 @@ const Features = () => {
                 </div>
                 <div className="sm:flex flex-wrap items-center justify-center gap-8">
                     {data.map((item) => {
-                        return (<>
-                            <Feature key={item.id} {...item} />
-                        </>)
+                        return <Feature key={item.id} {...item} />
                     })}
                 </div>
             </div>

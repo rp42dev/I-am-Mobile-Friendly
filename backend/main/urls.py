@@ -1,10 +1,10 @@
 
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
     # Other Django URL patterns here
 
     # Catch-all route for your React app
-    path('', views.react_app_view, name='react_app'),
+    re_path(r'^.*$', views.react_app_view, name='react_app'),
 ]
