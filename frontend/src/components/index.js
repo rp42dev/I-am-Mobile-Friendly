@@ -3,11 +3,12 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
-import ProblemSolution from "./ProblemSolution";
+import Features2 from "./Features2";
+import Features3 from "./Features3";
 import Why from "./Why";
-import How from "./How";
 import Faq from "./Faq";
 import Projects from "./Projects";
+import Hero from "./Hero";
 
 
-export { Features, Testimonials, Contact, Footer, NavBar, ProblemSolution, Why, How, Projects, Faq };
+export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Why, Projects, Faq, Hero };

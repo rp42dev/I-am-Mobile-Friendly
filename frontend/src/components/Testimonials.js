@@ -40,7 +40,7 @@ const data = [
 
 const Testimonials = () => {
     return (
-        <section className="pt-12 pb-24">
+        <section className="pb-24">
             <div className="container mx-auto w-full px-4 py-4 mt-6 text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                     What our clients say about us

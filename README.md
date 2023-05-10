@@ -6,6 +6,12 @@ Django REST Framework backend, with a React + tailwind frontend.
 Deployed on Linux Ubuntu with nginx and gunicorn.
 PostgreSQL database.
 
+## Design
+
+### Backend
+### Frontend
+
+
 ## Setup
 
 ### Backend

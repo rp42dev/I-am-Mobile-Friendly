@@ -19,17 +19,23 @@ const NavBar = () => {
     }, [location]);
 
     return (
-        <div className="navbar px-4 sm:px-6 lg:px-12 xl:px-16">
+        <div className="navbar px-4 sm:px-6">
             <div className="flex-1">
-                <Link to="/"  className="btn btn-ghost normal-case text-xl">I'm Mobile Friendly</Link>
+                <Link to="/"  className="btn btn-ghost normal-case text-xl pl-0">I'm Mobile Friendly</Link>
             </div>
 
             <div className="hidden lg:flex me-6">
                 <div className="tabs">
                     <Link to="/" className="tab tab-bordered tab-active">
-                        Design
+                        Home
                     </Link>
-                    <Link to="/transform" className="tab tab-bordered">
+                    <Link to="/custom-web-development" className="tab tab-bordered">
+                        Custom
+                    </Link>
+                    <Link to="/budget-web-development" className="tab tab-bordered">
+                        Budget
+                    </Link>
+                    <Link to="/mobile-website-transformation" className="tab tab-bordered">
                         Transform
                     </Link>
                     <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0" >

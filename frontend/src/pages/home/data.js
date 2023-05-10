@@ -1,76 +1,171 @@
-const data = [
+import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phosphor-icons/react";
+
+const hero = [
+    {
+        title: 'Responsive Website Design & Development',
+        description: 'I design and develop mobile-friendly websites that look great on any device. I offer custom solutions for every budget and timeline so you can get back to running your business without worrying about the technical details.',
+        image: require('../../assets/images/responsive.webp'),
+        alt: 'Hero mobile friendly',
+        btn: 'Get started',
+        btn2: 'Learn more',
+        link: '#contact',
+        link2: '#services'
+    }
+]
+
+const mobile = [
     {
         id: 1,
         custom: true,
-        text: 'Custom website design and development',
-        description: 'Our mobile-friendly website design and development service will help you to increase your website\'s visibility and improve your search engine ranking. Some of the Features of our Mobile-friendly website design and Development service include:',
+        text: 'Key Features of Mobile-Friendly Websites',
+        description: 'Mobile-friendly websites are designed to fit the small screen of mobile devices and provide a seamless browsing experience. They are optimized for mobile devices and provide a better user experience. They are also optimized for search engines to increase your online visibility.',
         data: [
             {
                 id: 1,
-                text: "Responsive design that adapts to any screen size"
+                title: 'Responsive Design',
+                text: "Seamlessly adapts to different screen sizes and resolutions."
             },
             {
                 id: 2,
-                text: "Easy navigation for a seamless user experience"
+                title: 'Mobile-Friendly Content',
+                text: "Optimized for mobile devices to increase your online visibility."
             },
             {
                 id: 3,
-                text: "Mobile-friendly content to increase your online visibility"
+                title: 'Enhanced Readability',
+                text: "Improved readability for better user engagement and conversion rate."
             },
             {
                 id: 4,
-                text: "Enhanced readability for better user engagement"
+                title: 'Fast Loading Speed',
+                text: "Optimized for fast loading speed to improve user experience and search engine ranking."
             },
             {
                 id: 5,
+                title: 'SEO Friendly',
                 text: "Optimized for search engines to increase your online visibility"
             },
             {
                 id: 6,
-                text: "Improved user experience to increase your conversion rate"
+                title: 'Improved User Experience',
+                text: "Improved user experience for better engagement and conversion rate."
             },
         ]
     }
 ]
 
-const faqData = [
+const services = [
     {
-        "question": "What is a mobile-friendly website?",
-        "answer": "A mobile-friendly website is a website that is optimized for mobile devices, such as smartphones and tablets. It is designed to fit the small screen of mobile devices and provides a seamless browsing experience."
-    },
-    {
-        "question": "Why is it important to have a mobile-friendly website?",
-        "answer": "Having a mobile-friendly website is important because more and more people are using smartphones and tablets to browse the internet. If your website is not mobile-friendly, you could lose potential customers and revenue."
-    },
-    {
-        "question": "How can we help to design and develop a mobile-friendly website?",
-        "answer": "We offer website design and development services to help businesses. We will work with you to understand your business requirements and design a website that is mobile-friendly and optimized for search engines."
-    },
-    {
-        "question": "How much does it cost to design and develop a mobile-friendly website?",
-        "answer": "The cost of design and develop a mobile-friendly website your website depends on the complexity of your website and the number of pages. We offer a free consultation to discuss your website requirements and provide you with a custom quote for your project."
-    },
-    {
-        "question": "How long does it take to design and develop a mobile-friendly website?",
-        "answer": "The time it takes to design and develop a mobile-friendly website depends on the complexity of your website and the number of pages. We offer a free consultation to discuss your website requirements and provide you with a custom quote for your project."
-    },
-    {
-        "question": "What is the process of design and develop a mobile-friendly website my website?",
-        "answer": "The process of design and develop a mobile-friendly website involves the following steps: 1. We will provide you with a free consultation. 2. We will design a mobile-friendly website for you. 3. We will develop the website and test it on different devices."
-    },
-    {
-        "question": "What are the benefits of design and develop a mobile-friendly website my website?",
-        "answer": "The benefits of design and develop a mobile-friendly website your website include: 1. Increased traffic 2. Improved user experience 3. Increased conversion rate 4. Improved search engine ranking 5. Increased revenue"
-    },
-    {
-        "question": "Can my existing website be transformed into a mobile-friendly website?",
-        "answer": "Generally, yes. However, it depends on platform your website is built on. We work with a wide range of platforms. If you are not sure if your website can be transformed into a mobile-friendly website, please contact us for a free consultation."
-    },
-    {
-        "question": "Is responsive design the same as mobile-friendly design?",
-        "answer": "Responsive design is a type of mobile-friendly design. It is a design approach that allows a website to adapt to different screen sizes and devices. We deploy responsive design for all our websites. This ensures that your website will look great on all devices."
-    },
+        id: 1,
+        custom: false,
+        title: 'Web development services!',
+        description: 'I offer a wide range of web development services for small businesses, and startups. I will work with you to create a website that meets your needs and budget.',
+        steps: [
+            {
+                id: 1,
+                icon: <Devices size={32} />,
+                title: "Custom Web Development",
+                text: ["Custom design tailored to your specific needs",
+                    "Development using modern technologies like React and Django",
+                    "Hosting options: VPS or dedicated servers."],
+                link: "/custom-web-development",
+                check: true
+            },
+            {
+                id: 2,
+                icon: <PiggyBank size={32} />,
+                title: "Budget Web Development",
+                text: ["Cost-effective solution to establish your online presence",
+                    "Website Development using WordPress or existing templates",
+                    "Hosting options: shared or cloud hosting"],
+                link: "/budget-web-development",
+                check: true
+
+            },
+            {
+                id: 3,
+                icon:
+                    <div className="relative">
+                        <div className="absolute left-0 -top-3">
+                            <ArrowArcRight size={28} weight="light" />
+                        </div>
+                        <div>
+                            <Devices size={32} weight="light" />
+                        </div>
+                    </div>
+                ,
+                title: "Mobile Website Transformation",
+                text: ["Convert your existing non-mobile-friendly website into a mobile-friendly version.",
+                    "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
+                ],
+                link: "/mobile-website-transformation",
+                check: true
+            },
+        ]
+
+    }
 ]
 
+const benefits = [
+    {
+        id: 1,
+        custom: false,
+        title: 'Benefits working with me!',
+        description: '',
+        steps: [
+            {
+                id: 1,
+                check: false,
+                icon: <PenNib size={32} />,
+                title: "Customized Solutions",
+                text: ["I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."],
+                link: "",
+            },
+            {
+                id: 2,
+                check: false,
+                icon: <PiggyBank size={32} />,
+                title: "Competitive Pricing",
+                text: ["Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."],
+                link: "",
+            },
+            {
+                id: 3,
+                check: false,
+                icon: <ArrowClockwise size={32} />,
+                title: "Fast Turnaround Time",
+                text: ["Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."],
+                link: "",
+            },
+        ]
+    }
+]
 
-export { data, faqData }
+const process = [
+    {
+        id: 1,
+        custom: false,
+        title: 'Here\'s How Our Process Works',
+        button: 'Get started',
+        description: 'I\'ll work with you to create a website that meets your needs and budget. Here are the three simple steps from start to finish.',
+        steps: [
+            {
+                id: 1,
+                title: 'Consultation',
+                text: "I'll discuss your website goals and needs and provide you with a custom quote for your project based on your requirements and budget."
+            },
+            {
+                id: 2,
+                title: 'Design & Development',
+                text: "I'll design and develop your website using the latest technologies and best practices to ensure it's mobile-friendly and optimized for search engines."
+            },
+            {
+                id: 3,
+                title: 'Launch',
+                text: " I'll launch your mobile-friendly website and ensure it's fully functional and optimized for search engines to increase your online visibility."
+            },
+        ]
+    }
+]
+
+export { hero, mobile, services, benefits, process }

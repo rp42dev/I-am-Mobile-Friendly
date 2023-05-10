@@ -2,11 +2,12 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import Home from './pages/home';
 import Transform from './pages/transform';
+import Budget from './pages/budget';
+import Custom from './pages/custom';
 import { NavBar, Footer } from './components';
 import ThemeProvider from './ThemeProvider';
 
@@ -21,7 +22,9 @@ function App() {
             <NavBar />
               <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/transform' element={<Transform />} />
+                  <Route path='/mobile-website-transformation' element={<Transform />} />
+                  <Route path='/budget-web-development' element={<Budget />} />
+                  <Route path='/custom-web-development' element={<Custom />} />
               </Routes>
             </Router>
           </div>
