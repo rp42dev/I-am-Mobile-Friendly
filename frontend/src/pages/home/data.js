@@ -80,7 +80,6 @@ const services = [
                     "Hosting options: shared or cloud hosting"],
                 link: "/budget-web-development",
                 check: true
-
             },
             {
                 id: 3,

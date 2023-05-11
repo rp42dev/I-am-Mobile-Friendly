@@ -74,7 +74,7 @@ const solution = [
                 id: 1,
                 title: 'Boosted User Engagement:',
                 icon: <Users size={32} weight="light" />,
-                link: '#',
+                link: '',
                 text: ["Engage and captivate your audience on any device, leading to longer site visits and increased conversions and revenue for your business."],
                 check: false
             },
@@ -82,7 +82,7 @@ const solution = [
                 id: 2,
                 title: 'Improved Search Rankings:',
                 icon: <MagnifyingGlass size={32} weight="light" />,
-                link: '#',
+                link: '',
                 text: ["Embrace mobile-friendliness to earn higher search engine rankings, attracting more organic traffic and potential customers to your website."],
                 check: false
             },
@@ -90,7 +90,7 @@ const solution = [
                 id: 3,
                 title: 'Expanded Reach:',
                 icon: <DeviceMobile size={32} weight="light" />,
-                link: '#',
+                link: '',
                 text: ["Tap into the vast mobile user base, accessing billions of potential customers worldwide and expanding your reach like never before."],
                 check: false
             },

@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
-from django.views import View
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_protect
 from django.http import JsonResponse
 from rest_framework import viewsets
 from .serializers import MySerializer, EmailSerializer
@@ -17,7 +18,9 @@ class ProjectsViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
 
 
+@method_decorator(csrf_protect, name='dispatch')
 class SendEmailViewSet(viewsets.ViewSet):
+
     serializer_class = EmailSerializer
     email = settings.DEFAULT_FROM_EMAIL
 
@@ -45,3 +48,4 @@ class SendEmailViewSet(viewsets.ViewSet):
             recipient_list=[from_email],
         )
         return JsonResponse({'message': 'Email sent successfully'})
+
