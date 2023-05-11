@@ -18,12 +18,16 @@ const ContactForm = () => {
 
     useEffect(() => {
         // Extract the CSRF token from the cookie
-        const cookieValue = document.cookie
+        const cookie = document.cookie
             .split('; ')
-            .find(row => row.startsWith('csrftoken='))
-            .split('=')[1];
+            .find(row => row.startsWith('csrftoken='));
 
-        setCsrfToken(cookieValue);
+        if (cookie) {
+            const cookieValue = cookie.split('=')[1];
+            setCsrfToken(cookieValue);
+        } else {
+            console.error('CSRF token cookie not found.');
+        }
     }, []);
 
     useEffect(() => {
