@@ -57,7 +57,7 @@ const ContactForm = () => {
         }, 
         csrfToken
         )
-            .then(response, () => {
+            .then(response => {
                 console.log(response.data);
                 setName('');
                 setMessage('');
@@ -66,7 +66,7 @@ const ContactForm = () => {
                 setError(false);
                 setErrors({});
             })
-            .catch((error) => {
+            .catch(error => {
                 setResponseText('Sorry, something went wrong. Please try again later.');
                 setError(true);
                 console.error(error);
