@@ -57,7 +57,8 @@ const ContactForm = () => {
         }, 
         csrfToken
         )
-            .then(() => {
+            .then(response, () => {
+                console.log(response.data);
                 setName('');
                 setMessage('');
                 setFromEmail('');
