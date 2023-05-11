@@ -40,7 +40,6 @@ const ContactForm = () => {
             message: message,
             fromEmail: fromEmail,
         }, 
-        csrfToken
         )
             .then(response => {
                 console.log(response.data);
