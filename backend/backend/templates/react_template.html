@@ -2,17 +2,19 @@
 
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="{{ 'js' | get_static_file }}"></script>
-    <link href="{{ 'css' | get_static_file }}" rel="stylesheet" />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="{{ 'js' | get_static_file }}"></script>
+  <link href="{{ 'css' | get_static_file }}" rel="stylesheet" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -22,6 +24,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <input type="hidden" id="csrf_token" value="{{ csrf_token }}">
-  </body>
-</html>
+  {% csrf_token %}
+  
+</body>

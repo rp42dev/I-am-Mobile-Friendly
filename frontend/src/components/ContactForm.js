@@ -14,21 +14,6 @@ const ContactForm = () => {
     const [responseText, setResponseText] = useState('');
     const [error, setError] = useState(false);
     const [errors, setErrors] = useState({});
-    const [csrfToken, setCsrfToken] = useState('');
-
-    useEffect(() => {
-        // Extract the CSRF token from the cookie
-        const cookie = document.cookie
-            .split('; ')
-            .find(row => row.startsWith('csrftoken='));
-
-        if (cookie) {
-            const cookieValue = cookie.split('=')[1];
-            setCsrfToken(cookieValue);
-        } else {
-            console.error('CSRF token cookie not found.');
-        }
-    }, []);
 
     useEffect(() => {
         if (Object.keys(errors).length > 0) {
@@ -81,9 +66,7 @@ const ContactForm = () => {
     return (
         <>
             <MessagePopup message={responseText} error={error} onClose={handleCloseMessage} />
-            
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 w-full max-w-2xl mx-auto lg:mx-0 mt-6" noValidate>
-                <input type="hidden" name="csrfmiddlewaretoken" value={csrfToken} />
                 <div className="relative w-full">
                     <input
                         className={`input w-full input-bordered ${errors.name && 'input-error'}`}
