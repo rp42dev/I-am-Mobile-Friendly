@@ -5,10 +5,29 @@ from django.http import JsonResponse
 from rest_framework import viewsets
 from .serializers import MySerializer, EmailSerializer
 from .models import Project
+from django.http import Http404
 
 
 def react_app_view(request):
-    return render(request, 'react_template.html')
+    # List of valid React app URLs
+    valid_urls = [
+        '/',
+        '/custom-web-development',
+        '/budget-web-development',
+        '/mobile-website-transformation',
+        # Add more valid URLs as needed
+    ]
+
+    # Get the requested URL path
+    requested_path = request.path
+
+    # Check if the requested path is in the list of valid URLs
+    if requested_path in valid_urls:
+        return render(request, 'react_template.html')
+    else:
+        # If the requested path is not valid, raise a 404 error
+        raise Http404("Page not found")
+        return render(request, 'react_template.html')
 
 
 class ProjectsViewSet(viewsets.ModelViewSet):

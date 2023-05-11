@@ -10,7 +10,7 @@ const hero = [
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
-        link2: '#services'
+        link2: '#features'
     }
 ]
 
