@@ -26,8 +26,7 @@ def react_app_view(request):
         return render(request, 'react_template.html')
     else:
         # If the requested path is not valid, raise a 404 error
-        raise Http404("Page not found")
-        return render(request, 'react_template.html')
+        return render(request, 'react_template.html', status=404)
 
 
 class ProjectsViewSet(viewsets.ModelViewSet):
