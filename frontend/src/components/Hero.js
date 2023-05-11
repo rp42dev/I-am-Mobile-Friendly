@@ -17,9 +17,9 @@ const Hero = ({ data }) => {
                     <div className="relative flex-1">
                         <span className="w-20 h-2 mb-12"></span>
                         <h1 className="flex flex-col text-5xl font-black leading-none uppercase font-bebas-neue sm:text-8xl">
-                            {data.title.split(' ')[0]}
+                            {data.title}
                             <span className="text-3xl sm:text-5xl max-w-2xl">
-                                {data.title.split(' ').slice(1).join(' ')}
+                                {data.subtitle}
                             </span>
                         </h1>
                         <p className="py-6 text-xl max-w-2xl text-left">

@@ -3,7 +3,8 @@ import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
 
 const hero = [
     {
-        title: 'Affordable Website Development',
+        title: 'Affordable',
+        subtitle: 'Website Development',
         description: 'Do you need a cost-effective solution without compromising on quality? Don\'t let limited resources hinder your online presence!',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Hero mobile friendly',

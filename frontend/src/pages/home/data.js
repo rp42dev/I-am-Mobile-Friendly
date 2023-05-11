@@ -2,7 +2,8 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 
 const hero = [
     {
-        title: 'Responsive Website Design & Development',
+        title: 'Responsive',
+        subtitle: 'Website Design & Development.',
         description: 'I design and develop mobile-friendly websites that look great on any device. I offer custom solutions for every budget and timeline so you can get back to running your business without worrying about the technical details.',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Hero mobile friendly',

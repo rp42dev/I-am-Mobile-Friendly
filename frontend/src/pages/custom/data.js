@@ -120,7 +120,8 @@ const features = [
 
 const hero = [
     {
-        title: 'Custom Website Design & Development',
+        title: 'Custom',
+        subtitle: 'Website Design & Development',
         description: 'I specialize in creating tailor-made, mobile-friendly websites using modern technologies like React and Django. With a focus on mobile-friendly design and user experience.',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Hero mobile friendly',

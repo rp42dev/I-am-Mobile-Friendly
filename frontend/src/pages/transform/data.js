@@ -2,7 +2,8 @@ import { Users, MagnifyingGlass, DeviceMobile, PenNib, PiggyBank, ArrowClockwise
 
 const hero = [
     {
-        title: 'Transform your website into a Mobile-Friendly version',
+        title: 'Transform',
+        subtitle: 'to a mobile-friendly website.',
         description: 'Don\'t let outdated websites hinder your success,with our mobile-friendly website transformation services. Prepare to elevate your business to new heights and connect with a larger customer base than ever before! 🚀',
         image: require('../../assets/images/transform.webp'),
         alt: 'Hero transform',
