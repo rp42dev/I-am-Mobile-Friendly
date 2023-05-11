@@ -25,6 +25,7 @@ const ContactForm = () => {
         if (cookie) {
             const cookieValue = cookie.split('=')[1];
             setCsrfToken(cookieValue);
+            localStorage.setItem('csrftoken', cookieValue);
         } else {
             console.error('CSRF token cookie not found.');
         }
