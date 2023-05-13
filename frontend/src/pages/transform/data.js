@@ -1,7 +1,7 @@
 import { Users, MagnifyingGlass, DeviceMobile, PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Mobile Website Transformation in Ireland | Drogheda, Dublin & Remote | I and mobile friendly developer',
+    title: 'Mobile Website Transformation in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
     description: 'Transform your non-mobile-friendly website into a mobile-friendly version with YourCompany\'s mobile website transformation service in Ireland.We serve clients in Drogheda, Dublin and remote services to clients worldwide',
 }
 

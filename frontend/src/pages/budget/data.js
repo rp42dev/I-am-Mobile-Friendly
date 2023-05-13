@@ -2,7 +2,7 @@ import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
 
 
 const metaProps = {
-    title: 'Affordable Budget Web Development in Ireland | Drogheda, Dublin & Remote | I and mobile friendly developer',
+    title: 'Affordable Budget Web Development in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
     description: 'I offers affordable budget mobile friendly web development services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide. We leverage tools like WordPress, cPanel, and more to create professional websites at affordable prices.',
 }
 

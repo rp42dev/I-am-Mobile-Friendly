@@ -62,7 +62,7 @@ const faqData = [
     },
     {
         question: "What is custom web development?",
-        answer: "Custom web development involves creating unique websites tailored to meet the specific requirements of businesses. my team utilizes technologies like React and Django to develop highly customized solutions.",
+        answer: "Custom web development involves creating unique websites tailored to meet the specific requirements of businesses. I utilize technologies like React and Django to develop highly customized solutions.",
     },
     {
         question: "What is budget web development?",
@@ -86,7 +86,7 @@ const faqData = [
     },
     {
         question: "What technologies do you use for custom web development?",
-        answer: "I utilizes modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
+        answer: "I utilize modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
     },
     {
         question: "How long do it take to transform a non-mobile-friendly website into a mobile-friendly version?",
