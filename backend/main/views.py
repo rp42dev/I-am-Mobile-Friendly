@@ -15,7 +15,16 @@ def react_app_view(request):
         '/custom-web-development',
         '/budget-web-development',
         '/mobile-website-transformation',
-        # Add more valid URLs as needed
+    ]
+    
+    sitemap_urls = [
+        '/sitemap.xml',
+        '/sitemap.xml/',
+    ]
+    
+    robots_urls = [
+        '/robots.txt',
+        '/robots.txt/',
     ]
 
     # Get the requested URL path
@@ -24,6 +33,10 @@ def react_app_view(request):
     # Check if the requested path is in the list of valid URLs
     if requested_path in valid_urls:
         return render(request, 'react_template.html')
+    elif requested_path in sitemap_urls:
+        return render(request, 'sitemap.xml')
+    elif requested_path in robots_urls:
+        return render(request, 'robots.txt')
     else:
         # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)

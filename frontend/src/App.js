@@ -22,7 +22,7 @@ function App() {
                   <Route path='/mobile-website-transformation' element={<Transform />} />
                   <Route path='/budget-web-development' element={<Budget />} />
                   <Route path='/custom-web-development' element={<Custom />} />
-                  <Route path='*' element={<NotFound />} /> {/* Fallback route for 404 */}
+                  <Route path='*' element={<NotFound />} />
                 </Routes>
               </Router>
             </div>
