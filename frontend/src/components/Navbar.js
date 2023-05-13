@@ -19,7 +19,7 @@ const NavBar = () => {
     }, [location]);
 
     return (
-        <div className="navbar px-4 sm:px-6">
+        <div className="navbar px-4 sm:px-6 relative z-10">
             <div className="flex-1">
                 <Link to="/"  className="btn btn-ghost normal-case text-xl pl-0">I'm Mobile Friendly</Link>
             </div>

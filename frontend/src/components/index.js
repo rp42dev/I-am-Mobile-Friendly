@@ -9,6 +9,7 @@ import Why from "./Why";
 import Faq from "./Faq";
 import Projects from "./Projects";
 import Hero from "./Hero";
+import Meta from "./Meta";
 
 
-export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Why, Projects, Faq, Hero };
+export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Why, Projects, Faq, Hero, Meta };

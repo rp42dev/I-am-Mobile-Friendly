@@ -1,5 +1,10 @@
 import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
 
+const metaProps = {
+    title: 'Custom Web Development in Ireland | Drogheda, Dublin & Remote | I and mobile friendly developer',
+    description: 'Custom web development services in Ireland, serving Drogheda and Dublin and beyond, offering remote services to clients worldwide. Utilizing modern technologies such as React, Node, Django, and more.',
+}
+
 const mobile = [
     {
         id: 1,
@@ -196,4 +201,4 @@ const process = [
 ]
 
 
-export { features, faqData, hero, benefits, process }
+export { features, faqData, hero, benefits, process, metaProps };

@@ -1,39 +1,21 @@
 {% load static %}
 
-<!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
 <link rel="icon" href="static/favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="manifest" href="{% static 'manifest.json' %}" />
 
 <link rel="apple-touch-icon" href="{% static 'logo192.png' %}" />
+<meta name="title" content="">
+<meta name="description" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
 
-
-{% if request.path == '/budget-web-development' %}
-<title>Custom Web Development Services | Affordable Solutions</title>
-<meta
-  name="description"
-  content="I offer custom web development services that are tailored to your specific needs. Contact me today for affordable solutions that won't compromise on quality."
-/>
-{% elif request.path == '/custom-web-development' %}
-<title>Budget-Friendly Web Development Services | Affordable Solutions</title>
-<meta
-  name="description"
-  content="I offer Mobile-Friendly Custom Web Development Services at affordable prices. Contact me today for budget-friendly options that won't compromise on quality."
-/>
-{% elif request.path == '/mobile-website-transformation' %}
-<title>Transform Your Old Website into a Mobile-Friendly Version</title>
-<meta
-  name="description"
-  content="I can transform your old website into a mobile-friendly version, ensuring a seamless user experience across all devices. Upgrade your site today and reach a wider audience. Contact us for professional and affordable solutions."
-/>
-{% else %}
-<title>
-  Budget-Friendly, Mobile-Friendly Website Design and Development Services
-</title>
-<meta name="description"
-  content="I specialize in creating mobile-friendly websites that are both visually appealing and user-friendly. Contact me today for budget-friendly options that won't compromise on quality." />
-{% endif %}
