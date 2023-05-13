@@ -5,7 +5,7 @@ import Transform from './pages/transform';
 import Budget from './pages/budget';
 import Custom from './pages/custom';
 import NotFound from './pages/NotFound'; // Import your custom 404 page
-import { NavBar, Footer } from './components';
+import { NavBar, Footer} from './components';
 import ThemeProvider from './ThemeProvider';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <ThemeProvider>
         <div className=" bg-base-300">
           <div className="App relative">
+   
             <div className="container mx-auto">
               <Router>
                 <NavBar />

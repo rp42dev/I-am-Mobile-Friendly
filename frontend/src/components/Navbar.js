@@ -2,6 +2,9 @@ import React, { useContext, useEffect } from 'react';
 import ThemeContext from '../ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 
+import SideDrawer from './SideDrawer';
+
+
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
     const location = useLocation();
@@ -19,8 +22,10 @@ const NavBar = () => {
     }, [location]);
 
     return (
+       
         <div className="navbar px-4 sm:px-6 relative z-10">
-            <div className="flex-1">
+            <SideDrawer />
+            <div className="flex-1 ml-10 lg:ml-0">
                 <Link to="/"  className="btn btn-ghost normal-case text-xl pl-0">I'm Mobile Friendly</Link>
             </div>
 
