@@ -4,7 +4,7 @@ const hero = [
     {
         title: 'Responsive',
         subtitle: 'Website Design & Development.',
-        description: 'Unlock the potential of your business with my comprehensive web development services for small businesses and startups in Ireland, including Drogheda and Dublin, and remotely to clients worldwide. Together, we\'ll create a tailored website that captures your unique vision and drives tangible results within your budget.',
+        description: 'Unlock the potential of ymy business with my comprehensive web development services for small businesses and startups in Ireland, including Drogheda and Dublin, and remotely to clients worldwide. Together, we\'ll create a tailored website that captures ymy unique vision and drives tangible results within ymy budget.',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
@@ -19,7 +19,7 @@ const mobile = [
         id: 1,
         custom: true,
         text: 'Key Features of Mobile-Friendly Websites',
-        description: 'Mobile-friendly websites are designed to fit the small screen of mobile devices and provide a seamless browsing experience. They are optimized for mobile devices and provide a better user experience. They are also optimized for search engines to increase your online visibility.',
+        description: 'Mobile-friendly websites are designed to fit the small screen of mobile devices and provide a seamless browsing experience. They are optimized for mobile devices and provide a better user experience. They are also optimized for search engines to increase ymy online visibility.',
         data: [
             {
                 id: 1,
@@ -29,7 +29,7 @@ const mobile = [
             {
                 id: 2,
                 title: 'Mobile-Friendly Content',
-                text: "Optimized for mobile devices to increase your online visibility."
+                text: "Optimized for mobile devices to increase ymy online visibility."
             },
             {
                 id: 3,
@@ -44,7 +44,7 @@ const mobile = [
             {
                 id: 5,
                 title: 'SEO Friendly',
-                text: "Optimized for search engines to increase your online visibility"
+                text: "Optimized for search engines to increase ymy online visibility"
             },
             {
                 id: 6,
@@ -54,6 +54,50 @@ const mobile = [
         ]
     }
 ]
+
+const faqData = [
+    {
+        question: "What services does you provide?",
+        answer: "I offer a comprehensive range of web development services, including custom web development, budget web development, and mobile website transformation.",
+    },
+    {
+        question: "What is custom web development?",
+        answer: "Custom web development involves creating unique websites tailored to meet the specific requirements of businesses. my team utilizes technologies like React and Django to develop highly customized solutions.",
+    },
+    {
+        question: "What is budget web development?",
+        answer: "Budget web development focuses on providing cost-effective website solutions without compromising on quality. I utilize platforms like WordPress, cPanel, or existing templates to deliver affordable web development options.",
+    },
+    {
+        question: "What is mobile website transformation?",
+        answer: "Mobile website transformation involves converting existing non-mobile-friendly websites into mobile-friendly versions. Regardless of the technology used, I have the expertise to transform ymy website into a mobile-friendly and responsive platform.",
+    },
+    {
+        question: "Which areas does you cover?",
+        answer: "I serve clients in Ireland, specifically in locations such as Drogheda and Dublin. Additionally, I provide remote services to clients worldwide.",
+    },
+    {
+        question: "How does I ensure the quality of custom web development?",
+        answer: "I take a personalized and individual approach to each custom web development project, ensuring that the final product meets the client's requirements and adheres to high-quality standards.",
+    },
+    {
+        question: "Can you work with existing website templates?",
+        answer: "Yes, as part of my budget web development service, I can utilize existing templates and customize them to suit ymy branding and business needs.",
+    },
+    {
+        question: "What technologies do you use for custom web development?",
+        answer: "I utilizes modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
+    },
+    {
+        question: "How long does it take to transform a non-mobile-friendly website into a mobile-friendly version?",
+        answer: "The time required for mobile website transformation depends on the complexity and size of the website. I work efficiently to ensure a smooth transition to a mobile-friendly platform.",
+    },
+    {
+        question: "Can You provide hosting services for websites?",
+        answer: "Yes, I offer hosting solutions and can assist you in setting up VPS or dedicated servers to ensure optimal performance and security for your website.",
+    },
+];
+
 
 const services = [
     {
@@ -66,7 +110,7 @@ const services = [
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
-                text: ["Custom design tailored to your specific needs",
+                text: ["Custom design tailored to ymy specific needs",
                     "Development using modern technologies like React and Django",
                     "Hosting options: VPS or dedicated servers."],
                 link: "/custom-web-development",
@@ -76,7 +120,7 @@ const services = [
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["Cost-effective solution to establish your online presence",
+                text: ["Cost-effective solution to establish ymy online presence",
                     "Website Development using WordPress or existing templates",
                     "Hosting options: shared or cloud hosting"],
                 link: "/budget-web-development",
@@ -95,7 +139,7 @@ const services = [
                     </div>
                 ,
                 title: "Mobile Website Transformation",
-                text: ["Convert your existing non-mobile-friendly website into a mobile-friendly version.",
+                text: ["Convert ymy existing non-mobile-friendly website into a mobile-friendly version.",
                     "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
                 ],
                 link: "/mobile-website-transformation",
@@ -118,7 +162,7 @@ const benefits = [
                 check: false,
                 icon: <PenNib size={32} />,
                 title: "Customized Solutions",
-                text: ["I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."],
+                text: ["I will work with you to understand ymy business needs and provide a customized solution that fits ymy needs and budget."],
                 link: "",
             },
             {
@@ -134,7 +178,7 @@ const benefits = [
                 check: false,
                 icon: <ArrowClockwise size={32} />,
                 title: "Fast Turnaround Time",
-                text: ["Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."],
+                text: ["Time is money. I will work hard to ensure that ymy website is up and running as soon as possible to minimize downtime."],
                 link: "",
             },
         ]
@@ -145,27 +189,27 @@ const process = [
     {
         id: 1,
         custom: false,
-        title: 'Here\'s How Our Process Works',
+        title: 'Here\'s How my Process Works',
         button: 'Get started',
-        description: 'I\'ll work with you to create a website that meets your needs and budget. Here are the three simple steps from start to finish.',
+        description: 'I\'ll work with you to create a website that meets ymy needs and budget. Here are the three simple steps from start to finish.',
         steps: [
             {
                 id: 1,
                 title: 'Consultation',
-                text: "I'll discuss your website goals and needs and provide you with a custom quote for your project based on your requirements and budget."
+                text: "I'll discuss ymy website goals and needs and provide you with a custom quote for ymy project based on ymy requirements and budget."
             },
             {
                 id: 2,
                 title: 'Design & Development',
-                text: "I'll design and develop your website using the latest technologies and best practices to ensure it's mobile-friendly and optimized for search engines."
+                text: "I'll design and develop ymy website using the latest technologies and best practices to ensure it's mobile-friendly and optimized for search engines."
             },
             {
                 id: 3,
                 title: 'Launch',
-                text: " I'll launch your mobile-friendly website and ensure it's fully functional and optimized for search engines to increase your online visibility."
+                text: " I'll launch ymy mobile-friendly website and ensure it's fully functional and optimized for search engines to increase ymy online visibility."
             },
         ]
     }
 ]
 
-export { hero, mobile, services, benefits, process }
+export { hero, mobile, services, benefits, process, faqData }

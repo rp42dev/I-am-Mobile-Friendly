@@ -1,5 +1,5 @@
-import { Features, Features3, Testimonials, Contact, Features2, Why, Projects, Hero, Meta } from '../../components';
-import { hero, services, benefits, mobile, process } from './data';
+import { Features, Features3, Testimonials, Contact, Features2, Why, Projects, Hero, Meta, Faq } from '../../components';
+import {hero, services, benefits, mobile, process, faqData } from './data';
 
 const Home = () => {
     return (
@@ -14,6 +14,7 @@ const Home = () => {
             <Features3 data={process} />
             <Testimonials />
             <Contact />
+            <Faq data={faqData} />
        </>
     );
 }

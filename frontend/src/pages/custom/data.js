@@ -51,15 +51,15 @@ const faqData = [
     },
     {
         question: "How long does it take to develop a custom mobile-friendly website?",
-        answer: "The development time can vary depending on the complexity and scope of the project. It is best to discuss the timeline with your web developer."
+        answer: "The development time can vary depending on the complexity and scope of the project. We will provide you with a timeline for your project based on your requirements."
     },
     {
         question: "What technologies are used in custom mobile-friendly web design?",
-        answer: "Custom mobile-friendly websites can be developed using a variety of technologies such as HTML5, CSS3, JavaScript, and frameworks like React or Angular."
+        answer: "Custom mobile-friendly websites can be developed using a variety of technologies such as HTML5, CSS3, JavaScript, and frameworks like React, Node, and Django."
     },
     {
         question: "Can I update the content on my custom mobile-friendly website myself?",
-        answer: "Yes, most custom mobile-friendly websites come with a content management system (CMS) that allows you to easily update and manage your website content."
+        answer: "This depends on the type of website you have. I can develop a custom content management system (CMS) that allows you to update the content on your website yourself."
     },
     {
         question: "Will my custom mobile-friendly website be compatible with all mobile devices?",
@@ -79,7 +79,7 @@ const faqData = [
     },
     {
         question: "How much does custom mobile-friendly web design cost?",
-        answer: "The cost of custom mobile-friendly web design varies depending on factors such as the complexity of the project, desired features, and the web developer's rates. It is best to discuss your budget and requirements with your web developer for a personalized quote."
+        answer: "The cost of custom mobile-friendly web design varies depending on factors such as the complexity of the project, desired features, and the web developer's rates. I will provide you with a quote based on your requirements."
     }
 ];
 
