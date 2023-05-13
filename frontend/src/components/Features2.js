@@ -16,7 +16,7 @@ const Features2 = (props) => {
                             </div>
                         </div>
                         <div className="w-full xl:pl-2">
-                            <ul className="gap-6 mt-8 lg:mt-0 md:grid md:grid-cols-2">
+                            <ul className="gap-6 mt-8 lg:mt-0 md:grid md:grid-cols-2 space-y-4 lg:space-y-0 lg:gap-8">
                                 {data[0].data.map((item) => {
                                     return (
                                         <li key={item.id} className="flex items-start lg:col-span-1">

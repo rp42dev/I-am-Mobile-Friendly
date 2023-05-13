@@ -127,9 +127,9 @@ const hero = [
     {
         title: 'Custom',
         subtitle: 'Website Design & Development',
-        description: 'I specialize in creating tailor-made, mobile-friendly websites using modern technologies like React and Django. With a focus on mobile-friendly design and user experience.',
+        description: 'I specialize in creating customized, mobile-friendly websites using modern technologies like React and Django. I offer services in Ireland, including Drogheda and Dublin, and remotely to clients worldwide. With a strong focus on mobile-friendly design and seamless user experience',
         image: require('../../assets/images/responsive.webp'),
-        alt: 'Hero mobile friendly',
+        alt: 'Custom Website Design & Development displaying responsive design',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',

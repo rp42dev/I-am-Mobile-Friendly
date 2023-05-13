@@ -10,9 +10,9 @@ const hero = [
     {
         title: 'Affordable',
         subtitle: 'Website Development',
-        description: 'Do you need a cost-effective solution without compromising on quality? Don\'t let limited resources hinder your online presence!',
+        description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
         image: require('../../assets/images/responsive.webp'),
-        alt: 'Hero mobile friendly',
+        alt: 'Budget mobile friendly website development Displaying a responsive website on a desktop, tablet, and mobile phone',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
@@ -33,7 +33,7 @@ const agitate = [
             },
             {
                 id: 2,
-                text: "WordPress is the most popular content management system (CMS) in the world, with a market share of 64.1%. [Source: W3Techs]"
+                text: "A website is a must-have for any business, but it can be expensive to develop and maintain, especially if you're just starting."
             },
             {
                 id: 3,
@@ -47,8 +47,7 @@ const solution = [
     {
         id: 1,
         custom: true,
-        text: 'Turn the tables with my budget-friendly website development services!',
-        description: ' specialize in using WordPress and pre-made templates to create professional websites at affordable prices. Say goodbye to excessive costs and hello to a high- quality website that fits your budget!',
+        text: 'Budget-friendly website features and functionality',
         data: [
             {
                 id: 1,
@@ -72,7 +71,7 @@ const solution = [
             },
             {
                 id: 5,
-                title: 'EShared or Managed Hosting',
+                title: 'Shared or Managed Hosting',
                 text: "Opt for shared hosting or managed WordPress hosting for reliable and cost-effective hosting options."
             },
             {

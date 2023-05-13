@@ -4,9 +4,9 @@ const hero = [
     {
         title: 'Responsive',
         subtitle: 'Website Design & Development.',
-        description: 'I design and develop mobile-friendly websites that look great on any device. I offer custom solutions for every budget and timeline so you can get back to running your business without worrying about the technical details.',
+        description: 'Unlock the potential of your business with my comprehensive web development services for small businesses and startups in Ireland, including Drogheda and Dublin, and remotely to clients worldwide. Together, we\'ll create a tailored website that captures your unique vision and drives tangible results within your budget.',
         image: require('../../assets/images/responsive.webp'),
-        alt: 'Hero mobile friendly',
+        alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
@@ -60,7 +60,7 @@ const services = [
         id: 1,
         custom: false,
         title: 'Web development services!',
-        description: 'I offer a wide range of web development services for small businesses, and startups. I will work with you to create a website that meets your needs and budget.',
+        description: '',
         steps: [
             {
                 id: 1,

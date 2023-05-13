@@ -9,9 +9,9 @@ const hero = [
     {
         title: 'Transform',
         subtitle: 'to a mobile-friendly website.',
-        description: 'Don\'t let outdated websites hinder your success,with our mobile-friendly website transformation services. Prepare to elevate your business to new heights and connect with a larger customer base than ever before! 🚀',
+        description: 'Don\'t let outdated websites hinder your success, I offers mobile website transformation services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide. Get a mobile-friendly website that looks great on any device!',
         image: require('../../assets/images/transform.webp'),
-        alt: 'Hero transform',
+        alt: 'Transform non-mobile-friendly website to mobile-friendly website displaying a desktop to mobile devices transformation',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
@@ -73,7 +73,7 @@ const solution = [
     {
         id: 1,
         custom: false,
-        title: 'Turn the tide with my web development services!',
+        title: 'Mobile Website Transformation Solutions',
         description: 'I specialize in transforming unresponsive websites into stunning mobile-friendly experiences. Don\'t let your competitors outshine you on the small screen - embrace the future of web browsing! and Experience the following benefits:',
         steps: [
             {
