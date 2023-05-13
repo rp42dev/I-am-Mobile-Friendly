@@ -57,7 +57,7 @@ const mobile = [
 
 const faqData = [
     {
-        question: "What services does you provide?",
+        question: "What services do you provide?",
         answer: "I offer a comprehensive range of web development services, including custom web development, budget web development, and mobile website transformation.",
     },
     {
@@ -73,11 +73,11 @@ const faqData = [
         answer: "Mobile website transformation involves converting existing non-mobile-friendly websites into mobile-friendly versions. Regardless of the technology used, I have the expertise to transform ymy website into a mobile-friendly and responsive platform.",
     },
     {
-        question: "Which areas does you cover?",
+        question: "Which areas do you cover?",
         answer: "I serve clients in Ireland, specifically in locations such as Drogheda and Dublin. Additionally, I provide remote services to clients worldwide.",
     },
     {
-        question: "How does I ensure the quality of custom web development?",
+        question: "How do I ensure the quality of custom web development?",
         answer: "I take a personalized and individual approach to each custom web development project, ensuring that the final product meets the client's requirements and adheres to high-quality standards.",
     },
     {
@@ -89,7 +89,7 @@ const faqData = [
         answer: "I utilizes modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
     },
     {
-        question: "How long does it take to transform a non-mobile-friendly website into a mobile-friendly version?",
+        question: "How long do it take to transform a non-mobile-friendly website into a mobile-friendly version?",
         answer: "The time required for mobile website transformation depends on the complexity and size of the website. I work efficiently to ensure a smooth transition to a mobile-friendly platform.",
     },
     {
