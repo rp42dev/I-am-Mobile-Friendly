@@ -3,7 +3,7 @@ const Features3 = (props) => {
     return (
         <>
             <section id="features3" className="container mx-auto px-4">
-                <div className="px-4 sm:px-6 lg:px-12 xl:px-16 bg-base-200 rounded-md shadow-lg py-24 mb-24">
+                <div className="px-4 sm:px-6 lg:px-12 xl:px-16 bg-base-200/75 rounded-md shadow-lg py-24 mb-24">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-1/2 xl:pr-4">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">

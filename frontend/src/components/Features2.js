@@ -5,7 +5,7 @@ const Features2 = (props) => {
 
     return (
         <section id="features2" className="container relative mx-auto px-4">
-            <div className="bg-base-200 border-base-100 rounded-lg shadow-lg py-24 mb-24 px-4 sm:px-6 lg:px-12 xl:px-16">
+            <div className="bg-base-200/75 border-base-100 rounded-lg shadow-lg py-24 mb-24 px-4 sm:px-6 lg:px-12 xl:px-16">
                 <div className="relative">
                     <div className="flex flex-wrap content-center">
                         <div className="w-full xl:pr-2">
