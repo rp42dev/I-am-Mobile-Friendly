@@ -64,7 +64,7 @@ const SideDrawer = ({ open, setOpen }) => {
                             </li>
 
                             <li>
-                                <a href="#about" className="btn btn-outline btn-primary rounded-lg py-0 mt-4 w-full" onClick={handleCloseDrawer}>
+                                <a href="#contact" className="btn btn-outline btn-primary rounded-lg py-0 mt-4 w-full" onClick={handleCloseDrawer}>
                                     <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-primary'}`}>
                                         <span className="mr-2 mt-1">Get Started</span>
                                         <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
