@@ -5,40 +5,6 @@ const metaProps = {
     description: 'Custom web development services in Ireland, serving Drogheda and Dublin and beyond, offering remote services to clients worldwide. Utilizing modern technologies such as React, Node, Django, and more.',
 }
 
-const mobile = [
-    {
-        id: 1,
-        custom: true,
-        text: 'Mobile Friendly Website features',
-        description: 'All our websites are designed and developed with the following features to ensure that your website is mobile-friendly and optimized for search engines.',
-        data: [
-            {
-                id: 1,
-                text: "Responsive design that adapts to any screen size"
-            },
-            {
-                id: 2,
-                text: "Easy navigation for a seamless user experience"
-            },
-            {
-                id: 3,
-                text: "Mobile-friendly content to increase your online visibility"
-            },
-            {
-                id: 4,
-                text: "Enhanced readability for better user engagement"
-            },
-            {
-                id: 5,
-                text: "Optimized for search engines to increase your online visibility"
-            },
-            {
-                id: 6,
-                text: "Improved user experience to increase your conversion rate"
-            },
-        ]
-    }
-]
 
 const faqData = [
     {
@@ -201,4 +167,4 @@ const process = [
 ]
 
 
-export { features, faqData, hero, benefits, process, metaProps };
+export { features, faqData, hero, benefits, process, metaProps }

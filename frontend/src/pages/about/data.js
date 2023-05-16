@@ -230,4 +230,9 @@ const process = [
     }
 ]
 
-export { hero, mobile, services, benefits, process, faqData, vision, mission }
+const metaProps = {
+    title: 'Custom Web Development Services in Ireland | Drogheda & Dublin - About Me',
+    description: 'I\'m a freelance web developer based in Ireland. I offer custom web development services to clients in Drogheda, Dublin, and worldwide. I specialize in Mobile Website Transformation, Budget Web Development, and Custom Web Development. Contact me today!',
+}
+
+export { hero, mobile, services, benefits, process, faqData, vision, mission, metaProps }

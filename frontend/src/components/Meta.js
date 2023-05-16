@@ -17,7 +17,7 @@ const Meta = ({ title, description }) => {
                 metaTags[i].content = description;
             }
         }
-    }, []); // Empty dependency array to run the effect after initial rendering
+    }, []);
 
     return <></>;
 };
