@@ -72,6 +72,9 @@ const NavBar = () => {
                         <Link to="/mobile-website-transformation" className="tab tab-bordered">
                             Transform
                         </Link>
+                        <Link to="/about-me" className="tab tab-bordered">
+                            About Me
+                        </Link>
                     </div>
                     <div className="hidden lg:flex me-6">
                         <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0" >

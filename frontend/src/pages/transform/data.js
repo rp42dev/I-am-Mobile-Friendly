@@ -115,7 +115,7 @@ const faqData = [
     },
     {
         "question": "How do I know if my website is mobile-friendly?",
-        "answer": "You can use Google's Mobile-Friendly Test to check if your website is mobile-friendly. If your website is not mobile-friendly, you can contact us to build a mobile-friendly website for you."
+        "answer": "You can use Google's Mobile-Friendly Test to check if your website is mobile-friendly. If your website is not mobile-friendly, you can Contact me to build a mobile-friendly website for you."
     },
     {
         "question": "How can I help to transform my website?",
@@ -139,7 +139,7 @@ const faqData = [
     },
     {
         "question": "Can my website be transformed into a mobile-friendly website?",
-        "answer": "Generally, yes. However, it depends on platform your website is built on. I work with a wide range of platforms. If you are not sure if your website can be transformed into a mobile-friendly website, please contact us for a free consultation."
+        "answer": "Generally, yes. However, it depends on platform your website is built on. I work with a wide range of platforms. If you are not sure if your website can be transformed into a mobile-friendly website, please Contact me for a free consultation."
     },
     {
         "question": "Is responsive design the same as mobile-friendly design?",

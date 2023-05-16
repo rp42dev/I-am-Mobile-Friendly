@@ -16,9 +16,9 @@ const SideDrawer = ({ open, setOpen }) => {
 
         tabs.forEach(tab => {
             if (tab.getAttribute('href') === location.pathname) {
-                tab.classList.add('active');
+                tab.classList.add('tab-active');
             } else {
-                tab.classList.remove('active');
+                tab.classList.remove('tab-active');
             }
         });
     }, [location]);
@@ -35,30 +35,36 @@ const SideDrawer = ({ open, setOpen }) => {
                         </div>
                     </div>
                     <nav className="p-4 w-full grid place-items-center h-screen">
-                        <ul className="menu text-base-content space-y-4 w-full">
+                        <ul className="menu text-base-content space-y-4 w-full ">
                             <li>
-                                <Link to="/" className="tab-bordered">
+                                <Link to="/" className="tab tab-bordered text-lg h-12">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/custom-web-development" className="tab-bordered">
+                                <Link to="/custom-web-development" className="tab tab-bordered text-lg h-12">
                                     Custom
                                 </Link></li>
                             <li>
-                                <Link to="/budget-web-development" className="tab-bordered">
+                                <Link to="/budget-web-development" className="tab tab-bordered text-lg h-12">
                                     Budget
                                 </Link>
                             </li>
                             <li>
 
-                                <Link to="/mobile-website-transformation" className="tab-bordered">
+                                <Link to="/mobile-website-transformation" className="tab tab-bordered text-lg h-12">
                                     Transform
                                 </Link>
                             </li>
 
                             <li>
-                                <a href="#contact" className="btn btn-outline btn-primary rounded-lg py-0 w-full" onClick={handleCloseDrawer}>
+                                <Link to="/about-me" className="tab tab-bordered text-lg h-12">
+                                    About Me
+                                </Link>
+                            </li>
+
+                            <li>
+                                <a href="#about" className="btn btn-outline btn-primary rounded-lg py-0 mt-4 w-full" onClick={handleCloseDrawer}>
                                     <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-primary'}`}>
                                         <span className="mr-2 mt-1">Get Started</span>
                                         <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
