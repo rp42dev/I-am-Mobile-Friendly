@@ -11,7 +11,7 @@ const hero = [
         title: 'Affordable',
         subtitle: 'Website Development',
         description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
-        image: require('../../assets/images/responsive.webp'),
+        image: require('../../assets/images/budget.webp'),
         alt: 'Budget mobile friendly website development Displaying a responsive website on a desktop, tablet, and mobile phone',
         btn: 'Get started',
         btn2: 'Learn more',

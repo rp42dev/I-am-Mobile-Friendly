@@ -118,8 +118,8 @@ const faqData = [
         "answer": "You can use Google's Mobile-Friendly Test to check if your website is mobile-friendly. If your website is not mobile-friendly, you can Contact me to build a mobile-friendly website for you."
     },
     {
-        "question": "How can I help to transform my website?",
-        "answer": "I offer website transformation services to help businesses like yours achieve a mobile-friendly website. Our team of experts will work with you to understand your business requirements and design a website that is mobile-friendly."
+        "question": "How can you help me to transform my website?",
+        "answer": "I offer website transformation services to help businesses like yours achieve a mobile-friendly website. I will work with you to understand your business requirements and design a website that is mobile-friendly."
     },
     {
         "question": "How much does it cost to transform my website?",

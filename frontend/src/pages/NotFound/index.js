@@ -4,7 +4,7 @@ const NotFound = () => {
     return (
         <>
             <Meta title='404 Not Found | Mobile friendly websites, Web design, Web development in Ireland | Drogheda, Dublin & Remote | I am Mobile Friendly' />
-            <div className="relative h-screen -mt-40 overflow-hidden -z-1">
+            <div className="relative min-h-screen overflow-hidden -z-1">
 
                 <div className="absolute inset-0 grid place-content-center">
                     <div className="container relative flex flex-col text-center justify-items-center h-screen justify-center mt-40">

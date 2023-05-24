@@ -12,5 +12,6 @@ import Projects from "./Projects";
 import Hero from "./Hero";
 import Meta from "./Meta";
 import SideDrawer from "./SideDrawer";
+import Badge from "./Badge";
 
-export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Features4, Why, Projects, Faq, Hero, Meta, SideDrawer };
+export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Features4, Why, Projects, Faq, Hero, Meta, SideDrawer, Badge };
