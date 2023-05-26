@@ -11,7 +11,7 @@ const Hero = ({ data }) => {
                 <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
                     <div className="max-w-2xl w-full h-full">
                         <div className="flex justify-center p-0 xl:px-4 py-4 xl:py-0 max-h-screen">
-                            <img src={data.image} alt={data.alt} className="hero-img object-contain max-full w-full" />
+                            <img width="1500" height="1200" src={data.image} alt={data.alt} className="hero-img object-contain max-full w-full" />
                         </div>
                     </div>
                     <div className="relative flex-1">

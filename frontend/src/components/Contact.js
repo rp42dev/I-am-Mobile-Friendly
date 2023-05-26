@@ -1,4 +1,4 @@
-import image from '../assets/images/paper-plane-path.svg'
+import image from '../assets/images/paper_plane.webp'
 import { LinkedinLogo } from "@phosphor-icons/react";
 
 import ContactForm from './ContactForm'
@@ -22,7 +22,7 @@ const Contact = () => {
                     </div>
                     <div className="z-10 grid  hidden lg:block">
 
-                        <img className="object-cover m-auto maw-w-60 py-8 my-auto" src={image} alt="Paper plane" />
+                        <img width="400" height="200" className="object-cover m-auto maw-w-60 py-8 my-auto" src={image} alt="Paper plane" />
 
                     </div>
                 </div>
