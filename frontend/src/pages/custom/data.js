@@ -126,7 +126,7 @@ const process = [
                 id: 2,
                 check: true,
                 icon: <Strategy size={32} />,
-                title: "Brainstorming and Planning",
+                title: "Planning",
                 text: [
                     "Brainstorm ideas and determine the best approach for the website.",
                     "Create a project plan outlining the development phases, timelines, and resource allocation.",
@@ -150,7 +150,7 @@ const process = [
                 id: 4,
                 check: true,
                 icon: <Code size={32} />,
-                title: "Coding, and Development",
+                title: "Development",
                 text: [
                     "Convert the approved prototype into a fully functional website.",
                     "Implement an appealing and responsive user interface (UI) design.",
@@ -175,7 +175,7 @@ const process = [
                 id: 6,
                 check: true,
                 icon: < Bug size={ 32} />,
-                title: "Testing and Quality Assurance",
+                title: "Testing",
                 text: [
                     "Conduct comprehensive testing to ensure the website functions properly across different browsers, devices, and screen sizes.",
                     "Verify that all features and functionalities are working as expected.",
