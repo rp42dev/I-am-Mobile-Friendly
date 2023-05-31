@@ -16,6 +16,7 @@ def react_app_view(request):
         '/budget-web-development',
         '/mobile-website-transformation',
         '/about-me',
+        '/contact-success',
     ]
     
     sitemap_urls = [

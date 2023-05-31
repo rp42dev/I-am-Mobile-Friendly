@@ -1,11 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import Home from './pages/home';
-import Transform from './pages/transform';
-import Budget from './pages/budget';
-import Custom from './pages/custom';
-import NotFound from './pages/NotFound'; // Import your custom 404 page
-import About from "./pages/about";
+import { Home, Transform, Budget, Custom, About, NotFound, Success } from './pages';
 import { NavBar, Footer } from './components';
 import ThemeProvider from './ThemeProvider';
 
@@ -24,6 +19,7 @@ function App() {
                   <Route path='/budget-web-development' element={<Budget />} />
                   <Route path='/custom-web-development' element={<Custom />} />
                   <Route path='/about-me' element={<About />} />
+                  <Route path='/contact-success' element={<Success />} />
                   <Route path='*' element={<NotFound />} />
                 </Routes>
               </div>

@@ -42,10 +42,10 @@ const ContactForm = () => {
         }, 
         )
             .then(response => {
-                console.log(response.data);
                 setName('');
                 setMessage('');
                 setFromEmail('');
+                window.location.replace('/contact-success');
                 setResponseText('Thank you! Your message has been sent.');
                 setError(false);
                 setErrors({});
