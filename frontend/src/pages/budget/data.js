@@ -2,15 +2,15 @@ import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
 
 
 const metaProps = {
-    title: 'Affordable Budget Web Development in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
-    description: 'I offers affordable budget mobile friendly web development services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide. We leverage tools like WordPress, cPanel, and more to create professional websites at affordable prices.',
+    title: 'Affordable Budget Web Development in Ireland | Mobile Friendly Websites | Web Design Ireland',
+    description: 'I offers affordable budget mobile friendly web development services in Ireland and offering remote services to clients worldwide. We leverage tools like WordPress, cPanel, and more to create professional websites at affordable prices.',
 }
 
 const hero = [
     {
         title: 'Affordable',
         subtitle: 'Website Development',
-        description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland, covering Drogheda, Dublin and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
+        description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
         image: require('../../assets/images/budget.webp'),
         alt: 'Budget mobile friendly website development Displaying a responsive website on a desktop, tablet, and mobile phone',
         btn: 'Get started',
@@ -47,7 +47,7 @@ const solution = [
     {
         id: 1,
         custom: true,
-        text: 'Budget-friendly website features and functionality',
+        text: 'Benefits of Budget-Friendly Mobile-Friendly Web Design',
         data: [
             {
                 id: 1,
@@ -62,7 +62,7 @@ const solution = [
             {
                 id: 3,
                 title: 'User-Friendly CMS',
-                text: "Easily update and manage your website content using the intuitive WordPress interface."
+                text: "Easily update and manage your website content using the intuitive WordPress, cPanel, or other CMS."
             },
             {
                 id: 4,

@@ -9,6 +9,7 @@ const Custom = () => {
             <Hero data={hero[0]} />
             <Features2 data={features} />
             <Features5 data={process} />
+            <Features2 data={benefits} />
             <Testimonials />
         
             <Contact />

@@ -1,8 +1,8 @@
 import { PenNib, PiggyBank, ArrowClockwise, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Web Development in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
-    description: 'Custom web development services in Ireland, serving Drogheda and Dublin and beyond, offering remote services to clients worldwide. Utilizing modern technologies such as React, Node, Django, and more.',
+    title: 'Custom Web Development in Ireland | Mobile friendly websites | Web Design Ireland',
+    description: 'Custom web development services in Ireland and offering remote services to clients worldwide. Utilizing modern technologies such as React, Node, Django.',
 }
 
 
@@ -191,34 +191,41 @@ const process = [
 const benefits = [
     {
         id: 1,
-        custom: false,
-        title: 'Benefits working with me!',
-        description: 'As an independent web developer, I offer a range of benefits to my clients, some of which include:',
-        steps: [
+        custom: true,
+        text: 'Benefits of choosing me!',
+        description: 'As a freelance web developer, I offer a range of benefits to my clients, some of which include:',
+        data: [
             {
                 id: 1,
-                check: false,
-                icon: <PenNib size={32} />,
-                title: "Customized Solutions",
-                text: ["I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."],
-                link: "",
+                title: 'No middleman',
+                text: "I will be your sole point of contact throughout the project, ensuring clear communication and a streamlined process."
             },
             {
                 id: 2,
-                check: false,
-                icon: <PiggyBank size={32} />,
-                title: "Competitive Pricing",
-                text: ["Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."],
-                link: "",
+                title: 'Customized Solutions',
+                text: "I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."
             },
             {
                 id: 3,
-                check: false,
-                icon: <ArrowClockwise size={32} />,
-                title: "Fast Turnaround Time",
-                text: ["Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."],
-                link: "",
+                title: 'Competitive Pricing',
+                text: "Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."
             },
+            {
+                id: 4,
+                title: 'Fast Turnaround Time',
+                text: "Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."
+            },
+            {
+                id: 5,
+                title: 'Aftercare Support',
+                text: "I will provide ongoing support and maintenance to ensure your website is always up-to-date and running smoothly."
+            },
+            {
+                id: 6,
+                title: 'Mobile-Friendly Design',
+                text: "All websites are designed to be mobile-friendly and responsive to ensure a seamless user experience across all devices."
+            },
+
         ]
     }
 ]

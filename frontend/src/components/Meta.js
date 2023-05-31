@@ -23,8 +23,8 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-    title: 'Web Development Services in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
-    description: 'I specialize in creating unique and responsive websites tailored to meet your business needs. Our services include Custom Web Development, Budget Web Development, and Mobile Website Transformation, all designed to enhance your online presence.',
+    title: 'Website Design Ireland | Mobile friendly websites | Web Design Ireland',
+    description: 'I am a freelance web designer based in Ireland. I design and build mobile friendly websites for small businesses and individuals. I also provide Transformation to mobile friendly websites for existing websites.',
 };
 
 export default Meta;
