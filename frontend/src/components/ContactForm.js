@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import { PaperPlaneTilt } from "@phosphor-icons/react";
-import { sendEmail } from '../services/apiService';
 import { validateFields } from '../utils/validation';
 
 import MessagePopup from './MessagePopup';
@@ -14,6 +14,8 @@ const ContactForm = () => {
     const [responseText, setResponseText] = useState('');
     const [error, setError] = useState(false);
     const [errors, setErrors] = useState({});
+    const [csrfToken, setCsrfToken] = useState('');
+
 
     useEffect(() => {
         if (Object.keys(errors).length > 0) {
@@ -21,6 +23,25 @@ const ContactForm = () => {
             setErrors(validationErrors);
         }
     }, [name, message, fromEmail]);
+
+    useEffect(() => {
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        setCsrfToken(getCookie('csrftoken'));
+    }, []);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -34,13 +55,14 @@ const ContactForm = () => {
             return;
         }
 
-        sendEmail({
-            subject: `New message from ${name}`,
-            name: name,
-            message: message,
-            fromEmail: fromEmail,
-        }, 
-        )
+        axios.post('/send-email', {
+            name, message, fromEmail
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrfToken,
+            },
+        })
             .then(response => {
                 console.log(response.data);
                 setName('');
@@ -81,24 +103,24 @@ const ContactForm = () => {
                 </div>
                 <div className="relative w-full">
 
-                <input
-                    className={`w-full input input-bordered ${errors.fromEmail && 'input-error'}`}
-                    id="fromEmail"
-                    type="email"
-                    placeholder='Email'
-                    value={fromEmail}
-                    onChange={(event) => setFromEmail(event.target.value)}
-                />
+                    <input
+                        className={`w-full input input-bordered ${errors.fromEmail && 'input-error'}`}
+                        id="fromEmail"
+                        type="email"
+                        placeholder='Email'
+                        value={fromEmail}
+                        onChange={(event) => setFromEmail(event.target.value)}
+                    />
                     {errors.fromEmail && <p className="absolute -bottom-3.5 left-2 text-xs text-red-500">{errors.fromEmail}</p>}
                 </div>
                 <div className="relative w-full">
-                <textarea
-                    className={`input input-bordered w-full h-40 ${errors.message && 'input-error'}`}
-                    id="message"
-                    placeholder='Message'
-                    value={message}
-                    onChange={(event) => setMessage(event.target.value)}
-                ></textarea>
+                    <textarea
+                        className={`input input-bordered w-full h-40 ${errors.message && 'input-error'}`}
+                        id="message"
+                        placeholder='Message'
+                        value={message}
+                        onChange={(event) => setMessage(event.target.value)}
+                    ></textarea>
                     {errors.message && <p className="absolute -bottom-2 left-2 text-xs text-red-500">{errors.message}</p>}
                 </div>
 
@@ -106,7 +128,7 @@ const ContactForm = () => {
                     Send &nbsp;<PaperPlaneTilt size={20} />
                 </button>
             </form>
-        
+
         </>
     );
 };

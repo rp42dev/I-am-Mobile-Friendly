@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import JsonResponse
-from rest_framework import viewsets
-from .serializers import MySerializer, EmailSerializer
-from .models import Project
-from django.http import Http404
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_POST
+
+import json
 
 
 def react_app_view(request):
@@ -39,46 +39,39 @@ def react_app_view(request):
         return render(request, 'sitemap.xml')
     elif requested_path in robots_urls:
         return render(request, 'robots.txt')
-    elif requested_path.startswith('/api'):
-        pass
+    elif requested_path.startswith('/send-email'):
+        return send_email(request)
     else:
         # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)
 
 
-class ProjectsViewSet(viewsets.ModelViewSet):
-    serializer_class = MySerializer
-    queryset = Project.objects.all()
-
-class SendEmailViewSet(viewsets.ViewSet):
-
-    serializer_class = EmailSerializer
-    email = settings.DEFAULT_FROM_EMAIL
-
-    def create(self, request):
-        serializer = self.serializer_class(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        name = serializer.validated_data['name']
-        from_email = serializer.validated_data['fromEmail']
-        message = serializer.validated_data['message']
+@require_POST
+def send_email(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        name = data['name']
+        from_email = data['fromEmail']
+        message = data['message']
 
         send_mail(
             subject='I am mobile friendly Contact Form Submission',
             message=f'Name: {name}\nEmail: {from_email}\nMessage: {message}',
             from_email=from_email,
-            recipient_list=[self.email],
+            recipient_list=[settings.DEFAULT_FROM_EMAIL],
             fail_silently=False,
         )
         send_mail(
             subject=f"Thank you for contacting me, {name}",
-            message=f"Thank you for contacting me, {name}."
+            message=f"Thank you for contacting me, {name}.\n"
                     f"I will get back to you as soon as possible.\n\n"
                     f"Best regards,\n"
                     f"Raivis from I am mobile friendly",
 
-            from_email=self.email,
+            from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[from_email],
             fail_silently=False,
         )
         return JsonResponse({'message': 'Email sent successfully'})
-
+    else:
+        return render(request, 'react_template.html')
