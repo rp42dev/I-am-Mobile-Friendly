@@ -4,7 +4,7 @@ const hero = [
     {
         title: 'Responsive',
         subtitle: 'Website Design & Development.',
-        description: 'Unlock the potential of your business with comprehensive web development services for small businesses and startups in Ireland and remotely to clients worldwide. Together, we\'ll create a tailored website that captures my unique vision and drives tangible results within my budget.',
+        description: 'Unlock the potential of your business with comprehensive web development services for small businesses and individuals. I offer custom web development, budget web development, and mobile website transformation services in Ireland and worldwide.',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
