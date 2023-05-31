@@ -39,6 +39,8 @@ def react_app_view(request):
         return render(request, 'sitemap.xml')
     elif requested_path in robots_urls:
         return render(request, 'robots.txt')
+    elif requested_path.startswith('/api'):
+        pass
     else:
         # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)
@@ -63,8 +65,9 @@ class SendEmailViewSet(viewsets.ViewSet):
         send_mail(
             subject='I am mobile friendly Contact Form Submission',
             message=f'Name: {name}\nEmail: {from_email}\nMessage: {message}',
-            from_email=self.email,
+            from_email=from_email,
             recipient_list=[self.email],
+            fail_silently=False,
         )
         send_mail(
             subject=f"Thank you for contacting me, {name}",
@@ -75,6 +78,7 @@ class SendEmailViewSet(viewsets.ViewSet):
 
             from_email=self.email,
             recipient_list=[from_email],
+            fail_silently=False,
         )
         return JsonResponse({'message': 'Email sent successfully'})
 

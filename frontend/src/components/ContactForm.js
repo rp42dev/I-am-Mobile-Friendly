@@ -46,6 +46,7 @@ const ContactForm = () => {
                 setName('');
                 setMessage('');
                 setFromEmail('');
+                window.location.href = '/contact-success';
                 setResponseText('Thank you! Your message has been sent.');
                 setError(false);
                 setErrors({});
