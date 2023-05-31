@@ -1,4 +1,4 @@
-import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
+import { PenNib, PiggyBank, ArrowClockwise, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
     title: 'Custom Web Development in Ireland | Drogheda, Dublin & Remote | I am mobile friendly developer',
@@ -103,12 +103,97 @@ const hero = [
     }
 ]
 
+const process = [
+    {
+        id: 1,
+        custom: false,
+        title: 'Development Process',
+        description: '',
+        steps: [
+            {
+                id: 1,
+                check: true,
+                icon: <ChatCircleDots size={32} />,
+                title: "Consultation",
+                text: [
+                    "Initial discussions to understand requirements, goals, and target audience.",
+                    "Gather information about the desired features, functionality, and design of the website.",
+                    "Identify any technical constraints or specific project needs."
+                ],
+                link: ""
+            },
+            {
+                id: 2,
+                check: true,
+                icon: <Strategy size={32} />,
+                title: "Brainstorming and Planning",
+                text: [
+                    "Brainstorm ideas and determine the best approach for the website.",
+                    "Create a project plan outlining the development phases, timelines, and resource allocation.",
+                    "Define the website's structure, navigation, and user flow."
+                ],
+                link: ""
+            },
+            {
+                id: 3,
+                check: true,
+                icon: <PenNib size={32} />,
+                title: "Prototyping",
+                text: [
+                    "Develop wireframes or prototypes to visualize the layout, structure.",
+                    "Obtain client feedback and make revisions to refine the design.",
+                    "Ensure that the prototype accurately represents the desired final product."
+                ],
+                link: ""
+            },
+            {
+                id: 4,
+                check: true,
+                icon: <Code size={32} />,
+                title: "Coding, and Development",
+                text: [
+                    "Convert the approved prototype into a fully functional website.",
+                    "Implement an appealing and responsive user interface (UI) design.",
+                    "Develop the back-end functionality and features of the website.",
+                ],
+                link: ""
+            },
+            {
+                id: 5,
+                check: true,
+                icon: <CloudArrowUp size={32} />,
+                title: "Deployment",
+                text: [
+                    "Set up the hosting environment and configure the server for the website.",
+                    "Optimize the website for performance, security, and search engine visibility.",
+                    "Deploy the website on a production server or hosting platform.",
+                    "Configure domain and DNS settings for the website's public access."
+                ],
+                link: ""
+            },
+            {
+                id: 6,
+                check: true,
+                icon: < Bug size={ 32} />,
+                title: "Testing and Quality Assurance",
+                text: [
+                    "Conduct comprehensive testing to ensure the website functions properly across different browsers, devices, and screen sizes.",
+                    "Verify that all features and functionalities are working as expected.",
+                    "Identify and fix any bugs or issues through rigorous testing and debugging processes.",
+                ],
+                link: ""
+            },
+        ]
+    }
+];
+
+
 const benefits = [
     {
         id: 1,
         custom: false,
         title: 'Benefits working with me!',
-        description: '',
+        description: 'As an independent web developer, I offer a range of benefits to my clients, some of which include:',
         steps: [
             {
                 id: 1,
@@ -133,34 +218,6 @@ const benefits = [
                 title: "Fast Turnaround Time",
                 text: ["Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."],
                 link: "",
-            },
-        ]
-    }
-]
-
-
-const process = [
-    {
-        id: 1,
-        custom: false,
-        title: 'Here\'s How Our Process Works',
-        button: 'Get started',
-        description: 'I will work with you to understand your business needs and provide a customized solution that fits your needs and budget. Here\'s how our process works in 3 simple steps:',
-        steps: [
-            {
-                id: 1,
-                title: 'Consultation',
-                text: "I'll discuss your website goals and needs and provide you with a custom quote for your project based on your requirements and budget."
-            },
-            {
-                id: 2,
-                title: 'Design & Development',
-                text: "I'll design and develop your website using the latest technologies and best practices to ensure it's mobile-friendly and optimized for search engines."
-            },
-            {
-                id: 3,
-                title: 'Launch',
-                text: " I'll launch your mobile-friendly website and ensure it's fully functional and optimized for search engines to increase your online visibility."
             },
         ]
     }

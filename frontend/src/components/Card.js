@@ -37,11 +37,11 @@ const Card = ({ title, description, icon, link, check }) => {
     return (
         <>
             {link ? (
-                <Link to={link} className='min-w-0 w-full lg:min-w-0 lg:w-1/3'>
+                <Link to={link} className='min-w-0 w-full lg:min-w-0 lg:w-1/4'>
                     {content}
                 </Link>
             ) : (
-                <div className='min-w-0 w-full lg:min-w-0 lg:w-1/3'>
+                <div className='min-w-0 w-full lg:min-w-0 lg:w-1/4'>
                     {content}
                 </div>
             )}
