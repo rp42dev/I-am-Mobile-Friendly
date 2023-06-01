@@ -111,8 +111,7 @@ const services = [
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
                 text: ["Custom design tailored to my specific needs",
-                    "Development using modern technologies like React and Django",
-                    "Hosting options: VPS or dedicated servers."],
+                    "Development using modern technologies like React and Django"],
                 link: "/custom-web-development",
                 check: true
             },
@@ -121,8 +120,7 @@ const services = [
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
                 text: ["Cost-effective solution to establish my online presence",
-                    "Website Development using WordPress or existing templates",
-                    "Hosting options: shared or cloud hosting"],
+                    "Website Development using WordPress or existing templates"],
                 link: "/budget-web-development",
                 check: true
             },
@@ -139,7 +137,7 @@ const services = [
                     </div>
                 ,
                 title: "Mobile Website Transformation",
-                text: ["Convert my existing non-mobile-friendly website into a mobile-friendly version.",
+                text: ["Convert existing non-mobile-friendly website into a mobile-friendly version.",
                     "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
                 ],
                 link: "/mobile-website-transformation",

@@ -51,3 +51,70 @@ body{
     background-size: cover;
 
 }
+
+
+.rocket-container {
+    transform-origin: center;
+    z-index: -1;
+    animation: spin 3s linear infinite;
+}
+
+.rocket-svg {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    rotate: -5deg;
+
+}
+
+.rocket-path {
+    fill: #ff0000;
+}
+
+.moon-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+}
+
+.center {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
+
+.moon-svg {
+    rotate: 0deg;
+    
+    animation: spinMoon 50s linear infinite;
+}
+
+@keyframes spinMoon {
+    0% {
+        transform-origin: center;
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
