@@ -10,7 +10,7 @@ const Why = () => {
                     Studies show that 52% of users are less likely to engage with a website that is not mobile-friendly. We are here to help you build a mobile-friendly website that will help you grow your business.
                 </p>
                 <div className="mt-8 max-w-md mx-0 md:mx-auto">
-                    <a href="#contact" className="btn px-4 py-2 btn-primary border-2">
+                    <a href="#contact" className="btn px-4 py-2 btn-secondary border-2">
                         Get started
                     </a>
                 </div>

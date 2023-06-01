@@ -11,7 +11,7 @@ const Features4 = (...data) => {
                 </p>
                 {button &&
                     <div className="mt-8 max-w-md mx-0 md:mx-auto">
-                        <a href="#contact" className="btn px-4 py-2 btn-primary border-2">
+                        <a href="#contact" className="btn px-4 py-2 btn-secondary border-2">
                             {button}
                         </a>
                     </div>}
