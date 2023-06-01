@@ -118,3 +118,51 @@ body{
         rotate: 360deg;
     }
 }
+
+.slide-in-right {
+    animation: slide-in .5s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(50%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s .5s ease-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ul-border {
+    position: relative;
+    z-index: 2;
+}
+
+.ul-border::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 13px;
+    width: 6px;
+    height: 80%;
+    z-index: -1;
+    background-color: #7B41FB;
+    transition: all .5s ease-in-out;
+}

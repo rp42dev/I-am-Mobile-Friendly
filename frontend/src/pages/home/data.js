@@ -4,7 +4,7 @@ const hero = [
     {
         title: 'Responsive',
         subtitle: 'Website Design & Development.',
-        description: 'Unlock the potential of your business with comprehensive web development services for small businesses and individuals. I offer custom web development, budget web development, and mobile website transformation services in Ireland and worldwide.',
+        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services. I can help you create a mobile-friendly website that is the perfect fit for your business needs and budget.',
         image: require('../../assets/images/responsive.webp'),
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
@@ -19,7 +19,6 @@ const mobile = [
         id: 1,
         custom: true,
         text: 'Key Features of Mobile-Friendly Websites',
-        description: 'Mobile-friendly websites are designed to fit the small screen of mobile devices and provide a seamless browsing experience. They are optimized for mobile devices and provide a better user experience. They are also optimized for search engines to increase my online visibility.',
         data: [
             {
                 id: 1,
@@ -103,7 +102,7 @@ const services = [
     {
         id: 1,
         custom: false,
-        title: 'Web development services!',
+        title: 'My Services',
         description: '',
         steps: [
             {
@@ -136,7 +135,7 @@ const services = [
                         </div>
                     </div>
                 ,
-                title: "Mobile Website Transformation",
+                title: "Mobile Web Transformation",
                 text: ["Convert existing non-mobile-friendly website into a mobile-friendly version.",
                     "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
                 ],

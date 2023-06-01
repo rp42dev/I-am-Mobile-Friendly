@@ -24,7 +24,7 @@ const Features3 = (props) => {
                         </div>
 
                         <div className="w-full px-4 lg:w-1/2 xl:pl-4">
-                            <ul className="space-y-8">
+                            <ul className="ul-border space-y-8">
                                 {data[0].steps.map((step, index) => (
                                     <li key={index} className="flex -mx-4">
                                         <div>

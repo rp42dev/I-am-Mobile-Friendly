@@ -33,7 +33,7 @@ const CardAccordion = ({ title, description, icon, link, check }) => {
 
     return (
         <>
-            <div className="relative min-w-0 w-full h-full lg:min-w-0 lg:w-1/3 xl:w-1/4 py-6 text-left bg-base-200/75 rounded-md shadow-lg">
+            <div className="relative min-w-0 w-full h-full lg:min-w-0 py-6 text-left bg-base-200/75 rounded-md shadow-lg">
 
                 <div className="flex flex-wrap content-center absolute -left-0 -top-0 px-1 py-2 bg-primary rounded-tl-lg rounded-br-lg w-20 h-16">
                     <div className="relative w-full px-4 lg:w-1/2 text-white">

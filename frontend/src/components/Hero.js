@@ -9,20 +9,20 @@ const Hero = ({ data }) => {
         <div className="home mx-auto pb-24 px-4 sm:px-6 mt-28">
             <div className="mt-8 container">
                 <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
-                    <div className="max-w-2xl w-full h-full">
+                    <div className="max-w-3xl w-full h-full">
                         <div className="flex justify-center p-0 xl:px-4 py-4 xl:py-0 max-h-screen">
-                            <img width="1500" height="1200" src={data.image} alt={data.alt} className="hero-img object-contain max-full w-full" />
+                            <img width="1500" height="1200" src={data.image} alt={data.alt} className="slide-in-right hero-img object-contain max-full w-full" />
                         </div>
                     </div>
-                    <div className="relative flex-1">
+                    <div className="relative flex-1 fade-in">
                         <span className="w-20 h-2 mb-12"></span>
-                        <h1 className="flex flex-col text-5xl font-black leading-none uppercase font-bebas-neue sm:text-8xl">
+                        <h1 className="flex flex-col text-5xl font-black leading-none font-bebas-neue sm:text-8xl">
                             {data.title}
-                            <span className="text-3xl sm:text-5xl max-w-2xl">
+                            <span className="text-3xl sm:text-5xl max-w-3xl">
                                 {data.subtitle}
                             </span>
                         </h1>
-                        <p className="py-6 text-xl max-w-2xl text-left">
+                        <p className="py-6 text-xl max-w-3xl text-left">
                             {data.description}
                         </p>
                         <div className="mt-8 mx-auto text-center lg:text-left btn-group">

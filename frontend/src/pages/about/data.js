@@ -2,8 +2,8 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 
 const hero = [
     {
-        title: 'Hello',
-        subtitle: 'I\'m Raivis.',
+        title: 'I\'m Raivis',
+        subtitle: 'Web Developer',
         description: 'I am a mobile friendly web developer from Ireland with a passion for creating responsive and user-friendly websites. I specialize in building websites that work seamlessly on all devices.',
         image: require('../../assets/images/me.webp'),
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices - Image of me',

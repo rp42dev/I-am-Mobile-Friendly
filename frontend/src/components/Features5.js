@@ -1,6 +1,6 @@
 import CardAccordion from './CardAccordion'
 
-const Features = ({ data }) => {
+const Features5 = ({ data }) => {
 
     return (
         <div id="features" className="text-center container mx-auto px-4 mb-24">
@@ -14,7 +14,7 @@ const Features = ({ data }) => {
                         {data[0].description}
                     </p>
                 </div>
-                <div className="flex flex-wrap xl:flex-wrap justify-center gap-8">
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
                     {data[0].steps.map((item) => {
                         return (
                             <CardAccordion
@@ -32,4 +32,4 @@ const Features = ({ data }) => {
     )
 }
 
-export default Features
+export default Features5
