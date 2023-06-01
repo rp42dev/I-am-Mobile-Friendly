@@ -30,7 +30,7 @@ const Hero = ({ data }) => {
                                 {data.btn ? data.btn : "Learn more"}
                             </a>
                             <a href={data.link2} className="px-4 py-0 mr-4 btn btn-outline btn-secondary text-md ">
-                                <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-primary'}`}>
+                                <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-secondary'}`}>
                                     <span className="mr-2 mt-1">{data.btn2 ? data.btn2 : "Learn more"}</span>
                                     <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
                                 </div>
