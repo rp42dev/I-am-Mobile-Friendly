@@ -1,7 +1,7 @@
 import Meta from "../../components/Meta";
 import React, { useState, useEffect, useContext } from "react";
 import rocket from '../../assets/images/rocket.svg'
-import moon from '../../assets/images/moon.svg'
+import moon from '../../assets/images/moon.webp'
 
 import ThemeContext from '../../ThemeContext';
 
