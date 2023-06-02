@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div id="contact" className="px-4 bg-base-200 ">
             <div className="container mx-auto">
-                <div className="px-4 py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center">
+                <div className="py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center">
                     <div>
                         <h2 className="text-3xl font-extrabold sm:text-4xl">
                             Contact me Today and Get a Free Quote
