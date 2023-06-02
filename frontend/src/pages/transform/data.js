@@ -48,7 +48,8 @@ const process = [
         custom: false,
         title: 'Here\'s How Our Process Works',
         button: 'Get started',
-        description: 'Transforming your website into a mobile-friendly version is a breeze with our streamlined process. Three simple steps to transform your website into a mobile-friendly version:',
+        img: require('../../assets/images/process.svg').default,
+        description: '',
         steps: [
             {
                 id: 1,
