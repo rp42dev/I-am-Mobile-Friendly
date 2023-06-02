@@ -6,7 +6,7 @@ const Hero = ({ data }) => {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={`home h-screen grid place-items-center ${data.bg}`}>
+        <div className={`home min-h-screen grid place-items-center py-24 ${data.bg}`}>
             <div className="mt-8 container mx-auto">
                 <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
                     <div className="max-w-2xl w-full h-full">
