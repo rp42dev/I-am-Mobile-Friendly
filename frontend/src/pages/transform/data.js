@@ -23,6 +23,7 @@ const agitate = [
     {
         id: 1,
         custom: false,
+        bg: 'bg-base-200',
         title: 'Losing potential customers',
         description: 'Imagine losing potential customers because your website is hard to navigate on mobile devices. Consider the frustration your users experience when they can\'t access your content on the go. Picture the missed opportunities and decreased engagement resulting from a non-mobile-friendly website.',
         steps: [
@@ -48,6 +49,7 @@ const process = [
         custom: false,
         title: 'Here\'s How Our Process Works',
         button: 'Get started',
+        bg: 'bg-base-200',
         img: require('../../assets/images/process.svg').default,
         description: '',
         steps: [
@@ -194,6 +196,7 @@ const benefits = [
         id: 1,
         custom: false,
         title: 'Benefits working with me!',
+        bg: 'bg-base-200',
         description: '',
         steps: [
             {

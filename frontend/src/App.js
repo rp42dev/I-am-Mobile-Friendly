@@ -12,7 +12,6 @@ function App() {
           <div className="App relative">
             <Router>
               <NavBar />
-              <div className="container mx-auto">
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='/mobile-website-transformation' element={<Transform />} />
@@ -22,7 +21,6 @@ function App() {
                   <Route path='/contact-success' element={<Success />} />
                   <Route path='*' element={<NotFound />} />
                 </Routes>
-              </div>
             </Router>
             <Footer />
             <div className="bg-pattern"></div>

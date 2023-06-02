@@ -124,7 +124,7 @@ const ContactForm = () => {
                     {errors.message && <p className="absolute -bottom-2 left-2 text-xs text-red-500">{errors.message}</p>}
                 </div>
 
-                <button className="btn btn-secondary w-full" type="submit" disabled={Object.keys(errors).length > 0}>
+                <button className="btn btn-primary w-100 sm:w-60" type="submit" disabled={Object.keys(errors).length > 0}>
                     Send &nbsp;<PaperPlaneTilt size={20} />
                 </button>
             </form>

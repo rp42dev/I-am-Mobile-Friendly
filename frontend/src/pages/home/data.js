@@ -3,6 +3,7 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 const hero = [
     {
         title: 'Mobile-Friendly',
+        bg: 'bg-base-200',
         subtitle: 'Web Design and Development',
         description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small businesses and startups. I am a freelance web developer based in Ireland, I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
         image: require('../../assets/images/responsive.svg').default,
@@ -18,6 +19,7 @@ const mobile = [
     {
         id: 1,
         custom: true,
+        bg: 'bg-base-200',
         text: 'Key Features of Mobile-Friendly Websites',
         data: [
             {
@@ -103,6 +105,7 @@ const services = [
         id: 1,
         custom: false,
         title: 'My Services',
+        bg: 'bg-base-200',
         description: '',
         steps: [
             {
@@ -148,6 +151,7 @@ const benefits = [
     {
         id: 1,
         custom: false,
+        bg: 'bg-base-200',
         title: 'Benefits working with me!',
         description: '',
         steps: [
@@ -184,6 +188,7 @@ const process = [
         id: 1,
         custom: false,
         title: 'My Approach',
+        bg: 'bg-base-200',
         button: 'Get started',
         img: require('../../assets/images/process.svg').default,
         description: '',

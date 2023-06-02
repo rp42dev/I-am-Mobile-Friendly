@@ -6,8 +6,8 @@ const Hero = ({ data }) => {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className="home mx-auto pb-24 px-4 sm:px-6 mt-28">
-            <div className="mt-8 container">
+        <div className={`home h-screen grid place-items-center ${data.bg}`}>
+            <div className="mt-8 container mx-auto">
                 <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
                     <div className="max-w-2xl w-full h-full">
                         <div className="flex justify-center p-0 xl:px-4 py-4 xl:py-0 max-h-screen">
@@ -30,8 +30,8 @@ const Hero = ({ data }) => {
                             <a href={data.link} className="btn px-4 py-2 btn-secondary border-2">
                                 {data.btn ? data.btn : "Learn more"}
                             </a>
-                            <a href={data.link2} className="px-4 py-0 mr-4 btn btn-outline btn-secondary text-md ">
-                                <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-secondary'}`}>
+                            <a href={data.link2} className="px-4 py-0 mr-4 btn btn-outline btn-primary text-md ">
+                                <div className={`flex items-center justify-center hover:text-white ${theme === 'dark' ? 'text-white' : 'text-primary'}`}>
                                     <span className="mr-2 mt-1">{data.btn2 ? data.btn2 : "Learn more"}</span>
                                     <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
                                 </div>

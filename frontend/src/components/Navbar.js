@@ -77,8 +77,8 @@ const NavBar = () => {
                         </Link>
                     </div>
                     <div className="hidden lg:flex me-6">
-                        <a href="#contact" className="ml-6 btn btn-outline btn-secondary rounded-lg py-0" >
-                            <span className={`${theme === 'dark' ? 'text-white' : 'text-secondary hover:text-white'}`}>
+                        <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0" >
+                            <span className={`${theme === 'dark' ? 'text-white' : 'text-primary hover:text-white'}`}>
                                 Get started
                             </span>
                         </a>

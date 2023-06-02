@@ -4,6 +4,7 @@ const hero = [
     {
         title: 'I\'m Raivis',
         subtitle: 'Web Developer & Designer',
+        bg: 'bg-base',
         description: 'I am a freelance web developer based in Ireland, and I take pride in offering mobile-friendly web design and development services. My goal is to help small businesses and individuals establish a strong online presence and unlock the full potential of their business. I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
         image: require('../../assets/images/me.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices - Image of me',
@@ -17,6 +18,7 @@ const hero = [
 const vision = [
     {
         title: 'My Vision',
+        bg: 'bg-base-200',
         description: 'My vision is to empower businesses and individuals by creating websites that work seamlessly on all devices. I want to contribute to the digital world by making websites accessible, attractive, and optimized for mobile users. I firmly believe that mobile-friendly design is the key to unlocking the true potential of online presence and enhancing user engagement.',
         btn: '',
         link: '',
@@ -172,6 +174,7 @@ const benefits = [
     {
         id: 1,
         custom: true,
+        bg: 'bg-base-200',
         text: 'Benefits of choosing me!',
         description: 'As a freelance web developer, I offer a range of benefits to my clients, some of which include:',
         data: [

@@ -2,8 +2,8 @@ const Features3 = (props) => {
     const { data } = props;
     return (
         <>
-            <section id="features3" className="container mx-auto">
-                <div className="px-4 sm:px-6 lg:px-12 xl:px-16 bg-base-200/75 rounded-md shadow-lg py-24 mb-24">
+            <section id="features3" className={`${data[0].bg}`}>
+                <div className="container mx-auto px-4 py-24">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-1/2 xl:pr-4">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">

@@ -53,6 +53,7 @@ const features = [
     {
         id: 1,
         custom: true,
+        bg: 'bg-base-200',
         text: 'Key Features of Custom Mobile-Friendly Websites',
         data: [
             {
@@ -92,6 +93,7 @@ const features = [
 const hero = [
     {
         title: 'Custom',
+        bg: 'bg-base-300',
         subtitle: 'Website Design & Development',
         description: 'I specialize in creating customized, mobile-friendly websites using modern technologies like React and Django. I offer services in Ireland and remotely to clients worldwide. With a strong focus on mobile-friendly design and seamless user experience',
         image: require('../../assets/images/custom.svg').default,
@@ -108,6 +110,8 @@ const process = [
         id: 1,
         custom: false,
         title: 'Development Process',
+        bg: 'bg-base',
+        img: require('../../assets/images/process2.svg').default,
         description: '',
         steps: [
             {
@@ -192,6 +196,7 @@ const benefits = [
     {
         id: 1,
         custom: true,
+        bg: 'bg-base-200',
         text: 'Benefits of choosing me!',
         description: 'As a freelance web developer, I offer a range of benefits to my clients, some of which include:',
         data: [

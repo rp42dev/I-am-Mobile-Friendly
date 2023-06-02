@@ -1,6 +1,6 @@
 const Why = () => {
     return (
-        <section className="bg-base pb-24">
+        <section className="bg-base py-24">
             <div className="text-left md:text-center w-full container mx-auto  px-4 sm:px-6 lg:px-12 xl:px-16 ">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                     Why a Mobile-Friendly Website?

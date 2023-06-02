@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const Features = ({ data }) => {
     return (
-        <div id="features" className="text-center container mx-auto px-4 mb-24">
+        <div id="features" className="text-center container mx-auto px-4 my-24">
             <div className="mx-auto">
                 <div className="w-full px-4">
                     <h2 className="text-3xl font-extrabold sm:text-4xl">

@@ -9,6 +9,7 @@ const metaProps = {
 const hero = [
     {
         title: 'Affordable',
+        bg: 'bg-base-200',
         subtitle: 'Website Development',
         description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
         image: require('../../assets/images/budget.svg').default,       
@@ -47,6 +48,7 @@ const solution = [
     {
         id: 1,
         custom: true,
+        bg: 'bg-base-200',
         text: 'Benefits of Budget-Friendly Mobile-Friendly Web Design',
         data: [
             {
@@ -88,6 +90,7 @@ const benefits = [
         id: 1,
         custom: false,
         title: 'Benefits working with me!',
+        bg: 'bg-base-200',
         description: '',
         steps: [
             {
@@ -168,6 +171,7 @@ const process = [
         custom: false,
         title: 'Here\'s How Our Process Works',
         button: 'Get started',
+        bg: 'bg-base-200',
         img: require('../../assets/images/process.svg').default,
         description: '',
         steps: [

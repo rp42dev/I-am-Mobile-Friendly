@@ -1,16 +1,21 @@
 import { CaretUp } from "@phosphor-icons/react";
 import React, { useState } from "react";
 
-function Accordion({ title, content }) {
+function Accordion({ icon, title, content }) {
     const [expanded, setExpanded] = useState(false)
     const toggleExpanded = () => {
         setExpanded((current) => !current)
     }
 
     return (
-        <div className="my-4 md:my-6 cursor-pointer bg-base-200/75 rounded-md shadow-lg" onClick={toggleExpanded}>
-            <div className="px-6 py-4 text-left items-center select-none flex justify-between flex-row">
-                <h3 className={`flex-1 text-md xl:text-lg font-semibold text-left ${expanded ? "text-primary" : ""}`}>
+        <div className="cursor-pointer" onClick={toggleExpanded}>
+            <div className="bg-base-200 border border-base-300 rounded-md px-6 py-4 text-left items-center select-none flex justify-between flex-row">
+                <h3 className={`flex flex-1 text-md xl:text-lg font-semibold text-left ${expanded ? "text-primary" : ""}`}>
+                    {icon && (
+                        <span className="mr-3 inline-block text-primary">
+                            {icon}
+                        </span>
+                    )}
                     {title}
                 </h3>
                 <div className="flex-none pl-2">
@@ -23,8 +28,8 @@ function Accordion({ title, content }) {
                     </label>
                 </div>
             </div>
-            <div className={`px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-60" : "max-h-0"}`}>
-                <p className="py-4 text-left border-t border-base-100">
+            <div className={`bg-base-200 rounded-md flex-none px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-60" : "max-h-0"}`}>
+                <p className="py-4 text-left">
                     {content}
                 </p>
             </div>

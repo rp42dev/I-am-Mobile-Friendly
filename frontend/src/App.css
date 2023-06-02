@@ -15,7 +15,7 @@ body{
 }
 
 
-.bg-pattern {
+/* .bg-pattern {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@ body{
     background-size: 100%;
     background-position: center;
     opacity: 0.2;
-}
+} */
 
 .swiper {
     width: 100%;
