@@ -26,6 +26,7 @@ const agitate = [
         id: 1,
         custom: false,
         title: 'Tight Budget and Limited Resources?',
+        img: require('../../assets/images/save.svg').default,
         description: 'Imagine the frustration of overspending on website development, draining your budget for other essential aspects of your business. Don\'t let limited resources hinder your online presence!',
         steps: [
             {

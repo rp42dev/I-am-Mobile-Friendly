@@ -7,19 +7,19 @@ const Features2 = (props) => {
         <section id="features2" className={`${data[0].bg} relative mx-auto`}>
             <div className="container mx-auto py-24 px-4">
                 <div className="relative">
-                    <div className="flex flex-wrap content-center">
+                    <div className="flex flex-wrap content-center space-y-6">
                         <div className="w-full xl:pr-2">
                             <div className="relative space-y-4">
-                                <h4 className="text-3xl font-extrabold sm:text-4xl mb-8">
+                                <h4 className="text-3xl font-extrabold sm:text-4xl text-center">
                                     {data[0].text}
                                 </h4>
                             </div>
                         </div>
                         <div className="w-full xl:pl-2">
-                            <ul className="gap-6 mt-8 lg:mt-0 md:grid md:grid-cols-2 space-y-4 lg:space-y-0 lg:gap-8">
+                            <ul className="md:grid md:grid-cols-2 gap-y-4 md:gap-y-0 md:gap-x-8">
                                 {data[0].data.map((item) => {
                                     return (
-                                        <li key={item.id} className="flex items-start lg:col-span-1">
+                                        <li key={item.id} className="my-4 flex items-start lg:col-span-1">
                                             <div className="flex-shrink-0">
                                                 <CheckFat size={24} color="green" />
                                             </div>

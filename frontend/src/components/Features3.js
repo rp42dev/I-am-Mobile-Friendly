@@ -3,28 +3,23 @@ const Features3 = (props) => {
     return (
         <>
             <section id="features3" className={`${data[0].bg}`}>
-                <div className="container mx-auto px-4 py-24">
-                    <div className="flex flex-wrap">
-                        <div className="w-full lg:w-1/2 xl:pr-4">
+                <div className="container mx-auto px-4 py-24 space-y-8">
+                    <h2 className="text-3xl font-extrabold sm:text-4xl text-center">
+                        {data[0].title}
+                    </h2>
+                    <p className="xl:text-xl mt-4 max-w-5xl mx-auto text-center">
+                        {data[0].description}
+                    </p>
+                    <div className="flex flex-wrap space-y-6">
+                        <div className="w-full lg:w-1/2 xl:pr-4 text-center lg:text-left lg:pr-4 grid place-items-center">
                             <div className="lg:mb-0 lg:pb-0 lg:border-b-0 pb-8">
-                                <h2 className="text-3xl font-extrabold sm:text-4xl">
-                                    {data[0].title}
-                                </h2>
+
                                 {data[0].img && (
                                     <div className="mt-8">
-                                        <img src={data[0].img} alt={data[0].alt} className="object-cover rounded-md" />
+                                        <img src={data[0].img} alt={data[0].alt} className="object-cover rounded-md xl:w-10/12 mx-auto" />
                                     </div>
                                 )}
-                                <p className="text-lg mt-4">
-                                    {data[0].description}
-                                </p>
-                                {data[0].button && (
-                                    <div className="mt-8 max-w-md mx-0 hidden lg:block">
-                                        <a href="#contact" className="btn px-4 py-2 btn-secondary border-2">
-                                            {data[0].button}
-                                        </a>
-                                    </div>
-                                )}
+
                             </div>
                         </div>
 
@@ -41,22 +36,22 @@ const Features3 = (props) => {
                                             <h3 className="text-xl mb-4 font-semibold">
                                                 {step.title}
                                             </h3>
-                                            <p className="text-sm">
+                                            <p className="text-sm xl:text-lg">
                                                 {step.text}
                                             </p>
                                         </div>
                                     </li>
                                 ))}
                             </ul>
-                            {data[0].button && (
-                                <div className="mt-8 max-w-md mx-0 block lg:hidden">
-                                    <a href="#contact" className="btn px-4 py-2 btn-secondary border-2">
-                                        {data[0].button}
-                                    </a>
-                                </div>
-                            )}
                         </div>
                     </div>
+                    {data[0].button && (
+                        <div className="mt-8 mx-auto lg:w-1/2 text-center">
+                            <a href="#contact" className=" btn px-4 py-2 btn-secondary border-2 w-full sm:w-60">
+                                {data[0].button}
+                            </a>
+                        </div>
+                    )}
                 </div>
             </section>
         </>

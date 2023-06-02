@@ -25,6 +25,7 @@ const agitate = [
         custom: false,
         bg: 'bg-base-200',
         title: 'Losing potential customers',
+        img: require('../../assets/images/user.svg').default,
         description: 'Imagine losing potential customers because your website is hard to navigate on mobile devices. Consider the frustration your users experience when they can\'t access your content on the go. Picture the missed opportunities and decreased engagement resulting from a non-mobile-friendly website.',
         steps: [
             {
