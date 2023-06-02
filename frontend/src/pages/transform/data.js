@@ -10,7 +10,7 @@ const hero = [
         title: 'Transform',
         subtitle: 'to a mobile-friendly website.',
         description: 'Don\'t let outdated websites hinder your success, I offer mobile website transformation services in Ireland and offering remote services to clients worldwide. Get a mobile-friendly website that looks great on any device!',
-        image: require('../../assets/images/transform.webp'),
+        image: require('../../assets/images/transform.svg').default,
         alt: 'Transform non-mobile-friendly website to mobile-friendly website displaying a desktop to mobile devices transformation',
         btn: 'Get started',
         btn2: 'Learn more',

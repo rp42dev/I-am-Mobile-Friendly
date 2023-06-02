@@ -11,7 +11,7 @@ const hero = [
         title: 'Affordable',
         subtitle: 'Website Development',
         description: 'Don\'t let limited resources hinder your online presence - I offers affordable budget mobile friendly web development services in Ireland and offering remote services to clients worldwide, for a fraction of the cost of a custom website.',
-        image: require('../../assets/images/budget.webp'),
+        image: require('../../assets/images/budget.svg').default,       
         alt: 'Budget mobile friendly website development Displaying a responsive website on a desktop, tablet, and mobile phone',
         btn: 'Get started',
         btn2: 'Learn more',
@@ -168,7 +168,8 @@ const process = [
         custom: false,
         title: 'Here\'s How Our Process Works',
         button: 'Get started',
-        description: 'I\'ll work with you to understand your website goals and needs and provide you with a custom quote for your project based on your requirements and budget.',
+        img: require('../../assets/images/process.svg').default,
+        description: '',
         steps: [
             {
                 id: 1,

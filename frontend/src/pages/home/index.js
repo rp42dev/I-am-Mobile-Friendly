@@ -6,12 +6,12 @@ const Home = () => {
         <>
             <Meta />
             <Hero data={hero[0]} />
-            <Features data={services} />
             <Why />
             <Features2 data={mobile} />
+            <Features data={services} />
+            <Features3 data={process} />
             <Features data={benefits} />
             <Projects />
-            <Features3 data={process} />
             <Testimonials />
             <Contact />
             <Faq data={faqData} />

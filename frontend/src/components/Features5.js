@@ -3,7 +3,7 @@ import CardAccordion from './CardAccordion'
 const Features5 = ({ data }) => {
 
     return (
-        <div id="features" className="text-center container mx-auto px-4 mb-24">
+        <div id="features" className="text-center container mx-auto mb-24">
             <div className="mx-auto">
                 <div className="w-full px-4 space-y-8">   
                     

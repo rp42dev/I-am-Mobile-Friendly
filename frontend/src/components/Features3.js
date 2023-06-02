@@ -2,7 +2,7 @@ const Features3 = (props) => {
     const { data } = props;
     return (
         <>
-            <section id="features3" className="container mx-auto px-4">
+            <section id="features3" className="container mx-auto">
                 <div className="px-4 sm:px-6 lg:px-12 xl:px-16 bg-base-200/75 rounded-md shadow-lg py-24 mb-24">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-1/2 xl:pr-4">
@@ -10,6 +10,11 @@ const Features3 = (props) => {
                                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                                     {data[0].title}
                                 </h2>
+                                {data[0].img && (
+                                    <div className="mt-8">
+                                        <img src={data[0].img} alt={data[0].alt} className="object-cover rounded-md" />
+                                    </div>
+                                )}
                                 <p className="text-lg mt-4">
                                     {data[0].description}
                                 </p>
@@ -23,7 +28,7 @@ const Features3 = (props) => {
                             </div>
                         </div>
 
-                        <div className="w-full px-4 lg:w-1/2 xl:pl-4">
+                        <div className="w-full px-4 lg:w-1/2 xl:pl-4 grid place-items-center">
                             <ul className="ul-border space-y-8">
                                 {data[0].steps.map((step, index) => (
                                     <li key={index} className="flex -mx-4">

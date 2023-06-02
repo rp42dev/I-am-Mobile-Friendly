@@ -2,10 +2,10 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 
 const hero = [
     {
-        title: 'Responsive',
-        subtitle: 'Website Design & Development.',
-        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services. I can help you create a mobile-friendly website that is the perfect fit for your business needs and budget.',
-        image: require('../../assets/images/responsive.webp'),
+        title: 'Mobile-Friendly',
+        subtitle: 'Web Design and Development',
+        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small businesses and startups. I am a freelance web developer based in Ireland, I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
+        image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
         btn2: 'Learn more',
@@ -22,33 +22,33 @@ const mobile = [
         data: [
             {
                 id: 1,
-                title: 'Responsive Design',
-                text: "Seamlessly adapts to different screen sizes and resolutions."
+                title: 'Enhanced User Experience:',
+                text: "Mobile-friendly websites offer smooth navigation and interaction, ensuring a positive user experience."
             },
             {
                 id: 2,
-                title: 'Mobile-Friendly Content',
-                text: "Optimized for mobile devices to increase my online visibility."
+                title: 'Increased Mobile Traffic:',
+                text: "Catering to mobile users helps attract more traffic and expand your customer base, leading to increased sales."
             },
             {
                 id: 3,
-                title: 'Enhanced Readability',
-                text: "Improved readability for better user engagement and conversion rate."
+                title: 'Improved Search Engine Visibility:',
+                text: "Mobile-friendly sites rank higher in search engine results, leading to better visibility and organic traffic."
             },
             {
                 id: 4,
-                title: 'Fast Loading Speed',
-                text: "Optimized for fast loading speed to improve user experience and search engine ranking."
+                title: 'Faster Page Loading Speed:',
+                text: "Optimized for mobile devices, these sites load quickly, reducing bounce rates and enhancing engagement."
             },
             {
                 id: 5,
-                title: 'SEO Friendly',
-                text: "Optimized for search engines to increase my online visibility"
+                title: 'Competitive Advantage:',
+                text: "Having a mobile-friendly site differentiates you from competitors and positions your brand as customer-centric."
             },
             {
                 id: 6,
-                title: 'Improved User Experience',
-                text: "Improved user experience for better engagement and conversion rate."
+                title: 'Higher Conversion Rates:',
+                text: "Streamlined mobile experiences result in improved conversions, making it easier for users to complete desired actions."
             },
         ]
     }
@@ -109,19 +109,17 @@ const services = [
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
-                text: ["Custom design tailored to my specific needs",
-                    "Development using modern technologies like React and Django"],
+                text: ["I specialize in creating custom websites uniquely tailored to your specific needs using modern technologies like React and Django. I take a personalized approach to each project, ensuring that the final product meets your expectations."],
                 link: "/custom-web-development",
-                check: true
+                check: false
             },
             {
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["Cost-effective solution to establish my online presence",
-                    "Website Development using WordPress or existing templates"],
+                text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain. e.g. WordPress, cPanel, or existing templates."],
                 link: "/budget-web-development",
-                check: true
+                check: false
             },
             {
                 id: 3,
@@ -136,11 +134,10 @@ const services = [
                     </div>
                 ,
                 title: "Mobile Web Transformation",
-                text: ["Convert existing non-mobile-friendly website into a mobile-friendly version.",
-                    "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
+                text: ["f you have a non-mobile-friendly website, I can transform it into a mobile-friendly version. Regardless of the technology stack used (WordPress, Static HTML, etc.), I ensure a smooth transition without compromising functionality or design."
                 ],
                 link: "/mobile-website-transformation",
-                check: true
+                check: false
             },
         ]
 
@@ -159,7 +156,7 @@ const benefits = [
                 check: false,
                 icon: <PenNib size={32} />,
                 title: "Customized Solutions",
-                text: ["I will work with you to understand my business needs and provide a customized solution that fits my needs and budget."],
+                text: ["I understand that every business is unique, and cookie-cutter solutions won't suffice. I take a personalized approach to each project, ensuring that the final product meets your specific needs and requirements that align with your business goals."],
                 link: "",
             },
             {
@@ -167,7 +164,7 @@ const benefits = [
                 check: false,
                 icon: <PiggyBank size={32} />,
                 title: "Competitive Pricing",
-                text: ["Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."],
+                text: ["As a freelancer, I understand the importance of affordability. I offer competitive pricing, with minimal upfront costs and no hidden fees. You only pay for the services you need, ensuring that you get the most value for your investment."],
                 link: "",
             },
             {
@@ -175,7 +172,7 @@ const benefits = [
                 check: false,
                 icon: <ArrowClockwise size={32} />,
                 title: "Fast Turnaround Time",
-                text: ["Time is money. I will work hard to ensure that my website is up and running as soon as possible to minimize downtime."],
+                text: ["I recognize that time is of the essence. I am committed to delivering your website within a reasonable timeframe. I work diligently to minimize downtime, ensuring that your business can start reaping the benefits of your new website as soon as possible."],
                 link: "",
             },
         ]
@@ -186,24 +183,25 @@ const process = [
     {
         id: 1,
         custom: false,
-        title: 'Here\'s How my Process Works',
+        title: 'My Approach',
         button: 'Get started',
-        description: 'I\'ll work with you to create a website that meets my needs and budget. Here are the three simple steps from start to finish.',
+        img: require('../../assets/images/process.svg').default,
+        description: '',
         steps: [
             {
                 id: 1,
                 title: 'Consultation',
-                text: "I'll discuss my website goals and needs and provide you with a custom quote for my project based on my requirements and budget."
+                text: "I begin by understanding your website goals and requirements. Through detailed discussions, I gain insights into your business, target audience, and desired functionalities. This allows me to provide you with a customized solution that precisely fits your needs and budget."
             },
             {
                 id: 2,
                 title: 'Design & Development',
-                text: "I'll design and develop my website using the latest technologies and best practices to ensure it's mobile-friendly and optimized for search engines."
+                text: "I will bring your vision to life. Using the latest technologies and following industry best practices, I create a mobile-friendly website that not only looks stunning but also performs exceptionally well. Ensuring that the final product meets your expectations."
             },
             {
                 id: 3,
                 title: 'Launch',
-                text: " I'll launch my mobile-friendly website and ensure it's fully functional and optimized for search engines to increase my online visibility."
+                text: " Once the development phase is complete, I rigorously test your website to ensure its functionality, responsiveness, and overall user experience. After thorough quality assurance checks, I deploy your mobile-friendly website, making it fully operational and ready for use."
             },
         ]
     }

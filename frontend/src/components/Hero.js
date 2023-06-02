@@ -25,6 +25,7 @@ const Hero = ({ data }) => {
                         <p className="py-6 text-xl max-w-3xl text-left">
                             {data.description}
                         </p>
+                        {data.btn  && (
                         <div className="mt-8 mx-auto text-center lg:text-left btn-group">
                             <a href={data.link} className="btn px-4 py-2 btn-secondary border-2">
                                 {data.btn ? data.btn : "Learn more"}
@@ -35,7 +36,8 @@ const Hero = ({ data }) => {
                                     <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
                                 </div>
                             </a>
-                        </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

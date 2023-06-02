@@ -1,4 +1,4 @@
-import image from '../assets/images/rocket-body.svg'
+import image from '../assets/images/letter.svg'
 import { LinkedinLogo } from "@phosphor-icons/react";
 
 import ContactForm from './ContactForm'

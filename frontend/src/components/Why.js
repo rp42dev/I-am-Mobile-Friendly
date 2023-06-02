@@ -6,8 +6,10 @@ const Why = () => {
                     Why a Mobile-Friendly Website?
                 </h2>
                 <p className="text-xl mt-4 max-w-5xl mx-auto">
-                    With more than half of the world's population using smartphones, it's crucial to have a mobile-friendly website. If your website is not mobile-friendly, you could lose potential customers and revenue.
-                    Studies show that 52% of users are less likely to engage with a website that is not mobile-friendly. We are here to help you build a mobile-friendly website that will help you grow your business.
+                    In today's digital landscape, having a mobile-friendly website is essential for success. With more than half of the world's population using smartphones,
+                    your website must cater to mobile users. Failing to do so can lead to missed opportunities and potential revenue loss.
+                    Studies have shown that 52% of users are less likely to engage with a website that is not mobile-friendly.
+                    By partnering with me, you can ensure that your website meets the demands of mobile users and drives your business forward.
                 </p>
                 <div className="mt-8 max-w-md mx-0 md:mx-auto">
                     <a href="#contact" className="btn px-4 py-2 btn-secondary border-2">
