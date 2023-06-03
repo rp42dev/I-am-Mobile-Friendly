@@ -2,7 +2,7 @@ const Features4 = (...data) => {
     const { bg, title, description, button } = data[0].data[0]
     return (
         <section id="features4" className={`${bg} py-24`}>
-            <div className="text-left md:text-center w-full container mx-auto px-4">
+            <div className="text-left sm:text-center w-full container mx-auto px-4">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                     {title}
                 </h2>

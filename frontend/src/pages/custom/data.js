@@ -110,7 +110,7 @@ const process = [
         id: 1,
         bg: 'bg-base',
         img: require('../../assets/images/process2.svg').default,
-        text: "Streamlined Development Process",
+        title: "Streamlined Development Process",
         description: "",
         steps: [
             {

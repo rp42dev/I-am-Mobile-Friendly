@@ -7,14 +7,14 @@ const Features2 = (props) => {
         <section id="features2" className={`${data[0].bg} relative mx-auto`}>
             <div className="container mx-auto py-24 px-4">
                 <div className="relative">
-                    <div className="flex flex-wrap content-center space-y-6">
+                    <div className="flex flex-wrap space-y-6">
                         <div className="w-full xl:pr-2">
                             <div className="relative space-y-4">
-                                <h4 className="text-3xl font-extrabold sm:text-4xl text-center">
+                                <h4 className="text-3xl font-extrabold sm:text-4xl sm:text-center">
                                     {data[0].text}
                                 </h4>
                                 {data[0].description &&
-                                    <p className="text-lg sm:text-2xl text-center max-w-7xl mx-auto">
+                                    <p className="text-lg sm:text-2xl sm:text-center max-w-7xl mx-auto">
                                         {data[0].description}
                                     </p>
                                 }

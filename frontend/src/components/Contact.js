@@ -8,9 +8,9 @@ const Contact = () => {
     return (
         <div id="contact" className="px-4 bg-base-200 ">
             <div className="container mx-auto">
-                <div className="py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center text-center lg:text-left">
-                    <div>
-                        <h2 className="text-3xl font-extrabold sm:text-4xl">
+                <div className="py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center sm:text-center lg:text-left">
+                    <div className='space-y-6'>
+                        <h2 className="text-3xl font-extrabold sm:text-4xl max-w-2xl">
                             Contact Me Today for a Free Quote and Consultation
                         </h2>
                         <p className="text-lg xl:text-xl lg:z-10 relative mx-auto lg:mx-0 mt-2 max-w-2xl">

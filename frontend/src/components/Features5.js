@@ -5,7 +5,7 @@ const Features5 = ({ data }) => {
     return (
         <div id="features" className={`py-24 ${data[0].bg}`}>
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-extrabold sm:text-4xl text-center">
+                <h2 className="text-3xl font-extrabold sm:text-4xl sm:text-center mb-6">
                     {data[0].title}
                 </h2>
                 <div className="flex flex-wrap">

@@ -123,7 +123,7 @@ const ContactForm = () => {
                     ></textarea>
                     {errors.message && <p className="absolute -bottom-2 left-2 text-xs text-red-500">{errors.message}</p>}
                 </div>
-                <button className="btn btn-primary w-100 sm:w-60 mx-auto lg:mx-0" type="submit" disabled={Object.keys(errors).length > 0}>
+                <button className="btn btn-primary w-100 sm:w-60 sm:mx-auto lg:mx-0" type="submit" disabled={Object.keys(errors).length > 0}>
                     Send &nbsp;<PaperPlaneTilt size={20} />
                 </button>
 

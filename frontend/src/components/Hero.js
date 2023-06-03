@@ -14,7 +14,7 @@ const Hero = ({ data }) => {
                             <img width="1500" height="1200" src={data.image} alt={data.alt} className="slide-in-right hero-img object-contain max-full w-full" />
                         </div>
                     </div>
-                    <div className="relative flex-1 fade-in text-center xl:text-left">
+                    <div className="relative flex-1 fade-in sm:text-center xl:text-left">
                         <span className="w-20 h-2 mb-12"></span>
                         <h1 className="flex flex-col text-5xl font-black leading-none font-bebas-neue sm:text-8xl">
                             {data.title}

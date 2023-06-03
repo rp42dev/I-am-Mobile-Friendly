@@ -115,7 +115,7 @@ const services = [
     {
         id: 1,
         custom: false,
-        title: 'My Services',
+        title: 'My Services - What I can do for you!',
         bg: 'bg-base-200',
         description: '',
         steps: [
@@ -198,7 +198,7 @@ const process = [
     {
         id: 1,
         custom: false,
-        title: 'My Approach',
+        title: 'Streamlined Development Process',
         bg: 'bg-base-200',
         button: 'Get started',
         img: require('../../assets/images/process.svg').default,
