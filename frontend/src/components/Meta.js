@@ -23,7 +23,7 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-    title: 'Need to Build Your Website? | Website Design Ireland | I am Mobile Friendly',
+    title: 'Unique Web Design and Development | Web Design Ireland | Web Transformation',
     description: 'I am a freelance web designer based in Ireland. I design and build mobile friendly websites for small businesses and individuals. I also provide Transformation to mobile friendly websites for existing websites.',
 };
 

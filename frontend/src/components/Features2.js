@@ -13,6 +13,11 @@ const Features2 = (props) => {
                                 <h4 className="text-3xl font-extrabold sm:text-4xl text-center">
                                     {data[0].text}
                                 </h4>
+                                {data[0].description &&
+                                    <p className="text-lg sm:text-2xl text-center max-w-7xl mx-auto">
+                                        {data[0].description}
+                                    </p>
+                                }
                             </div>
                         </div>
                         <div className="w-full xl:pl-2">
@@ -24,10 +29,10 @@ const Features2 = (props) => {
                                                 <CheckFat size={24} color="green" />
                                             </div>
                                             <div className="ml-3 flex flex-col space-y-2">
-                                                <h3 className="text-lg font-medium">
+                                                <h3 className="text-lg font-semibold xl:text-xl">
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-sm">
+                                                <p className="text-sm xl:text-lg">
                                                     {item.text}
                                                 </p>
                                             </div>

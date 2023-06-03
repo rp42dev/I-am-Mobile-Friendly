@@ -21,7 +21,7 @@ const CardAccordion = ({ title, description, icon, link, check }) => {
                             <div className="flex-shrink-0">
                                 <DotOutline size={20} color="green" />
                             </div>}
-                        <p className="ml-2 text-sm">
+                        <p className="ml-2 text-sm lg:text-lg">
                             {item}
                         </p>
                     </li>

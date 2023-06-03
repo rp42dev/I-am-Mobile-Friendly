@@ -22,7 +22,7 @@ const Hero = ({ data }) => {
                                 {data.subtitle}
                             </span>
                         </h1>
-                        <p className="py-6 sm:text-xl max-w-3xl">
+                        <p className="py-6 text-lg xl:text-xl max-w-3xl">
                             {data.description}
                         </p>
                         {data.btn  && (

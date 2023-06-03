@@ -59,9 +59,9 @@ const Testimonials = () => {
                     <SwiperSlide key={item.id}>
                         <div className="flex flex-col items-center justify-center w-full p-4 mx-auto text-center">
                             <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full" />
-                            <h3 className="mt-4 text-2xl font-semibold sm:text-xl">{item.name}</h3>
-                            <p className="text-sm font-medium">{item.title}</p>
-                            <p className="max-w-lg mt-4 text-sm">{item.description}</p>
+                            <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
+                            <p className="text-sm xl:text-lg font-medium">{item.title}</p>
+                            <p className="max-w-xl mt-4 text-sm xl:text-lg">{item.description}</p>
                             <div className="flex items-center justify-center mt-4 space-x-2">
                                 <img src={star} alt="star" className='w-8 h-8' />
                                 <img src={star} alt="star" className='w-8 h-8' />

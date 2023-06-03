@@ -1,51 +1,51 @@
 import { PenNib, PiggyBank, ArrowClockwise, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Web Development in Ireland | Mobile friendly websites | Web Design Ireland',
-    description: 'Custom web development services in Ireland and offering remote services to clients worldwide. Utilizing modern technologies such as React, Node, Django.',
+    title: 'Custom Web Design & Development for an Exceptional Online Presenc | Freelance Web Developer',
+    description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
 }
 
 
 const faqData = [
     {
         question: "What is custom mobile-friendly web design?",
-        answer: "Custom mobile-friendly web design involves creating a website from scratch, tailored specifically to be responsive and optimized for mobile devices."
+        answer: "I offer custom mobile-friendly web design services as a freelance developer. It refers to the process of creating websites that are specifically tailored to be visually appealing, highly functional, and user-friendly on mobile devices. I utilize responsive design techniques, modern technologies, and optimized coding practices to ensure seamless user experiences across various screen sizes and devices."
     },
     {
         question: "Why is custom mobile-friendly web design important?",
-        answer: "Custom mobile-friendly design ensures that your website provides an optimal user experience on mobile devices, leading to higher engagement and conversions."
+        answer: "In today's digital landscape, mobile devices have become the primary means of accessing the internet. Having a custom mobile-friendly website is crucial for businesses to reach and engage their target audience effectively. Mobile-friendly websites improve user experience, boost search engine visibility, increase conversion rates, and enhance overall customer satisfaction."
     },
     {
         question: "How long does it take to develop a custom mobile-friendly website?",
-        answer: "The development time can vary depending on the complexity and scope of the project. We will provide you with a timeline for your project based on your requirements."
+        answer: "The development timeline for a custom mobile-friendly website depends on various factors, such as the project's complexity, design requirements, and the scope of functionality. As a freelance developer, I prioritize delivering high-quality websites within reasonable timeframes. After understanding your specific needs, I provide you with an estimated timeline during the initial consultation phase."
     },
     {
         question: "What technologies are used in custom mobile-friendly web design?",
-        answer: "Custom mobile-friendly websites can be developed using a variety of technologies such as HTML5, CSS3, JavaScript, and frameworks like React, Node, and Django."
+        answer: "As a freelance developer, I leverage modern technologies to create custom mobile-friendly websites that deliver exceptional performance and functionality. Some of the technologies I use include React, a popular JavaScript library for building user interfaces, and Django, a robust and scalable Python web framework. These technologies enable me to develop dynamic and responsive websites that cater to your unique business requirements."
     },
     {
         question: "Can I update the content on my custom mobile-friendly website myself?",
-        answer: "This depends on the type of website you have. I can develop a custom content management system (CMS) that allows you to update the content on your website yourself."
+        answer: "Yes, I provide my clients with user-friendly content management systems (CMS) that allow you to update and manage the content on your website effortlessly. I will guide you on how to use the CMS effectively, empowering you to make changes, add new content, and keep your website up-to-date without the need for technical expertise."
     },
     {
         question: "Will my custom mobile-friendly website be compatible with all mobile devices?",
-        answer: "Yes, custom mobile-friendly websites are designed to be compatible with a wide range of mobile devices, ensuring a consistent user experience."
+        answer: "Absolutely! I understand the importance of cross-device compatibility in today's mobile-driven world. The custom mobile-friendly websites I create are designed and developed to be compatible with a wide range of mobile devices, including smartphones and tablets. I conduct thorough testing and optimization to ensure that your website functions flawlessly on various platforms, screen sizes, and operating systems."
     },
     {
         question: "Can I integrate third-party services and tools into my custom mobile-friendly website?",
-        answer: "Yes, custom mobile-friendly websites can be integrated with various third-party services and tools to enhance functionality and meet your specific needs."
+        answer: "Certainly! I offer seamless integration of third-party services and tools to enhance the functionality and capabilities of your custom mobile-friendly website. Whether you need to integrate payment gateways, social media platforms, customer relationship management (CRM) systems, or any other service, I will ensure smooth integration and seamless operation."
     },
     {
         question: "Will my custom mobile-friendly website be search engine optimized?",
-        answer: "Yes, web developers can implement search engine optimization (SEO) techniques during the development process to ensure your website ranks well in search results."
+        answer: "Yes, search engine optimization (SEO) is an integral part of my web development process. I follow industry best practices and adhere to Google's guidelines to optimize your website for search engines. From optimized code structure and meta tags to keyword research and on-page optimization, I implement strategies that improve your website's visibility and organic search rankings."
     },
     {
         question: "Can I request additional features and functionalities for my custom mobile-friendly website?",
-        answer: "Yes, one of the advantages of custom web design is the flexibility to add specific features and functionalities tailored to your business requirements."
+        answer: "Certainly! I encourage my clients to share their specific requirements and ideas for additional features and functionalities. I will carefully evaluate your requests and provide professional recommendations to enhance your website's performance and user experience. I am committed to turning your vision into reality and delivering a website that exceeds your expectations."
     },
     {
         question: "How much does custom mobile-friendly web design cost?",
-        answer: "The cost of custom mobile-friendly web design varies depending on factors such as the complexity of the project, desired features, and the web developer's rates. I will provide you with a quote based on your requirements."
+        answer: "The cost of custom mobile-friendly web design varies depending on several factors, including the project scope, complexity, design requirements, and desired functionalities. As a freelance developer, I believe in fair and transparent pricing. After understanding your specific needs, I provide you with a detailed quote that outlines the costs involved. My pricing structure is designed to be competitive and tailored to the requirements of small businesses."
     }
 ];
 
@@ -54,48 +54,48 @@ const features = [
         id: 1,
         custom: true,
         bg: 'bg-base-200',
-        text: 'Key Features of Custom Mobile-Friendly Websites',
+        text: "Key Features of My Custom Mobile-Friendly Websites",
         data: [
             {
                 id: 1,
-                title: 'Responsive Design',
-                text: "Ensure a seamless user experience across all devices and screen sizes with responsive design."
+                title: "Responsive Design for Seamless User Experience",
+                text: "Enjoy optimal viewing and interaction on all devices. Your website will automatically adjust to provide an intuitive and visually appealing experience for every user."
             },
             {
                 id: 2,
-                title: 'Modern Technologies',
-                text: "Development using cutting-edge tools like React and Django for robust functionality and performance."
+                title: "Utilizing Modern Technologies for Superior Performance",
+                text: "Leverage modern technologies like React, Node, and Django to create dynamic and scalable websites with exceptional functionality and performance."
             },
             {
                 id: 3,
-                title: 'Customizable Layouts',
-                text: "Tailor the design, layout, and features to align with your brand and business objectives."
+                title: "Customizable Layouts Aligned with Your Brand",
+                text: "Have complete control over the design, layout, and features of your website. Tailor the aesthetics to perfectly align with your unique brand identity."
             },
             {
                 id: 4,
-                title: 'Optimized Performance',
-                text: "Fast loading speeds and efficient coding for a smooth browsing experience on all devices."
+                title: "Optimized Performance for Speed and Efficiency",
+                text: "Ensure fast loading speeds and efficient resource utilization. Deliver a lightning-fast browsing experience that keeps visitors engaged."
             },
             {
                 id: 5,
-                title: 'Endless Customization',
-                text: "With a custom website, you can add any feature you want and customize it to your needs."
+                title: "Endless Customization to Suit Your Needs",
+                text: "Add any desired feature or functionality. Tailor your website to meet your unique requirements and stand out from the competition."
             },
             {
                 id: 6,
-                title: 'Integration Capabilities',
-                text: "Seamlessly integrate third-party services and tools for enhanced functionality."
-            },
+                title: "Seamless Integration Capabilities",
+                text: "Enhance your website's functionality by seamlessly integrating third-party services and tools. Create a comprehensive online presence."
+            }
         ]
     }
-]
+];
 
 const hero = [
     {
-        title: 'Custom',
+        title: 'Custom web',
         bg: 'bg-base-300',
-        subtitle: 'Website Design & Development',
-        description: 'I specialize in creating customized, mobile-friendly websites using modern technologies like React and Django. I offer services in Ireland and remotely to clients worldwide. With a strong focus on mobile-friendly design and seamless user experience',
+        subtitle: 'Design & Development for an Exceptional Online Presence',
+        description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
         image: require('../../assets/images/custom.svg').default,
         alt: 'Custom Website Design & Development displaying responsive design',
         btn: 'Get started',
@@ -108,132 +108,96 @@ const hero = [
 const process = [
     {
         id: 1,
-        custom: false,
-        title: 'Development Process',
         bg: 'bg-base',
         img: require('../../assets/images/process2.svg').default,
-        description: '',
+        text: "Streamlined Development Process",
+        description: "",
         steps: [
             {
                 id: 1,
-                check: true,
-                icon: <ChatCircleDots size={32} />,
                 title: "Consultation",
-                text: [
-                    "Initial discussions to understand requirements, goals, and target audience.",
-                    "Gather information about the desired features, functionality, and design of the website.",
-                    "Identify any technical constraints or specific project needs."
-                ],
+                icon: <ChatCircleDots size={32} />,
+                text: ["We begin by understanding your business goals, target audience, and specific requirements. This consultation phase helps us align our development strategy with your vision."],
                 link: ""
             },
             {
                 id: 2,
-                check: true,
-                icon: <Strategy size={32} />,
                 title: "Planning",
-                text: [
-                    "Brainstorm ideas and determine the best approach for the website.",
-                    "Create a project plan outlining the development phases, timelines, and resource allocation.",
-                    "Define the website's structure, navigation, and user flow."
-                ],
+                icon: <Strategy size={32} />,
+                text: ["I create a detailed plan that outlines the project scope, timeline, and milestones. We collaborate closely to ensure that all aspects of your website are considered."],
                 link: ""
             },
             {
                 id: 3,
-                check: true,
-                icon: <PenNib size={32} />,
                 title: "Prototyping",
-                text: [
-                    "Develop wireframes or prototypes to visualize the layout, structure.",
-                    "Obtain client feedback and make revisions to refine the design.",
-                    "Ensure that the prototype accurately represents the desired final product."
-                ],
+                icon: <PenNib size={32} />,
+                text: ["I develop interactive prototypes that give you a visual representation of the website's layout, features, and user flow. This step allows you to provide feedback and make informed decisions about the design and functionality."],
                 link: ""
             },
             {
                 id: 4,
-                check: true,
-                icon: <Code size={32} />,
                 title: "Development",
-                text: [
-                    "Convert the approved prototype into a fully functional website.",
-                    "Implement an appealing and responsive user interface (UI) design.",
-                    "Develop the back-end functionality and features of the website.",
-                ],
+                icon: <Code size={32} />,
+                text: ["I bring your website to life, employing the latest technologies and coding practices to ensure optimal performance and functionality."],
                 link: ""
             },
             {
                 id: 5,
-                check: true,
-                icon: <CloudArrowUp size={32} />,
                 title: "Deployment",
-                text: [
-                    "Set up the hosting environment and configure the server for the website.",
-                    "Optimize the website for performance, security, and search engine visibility.",
-                    "Deploy the website on a production server or hosting platform.",
-                    "Configure domain and DNS settings for the website's public access."
-                ],
+                icon: <CloudArrowUp size={32} />,
+                text: ["Once the development phase is complete, I deploy your website to the hosting environment of your choice, ensuring a seamless transition from development to the live environment."],
                 link: ""
             },
             {
                 id: 6,
-                check: true,
-                icon: < Bug size={ 32} />,
                 title: "Testing",
-                text: [
-                    "Conduct comprehensive testing to ensure the website functions properly across different browsers, devices, and screen sizes.",
-                    "Verify that all features and functionalities are working as expected.",
-                    "Identify and fix any bugs or issues through rigorous testing and debugging processes.",
-                ],
+                icon: < Bug size={ 32} />,
+                text: ["I conduct comprehensive testing to ensure that your website functions flawlessly across different devices, browsers, and operating systems. This testing phase guarantees that your website is ready for a smooth user experience."],
                 link: ""
-            },
+            }
         ]
     }
 ];
-
 
 const benefits = [
     {
         id: 1,
         custom: true,
         bg: 'bg-base-200',
-        text: 'Benefits of choosing me!',
-        description: 'As a freelance web developer, I offer a range of benefits to my clients, some of which include:',
+        text: "Benefits of Choosing My Services",
         data: [
             {
                 id: 1,
-                title: 'No middleman',
-                text: "I will be your sole point of contact throughout the project, ensuring clear communication and a streamlined process."
+                title: "Direct Communication, No Middleman",
+                text: "Experience clear and efficient communication by directly working with me throughout the project. Eliminate intermediaries for a personalized experience and better understanding of your needs."
             },
             {
                 id: 2,
-                title: 'Customized Solutions',
-                text: "I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."
+                title: "Customized Solutions for Your Business",
+                text: "Tailor-made solutions that understand the uniqueness of your business. I work closely with you to create a custom website that aligns perfectly with your brand and helps you achieve your goals."
             },
             {
                 id: 3,
-                title: 'Competitive Pricing',
-                text: "Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."
+                title: "Competitive Pricing for Small Businesses",
+                text: "Accessible and affordable web development pricing for small businesses. Enjoy transparent pricing with no hidden fees, ensuring exceptional value for your investment."
             },
             {
                 id: 4,
-                title: 'Fast Turnaround Time',
-                text: "Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."
+                title: "Fast Turnaround Time, Minimal Downtime",
+                text: "Quick website development to minimize downtime and maximize your online presence. My dedicated team works diligently to ensure your website is up and running as soon as possible."
             },
             {
                 id: 5,
-                title: 'Aftercare Support',
-                text: "I will provide ongoing support and maintenance to ensure your website is always up-to-date and running smoothly."
+                title: "Ongoing Support and Maintenance",
+                text: "Comprehensive support and maintenance services beyond the initial development phase. I provide updates, enhancements, and address concerns to keep your website functioning smoothly."
             },
             {
                 id: 6,
-                title: 'Mobile-Friendly Design',
-                text: "All websites are designed to be mobile-friendly and responsive to ensure a seamless user experience across all devices."
-            },
-
+                title: "Mobile-Friendly Design for Seamless User Experience",
+                text: "Prioritize mobile responsiveness in all custom web development projects. Your website will seamlessly adapt to various mobile devices, ensuring a user-friendly experience for all visitors."
+            }
         ]
     }
-]
-
+];
 
 export { features, faqData, hero, benefits, process, metaProps }

@@ -11,10 +11,10 @@ const Contact = () => {
                 <div className="py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center text-center lg:text-left">
                     <div>
                         <h2 className="text-3xl font-extrabold sm:text-4xl">
-                            Contact me Today and Get a Free Quote
+                            Contact Me Today for a Free Quote and Consultation
                         </h2>
-                        <p className="lg:z-10 relative mx-auto lg:mx-0 mt-2 max-w-2xl">
-                            Fill out the form below and I will get back to you as soon as possible. Or you can Contact me on linked in. Thank you!
+                        <p className="text-lg xl:text-xl lg:z-10 relative mx-auto lg:mx-0 mt-2 max-w-2xl">
+                            Ready to take your online presence to the next level? Get in touch with us today for a free quote and consultation. Fill out the form below, and I will respond to your inquiry as soon as possible. Alternatively, you can connect with me on LinkedIn to explore the possibilities.
                             <a href="https://www.linkedin.com/in/rp42/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary-focus inline-block -mb-4 ml-2"> <LinkedinLogo size={42} weight="light" /></a>
                         </p>
 

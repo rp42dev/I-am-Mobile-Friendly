@@ -24,33 +24,33 @@ const mobile = [
         data: [
             {
                 id: 1,
-                title: 'Enhanced User Experience:',
-                text: "Mobile-friendly websites offer smooth navigation and interaction, ensuring a positive user experience."
+                title: "Enhanced User Experience",
+                text: "Mobile-friendly websites are designed to provide smooth navigation, intuitive interactions, and easy access to information. Users can have a positive experience while browsing your site on their mobile devices.",
             },
             {
                 id: 2,
-                title: 'Increased Mobile Traffic:',
-                text: "Catering to mobile users helps attract more traffic and expand your customer base, leading to increased sales."
+                title: "Increased Mobile Traffic",
+                text: "With the growing number of mobile users, having a mobile-friendly website helps you reach a larger audience. By catering to mobile users, you can attract more traffic and expand your customer base.",
             },
             {
                 id: 3,
-                title: 'Improved Search Engine Visibility:',
-                text: "Mobile-friendly sites rank higher in search engine results, leading to better visibility and organic traffic."
+                title: "Improved Search Engine Visibility",
+                text: "Search engines like Google prioritize mobile-friendly websites in their search results. Having a mobile-friendly site increases your chances of ranking higher, leading to better visibility and attracting organic traffic.",
             },
             {
                 id: 4,
-                title: 'Faster Page Loading Speed:',
-                text: "Optimized for mobile devices, these sites load quickly, reducing bounce rates and enhancing engagement."
+                title: "Faster Page Loading Speed",
+                text: "Mobile-friendly websites are optimized for mobile devices, ensuring faster loading times. This helps reduce bounce rates and keeps users engaged, as they don't have to wait for slow-loading pages.",
             },
             {
                 id: 5,
-                title: 'Competitive Advantage:',
-                text: "Having a mobile-friendly site differentiates you from competitors and positions your brand as customer-centric."
+                title: "Competitive Advantage",
+                text: "In today's digital landscape, having a mobile-friendly website is essential for staying ahead of the competition. A mobile-friendly site showcases your commitment to providing a seamless user experience, which differentiates you from competitors and positions your brand as customer-centric.",
             },
             {
                 id: 6,
-                title: 'Higher Conversion Rates:',
-                text: "Streamlined mobile experiences result in improved conversions, making it easier for users to complete desired actions."
+                title: "Higher Conversion Rates",
+                text: "Streamlined mobile experiences make it easier for users to navigate your site, find information, and complete desired actions such as making a purchase or submitting a form. This can lead to improved conversion rates and better business outcomes.",
             },
         ]
     }
@@ -58,46 +58,57 @@ const mobile = [
 
 const faqData = [
     {
-        question: "What services do you provide?",
-        answer: "I offer a comprehensive range of web development services, including custom web development, budget web development, and mobile website transformation.",
+        id: 1,
+        question: "What is budget-friendly, mobile-friendly web design?",
+        answer: "Budget-friendly, mobile-friendly web design refers to the creation of visually appealing and functional websites that are accessible on various mobile devices while being cost-effective for businesses."
     },
     {
-        question: "What is custom web development?",
-        answer: "Custom web development involves creating unique websites tailored to meet the specific requirements of businesses. I utilize technologies like React and Django to develop highly customized solutions.",
+        id: 2,
+        question: "Is budget-friendly, mobile-friendly web design of lesser quality?",
+        answer: "No, it's a misconception that budget-friendly web design compromises on quality. With the right expertise and tools, a mobile-friendly website can be developed within budget without sacrificing visual appeal or functionality."
     },
     {
-        question: "What is budget web development?",
-        answer: "Budget web development focuses on providing cost-effective website solutions without compromising on quality. I utilize platforms like WordPress, cPanel, or existing templates to deliver affordable web development options.",
+        id: 3,
+        question: "What are pre-made templates?",
+        answer: "Pre-made templates are pre-designed website layouts that can be customized to suit your brand and content. They offer a cost-effective solution for website development, as they eliminate the need for extensive design work from scratch."
     },
     {
-        question: "What is mobile website transformation?",
-        answer: "Mobile website transformation involves converting existing non-mobile-friendly websites into mobile-friendly versions. Regardless of the technology used, I have the expertise to transform my website into a mobile-friendly and responsive platform.",
+        id: 4,
+        question: "Can I customize a pre-made template to match my brand?",
+        answer: "Absolutely! Pre-made templates are highly customizable, allowing you to incorporate your brand colors, logo, and content to create a cohesive online presence that aligns with your brand identity."
     },
     {
-        question: "Which areas do you cover?",
-        answer: "I serve clients in Ireland, specifically in locations such as Drogheda and Dublin. Additionally, I provide remote services to clients worldwide.",
+        id: 5,
+        question: "Is it possible to have a mobile-friendly website on a limited budget?",
+        answer: "Yes, it is possible to have a mobile-friendly website on a limited budget. By leveraging budget-friendly web development services, you can ensure that your website is accessible and optimized for mobile devices without overspending."
     },
     {
-        question: "How do I ensure the quality of custom web development?",
-        answer: "I take a personalized and individual approach to each custom web development project, ensuring that the final product meets the client's requirements and adheres to high-quality standards.",
+        id: 6,
+        question: "Can I manage the content on my budget-friendly, mobile-friendly website myself?",
+        answer: "Yes, one of the advantages of modern content management systems like WordPress and cPanel is their user-friendly interfaces, empowering you to manage and update your website's content independently."
     },
     {
-        question: "Can you work with existing website templates?",
-        answer: "Yes, as part of my budget web development service, I can utilize existing templates and customize them to suit my branding and business needs.",
+        id: 7,
+        question: "What is the difference between shared hosting and managed WordPress hosting?",
+        answer: "Shared hosting involves multiple websites sharing server resources, making it a cost-effective option. Managed WordPress hosting, on the other hand, provides a dedicated environment optimized for WordPress websites, offering enhanced performance and security."
     },
     {
-        question: "What technologies do you use for custom web development?",
-        answer: "I utilize modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
+        id: 8,
+        question: "Can I upgrade my budget-friendly, mobile-friendly website in the future?",
+        answer: "Absolutely! As your business grows and your requirements change, your website can be easily upgraded to incorporate new features and functionalities. The scalability of budget-friendly web development ensures that your website can adapt to your evolving needs."
     },
     {
-        question: "How long do it take to transform a non-mobile-friendly website into a mobile-friendly version?",
-        answer: "The time required for mobile website transformation depends on the complexity and size of the website. I work efficiently to ensure a smooth transition to a mobile-friendly platform.",
+        id: 9,
+        question: "Will my budget-friendly, mobile-friendly website be responsive on all devices?",
+        answer: "Yes, one of the core principles of mobile-friendly web design is responsiveness. Your website will be optimized to automatically adapt and provide an optimal user experience on various devices, including smartphones, tablets, and desktop computers."
     },
     {
-        question: "Can You provide hosting services for websites?",
-        answer: "Yes, I offer hosting solutions and can assist you in setting up VPS or dedicated servers to ensure optimal performance and security for your website.",
-    },
+        id: 10,
+        question: "Can I integrate third-party plugins or tools into my budget-friendly, mobile-friendly website?",
+        answer: "Yes, depending on your specific needs, third-party plugins or tools can be integrated into your website to enhance its functionality and provide additional features. These integrations can be customized to align with your budget-friendly web development project."
+    }
 ];
+
 
 
 const services = [
@@ -120,7 +131,7 @@ const services = [
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain. e.g. WordPress, cPanel, or existing templates."],
+                text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain without compromising on quality."],
                 link: "/budget-web-development",
                 check: false
             },
@@ -137,7 +148,7 @@ const services = [
                     </div>
                 ,
                 title: "Mobile Web Transformation",
-                text: ["f you have a non-mobile-friendly website, I can transform it into a mobile-friendly version. Regardless of the technology stack used (WordPress, Static HTML, etc.), I ensure a smooth transition without compromising functionality or design."
+                text: ["If you have a non-mobile-friendly website, I can transform it into a mobile-friendly version. Regardless of the technology stack used (WordPress, Static HTML, etc.), I ensure a smooth transition without compromising functionality or design."
                 ],
                 link: "/mobile-website-transformation",
                 check: false

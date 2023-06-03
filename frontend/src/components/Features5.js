@@ -16,7 +16,7 @@ const Features5 = ({ data }) => {
                                     <img src={data[0].img} alt={data[0].alt} className="object-cover rounded-md" />
                                 </div>
                             )}
-                            <p className="text-lg mt-4">
+                            <p className="text-lg sm:text-xl mt-4">
                                 {data[0].description}
                             </p>
                             {data[0].button && (

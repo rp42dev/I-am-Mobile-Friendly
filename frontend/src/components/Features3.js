@@ -7,7 +7,7 @@ const Features3 = (props) => {
                     <h2 className="text-3xl font-extrabold sm:text-4xl text-center">
                         {data[0].title}
                     </h2>
-                    <p className="xl:text-xl mt-4 max-w-5xl mx-auto text-center">
+                    <p className="text-lg xl:text-xl mt-4 max-w-5xl mx-auto text-center">
                         {data[0].description}
                     </p>
                     <div className="flex flex-wrap space-y-6">
@@ -33,7 +33,7 @@ const Features3 = (props) => {
                                             </span>
                                         </div>
                                         <div className="px-4">
-                                            <h3 className="text-xl mb-4 font-semibold">
+                                            <h3 className="text-lg xl:text-2xl mb-4 font-semibold">
                                                 {step.title}
                                             </h3>
                                             <p className="text-sm xl:text-lg">

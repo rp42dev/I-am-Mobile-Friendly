@@ -3,9 +3,9 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 const hero = [
     {
         title: 'I\'m Raivis',
-        subtitle: 'Web Developer & Designer',
+        subtitle: 'Web Developer & Designer - Empowering Businesses with Mobile-Friendly Web Solutions',
         bg: 'bg-base',
-        description: 'I am a freelance web developer based in Ireland, and I take pride in offering mobile-friendly web design and development services. My goal is to help small businesses and individuals establish a strong online presence and unlock the full potential of their business. I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
+        description: 'As a freelance web developer based in Ireland, I am dedicated to helping small businesses and individuals establish a strong online presence. With my expertise, you can expect a mobile-friendly website that perfectly aligns with your unique needs and budget. Let\'s dive into the details of how I can transform your online presence and drive your business forward..',
         image: require('../../assets/images/me.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices - Image of me',
         btn: 'Contact me',
@@ -17,9 +17,9 @@ const hero = [
 
 const vision = [
     {
-        title: 'My Vision',
+        title: 'My Vision: Unlocking the Power of Mobile-Friendly Design',
         bg: 'bg-base-200',
-        description: 'My vision is to empower businesses and individuals by creating websites that work seamlessly on all devices. I want to contribute to the digital world by making websites accessible, attractive, and optimized for mobile users. I firmly believe that mobile-friendly design is the key to unlocking the true potential of online presence and enhancing user engagement.',
+        description: 'my vision is to empower businesses and individuals by creating websites that work seamlessly on all devices. In today\'s digital landscape, having a mobile- friendly website is crucial for success.It ensures that your audience can access your content and engage with your brand, regardless of the device they are using.By making websites accessible, attractive, and optimized for mobile users, I strive to contribute to the digital world and enhance user engagement..',
         btn: '',
         link: '',
     }
@@ -77,74 +77,80 @@ const mobile = [
 
 const faqData = [
     {
+        id: 1,
         question: "What services do you provide?",
-        answer: "I offer a comprehensive range of web development services, including custom web development, budget web development, and mobile website transformation.",
+        answer: "I provide a range of web development and design services, including custom web development, budget web development, and mobile web transformation. I cater to the unique needs of businesses and individuals, ensuring a personalized approach and tailored solutions."
     },
     {
+        id: 2,
         question: "What is custom web development?",
-        answer: "Custom web development involves creating unique websites tailored to meet the specific requirements of businesses. I utilize technologies like React and Django to develop highly customized solutions.",
+        answer: "Custom web development involves creating a website from scratch, specifically designed to meet the unique requirements of your business. It utilizes modern technologies and frameworks to ensure a highly customized and feature-rich online platform."
     },
     {
+        id: 3,
         question: "What is budget web development?",
-        answer: "Budget web development focuses on providing cost-effective website solutions without compromising on quality. I utilize platforms like WordPress, cPanel, or existing templates to deliver affordable web development options.",
+        answer: "Budget web development offers cost-effective solutions for small businesses with limited budgets. By utilizing platforms like WordPress and existing templates, I create professional websites that are affordable, easy to maintain, and maintain high quality."
     },
     {
+        id: 4,
         question: "What is mobile website transformation?",
-        answer: "Mobile website transformation involves converting existing non-mobile-friendly websites into mobile-friendly versions. Regardless of the technology used, I have the expertise to transform my website into a mobile-friendly and responsive platform.",
+        answer: "Mobile website transformation involves converting a non-mobile-friendly website into a mobile-friendly version. This process ensures that your website is fully responsive and optimized for mobile devices, providing an enhanced user experience across all screen sizes."
     },
     {
+        id: 5,
         question: "Which areas do you cover?",
-        answer: "I serve clients in Ireland, specifically in locations such as Drogheda and Dublin. Additionally, I provide remote services to clients worldwide.",
+        answer: "While I am based in Ireland, I provide web development services to clients worldwide. Whether you are located locally or internationally, I am equipped to cater to your needs remotely, ensuring efficient and effective communication throughout the project."
     },
     {
+        id: 6,
         question: "How do I ensure the quality of custom web development?",
-        answer: "I take a personalized and individual approach to each custom web development project, ensuring that the final product meets the client's requirements and adheres to high-quality standards.",
+        answer: "I prioritize the quality of my custom web development projects by taking a personalized approach and closely collaborating with you. Throughout the development process, I provide regular updates, seek your feedback, and make necessary adjustments to ensure the final product meets your expectations."
     },
     {
+        id: 7,
         question: "Can you work with existing website templates?",
-        answer: "Yes, as part of my budget web development service, I can utilize existing templates and customize them to suit my branding and business needs.",
+        answer: "Absolutely. If you already have a website template that you'd like to utilize, I can work with it to create a customized and unique website that aligns with your brand. By leveraging the strengths of existing templates, I can tailor them to your specific requirements."
     },
     {
+        id: 8,
         question: "What technologies do you use for custom web development?",
-        answer: "I utilize modern technologies like React and Django for custom web development projects, ensuring robust and scalable solutions.",
+        answer: "I employ modern technologies and frameworks like React and Django for custom web development. These technologies offer robust functionality, scalability, and flexibility, ensuring a seamless user experience and future-proofing your website."
     },
     {
-        question: "How long do it take to transform a non-mobile-friendly website into a mobile-friendly version?",
-        answer: "The time required for mobile website transformation depends on the complexity and size of the website. I work efficiently to ensure a smooth transition to a mobile-friendly platform.",
+        id: 9,
+        question: "How long does it take to transform a non-mobile-friendly website into a mobile-friendly version?",
+        answer: "The timeframe for transforming a non-mobile-friendly website into a mobile-friendly version depends on various factors, such as the complexity of the website and the desired features. However, I strive to minimize downtime and ensure a smooth transition, delivering the mobile-friendly version as quickly as possible."
     },
     {
-        question: "Can You provide hosting services for websites?",
-        answer: "Yes, I offer hosting solutions and can assist you in setting up VPS or dedicated servers to ensure optimal performance and security for your website.",
-    },
+        id: 10,
+        question: "Can you provide hosting services for websites?",
+        answer: "While I specialize in web development and design, I don't directly provide hosting services. However, I can guide you through the process of selecting a reliable hosting provider and assist you in setting up your website on the chosen hosting platform."
+    }
 ];
-
 
 const services = [
     {
         id: 1,
         custom: false,
-        title: 'My Services',
+        title: 'My Services: Tailored Solutions for Your Business',
+        bg: 'bg-base-200',
         description: '',
         steps: [
             {
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
-                text: ["Custom design tailored to my specific needs",
-                    "Development using modern technologies like React and Django",
-                    "Hosting options: VPS or dedicated servers."],
+                text: ["I specialize in creating custom websites uniquely tailored to your specific needs using modern technologies like React and Django. I take a personalized approach to each project, ensuring that the final product meets your expectations."],
                 link: "/custom-web-development",
-                check: true
+                check: false
             },
             {
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["Cost-effective solution to establish my online presence",
-                    "Website Development using WordPress or existing templates",
-                    "Hosting options: shared or cloud hosting"],
+                text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain without compromising on quality."],
                 link: "/budget-web-development",
-                check: true
+                check: false
             },
             {
                 id: 3,
@@ -158,12 +164,11 @@ const services = [
                         </div>
                     </div>
                 ,
-                title: "Mobile Website Transformation",
-                text: ["Convert my existing non-mobile-friendly website into a mobile-friendly version.",
-                    "Regardless of the underlying technology stack (WordPress, Static HTML, etc.)"
+                title: "Mobile Web Transformation",
+                text: ["If you have a non-mobile-friendly website, I can transform it into a mobile-friendly version. Regardless of the technology stack used (WordPress, Static HTML, etc.), I ensure a smooth transition without compromising functionality or design."
                 ],
                 link: "/mobile-website-transformation",
-                check: true
+                check: false
             },
         ]
 
@@ -175,43 +180,42 @@ const benefits = [
         id: 1,
         custom: true,
         bg: 'bg-base-200',
-        text: 'Benefits of choosing me!',
-        description: 'As a freelance web developer, I offer a range of benefits to my clients, some of which include:',
+        text: "Benefits of Choosing My Services",
         data: [
             {
                 id: 1,
-                title: 'No middleman',
-                text: "I will be your sole point of contact throughout the project, ensuring clear communication and a streamlined process."
+                title: "Direct Communication, No Middleman",
+                text: "Experience clear and efficient communication by directly working with me throughout the project. Eliminate intermediaries for a personalized experience and better understanding of your needs."
             },
             {
                 id: 2,
-                title: 'Customized Solutions',
-                text: "I will work with you to understand your business needs and provide a customized solution that fits your needs and budget."
+                title: "Customized Solutions for Your Business",
+                text: "Tailor-made solutions that understand the uniqueness of your business. I work closely with you to create a custom website that aligns perfectly with your brand and helps you achieve your goals."
             },
             {
                 id: 3,
-                title: 'Competitive Pricing',
-                text: "Affordable pricing for small businesses. Minimal upfront costs and no hidden fees. Pay only for what you need and use."
+                title: "Competitive Pricing for Small Businesses",
+                text: "Accessible and affordable web development pricing for small businesses. Enjoy transparent pricing with no hidden fees, ensuring exceptional value for your investment."
             },
             {
                 id: 4,
-                title: 'Fast Turnaround Time',
-                text: "Time is money. I will work hard to ensure that your website is up and running as soon as possible to minimize downtime."
+                title: "Fast Turnaround Time, Minimal Downtime",
+                text: "Quick website development to minimize downtime and maximize your online presence. My dedicated team works diligently to ensure your website is up and running as soon as possible."
             },
             {
                 id: 5,
-                title: 'Aftercare Support',
-                text: "I will provide ongoing support and maintenance to ensure your website is always up-to-date and running smoothly."
+                title: "Ongoing Support and Maintenance",
+                text: "Comprehensive support and maintenance services beyond the initial development phase. I provide updates, enhancements, and address concerns to keep your website functioning smoothly."
             },
             {
                 id: 6,
-                title: 'Mobile-Friendly Design',
-                text: "All websites are designed to be mobile-friendly and responsive to ensure a seamless user experience across all devices."
-            },
-
+                title: "Mobile-Friendly Design for Seamless User Experience",
+                text: "Prioritize mobile responsiveness in all custom web development projects. Your website will seamlessly adapt to various mobile devices, ensuring a user-friendly experience for all visitors."
+            }
         ]
     }
-]
+];
+
 
 const process = [
     {
@@ -241,8 +245,8 @@ const process = [
 ]
 
 const metaProps = {
-    title: 'About Me - web developer | web designer | mobile friendly websites',
-    description: 'I\'m a freelance web developer based in Ireland. I design and build mobile friendly websites for small businesses and individuals. I also provide Transformation to mobile friendly websites for existing websites.',
+    title: 'About Me - Providing Reliable Tech Solutions: Your Leading Web Developer and Designer',
+    description: 'Freelance web developer based in Ireland, I am dedicated to helping small businesses and individuals establish a strong online presence. With my expertise, you can expect a mobile-friendly website that perfectly aligns with your unique needs and budget.',
 }
 
 export { hero, mobile, services, benefits, process, faqData, vision, mission, metaProps }

@@ -12,7 +12,7 @@ const Card = ({ title, description, icon, link, check }) => {
                 </div>
             </div>
 
-            <h3 className="py-4 font-semibold text-lg sm:text-xl mt-8">
+            <h3 className="py-4 font-semibold text-lg sm:text-2xl mt-8">
                 {title}
             </h3>
 
@@ -24,7 +24,7 @@ const Card = ({ title, description, icon, link, check }) => {
                                 <div className="flex-shrink-0">
                                     <CheckFat size={20} color="green" />
                                 </div>}
-                            <p className="ml-2 text-sm">
+                            <p className="ml-2 text-sm xl:text-lg">
                                 {item}
                             </p>
                         </li>

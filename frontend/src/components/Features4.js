@@ -6,7 +6,7 @@ const Features4 = (...data) => {
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                     {title}
                 </h2>
-                <p className="text-xl mt-4 max-w-5xl mx-auto">
+                <p className="xl:text-xl mt-4 max-w-5xl mx-auto">
                     {description}
                 </p>
                 {button &&
