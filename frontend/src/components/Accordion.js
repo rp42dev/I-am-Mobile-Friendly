@@ -28,8 +28,8 @@ function Accordion({ icon, title, content }) {
                     </label>
                 </div>
             </div>
-            <div className={`bg-base-200 rounded-md flex-none px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-60" : "max-h-0"}`}>
-                <p className="py-4 text-left">
+            <div className={`bg-base-200 rounded-md flex-none px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-80" : "max-h-0"}`}>
+                <p className="py-4 text-left text-sm sm:text-base">
                     {content}
                 </p>
             </div>

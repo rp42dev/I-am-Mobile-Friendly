@@ -1,99 +1,14 @@
-import { PenNib, PiggyBank, ArrowClockwise, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
+import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
     title: 'Custom Web Design & Development for an Exceptional Online Presenc | Freelance Web Developer',
     description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
 }
 
-
-const faqData = [
-    {
-        question: "What is custom mobile-friendly web design?",
-        answer: "I offer custom mobile-friendly web design services as a freelance developer. It refers to the process of creating websites that are specifically tailored to be visually appealing, highly functional, and user-friendly on mobile devices. I utilize responsive design techniques, modern technologies, and optimized coding practices to ensure seamless user experiences across various screen sizes and devices."
-    },
-    {
-        question: "Why is custom mobile-friendly web design important?",
-        answer: "In today's digital landscape, mobile devices have become the primary means of accessing the internet. Having a custom mobile-friendly website is crucial for businesses to reach and engage their target audience effectively. Mobile-friendly websites improve user experience, boost search engine visibility, increase conversion rates, and enhance overall customer satisfaction."
-    },
-    {
-        question: "How long does it take to develop a custom mobile-friendly website?",
-        answer: "The development timeline for a custom mobile-friendly website depends on various factors, such as the project's complexity, design requirements, and the scope of functionality. As a freelance developer, I prioritize delivering high-quality websites within reasonable timeframes. After understanding your specific needs, I provide you with an estimated timeline during the initial consultation phase."
-    },
-    {
-        question: "What technologies are used in custom mobile-friendly web design?",
-        answer: "As a freelance developer, I leverage modern technologies to create custom mobile-friendly websites that deliver exceptional performance and functionality. Some of the technologies I use include React, a popular JavaScript library for building user interfaces, and Django, a robust and scalable Python web framework. These technologies enable me to develop dynamic and responsive websites that cater to your unique business requirements."
-    },
-    {
-        question: "Can I update the content on my custom mobile-friendly website myself?",
-        answer: "Yes, I provide my clients with user-friendly content management systems (CMS) that allow you to update and manage the content on your website effortlessly. I will guide you on how to use the CMS effectively, empowering you to make changes, add new content, and keep your website up-to-date without the need for technical expertise."
-    },
-    {
-        question: "Will my custom mobile-friendly website be compatible with all mobile devices?",
-        answer: "Absolutely! I understand the importance of cross-device compatibility in today's mobile-driven world. The custom mobile-friendly websites I create are designed and developed to be compatible with a wide range of mobile devices, including smartphones and tablets. I conduct thorough testing and optimization to ensure that your website functions flawlessly on various platforms, screen sizes, and operating systems."
-    },
-    {
-        question: "Can I integrate third-party services and tools into my custom mobile-friendly website?",
-        answer: "Certainly! I offer seamless integration of third-party services and tools to enhance the functionality and capabilities of your custom mobile-friendly website. Whether you need to integrate payment gateways, social media platforms, customer relationship management (CRM) systems, or any other service, I will ensure smooth integration and seamless operation."
-    },
-    {
-        question: "Will my custom mobile-friendly website be search engine optimized?",
-        answer: "Yes, search engine optimization (SEO) is an integral part of my web development process. I follow industry best practices and adhere to Google's guidelines to optimize your website for search engines. From optimized code structure and meta tags to keyword research and on-page optimization, I implement strategies that improve your website's visibility and organic search rankings."
-    },
-    {
-        question: "Can I request additional features and functionalities for my custom mobile-friendly website?",
-        answer: "Certainly! I encourage my clients to share their specific requirements and ideas for additional features and functionalities. I will carefully evaluate your requests and provide professional recommendations to enhance your website's performance and user experience. I am committed to turning your vision into reality and delivering a website that exceeds your expectations."
-    },
-    {
-        question: "How much does custom mobile-friendly web design cost?",
-        answer: "The cost of custom mobile-friendly web design varies depending on several factors, including the project scope, complexity, design requirements, and desired functionalities. As a freelance developer, I believe in fair and transparent pricing. After understanding your specific needs, I provide you with a detailed quote that outlines the costs involved. My pricing structure is designed to be competitive and tailored to the requirements of small businesses."
-    }
-];
-
-const features = [
-    {
-        id: 1,
-        custom: true,
-        bg: 'bg-base-200',
-        text: "Key Features of My Custom Mobile-Friendly Websites",
-        data: [
-            {
-                id: 1,
-                title: "Responsive Design for Seamless User Experience",
-                text: "Enjoy optimal viewing and interaction on all devices. Your website will automatically adjust to provide an intuitive and visually appealing experience for every user."
-            },
-            {
-                id: 2,
-                title: "Utilizing Modern Technologies for Superior Performance",
-                text: "Leverage modern technologies like React, Node, and Django to create dynamic and scalable websites with exceptional functionality and performance."
-            },
-            {
-                id: 3,
-                title: "Customizable Layouts Aligned with Your Brand",
-                text: "Have complete control over the design, layout, and features of your website. Tailor the aesthetics to perfectly align with your unique brand identity."
-            },
-            {
-                id: 4,
-                title: "Optimized Performance for Speed and Efficiency",
-                text: "Ensure fast loading speeds and efficient resource utilization. Deliver a lightning-fast browsing experience that keeps visitors engaged."
-            },
-            {
-                id: 5,
-                title: "Endless Customization to Suit Your Needs",
-                text: "Add any desired feature or functionality. Tailor your website to meet your unique requirements and stand out from the competition."
-            },
-            {
-                id: 6,
-                title: "Seamless Integration Capabilities",
-                text: "Enhance your website's functionality by seamlessly integrating third-party services and tools. Create a comprehensive online presence."
-            }
-        ]
-    }
-];
-
 const hero = [
     {
         title: 'Custom web',
-        bg: 'bg-base-300',
+        bg: 'bg-base-200',
         subtitle: 'Design & Development for an Exceptional Online Presence',
         description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
         image: require('../../assets/images/custom.svg').default,
@@ -109,7 +24,7 @@ const process = [
     {
         id: 1,
         bg: 'bg-base',
-        img: require('../../assets/images/process2.svg').default,
+        img: require('../../assets/images/prototype.svg').default,
         title: "Streamlined Development Process",
         description: "",
         steps: [
@@ -159,6 +74,47 @@ const process = [
     }
 ];
 
+const features = [
+    {
+        id: 1,
+        custom: true,
+        bg: 'bg-base-200',
+        text: "Key Features of My Custom Mobile-Friendly Websites",
+        data: [
+            {
+                id: 1,
+                title: "Responsive Design for Seamless User Experience",
+                text: "Enjoy optimal viewing and interaction on all devices. Your website will automatically adjust to provide an intuitive and visually appealing experience for every user."
+            },
+            {
+                id: 2,
+                title: "Utilizing Modern Technologies for Superior Performance",
+                text: "Leverage modern technologies like React, Node, and Django to create dynamic and scalable websites with exceptional functionality and performance."
+            },
+            {
+                id: 3,
+                title: "Customizable Layouts Aligned with Your Brand",
+                text: "Have complete control over the design, layout, and features of your website. Tailor the aesthetics to perfectly align with your unique brand identity."
+            },
+            {
+                id: 4,
+                title: "Optimized Performance for Speed and Efficiency",
+                text: "Ensure fast loading speeds and efficient resource utilization. Deliver a lightning-fast browsing experience that keeps visitors engaged."
+            },
+            {
+                id: 5,
+                title: "Endless Customization to Suit Your Needs",
+                text: "Add any desired feature or functionality. Tailor your website to meet your unique requirements and stand out from the competition."
+            },
+            {
+                id: 6,
+                title: "Seamless Integration Capabilities",
+                text: "Enhance your website's functionality by seamlessly integrating third-party services and tools. Create a comprehensive online presence."
+            }
+        ]
+    }
+];
+
 const benefits = [
     {
         id: 1,
@@ -200,4 +156,74 @@ const benefits = [
     }
 ];
 
-export { features, faqData, hero, benefits, process, metaProps }
+const faqData = [
+    {
+        question: "What is custom mobile-friendly web design?",
+        answer: "I provide custom mobile-friendly web design services as a freelance developer. This involves creating visually appealing, highly functional, and user-friendly websites specifically designed for mobile devices. I use responsive design techniques, modern technologies, and optimized coding practices to ensure seamless user experiences across different screen sizes and devices."
+    },
+    {
+        question: "Why is custom mobile-friendly web design important?",
+        answer: "In today's digital landscape, mobile devices have become the primary means of accessing the internet. Custom mobile-friendly websites are crucial for businesses to effectively reach and engage their target audience. They improve user experience, increase search engine visibility, boost conversion rates, and enhance overall customer satisfaction."
+    },
+    {
+        question: "How long does it take to develop a custom mobile-friendly website?",
+        answer: "The development timeline for a custom mobile-friendly website depends on factors such as project complexity, design requirements, and functionality scope. As a freelance developer, I prioritize delivering high-quality websites within reasonable timeframes. During the initial consultation, I provide an estimated timeline based on your specific needs."
+    },
+    {
+        question: "What technologies are used in custom mobile-friendly web design?",
+        answer: "As a freelance developer, I utilize modern technologies like React, a popular JavaScript library for building user interfaces, and Django, a robust and scalable Python web framework. These technologies enable me to create dynamic and responsive custom mobile-friendly websites that cater to your unique business requirements."
+    },
+    {
+        question: "Can I update the content on my custom mobile-friendly website myself?",
+        answer: "Yes, I offer user-friendly content management systems (CMS) that allow you to effortlessly update and manage your website's content. I provide guidance on effectively using the CMS, empowering you to make changes, add new content, and keep your website up-to-date without requiring technical expertise."
+    },
+    {
+        question: "Will my custom mobile-friendly website be compatible with all mobile devices?",
+        answer: "Absolutely! I understand the importance of cross-device compatibility in today's mobile-driven world. The custom mobile-friendly websites I create are designed and developed to be compatible with a wide range of mobile devices, including smartphones and tablets. Thorough testing and optimization ensure flawless functionality on various platforms, screen sizes, and operating systems."
+    },
+    {
+        question: "Can I integrate third-party services and tools into my custom mobile-friendly website?",
+        answer: "Certainly! I offer seamless integration of third-party services and tools to enhance the functionality and capabilities of your custom mobile-friendly website. Whether it's integrating payment gateways, social media platforms, or customer relationship management (CRM) systems, I ensure smooth integration and seamless operation."
+    },
+    {
+        question: "Will my custom mobile-friendly website be search engine optimized?",
+        answer: "Yes, search engine optimization (SEO) is an integral part of my web development process. I follow industry best practices and adhere to Google's guidelines to optimize your website for search engines. From optimized code structure and meta tags to keyword research and on-page optimization, I implement strategies that improve your website's visibility and organic search rankings."
+    },
+    {
+        question: "Can I request additional features and functionalities for my custom mobile-friendly website?",
+        answer: "Certainly! I encourage clients to share specific requirements and ideas for additional features and functionalities. I carefully evaluate your requests and provide professional recommendations to enhance your website's performance and user experience. I am committed to turning your vision into reality and delivering a website that exceeds your expectations."
+    },
+    {
+        question: "How much does custom mobile-friendly web design cost?",
+        answer: "The cost of custom mobile-friendly web design varies depending on factors such as project scope, complexity, design requirements, and desired functionalities. As a freelance developer, I believe in fair and transparent pricing. After understanding your specific needs, I provide a detailed quote outlining the costs involved. My pricing structure is competitive and tailored to the requirements of small businesses."
+    }
+];
+
+const what = [
+    {
+        id: 1,
+        custom: false,
+        title: 'What is Custom Web Development?',
+        img: require('../../assets/images/modern.svg').default,
+        description: 'Custom web development involves the creation of unique and tailored online solutions that cater specifically to the needs and goals of your business. As a freelance web developer, I specialize in designing and building custom websites using modern technologies such as React and Django',
+        steps: [
+            {
+                id: 1,
+                title: 'Uniqueness and Personalization:',
+                text: "Custom web development allows for complete control over the design and functionality of your website. Every aspect can be tailored to reflect your brand identity, ensuring a unique and personalized online presence that resonates with your target audience."
+            },
+            {
+                id: 2,
+                title: 'Scalability and Future-Proofing:',
+                text: "Custom websites are built with scalability in mind, allowing for easy expansion and addition of new features as your business grows. By leveraging modern technologies, your website remains adaptable and future-proof, ensuring long-term success."
+            },
+            {
+                id: 3,
+                title: 'Enhanced Performance and User Experience:',
+                text: "Custom web development allows for optimized coding practices and performance enhancements, resulting in a website that loads quickly, is highly responsive, and provides a seamless user experience. This translates to higher engagement, increased conversions, and improved customer satisfaction."
+            },
+        ]
+    }
+]
+
+export { features, faqData, hero, benefits, process, metaProps, what }

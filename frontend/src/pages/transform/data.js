@@ -26,7 +26,7 @@ const agitate = [
         bg: 'bg-base-200',
         title: 'The Importance of Mobile-Friendly Websites',
         img: require('../../assets/images/user.svg').default,
-        description: 'In today\'s fast- paced world, more and more users rely on mobile devices to access information on the go.If your website is not optimized for mobile devices, you risk losing potential customers and missing out on valuable opportunities.Consider these statistics: ',
+        description: 'In today\'s fast- paced world, more and more users rely on mobile devices to access information on the go. If your website is not optimized for mobile devices, you risk losing potential customers and missing out on valuable opportunities.Consider these statistics: ',
         steps: [
             {
                 id: 1,

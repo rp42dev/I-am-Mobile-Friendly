@@ -31,15 +31,18 @@ const agitate = [
         steps: [
             {
                 id: 1,
-                text: "As a small business owner, it's important to be conscious of your expenses. That's why my budget-friendly web development services are designed to give you an online platform without straining your financial resources. Say goodbye to exorbitant development costs and hello to a cost-effective solution that delivers results."
+                title: 'Budget-Friendly Web Development Services',
+                text: "As a small business owner, it's important to be conscious of your expenses. That's why my budget-friendly web development services are designed to give you an online platform without straining your financial resources."
             },
             {
                 id: 2,
-                text: "In today's digital age, a website is an essential tool for any business. It allows you to reach a wider audience, showcase your products or services, and build credibility. However, custom website development can be expensive, especially for those who are just starting out. With my affordable services, you can unlock the benefits of having a professional website without the hefty price tag."
+                title: 'Mobile-Friendly Web Design',
+                text: "In today's digital age, a website is an essential tool for any business. It allows you to reach a wider audience, showcase your products or services, and build credibility. However, custom website development can be expensive, especially for those who are just starting out."
             },
             {
                 id: 3,
-                text: "According to Weebly, cost is a significant factor for 70% of small businesses when choosing a website solution. I understand the importance of cost-effectiveness and strive to provide tailored solutions that align with your budgetary requirements. Together, we can ensure that your website development fits comfortably within your financial boundaries."
+                title: 'Cost-Effective Solutions',
+                text: "According to Weebly, cost is a significant factor for 70% of small businesses when choosing a website solution. I understand the importance of cost-effectiveness and strive to provide tailored solutions that align with your budgetary requirements."
             },
         ]
     }

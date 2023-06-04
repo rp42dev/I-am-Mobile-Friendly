@@ -158,10 +158,10 @@ body{
 .ul-border::after {
     content: '';
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     left: 13px;
     width: 6px;
-    height: 80%;
+    height: 70%;
     z-index: -1;
     background-color: #7B41FB;
     transition: all .5s ease-in-out;

@@ -2,9 +2,9 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 
 const hero = [
     {
-        title: 'Mobile-Friendly',
+        title: 'Responsive',
         bg: 'bg-base-200',
-        subtitle: 'Web Design and Development',
+        subtitle: 'Mobile-Friendly Web Design & Development Services',
         description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small businesses and startups. I am a freelance web developer based in Ireland, I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
         image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
@@ -12,6 +12,31 @@ const hero = [
         btn2: 'Learn more',
         link: '#contact',
         link2: '#features'
+    }
+]
+
+const what = [
+    {
+        id: 1,
+        custom: false,
+        bg: 'bg-base-300',
+        title: 'What is a Mobile-Friendly Website?',
+        img: require('../../assets/images/user.svg').default,
+        description: 'A mobile-friendly website is a website that is designed to provide an optimal user experience on various mobile devices, including smartphones and tablets. Mobile-friendly websites are responsive, meaning that they automatically adapt to the screen size of the device, ensuring that users can easily navigate and interact with the site. Here are some statistics that highlight the importance of mobile-friendly websites:',
+        steps: [
+            {
+                id: 1,
+                text: "90% of users switch between devices to accomplish a goal [Source: Google]: Users expect a seamless experience across multiple devices. If your website is not mobile-friendly, users may abandon it in search of a more accessible alternative."
+            },
+            {
+                id: 2,
+                text: "53% of mobile users abandon websites that take longer than three seconds to load [Source: Google]: Mobile users have little patience for slow-loading websites. A non-mobile-friendly website may result in high bounce rates and lost conversions."
+            },
+            {
+                id: 3,
+                text: "Mobile internet usage surpassed desktop usage, accounting for 54.8% of global web traffic [Source: Statista]: The majority of web traffic now comes from mobile devices. To stay relevant and tap into this vast user base, a mobile-friendly website is essential."
+            },
+        ]
     }
 ]
 
@@ -223,4 +248,4 @@ const process = [
     }
 ]
 
-export { hero, mobile, services, benefits, process, faqData }
+export { hero, mobile, services, benefits, process, faqData, what }
