@@ -11,18 +11,8 @@
   <link href="{{ 'css' | get_static_file }}" rel="stylesheet" />
   {% include 'includes/extra_head.html' %}
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RFB5NGRR4">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-4RFB5NGRR4');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RFB5NGRR4"></script>
+  <script defer src="{% static 'js/gtag.js' %}"></script>
 </head>
 
 <body>
