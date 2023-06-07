@@ -21,7 +21,7 @@ const what = [
         custom: false,
         bg: 'bg-base-300',
         title: 'What is a Mobile-Friendly Website?',
-        img: require('../../assets/images/user.svg').default,
+        img: require('../../assets/imagd Beyondes/user.svg').default,
         description: 'A mobile-friendly website is a website that is designed to provide an optimal user experience on various mobile devices, including smartphones and tablets. Mobile-friendly websites are responsive, meaning that they automatically adapt to the screen size of the device, ensuring that users can easily navigate and interact with the site. Here are some statistics that highlight the importance of mobile-friendly websites:',
         steps: [
             {
