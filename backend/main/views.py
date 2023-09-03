@@ -15,6 +15,7 @@ def react_app_view(request):
         '/custom-web-development',
         '/budget-web-development',
         '/mobile-website-transformation',
+        '/funnels',
         '/about-me',
         '/contact-success',
     ]

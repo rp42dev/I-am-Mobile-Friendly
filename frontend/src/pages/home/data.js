@@ -1,4 +1,4 @@
-import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phosphor-icons/react";
+import { PenNib, PiggyBank, Funnel, ArrowClockwise, Devices, ArrowArcRight } from "@phosphor-icons/react";
 
 const hero = [
     {
@@ -131,9 +131,23 @@ const faqData = [
         id: 10,
         question: "Can I integrate third-party plugins or tools into my budget-friendly, mobile-friendly website?",
         answer: "Yes, depending on your specific needs, third-party plugins or tools can be integrated into your website to enhance its functionality and provide additional features. These integrations can be customized to align with your budget-friendly web development project."
-    }
+    },
+    {
+        id: 11,
+        question: "What is Funnel Building?",
+        answer: "Funnel Building is the process of creating automated sales funnels that help you generate leads and convert them into paying customers. It involves a series of steps that guide users through the sales process, from awareness to purchase."
+    },
+    {
+        id: 12,
+        question: "What is a sales funnel?",
+        answer: "A sales funnel is a marketing concept that describes the process of converting prospects into paying customers. It involves a series of steps that guide users through the sales process, from awareness to purchase."
+    },
+    {
+        id: 13,
+        question: "What are the stages of a sales funnel?",
+        answer: "The stages of a sales funnel are awareness, interest, decision, and action. At each stage, users are provided with relevant information and guided towards the next step in the sales process."
+    },
 ];
-
 
 
 const services = [
@@ -158,6 +172,14 @@ const services = [
                 title: "Budget Web Development",
                 text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain without compromising on quality."],
                 link: "/budget-web-development",
+                check: false
+            },
+            {
+                id: 2,
+                icon: <Funnel size={32} />,
+                title: "Automated Funnel Building",
+                text: ["I offer Funnel Building services for coaching, consulting, and service-based businesses I create automated sales funnels that help you generate leads and convert them into paying customers."],
+                link: "/funnels",
                 check: false
             },
             {

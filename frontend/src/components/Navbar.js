@@ -66,6 +66,9 @@ const NavBar = () => {
                         <Link to="/custom-web-development" className="tab tab-bordered">
                             Custom
                         </Link>
+                        <Link to="/funnels" className="tab tab-bordered">
+                            Funnels
+                        </Link>
                         <Link to="/budget-web-development" className="tab tab-bordered">
                             Budget
                         </Link>
