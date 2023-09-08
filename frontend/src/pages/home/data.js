@@ -2,10 +2,10 @@ import { PenNib, PiggyBank, Funnel, ArrowClockwise, Devices, ArrowArcRight } fro
 
 const hero = [
     {
-        title: 'Mobile-Friendly',
+        title: "Let's Build Website!",
         bg: 'bg-base-200',
-        subtitle: 'Web Design & Development Services',
-        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small to medium size businesses and startups.',
+        subtitle: 'That brings you more business!',
+        description: 'I offer custom and budget-friendly web development services for small businesses and startups. Whether you need a custom website or a mobile-friendly version of your existing site, I can help. I also offer Funnel Building services for coaching and service-based businesses.',
         image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
@@ -45,7 +45,7 @@ const mobile = [
         id: 1,
         custom: true,
         bg: 'bg-base-200',
-        text: 'Key Features of Mobile-Friendly Websites',
+        text: 'The Amazing Perks of Mobile-Friendly Websites',
         data: [
             {
                 id: 1,
@@ -162,7 +162,7 @@ const services = [
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
-                text: ["I specialize in creating custom websites uniquely tailored to your specific needs using modern technologies like React and Django. I take a personalized approach to each project, ensuring that the final product meets your expectations."],
+                text: ["Let's embrace innovation together with our custom web development solutions. I specialize in crafting unique websites using modern technologies like React and Django, ensuring your online presence is as distinctive as your vision."],
                 link: "/custom-web-development",
                 check: false
             },
@@ -170,7 +170,7 @@ const services = [
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["I offer cost-effective web development solutions for small businesses. Using platforms like WordPress and existing templates, I create professional websites that are affordable and easy to maintain without compromising on quality."],
+                text: ["Our budget-friendly web development services are designed especially for small businesses. We use platforms like WordPress and templates to create professional websites that are not only affordable but also easy to maintain without compromising on quality."],
                 link: "/budget-web-development",
                 check: false
             },
@@ -178,8 +178,7 @@ const services = [
                 id: 2,
                 icon: <Funnel size={32} />,
                 title: "Automated Funnel Building",
-                text: ["I offer Funnel Building services for coaching, consulting, and service-based businesses I create automated sales funnels that help you generate leads and convert them into paying customers."],
-                link: "/funnels",
+                text: ["Are you in the coaching, or service-based business? I can help you automate your sales process with a custom-built sales funnel. I will create a sales funnel that will help you generate leads and convert them into paying customers."],
                 check: false
             },
             {
@@ -195,7 +194,7 @@ const services = [
                     </div>
                 ,
                 title: "Mobile Web Transformation",
-                text: ["If you have a non-mobile-friendly website, I can transform it into a mobile-friendly version. Regardless of the technology stack used (WordPress, Static HTML, etc.), I ensure a smooth transition without compromising functionality or design."
+                text: ["If you currently have a non-mobile-friendly website, I can help you transform it into a mobile-friendly website. I will ensure that your website is optimized for mobile devices, providing a seamless user experience across various screen sizes."
                 ],
                 link: "/mobile-website-transformation",
                 check: false

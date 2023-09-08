@@ -1,18 +1,18 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Sales Funnel Development for Coaching Businesses',
-    description: 'I offer custom sales funnel development services for coaching businesses. I create highly effective sales funnels that help you reach more clients and grow your coaching business.',
+    title: 'Custom Sales Funnel Development for coaching, or service-based business',
+    description: 'I offer custom sales funnel development services for coaching, or service-based business. I create highly effective sales funnels that help you reach more clients and grow your coaching, or service-based business.',
 }
 
 const hero = [
     {
-        title: 'Funnels',
+        title: 'Let\'s build',
         bg: 'bg-base',
-        subtitle: 'For Effective Automated Sales',
-        description: "I offer custom sales funnel development services that help you generate leads, nurture them, and convert them into paying customers. I create highly effective sales funnels that are tailored to your unique needs and goals. My funnels are designed to help you reach more clients and grow your business.",
+        subtitle: 'Funnels for coaching, or service-based business',
+        description: "I offer sales funnel development services, with automated email marketing, for coaching, or service-based business. I create highly effective sales funnels that help you reach more clients, convert them into paying customers, and grow your coaching, or service-based business.",
         image: require('../../assets/images/funnel1.webp'),
-        alt: 'Custom Website Design & Development displaying responsive design',
+        alt: 'Custom Sales Funnel Development for coaching, or service-based business',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
@@ -24,7 +24,7 @@ const process = [
     {
         id: 1,
         bg: 'bg-base',
-        img: require('../../assets/images/funnel2.webp'),
+        img: require('../../assets/images/funnel3.webp'),
         title: "Our Proven Funnel Building Process",
         description: "",
         steps: [
@@ -32,7 +32,7 @@ const process = [
                 id: 1,
                 title: "Consultation",
                 icon: <ChatCircleDots size={32} />,
-                text: ["We start by understanding your coaching business, goals, and target audience. This consultation helps us customize the funnel to your unique needs."],
+                text: ["We start by understanding your coaching, or service-based business, goals, and target audience. This consultation helps us customize the funnel to your unique needs."],
                 link: ""
             },
             {
@@ -53,7 +53,7 @@ const process = [
                 id: 5,
                 title: "Launch & Automation",
                 icon: <CloudArrowUp size={32} />,
-                text: ["We launch the funnel and automate email communication to help you reach more clients and grow your coaching business."],
+                text: ["We launch the funnel and automate email communication to help you reach more clients and grow your coaching, or service-based business."],
                 link: ""
             },
             {
@@ -78,7 +78,7 @@ const features = [
             {
                 id: 1,
                 title: "Sales Funnels For Businesses and Coaches",
-                text: "We create Sales funnels For Businesses and Coaches that are tailored to your unique needs and goals. Our funnels are designed to help you reach more clients and grow your coaching business."
+                text: "We create Sales funnels For Businesses and Coaches that are tailored to your unique needs and goals. Our funnels are designed to help you reach more clients and grow your coaching, or service-based business."
             },
             {
                 id: 2,
@@ -103,7 +103,7 @@ const features = [
             {
                 id: 6,
                 title: "Email Automation",
-                text: "We automate email communication to help you reach more clients and grow your coaching business. This includes setting up email sequences, creating email templates, and more."
+                text: "We automate email communication to help you reach more clients and grow your coaching, or service-based business. This includes setting up email sequences, creating email templates, and more."
             }
         ]
     }
@@ -123,13 +123,13 @@ const benefits = [
             },
             {
                 id: 2,
-                title: "Specialized Services for Coaching Businesses",
-                text: "We understand the uniqueness of coaching businesses. Our funnels are designed to meet your specific needs and goals."
+                title: "Specialized Services for coaching, or service-based business",
+                text: "We understand the uniqueness of coaching, or service-based business. Our funnels are designed to meet your specific needs and goals."
             },
             {
                 id: 3,
                 title: "Affordable Pricing for All Budgets",
-                text: "Our transparent pricing ensures coaching businesses of all sizes can benefit from our services."
+                text: "Our transparent pricing ensures coaching, or service-based business of all sizes can benefit from our services."
             },
             {
                 id: 4,
@@ -152,11 +152,11 @@ const benefits = [
 
 const faqData = [
     {
-        question: "What is a Sales Funnel for Coaching Businesses?",
-        answer: "I offer sales funnel development services tailored specifically for coaching businesses. A sales funnel is a strategic process designed to attract potential clients, nurture them, and ultimately convert them into paying customers. I create customized sales funnels that align with your coaching services, helping you efficiently generate leads and boost your revenue."
+        question: "What is a Sales Funnel for coaching, or service-based business?",
+        answer: "I offer sales funnel development services tailored specifically for coaching, or service-based business. A sales funnel is a strategic process designed to attract potential clients, nurture them, and ultimately convert them into paying customers. I create customized sales funnels that align with your coaching services, helping you efficiently generate leads and boost your revenue."
     },
     {
-        question: "Why is a Sales Funnel Essential for Coaching Businesses?",
+        question: "Why is a Sales Funnel Essential for coaching, or service-based business?",
         answer: "In the competitive coaching industry, having a well-structured sales funnel is crucial for sustainable growth. It streamlines your marketing efforts, identifies potential clients, and guides them through a journey that builds trust and increases the likelihood of them choosing your coaching services. A properly optimized sales funnel can significantly enhance your client acquisition and conversion rates."
     },
     {
@@ -165,7 +165,7 @@ const faqData = [
     },
     {
         question: "What Technologies and Tools are Used in Sales Funnel Development?",
-        answer: "I leverage a range of modern tools and platforms to create effective sales funnels for coaching businesses. This may include marketing automation software, email marketing platforms, and customer relationship management (CRM) systems. I carefully select and integrate the right technologies to ensure seamless lead capture, nurturing, and conversion processes."
+        answer: "I leverage a range of modern tools and platforms to create effective sales funnels for coaching, or service-based business. This may include marketing automation software, email marketing platforms, and customer relationship management (CRM) systems. I carefully select and integrate the right technologies to ensure seamless lead capture, nurturing, and conversion processes."
     },
     {
         question: "Can I Customize and Update my Sales Funnel?",
@@ -189,7 +189,7 @@ const faqData = [
     },
     {
         question: "How Much Does Custom Sales Funnel Development Cost?",
-        answer: "The cost of custom sales funnel development depends on factors such as the complexity of your funnel, the number of stages, and any specific integrations or features required. I believe in transparent pricing, and after understanding your unique needs, I will provide a detailed quote outlining the costs involved. My pricing is competitive and tailored to coaching businesses."
+        answer: "The cost of custom sales funnel development depends on factors such as the complexity of your funnel, the number of stages, and any specific integrations or features required. I believe in transparent pricing, and after understanding your unique needs, I will provide a detailed quote outlining the costs involved. My pricing is competitive and tailored to coaching, or service-based business."
     }
 ];
 
