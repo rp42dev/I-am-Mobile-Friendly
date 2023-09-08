@@ -6,9 +6,9 @@ const Home = () => {
         <>
             <Meta />
             <Hero data={hero[0]} />
-            <Features3 data={what} />
-            <Features2 data={mobile} />
             <Features data={services} />
+            <Features2 data={mobile} />
+            <Features3 data={what} />
             <Features3 data={process} />
             <Features data={benefits} />
             <Projects />

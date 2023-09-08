@@ -1,17 +1,17 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Web Design & Development for an Exceptional Online Presenc | Freelance Web Developer',
-    description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
+    title: 'Custom Sales Funnel Development for Coaching Businesses',
+    description: 'I offer custom sales funnel development services for coaching businesses. I create highly effective sales funnels that help you reach more clients and grow your coaching business.',
 }
 
 const hero = [
     {
-        title: 'Funnels for Coaches',
+        title: 'Funnels',
         bg: 'bg-base',
-        subtitle: 'Unleash the Power of Effective Automated Sales',
-        description: "Our specialized funnel building service, combined with email automation, is designed to help coaching businesses like yours succeed in the digital world. With our expertise in creating highly effective funnels and automating email communication, we'll smoothly guide potential clients from discovery to conversion.",
-        image: require('../../assets/images/leads.svg').default,
+        subtitle: 'For Effective Automated Sales',
+        description: "I offer custom sales funnel development services that help you generate leads, nurture them, and convert them into paying customers. I create highly effective sales funnels that are tailored to your unique needs and goals. My funnels are designed to help you reach more clients and grow your business.",
+        image: require('../../assets/images/funnel1.webp'),
         alt: 'Custom Website Design & Development displaying responsive design',
         btn: 'Get started',
         btn2: 'Learn more',
@@ -24,7 +24,7 @@ const process = [
     {
         id: 1,
         bg: 'bg-base',
-        img: require('../../assets/images/prototype.svg').default,
+        img: require('../../assets/images/funnel2.webp'),
         title: "Our Proven Funnel Building Process",
         description: "",
         steps: [
@@ -77,8 +77,8 @@ const features = [
         data: [
             {
                 id: 1,
-                title: "Custom Coaching Funnels",
-                text: "We create custom coaching funnels that are tailored to your unique needs and goals. Our funnels are designed to help you reach more clients and grow your coaching business."
+                title: "Sales Funnels For Businesses and Coaches",
+                text: "We create Sales funnels For Businesses and Coaches that are tailored to your unique needs and goals. Our funnels are designed to help you reach more clients and grow your coaching business."
             },
             {
                 id: 2,

@@ -2,10 +2,10 @@ import { PenNib, PiggyBank, Funnel, ArrowClockwise, Devices, ArrowArcRight } fro
 
 const hero = [
     {
-        title: 'Responsive',
+        title: 'Mobile-Friendly',
         bg: 'bg-base-200',
-        subtitle: 'Mobile-Friendly Web Design & Development Services',
-        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small businesses and startups. I am a freelance web developer based in Ireland, I can create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
+        subtitle: 'Web Design & Development Services',
+        description: 'Unlock the potential of your business with comprehensive mobile-friendly web design and development services for small to medium size businesses and startups.',
         image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
         btn: 'Get started',
