@@ -11,7 +11,7 @@ const hero = [
         bg: 'bg-base',
         subtitle: 'Funnels for coaching, or service-based business',
         description: "I offer sales funnel development services, with automated email marketing, for coaching, or service-based business. I create highly effective sales funnels that help you reach more clients, convert them into paying customers, and grow your coaching, or service-based business.",
-        image: require('../../assets/images/funnel1.webp'),
+        image: require('../../assets/images/funnel1.svg').default,
         alt: 'Custom Sales Funnel Development for coaching, or service-based business',
         btn: 'Get started',
         btn2: 'Learn more',
@@ -24,7 +24,7 @@ const process = [
     {
         id: 1,
         bg: 'bg-base',
-        img: require('../../assets/images/funnel3.webp'),
+        img: require('../../assets/images/funnel3.svg').default,
         title: "Our Proven Funnel Building Process",
         description: "",
         steps: [
