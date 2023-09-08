@@ -11,7 +11,6 @@ const Funnels = () => {
             <Features5 data={process} />
             <Features2 data={benefits} />
             <Testimonials />
-        
             <Contact />
             <Faq data={faqData} />
         </>
