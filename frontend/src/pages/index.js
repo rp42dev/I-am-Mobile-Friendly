@@ -5,6 +5,6 @@ import Home from "./home";
 import NotFound from "./NotFound";
 import Transform from "./transform";
 import Success from "./success";
-import Funnels from "./funnels";
+import Funnels from "./Funnels";
 
 export { About, Budget, Custom, Home, NotFound, Transform, Success, Funnels };
