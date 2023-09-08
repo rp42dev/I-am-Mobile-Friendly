@@ -1,7 +1,7 @@
 import { Features5, Testimonials, Contact, Features2, Faq, Hero, Meta } from '../../components';
 import { features, faqData, hero, benefits, process, metaProps } from './data';
 
-const Custom = () => {
+const Funnels = () => {
 
     return (
         <>
@@ -18,4 +18,4 @@ const Custom = () => {
     );
 }
 
-export default Custom;
+export default Funnels;
