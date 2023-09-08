@@ -179,7 +179,7 @@ const services = [
                 icon: <Funnel size={32} />,
                 title: "Automated Funnel Building",
                 text: ["Are you in the coaching, or service-based business? I can help you automate your sales process with a custom-built sales funnel. I will create a sales funnel that will help you generate leads and convert them into paying customers."],
-                link: "/funnel",
+                link: "/funnels",
                 check: false
             },
             {
