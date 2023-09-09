@@ -14,6 +14,7 @@ import rp42 from '../assets/images/projects/rp42.webp';
 import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import from_lads_to_dads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
+import karen from '../assets/images/projects/karen.webp';
 
 const Projects = () => {
     return (
@@ -39,9 +40,14 @@ const Projects = () => {
                 }}
                 pagination={true}
                 loop={true}
-                modules={[EffectCube, Pagination, Autoplay]}
+                modules={[Pagination, Autoplay]}
                 className="swiper"
             >
+                <SwiperSlide>
+                    <a href="https://www.mayanurtures.net/" target="_blank" rel="noreferrer">
+                        <img className="img" src={karen} alt="karen" />
+                    </a>
+                </SwiperSlide>
                 <SwiperSlide>
                     <a href="https://tattooskworkshop.no/" target="_blank" rel="noreferrer">
                         <img className="img" src={tattoo_sk} alt="tattoo_sk" />
