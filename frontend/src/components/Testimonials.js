@@ -21,7 +21,7 @@ const data = [
         name: 'Karen',
         title: 'CEO of Mayanurtures.net',
         link: 'https://www.mayanurtures.net/',
-        description: 'One word to describe Raivis’ service is overdeliver. A kind person recommended him. Raivis gets to know his customers to get the job done quickly and with excellent quality. The service was supposed to be for creating a funnel and helping me out with my website. But, it’s more than just that. He fixed my logo which fits what my brand is about even the color scheme for my brand. We did explore font styles too. But, above all, he is easy to work with. Highly recommended!'
+        description: 'One word to describe Raivis’ service is overdeliver. A kind person recommended him. Raivis gets to know his customers to get the job done quickly and with excellent quality. The service was supposed to be for creating a funnel and helping me out with my website. But, it’s more than just that. He fixed my logo which fits what my brand. But, above all, he is easy to work with. Highly recommended!'
     },
     {
         id: 1,
@@ -45,7 +45,7 @@ const data = [
         name: 'Jane',
         title: 'Tattoo SK Workshop administrator',
         link: 'https://tattooskworkshop.no/',
-        description: 'Raivis made an amazing web page for us. I have tried it myself many times and I am very glad that I found it and our page looks very bright and professional. In a short time with 100% feedback, he takes into account all the wishes and also gives advice, which is often very helpful. Definitely made my life easier.'
+        description: 'Raivis made an amazing web page for us. I have tried it myself many times and I am very glad that I found it and our page looks very bright and professional. In a short time with 100% feedback, he takes into account all the wishes and also gives advice, which is often very helpful. Definitely made my life easier and I am very grateful to him for that. I recommend it to everyone.'
     },
 ]
 
