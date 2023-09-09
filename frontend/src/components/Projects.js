@@ -53,12 +53,7 @@ const Projects = () => {
                         <img className="img" src={tattoo_sk} alt="tattoo_sk" />
                     </a>
                 </SwiperSlide>
-
-                <SwiperSlide>
-                    <a href="https://rp42.dev/" target="_blank" rel="noreferrer">
-                        <img className="img" src={rp42} alt="rp42" />
-                    </a>
-                </SwiperSlide>
+                
                 <SwiperSlide>
                     <a href="https://fromladstodads.ie/" target="_blank" rel="noreferrer">
                         <img className="img" src={from_lads_to_dads} alt="from_lads_to_dads" />
