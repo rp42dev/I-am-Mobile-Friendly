@@ -14,7 +14,7 @@ import rp42 from '../assets/images/projects/rp42.webp';
 import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import from_lads_to_dads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
-import karen from '../assets/images/projects/karen.webp';
+import maya from '../assets/images/projects/maya.webp';
 
 const Projects = () => {
     return (
@@ -45,7 +45,7 @@ const Projects = () => {
             >
                 <SwiperSlide>
                     <a href="https://www.mayanurtures.net/" target="_blank" rel="noreferrer">
-                        <img className="img" src={karen} alt="karen" />
+                        <img className="img" src={maya} alt="maya Nurtures" />
                     </a>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -53,7 +53,7 @@ const Projects = () => {
                         <img className="img" src={tattoo_sk} alt="tattoo_sk" />
                     </a>
                 </SwiperSlide>
-                
+
                 <SwiperSlide>
                     <a href="https://fromladstodads.ie/" target="_blank" rel="noreferrer">
                         <img className="img" src={from_lads_to_dads} alt="from_lads_to_dads" />

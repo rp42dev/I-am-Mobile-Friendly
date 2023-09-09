@@ -12,13 +12,23 @@ import jeff from '../assets/images/testimonials/jeff.webp';
 import ed from '../assets/images/testimonials/ed.webp';
 import jane from '../assets/images/testimonials/jane.webp';
 import star from '../assets/images/star.svg';
+import karen from '../assets/images/testimonials/karen.webp';
 
 const data = [
+    {
+        id: 0,
+        image: karen,
+        name: 'Karen',
+        title: 'CEO of Mayanurtures.net',
+        link: 'https://www.mayanurtures.net/',
+        description: 'One word to describe Raivis’ service is overdeliver. A kind person recommended him. Raivis gets to know his customers to get the job done quickly and with excellent quality. The service was supposed to be for creating a funnel and helping me out with my website. But, it’s more than just that. He fixed my logo which fits what my brand is about even the color scheme for my brand. We did explore font styles too. But, above all, he is easy to work with. Highly recommended!'
+    },
     {
         id: 1,
         image: jeff,
         name: 'Jeff',
         title: 'Director of the board FLTD',
+        link: 'https://fromladstodads.ie/',
         description: 'Raivis has been an intergeral part of our online division in From Lads to Dads. His knowledge, expertise and understanding of the online section of our charity has been second to none. He has built and maintained our online division, bringing it together with the social media end which is very important to todays businesses. We are happy to count Raivis as part of our team.'
     },
     {
@@ -26,6 +36,7 @@ const data = [
         image: ed,
         name: 'Ed Tattoo',
         title: 'CEO of edtattoo.no',
+        link: 'https://edtattoo.no/',
         description: 'Raivis was hired as our web developer. Our industry is focused on internet and social network support. Thanks to Raivis, our company has achieved incredibly high results. Through his work, we have made contact with countless customers, and our customer base continues to grow every day. We are happy to have worked with Raivis..'
     },
     {
@@ -33,6 +44,7 @@ const data = [
         image: jane,
         name: 'Jane',
         title: 'Tattoo SK Workshop administrator',
+        link: 'https://tattooskworkshop.no/',
         description: 'Raivis made an amazing web page for us. I have tried it myself many times and I am very glad that I found it and our page looks very bright and professional. In a short time with 100% feedback, he takes into account all the wishes and also gives advice, which is often very helpful. Definitely made my life easier.'
     },
 ]
@@ -61,6 +73,7 @@ const Testimonials = () => {
                             <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full" />
                             <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
                             <p className="text-sm xl:text-lg font-medium">{item.title}</p>
+                            <a href={item.link} target="_blank" rel="noreferrer" className="text-sm xl:text-lg font-medium text-blue-500 hover:underline">{item.link}</a>
                             <p className="max-w-xl mt-4 text-sm xl:text-lg">{item.description}</p>
                             <div className="flex items-center justify-center mt-4 space-x-2">
                                 <img src={star} alt="star" className='w-8 h-8' />
