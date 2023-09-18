@@ -14,7 +14,6 @@ function App() {
               <NavBar />
               <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/mobile-website-transformation' element={<Transform />} />
                 <Route path='/budget-web-development' element={<Budget />} />
                 <Route path='/funnels' element={<Funnels />} />
                 <Route path='/custom-web-development' element={<Custom />} />

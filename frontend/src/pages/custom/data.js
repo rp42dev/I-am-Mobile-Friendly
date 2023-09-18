@@ -1,16 +1,16 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Web Design & Development for an Exceptional Online Presenc | Freelance Web Developer',
-    description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
+    title: 'Custom Mobile-Friendly Website Design & Development | Freelance Web Developer',
+    description: 'I specialize in custom mobile-friendly website design & development. I can help you create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
 }
 
 const hero = [
     {
-        title: 'Custom web',
+        title: 'Custom',
         bg: 'bg-base-200',
-        subtitle: 'Design & Development for an Exceptional Online Presence',
-        description: 'Unlock the potential of your business with customized, mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
+        subtitle: 'Crafted Website Design & Development',
+        description: 'Unique Mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
         image: require('../../assets/images/custom.svg').default,
         alt: 'Custom Website Design & Development displaying responsive design',
         btn: 'Get started',
@@ -23,7 +23,7 @@ const hero = [
 const process = [
     {
         id: 1,
-        bg: 'bg-base',
+        bg: 'bg-base-200',
         img: require('../../assets/images/prototype.svg').default,
         title: "Streamlined Development Process",
         description: "",
@@ -78,7 +78,7 @@ const features = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base-200',
+        bg: 'bg-base',
         text: "Key Features of My Custom Mobile-Friendly Websites",
         data: [
             {
@@ -110,47 +110,6 @@ const features = [
                 id: 6,
                 title: "Seamless Integration Capabilities",
                 text: "Enhance your website's functionality by seamlessly integrating third-party services and tools. Create a comprehensive online presence."
-            }
-        ]
-    }
-];
-
-const benefits = [
-    {
-        id: 1,
-        custom: true,
-        bg: 'bg-base-200',
-        text: "Benefits of Choosing My Services",
-        data: [
-            {
-                id: 1,
-                title: "Direct Communication, No Middleman",
-                text: "Experience clear and efficient communication by directly working with me throughout the project. Eliminate intermediaries for a personalized experience and better understanding of your needs."
-            },
-            {
-                id: 2,
-                title: "Customized Solutions for Your Business",
-                text: "Tailor-made solutions that understand the uniqueness of your business. I work closely with you to create a custom website that aligns perfectly with your brand and helps you achieve your goals."
-            },
-            {
-                id: 3,
-                title: "Competitive Pricing for Small Businesses",
-                text: "Accessible and affordable web development pricing for small businesses. Enjoy transparent pricing with no hidden fees, ensuring exceptional value for your investment."
-            },
-            {
-                id: 4,
-                title: "Fast Turnaround Time, Minimal Downtime",
-                text: "Quick website development to minimize downtime and maximize your online presence. My dedicated team works diligently to ensure your website is up and running as soon as possible."
-            },
-            {
-                id: 5,
-                title: "Ongoing Support and Maintenance",
-                text: "Comprehensive support and maintenance services beyond the initial development phase. I provide updates, enhancements, and address concerns to keep your website functioning smoothly."
-            },
-            {
-                id: 6,
-                title: "Mobile-Friendly Design for Seamless User Experience",
-                text: "Prioritize mobile responsiveness in all custom web development projects. Your website will seamlessly adapt to various mobile devices, ensuring a user-friendly experience for all visitors."
             }
         ]
     }
@@ -199,31 +158,5 @@ const faqData = [
     }
 ];
 
-const what = [
-    {
-        id: 1,
-        custom: false,
-        title: 'What is Custom Web Development?',
-        img: require('../../assets/images/modern.svg').default,
-        description: 'Custom web development involves the creation of unique and tailored online solutions that cater specifically to the needs and goals of your business. As a freelance web developer, I specialize in designing and building custom websites using modern technologies such as React and Django',
-        steps: [
-            {
-                id: 1,
-                title: 'Uniqueness and Personalization:',
-                text: "Custom web development allows for complete control over the design and functionality of your website. Every aspect can be tailored to reflect your brand identity, ensuring a unique and personalized online presence that resonates with your target audience."
-            },
-            {
-                id: 2,
-                title: 'Scalability and Future-Proofing:',
-                text: "Custom websites are built with scalability in mind, allowing for easy expansion and addition of new features as your business grows. By leveraging modern technologies, your website remains adaptable and future-proof, ensuring long-term success."
-            },
-            {
-                id: 3,
-                title: 'Enhanced Performance and User Experience:',
-                text: "Custom web development allows for optimized coding practices and performance enhancements, resulting in a website that loads quickly, is highly responsive, and provides a seamless user experience. This translates to higher engagement, increased conversions, and improved customer satisfaction."
-            },
-        ]
-    }
-]
 
-export { features, faqData, hero, benefits, process, metaProps, what }
+export { features, faqData, hero, process, metaProps }

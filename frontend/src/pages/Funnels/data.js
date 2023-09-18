@@ -1,16 +1,16 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Sales Funnel Development for coaching, or service-based business',
-    description: 'I offer custom sales funnel development services for coaching, or service-based business. I create highly effective sales funnels that help you reach more clients and grow your coaching, or service-based business.',
+    title: 'Custom Sales Funnel Development Services for coaching, or service-based business',
+    description: 'Sales funnel development services with automated email marketing for coaching or service-based businesses help you reach more clients, convert them into paying customers, and grow your coaching or service-based business.',
 }
 
 const hero = [
     {
         title: 'Let\'s build',
-        bg: 'bg-base',
+        bg: 'bg-base-200',
         subtitle: 'Funnel to grow your coaching, or service-based business',
-        description: "I offer sales funnel development services, with automated email marketing, for coaching, or service-based business. I create highly effective sales funnels that help you reach more clients, convert them into paying customers, and grow your coaching, or service-based business.",
+        description: "Sales funnel development services with automated email marketing for coaching or service-based businesses help you reach more clients, convert them into paying customers, and grow your coaching or service-based business.",
         image: require('../../assets/images/funnel1.svg').default,
         alt: 'Custom Sales Funnel Development for coaching, or service-based business',
         btn: 'Get started',
@@ -23,7 +23,7 @@ const hero = [
 const process = [
     {
         id: 1,
-        bg: 'bg-base',
+        bg: 'bg-base-200',
         img: require('../../assets/images/funnel3.svg').default,
         title: "Our Proven Funnel Building Process",
         description: "",
@@ -72,7 +72,7 @@ const features = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base-200',
+        bg: 'bg-base',
         text: "Why Opt for Our Funnel Building Service",
         data: [
             {
@@ -104,47 +104,6 @@ const features = [
                 id: 6,
                 title: "Email Automation",
                 text: "We automate email communication to help you reach more clients and grow your coaching, or service-based business. This includes setting up email sequences, creating email templates, and more."
-            }
-        ]
-    }
-];
-
-const benefits = [
-    {
-        id: 1,
-        custom: true,
-        bg: 'bg-base-200',
-        text: "Benefits of Choosing My Services",
-        data: [
-            {
-                id: 1,
-                title: "Direct Communication, No Middleman",
-                text: "Work directly with our experts throughout the project. No intermediaries, just clear, efficient communication."
-            },
-            {
-                id: 2,
-                title: "Specialized Services for coaching, or service-based business",
-                text: "We understand the uniqueness of coaching, or service-based business. Our funnels are designed to meet your specific needs and goals."
-            },
-            {
-                id: 3,
-                title: "Affordable Pricing for All Budgets",
-                text: "Our transparent pricing ensures coaching, or service-based business of all sizes can benefit from our services."
-            },
-            {
-                id: 4,
-                title: "Quick Turnaround Time",
-                text: "Quick website development to minimize downtimeWe know time is valuable. Our team works diligently to minimize downtime and maximize your online presence."
-            },
-            {
-                id: 5,
-                title: "Continuous Support and Updates",
-                text: "Our commitment extends beyond the launch. We provide continuous support, updates, and enhancements to keep your coaching funnel at its best."
-            },
-            {
-                id: 6,
-                title: "Mobile-Friendly Design for Seamless User Experience",
-                text: "All our funnels are designed to be mobile-friendly, ensuring a seamless user experience across all devices."
             }
         ]
     }
@@ -220,4 +179,4 @@ const what = [
     }
 ]
 
-export { features, faqData, hero, benefits, process, metaProps, what }
+export { features, faqData, hero, process, metaProps, what }

@@ -72,9 +72,6 @@ const NavBar = () => {
                         <Link to="/budget-web-development" className="tab tab-bordered">
                             Budget
                         </Link>
-                        <Link to="/mobile-website-transformation" className="tab tab-bordered">
-                            Transform
-                        </Link>
                         <Link to="/about-me" className="tab tab-bordered">
                             About Me
                         </Link>

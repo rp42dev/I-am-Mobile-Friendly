@@ -1,4 +1,4 @@
-import { PenNib, PiggyBank, Funnel, ArrowClockwise, Devices, ArrowArcRight } from "@phosphor-icons/react";
+import { PiggyBank, Funnel, Devices } from "@phosphor-icons/react";
 
 const hero = [
     {
@@ -22,64 +22,64 @@ const what = [
         bg: 'bg-base-300',
         title: 'What is a Mobile-Friendly Website?',
         img: require('../../assets/images/user.svg').default,
-        description: 'A mobile-friendly website is a website that is designed to provide an optimal user experience on various mobile devices, including smartphones and tablets. Mobile-friendly websites are responsive, meaning that they automatically adapt to the screen size of the device, ensuring that users can easily navigate and interact with the site. Here are some statistics that highlight the importance of mobile-friendly websites:',
+        description: 'A mobile-friendly website adapts to various mobile devices, ensuring an optimal user experience. Statistics emphasize the importance of mobile-friendliness:',
         steps: [
             {
                 id: 1,
-                text: "90% of users switch between devices to accomplish a goal [Source: Google]: Users expect a seamless experience across multiple devices. If your website is not mobile-friendly, users may abandon it in search of a more accessible alternative."
+                text: "About 90% of users switch between different devices, like desktop computers, smartphones, and tablets, to accomplish tasks or access information. This underscores the need for websites to be compatible with all these devices to maintain a consistent user experience."
             },
             {
                 id: 2,
-                text: "53% of mobile users abandon websites that take longer than three seconds to load [Source: Google]: Mobile users have little patience for slow-loading websites. A non-mobile-friendly website may result in high bounce rates and lost conversions."
+                text: "Approximately 53% of mobile users will leave a website if it loads too slowly. Mobile users expect quick access to information, and a mobile-friendly website is optimized to load swiftly on smaller screens and slower connections, reducing the risk of users leaving due to slow loading times."
             },
             {
                 id: 3,
-                text: "Mobile internet usage surpassed desktop usage, accounting for 54.8% of global web traffic [Source: Statista]: The majority of web traffic now comes from mobile devices. To stay relevant and tap into this vast user base, a mobile-friendly website is essential."
+                text: "Mobile internet usage has surpassed desktop usage, with mobile devices accounting for 54.8% of global web traffic. This shift in user behavior highlights the necessity for websites to prioritize mobile compatibility to reach and engage a significant portion of their audience effectively."
             },
         ]
     }
 ]
 
-const mobile = [
+const benefits = [
     {
         id: 1,
         custom: true,
         bg: 'bg-base-200',
-        text: 'The Amazing Perks of Mobile-Friendly Websites',
+        text: "Benefits of Choosing My Services",
         data: [
             {
                 id: 1,
-                title: "Enhanced User Experience",
-                text: "Mobile-friendly websites are designed to provide smooth navigation, intuitive interactions, and easy access to information. Users can have a positive experience while browsing your site on their mobile devices.",
+                title: "Direct Communication, No Middleman",
+                text: "Work directly with our experts throughout the project. No intermediaries, just clear, efficient communication."
             },
             {
                 id: 2,
-                title: "Increased Mobile Traffic",
-                text: "With the growing number of mobile users, having a mobile-friendly website helps you reach a larger audience. By catering to mobile users, you can attract more traffic and expand your customer base.",
+                title: "Specialized Services for coaching, or service-based business",
+                text: "We understand the uniqueness of coaching, or service-based business. Our funnels are designed to meet your specific needs and goals."
             },
             {
                 id: 3,
-                title: "Improved Search Engine Visibility",
-                text: "Search engines like Google prioritize mobile-friendly websites in their search results. Having a mobile-friendly site increases your chances of ranking higher, leading to better visibility and attracting organic traffic.",
+                title: "Affordable Pricing for All Budgets",
+                text: "Our transparent pricing ensures coaching, or service-based business of all sizes can benefit from our services."
             },
             {
                 id: 4,
-                title: "Faster Page Loading Speed",
-                text: "Mobile-friendly websites are optimized for mobile devices, ensuring faster loading times. This helps reduce bounce rates and keeps users engaged, as they don't have to wait for slow-loading pages.",
+                title: "Quick Turnaround Time",
+                text: "Quick website development to minimize downtimeWe know time is valuable. Our team works diligently to minimize downtime and maximize your online presence."
             },
             {
                 id: 5,
-                title: "Competitive Advantage",
-                text: "In today's digital landscape, having a mobile-friendly website is essential for staying ahead of the competition. A mobile-friendly site showcases your commitment to providing a seamless user experience, which differentiates you from competitors and positions your brand as customer-centric.",
+                title: "Continuous Support and Updates",
+                text: "Our commitment extends beyond the launch. We provide continuous support, updates, and enhancements to keep your coaching funnel at its best."
             },
             {
                 id: 6,
-                title: "Higher Conversion Rates",
-                text: "Streamlined mobile experiences make it easier for users to navigate your site, find information, and complete desired actions such as making a purchase or submitting a form. This can lead to improved conversion rates and better business outcomes.",
-            },
+                title: "Mobile-Friendly Design for Seamless User Experience",
+                text: "All our funnels are designed to be mobile-friendly, ensuring a seamless user experience across all devices."
+            }
         ]
     }
-]
+];
 
 const faqData = [
     {
@@ -162,7 +162,7 @@ const services = [
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Custom Web Development",
-                text: ["Let's embrace innovation together with our custom web development solutions. I specialize in crafting unique websites using modern technologies like React and Django, ensuring your online presence is as distinctive as your vision."],
+                text: ["Embrace innovation with our unique websites crafted using modern technologies like React and Django."],
                 link: "/custom-web-development",
                 check: false
             },
@@ -170,7 +170,7 @@ const services = [
                 id: 2,
                 icon: <PiggyBank size={32} />,
                 title: "Budget Web Development",
-                text: ["Our budget-friendly web development services are designed especially for small businesses. We use platforms like WordPress and templates to create professional websites that are not only affordable but also easy to maintain without compromising on quality."],
+                text: ["Affordable solutions for small businesses, utilizing platforms like WordPress and templates to maintain quality."],
                 link: "/budget-web-development",
                 check: false
             },
@@ -178,96 +178,14 @@ const services = [
                 id: 2,
                 icon: <Funnel size={32} />,
                 title: "Automated Funnel Building",
-                text: ["Are you in the coaching, or service-based business? I can help you automate your sales process with a custom-built sales funnel. I will create a sales funnel that will help you generate leads and convert them into paying customers."],
+                text: ["Streamline your sales process with a custom-built sales funnel, designed to generate leads and convert them into paying customers."],
                 link: "/funnels",
                 check: false
             },
-            {
-                id: 3,
-                icon:
-                    <div className="relative">
-                        <div className="absolute left-0 -top-3">
-                            <ArrowArcRight size={28} weight="light" />
-                        </div>
-                        <div>
-                            <Devices size={32} weight="light" />
-                        </div>
-                    </div>
-                ,
-                title: "Mobile Web Transformation",
-                text: ["If you currently have a non-mobile-friendly website, I can help you transform it into a mobile-friendly website. I will ensure that your website is optimized for mobile devices, providing a seamless user experience across various screen sizes."
-                ],
-                link: "/mobile-website-transformation",
-                check: false
-            },
         ]
 
     }
 ]
 
-const benefits = [
-    {
-        id: 1,
-        custom: false,
-        bg: 'bg-base-200',
-        title: 'Benefits working with me!',
-        description: '',
-        steps: [
-            {
-                id: 1,
-                check: false,
-                icon: <PenNib size={32} />,
-                title: "Customized Solutions",
-                text: ["I understand that every business is unique, and cookie-cutter solutions won't suffice. I take a personalized approach to each project, ensuring that the final product meets your specific needs and requirements that align with your business goals."],
-                link: "",
-            },
-            {
-                id: 2,
-                check: false,
-                icon: <PiggyBank size={32} />,
-                title: "Competitive Pricing",
-                text: ["As a freelancer, I understand the importance of affordability. I offer competitive pricing, with minimal upfront costs and no hidden fees. You only pay for the services you need, ensuring that you get the most value for your investment."],
-                link: "",
-            },
-            {
-                id: 3,
-                check: false,
-                icon: <ArrowClockwise size={32} />,
-                title: "Fast Turnaround Time",
-                text: ["I recognize that time is of the essence. I am committed to delivering your website within a reasonable timeframe. I work diligently to minimize downtime, ensuring that your business can start reaping the benefits of your new website as soon as possible."],
-                link: "",
-            },
-        ]
-    }
-]
 
-const process = [
-    {
-        id: 1,
-        custom: false,
-        title: 'Streamlined Development Process',
-        bg: 'bg-base-200',
-        button: 'Get started',
-        img: require('../../assets/images/process.svg').default,
-        description: '',
-        steps: [
-            {
-                id: 1,
-                title: 'Consultation',
-                text: "I begin by understanding your website goals and requirements. Through detailed discussions, I gain insights into your business, target audience, and desired functionalities. This allows me to provide you with a customized solution that precisely fits your needs and budget."
-            },
-            {
-                id: 2,
-                title: 'Design & Development',
-                text: "I will bring your vision to life. Using the latest technologies and following industry best practices, I create a mobile-friendly website that not only looks stunning but also performs exceptionally well. Ensuring that the final product meets your expectations."
-            },
-            {
-                id: 3,
-                title: 'Launch',
-                text: " Once the development phase is complete, I rigorously test your website to ensure its functionality, responsiveness, and overall user experience. After thorough quality assurance checks, I deploy your mobile-friendly website, making it fully operational and ready for use."
-            },
-        ]
-    }
-]
-
-export { hero, mobile, services, benefits, process, faqData, what }
+export { hero, services, faqData, what, benefits }

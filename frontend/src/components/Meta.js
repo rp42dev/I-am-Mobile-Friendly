@@ -23,8 +23,8 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-    title: 'Unique Web Design and Development | Web Design Ireland | Web Transformation',
-    description: 'I am a freelance web designer based in Ireland. I design and build mobile friendly websites for small businesses and individuals. I also provide Transformation to mobile friendly websites for existing websites.',
+    title: 'Web Development Services | Funnel Building Services',
+    description: 'I offer custom and budget-friendly web development services for small businesses and startups. I also offer Funnel Building services for coaching and service-based businesses.',
 };
 
 export default Meta;
