@@ -1,18 +1,18 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Sales Funnel Development Services for coaching, or service-based business',
-    description: 'Sales funnel development services with automated email marketing for coaching or service-based businesses help you reach more clients, convert them into paying customers, and grow your coaching or service-based business.',
+    title: 'Sales Funnel Development Services | Funnel Building Services',
+    text: 'Sales funnel development services services automated email marketing for coaching or service-based businesses help you reach more clients, convert them into paying customers.',
 }
 
 const hero = [
     {
-        title: 'Let\'s build',
-        bg: 'bg-base-200',
-        subtitle: 'Funnel to grow your coaching, or service-based business',
-        description: "Sales funnel development services with automated email marketing for coaching or service-based businesses help you reach more clients, convert them into paying customers, and grow your coaching or service-based business.",
+        title: 'Supercharge',
+        bg: 'bg-base',
+        subtitle: 'Your Business with Sales Funnels',
+        description: "Sales funnel development services with automated email marketing for coaching or service-based businesses. To help you reach more clients and convert them into paying customers.",
         image: require('../../assets/images/funnel1.svg').default,
-        alt: 'Custom Sales Funnel Development for coaching, or service-based business',
+        alt: 'Sales Funnel Development Services',
         btn: 'Get started',
         btn2: 'Learn more',
         link: '#contact',
@@ -26,7 +26,7 @@ const process = [
         bg: 'bg-base-200',
         img: require('../../assets/images/funnel3.svg').default,
         title: "Our Proven Funnel Building Process",
-        description: "",
+        text: "",
         steps: [
             {
                 id: 1,
@@ -73,37 +73,37 @@ const features = [
         id: 1,
         custom: true,
         bg: 'bg-base',
-        text: "Why Opt for Our Funnel Building Service",
+        text: "Key Benefits of Sales Funnel for Your Business",
         data: [
             {
-                id: 1,
-                title: "Sales Funnels For Businesses and Coaches",
-                text: "We create Sales funnels For Businesses and Coaches that are tailored to your unique needs and goals. Our funnels are designed to help you reach more clients and grow your coaching, or service-based business."
+                "id": 1,
+                "title": "Increased Client Reach",
+                "text": "The sales funnel can expand your reach by attracting a wider audience of potential clients."
             },
             {
-                id: 2,
-                title: "Boosting Conversions",
-                text: "Our strategies and design skills are all about one thing: bringing you more clients. We optimize every part of the funnel for the best conversion rates."
+                "id": 2,
+                "title": "Higher Conversion Rates",
+                "text": "With the help of automated email marketing and a well-structured funnel, you can expect to convert a larger percentage of leads into paying customers."
             },
             {
-                id: 3,
-                title: "Mastering Lead Generation",
-                text: "Building a strong client base begins with generating leads. We excel at crafting lead magnets and forms that effectively capture potential client information."
+                "id": 3,
+                "title": "Improved Customer Retention",
+                "text": "The funnel can also be designed to nurture and engage existing customers, enhancing their loyalty and increasing repeat business."
             },
             {
-                id: 4,
-                title: "User-Friendly Experience",
-                text: "A seamless and user-friendly journey through your funnel is vital. We prioritize user experience to keep potential clients engaged and committed to your coaching."
+                "id": 4,
+                "title": "Revenue Growth",
+                "text": "By converting more leads and retaining more customers, your coaching or service-based business can experience significant revenue growth."
             },
             {
-                id: 5,
-                title: "Data-Driven Insights:",
-                text: "A seamless and user-friendly journey through your funnel is vital. We prioritize user experience to keep potential clients engaged and committed to your coaching."
+                "id": 5,
+                "title": "Time Efficiency",
+                "text": "The automation in place with this funnel can save you time, allowing you to focus on other aspects of your business while the funnel works to convert and engage leads."
             },
             {
-                id: 6,
-                title: "Email Automation",
-                text: "We automate email communication to help you reach more clients and grow your coaching, or service-based business. This includes setting up email sequences, creating email templates, and more."
+                "id": 6,
+                "title": "Enhanced Brand Presence",
+                "text": "A well-optimized funnel can help your business stand out and create a stronger online presence, boosting brand awareness and credibility."
             }
         ]
     }
@@ -156,25 +156,26 @@ const what = [
     {
         id: 1,
         custom: false,
-        title: 'What is Custom Web Development?',
-        img: require('../../assets/images/modern.svg').default,
-        description: 'Custom web development involves the creation of unique and tailored online solutions that cater specifically to the needs and goals of your business. As a freelance web developer, I specialize in designing and building custom websites using modern technologies such as React and Django',
+        title: 'How It Works',
+        bg: 'bg-base-200',
+        img: require('../../assets/images/funnel2.svg').default,
+        text: 'Custom web development involves the creation of unique and tailored online solutions that cater specifically to the needs and goals of your business. As a freelance web developer, I specialize in designing and building custom websites using modern technologies such as React and Django',
         steps: [
             {
-                id: 1,
-                title: 'Uniqueness and Personalization:',
-                text: "Custom web development allows for complete control over the design and functionality of your website. Every aspect can be tailored to reflect your brand identity, ensuring a unique and personalized online presence that resonates with your target audience."
+                "id": 1,
+                "title": "Lead Generation",
+                "text": "Attract potential clients through marketing strategies and create awareness to generate leads."
             },
             {
-                id: 2,
-                title: 'Scalability and Future-Proofing:',
-                text: "Custom websites are built with scalability in mind, allowing for easy expansion and addition of new features as your business grows. By leveraging modern technologies, your website remains adaptable and future-proof, ensuring long-term success."
+                "id": 2,
+                "title": "Email Automation",
+                "text": "Automate email marketing to engage leads with valuable content, guide them towards a purchase, and nurture customer relationships."
             },
             {
-                id: 3,
-                title: 'Enhanced Performance and User Experience:',
-                text: "Custom web development allows for optimized coding practices and performance enhancements, resulting in a website that loads quickly, is highly responsive, and provides a seamless user experience. This translates to higher engagement, increased conversions, and improved customer satisfaction."
-            },
+                "id": 3,
+                "title": "Boost Conversions",
+                "text": "Optimize the funnel to increase conversion rates, turning leads into paying customers and driving business growth."
+            }
         ]
     }
 ]
