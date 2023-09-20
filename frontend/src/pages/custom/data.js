@@ -79,7 +79,7 @@ const features = [
         id: 1,
         custom: true,
         bg: 'bg-base',
-        text: "Key Features of My Custom Mobile-Friendly Websites",
+        text: "Key Features of Custom Websites",
         data: [
             {
                 id: 1,
