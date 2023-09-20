@@ -71,13 +71,13 @@ const data = [
 
 const VideoTestimonials = () => {
     return (
-        <section className="py-24">
-            <div className="container mx-auto w-full px-4 text-center">
+        <section className="pt-24">
+            <div className="container mx-auto w-full text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl mb-4">
                     What our clients say about me
                 </h2>
             </div>
-            <div className="container mx-auto w-full px-4 text-center d-flex flex-wrap justify-center space-x-4 space-y-4">
+            <div className="container mx-auto w-full text-center d-flex flex-wrap justify-center sm:space-x-4 space-y-4">
                 {data0.map((item) => (
                     <PhoneFrame key={item.id} name={item.name} title={item.title} iframe={item.iframe} />
                 ))}
@@ -91,7 +91,7 @@ const Testimonials = () => {
     return (
         <>
             <VideoTestimonials />
-        <section className="pb-24">
+        <section className="pt-24 pb-12">
             
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -104,7 +104,7 @@ const Testimonials = () => {
             >
                 {data.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="flex flex-col items-center justify-center w-full mx-auto text-center">
+                        <div className="flex flex-col px-4 items-center justify-center w-full mx-auto text-center">
                        
                             <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full mx-auto" />
                             <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
