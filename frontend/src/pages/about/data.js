@@ -3,11 +3,11 @@ import { PenNib, PiggyBank, ArrowClockwise, Devices, ArrowArcRight } from "@phos
 const hero = [
     {
         title: 'I\'m Raivis',
-        subtitle: 'Web Developer & Designer - Empowering Businesses with Mobile-Friendly Web Solutions',
-        bg: 'bg-base',
-        description: 'As a freelance web developer based in Ireland, I am dedicated to helping small businesses and individuals establish a strong online presence. With my expertise, you can expect a mobile-friendly website that perfectly aligns with your unique needs and budget. Let\'s dive into the details of how I can transform your online presence and drive your business forward..',
-        image: require('../../assets/images/me.svg').default,
-        alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices - Image of me',
+        subtitle: 'Funnel & Web Developer',
+        bg: 'bg-base-200',
+        description: 'Dedicated to empowering coaching and service-based businesses with sustainable growth through expert sales funnel strategies, lead generation, email automation, and conversion optimization. Committed to guiding clients in the coaching and service industries to achieve online success and realize their business objectives.',
+        image: require('../../assets/images/me.webp'),
+        alt: 'me',
         btn: 'Contact me',
         btn2: 'My Vision',
         link: '#contact',
@@ -17,9 +17,9 @@ const hero = [
 
 const vision = [
     {
-        title: 'My Vision: Unlocking the Power of Mobile-Friendly Design',
-        bg: 'bg-base-200',
-        description: 'my vision is to empower businesses and individuals by creating websites that work seamlessly on all devices. In today\'s digital landscape, having a mobile- friendly website is crucial for success.It ensures that your audience can access your content and engage with your brand, regardless of the device they are using.By making websites accessible, attractive, and optimized for mobile users, I strive to contribute to the digital world and enhance user engagement..',
+        title: 'My Vision',
+        bg: 'bg-base',
+        description: 'I am dedicated to helping small coaching and service-based businesses establish a strong online presence. Attract more customers, increase sales, and grow your business with funnels and websites that are tailored to your unique needs and budget.',
         btn: '',
         link: '',
     }
@@ -28,52 +28,13 @@ const vision = [
 const mission = [
     {
         title: 'My Mission',
-        description: 'I am on a mission to make the web a more user-friendly and accessible place, one mobile-friendly website at a time. I want to help businesses and individuals reach their full potential by creating websites that work seamlessly on all devices.',
+        description: '',
         btn: '',
         link: '',
     }
 ]
 
-const mobile = [
-    {
-        id: 1,
-        custom: true,
-        text: 'Key Features of Mobile-Friendly Websites',
-        description: 'Mobile-friendly websites are designed to fit the small screen of mobile devices and provide a seamless browsing experience. They are optimized for mobile devices and provide a better user experience. They are also optimized for search engines to increase my online visibility.',
-        data: [
-            {
-                id: 1,
-                title: 'Responsive Design',
-                text: "Seamlessly adapts to different screen sizes and resolutions."
-            },
-            {
-                id: 2,
-                title: 'Mobile-Friendly Content',
-                text: "Optimized for mobile devices to increase my online visibility."
-            },
-            {
-                id: 3,
-                title: 'Enhanced Readability',
-                text: "Improved readability for better user engagement and conversion rate."
-            },
-            {
-                id: 4,
-                title: 'Fast Loading Speed',
-                text: "Optimized for fast loading speed to improve user experience and search engine ranking."
-            },
-            {
-                id: 5,
-                title: 'SEO Friendly',
-                text: "Optimized for search engines to increase my online visibility"
-            },
-            {
-                id: 6,
-                title: 'Improved User Experience',
-                text: "Improved user experience for better engagement and conversion rate."
-            },
-        ]
-    }
-]
+
 
 const faqData = [
     {
@@ -133,4 +94,4 @@ const metaProps = {
     description: 'Freelance web developer based in Ireland, I am dedicated to helping small businesses and individuals establish a strong online presence. With my expertise, you can expect a mobile-friendly website that perfectly aligns with your unique needs and budget.',
 }
 
-export { hero, mobile, faqData, vision, mission, metaProps }
+export { hero, faqData, vision, mission, metaProps }

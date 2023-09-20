@@ -2,7 +2,8 @@ import Card from "./Card";
 
 const Features = ({ data }) => {
     return (
-        <div id="features" className="container mx-auto px-4 my-24">
+        <div id="features" className={`py-24 ${data[0].bg}`}>
+        <div className="container mx-auto px-4 my-24">
             <div className="mx-auto">
                 <div className="w-full">
                     <h2 className="text-3xl sm:text-center font-extrabold sm:text-4xl">
@@ -26,6 +27,7 @@ const Features = ({ data }) => {
                         )
                     })}
                 </div>
+            </div>
             </div>
         </div>
     )
