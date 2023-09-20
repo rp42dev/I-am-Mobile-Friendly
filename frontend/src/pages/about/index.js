@@ -9,7 +9,9 @@ const About = () => {
             <Meta {...metaProps} />
             <Hero data={hero[0]} />
             <Features4 data={vision} />
-            <Features data={services} bg={ "base-200" } />
+            <div className="bg-base-200">
+                <Features data={services} bg={"base-200"} />
+            </div>
             <Testimonials />
             <Contact />
             <Faq data={faqData} />

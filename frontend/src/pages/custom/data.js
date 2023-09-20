@@ -7,9 +7,9 @@ const metaProps = {
 
 const hero = [
     {
-        title: 'Custom',
+        title: 'Custom tailored',
         bg: 'bg-base-200',
-        subtitle: 'Crafted Website Design & Development',
+        subtitle: 'Mobile-friendly websites',
         description: 'Unique Mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
         image: require('../../assets/images/custom.svg').default,
         alt: 'Custom Website Design & Development displaying responsive design',

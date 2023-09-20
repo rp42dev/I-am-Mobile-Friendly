@@ -2,9 +2,9 @@ import { PiggyBank, Funnel, Devices } from "@phosphor-icons/react";
 
 const hero = [
     {
-        title: "Let's Build Website!",
-        bg: 'bg-base-200',
-        subtitle: 'That brings you more business!',
+        title: "Let's build",
+        bg: 'bg-base',
+        subtitle: 'your online presence',
         description: 'I offer custom and budget-friendly web development services for small businesses and startups. Whether you need a custom website or a mobile-friendly version of your existing site, I can help. I also offer Funnel Building services for coaching and service-based businesses.',
         image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
@@ -44,7 +44,7 @@ const benefits = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base-100',
+        bg: 'bg-base',
         text: "Benefits of Choosing My Services",
         data: [
             {

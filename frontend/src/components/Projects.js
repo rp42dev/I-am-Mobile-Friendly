@@ -17,7 +17,7 @@ import maya from '../assets/images/projects/maya.webp';
 
 const Projects = () => {
     return (
-        <div className="bg-base-200 relative py-24 overflow-hidden">
+        <div className="relative py-24 overflow-hidden">
             <div className="container mx-auto w-full px-4 text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl pb-6">
                     Recent Projects and Clients
