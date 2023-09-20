@@ -7,10 +7,9 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCube, Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 
-import rp42 from '../assets/images/projects/rp42.webp';
 import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import from_lads_to_dads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';

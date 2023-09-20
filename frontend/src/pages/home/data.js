@@ -19,7 +19,7 @@ const what = [
     {
         id: 1,
         custom: false,
-        bg: 'bg-base-300',
+        bg: 'bg-base-200',
         title: 'What is a Mobile-Friendly Website?',
         img: require('../../assets/images/user.svg').default,
         description: 'A mobile-friendly website adapts to various mobile devices, ensuring an optimal user experience. Statistics emphasize the importance of mobile-friendliness:',
@@ -44,7 +44,7 @@ const benefits = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base-200',
+        bg: 'bg-base-100',
         text: "Benefits of Choosing My Services",
         data: [
             {
