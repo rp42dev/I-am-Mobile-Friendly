@@ -29,7 +29,12 @@ const data0 = [
         title: 'CEO of Jeffshealthyliving.com',
         iframe: <iframe width="320" height="600" src="https://youtube.com/embed/Wb83muatHbk?si=oI4NHT7HCnDjQeni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     },
-
+    {
+        id: 2,
+        name: 'Ed',
+        title: 'CEO of riseenergy.co.uk',
+        iframe: <iframe width="320" height="600" src="https://youtube.com/embed/ayG8NvNND7c?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    }
 ]
 
 const data = [
