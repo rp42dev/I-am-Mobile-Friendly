@@ -14,6 +14,7 @@ import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import from_lads_to_dads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
 import maya from '../assets/images/projects/maya.webp';
+import andrejfineart from '../assets/images/projects/andrejfineart.webp';
 
 const Projects = () => {
     return (
@@ -42,6 +43,11 @@ const Projects = () => {
                 modules={[Pagination, Autoplay]}
                 className="swiper"
             >
+                <SwiperSlide>
+                    <a href="https://andrejfineart.com/" target="_blank" rel="noreferrer">
+                        <img className="img" src={andrejfineart} alt="andrejfineart" />
+                    </a>
+                </SwiperSlide>
                 <SwiperSlide>
                     <a href="https://www.mayanurtures.net/" target="_blank" rel="noreferrer">
                         <img className="img" src={maya} alt="maya Nurtures" />
