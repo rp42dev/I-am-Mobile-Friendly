@@ -14,7 +14,7 @@ import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import from_lads_to_dads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
 import maya from '../assets/images/projects/maya.webp';
-import andrejfineart from '../assets/images/projects/andrejfineart.webp';
+import andrejfineart from '../assets/images/projects/andrejsfinert.webp';
 
 const Projects = () => {
     return (
