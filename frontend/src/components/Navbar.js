@@ -67,7 +67,7 @@ const NavBar = () => {
                         <Link to="/custom-web-development" className="tab tab-bordered">
                             Custom
                         </Link>
-                        <Link to="/funnels" className="tab tab-bordered">
+                        <Link to="https://www.coachautomationdone4you.com/" className="tab tab-bordered">
                             Funnels
                         </Link>
                         <Link to="/budget-web-development" className="tab tab-bordered">

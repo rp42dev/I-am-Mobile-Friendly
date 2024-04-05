@@ -179,7 +179,7 @@ const services = [
                 icon: <Funnel size={32} />,
                 title: "Automated Funnel Building",
                 text: ["Streamline your sales process with a custom-built sales funnel, designed to generate leads and convert them into paying customers."],
-                link: "/funnels",
+                link: "https://www.coachautomationdone4you.com/",
                 check: false
             },
         ]
