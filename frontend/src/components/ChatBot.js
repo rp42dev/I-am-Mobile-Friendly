@@ -47,6 +47,11 @@ const ChatBot = () => {
         }
     };
 
+    const scroll = () => {
+        const chatArea = document.querySelector('.chat-area');
+        chatArea.scrollTop = chatArea.scrollHeight;
+    };
+
 
     const handleSend = (event) => {
         event.preventDefault();
@@ -72,18 +77,22 @@ const ChatBot = () => {
         sendMessageToOpenAI(userInput);
     };
 
+    useEffect(() => {
+        scroll();
+    }, [messages]);
+
 
     return (
-        <div className="w-full max-w-md h-full min-h-screen bg-base-300 p-3 pt-4 pb-4 overflow-auto flex flex-col justify-between">
-            <div>
+        <div className="w-full max-w-md h-full min-h-screen p-3 bg-base-200 overflow-auto flex flex-col justify-between">
+            <div className=" bg-base-200 pb-3">
                 <button className="btn btn-circle btn-sm m-2">
                     <label htmlFor="my-drawer" aria-label="close sidebar" className=""><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg></label>
                 </button>
             </div>
 
-            <div className="h-full flex flex-col justify-end bg-base-300 rounded-t">
+            <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
               
-                <div className="chat-area p-4 rounded-lg ">
+                <div className="chat-area p-3 rounded-lg max-h-screen overflow-auto">
                     <div className="chat w-full chat-start">
                         <div className="chat-bubble bg-base-100">Hello! I'm a chatbot. Ask me anything!</div>
                     </div>
@@ -95,7 +104,7 @@ const ChatBot = () => {
 
                 </div>
             </div>
-            <div className="mt-4">
+            <div className="pt-3 pb-8 bg-base-200">
                 <form action="" method="post" onSubmit={handleSend}>
                     <input type="text" placeholder="Type here" name="userInput" id="userInput" className="input p-2 input-base w-full" disabled={disabled} />
                     <div className="flex justify-end mt-2">

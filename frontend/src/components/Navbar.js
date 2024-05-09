@@ -57,7 +57,7 @@ const NavBar = () => {
                             </svg>
                         </button>
 
-                        <Link to="/" className="btn btn-ghost normal-case text-xl"><img src={logo} className="w-10 h-10 mr-2" alt="logo" />I Am Mobile Friendly</Link>
+                        <Link to="/" className="btn btn-ghost normal-case sm:text-xl text-sm"><img src={logo} className="w-10 h-10 mr-2" alt="logo" />I Am Mobile Friendly</Link>
                     </div>
 
                     <div className="tabs hidden lg:flex">
