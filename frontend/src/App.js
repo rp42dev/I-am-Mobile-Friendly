@@ -25,7 +25,6 @@ function App() {
                 </Routes>
               </Router>
               <Footer />
-              <div className="bg-pattern"></div>
             </Drawer>
           </div>
         </div>

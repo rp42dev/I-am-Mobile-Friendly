@@ -52,8 +52,8 @@ const SideDrawer = ({ open, setOpen }) => {
                             </li>
                             <li>
 
-                                <Link to="/mobile-website-transformation" className="tab tab-bordered text-lg h-12">
-                                    Transform
+                                <Link to="https://www.coachautomationdone4you.com/" className="tab tab-bordered text-lg h-12">
+                                    Funnels
                                 </Link>
                             </li>
 
