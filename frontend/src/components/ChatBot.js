@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ArrowUp } from "@phosphor-icons/react";
 import axios from 'axios';
 
 
@@ -72,7 +73,7 @@ const ChatBot = () => {
 
         // Clear the input field
         event.target.userInput.value = '';
-        
+
         // Call function to send user input to OpenAI
         sendMessageToOpenAI(userInput);
     };
@@ -91,24 +92,38 @@ const ChatBot = () => {
             </div>
 
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
-              
+
                 <div className="chat-area p-3 rounded-lg overflow-auto">
                     <div className="chat w-full chat-start">
                         <div className="chat-bubble bg-base-100">Hello! I'm a chatbot. Ask me anything!</div>
                     </div>
+
                     {messages.map((message, index) => (
                         <div key={index} className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
                             <div className={`chat-bubble ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base-200'}`}>{message.text}</div>
                         </div>
                     ))}
-
+                    {disabled &&
+                        <div className="chat w-full chat-start">
+                            <div className="chat-bubble bg-base-100">
+                                <span className="loading loading-dots loading-md">
+                                </span>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
             <div className="pt-3 pb-8 bg-base-200">
                 <form action="" method="post" onSubmit={handleSend}>
-                    <input type="text" placeholder="Type here" name="userInput" id="userInput" className="input p-2 input-base w-full" disabled={disabled} />
-                    <div className="flex justify-end mt-2">
-                        <button className="btn btn-outline btn-primary m-1" disabled={disabled}>Send</button>
+                    <div className="w-full relative">
+                        <input type="text" placeholder="Type here" name="userInput" id="userInput" className="focus:outline-none input p-2 input-base w-full" disabled={disabled} />
+
+                        <button className="bg-base-200 join-item absolute right-0 p-2.5 m-1 rounded tooltip tooltip-left" disabled={disabled} data-tip="Send Message">
+                            <span className='text-white/50'>
+                                <ArrowUp size={20} />
+                            </span>
+                        </button>
+
                     </div>
                 </form>
             </div>

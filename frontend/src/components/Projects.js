@@ -18,7 +18,7 @@ import andrejfineart from '../assets/images/projects/andrejsfinert.webp';
 
 const Projects = () => {
     return (
-        <div className="relative py-24 overflow-hidden">
+        <div className="py-24 overflow-hidden">
             <div className="container mx-auto w-full px-4 text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl pb-6">
                     Recent Projects and Clients

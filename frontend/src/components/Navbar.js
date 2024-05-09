@@ -47,7 +47,7 @@ const NavBar = () => {
     return (
         <>
             <SideDrawer open={open} setOpen={setOpen} />
-            <div className={`w-full fixed top-0 px-4 sm:px-6 z-20 bg-base-100/90 transform transition-transform ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+            <div className={`w-full fixed top-0 px-4 sm:px-6 z-10 bg-base-100/90 transform transition-transform ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
 
                 <div className="container mx-auto px-0 sm:px-2 flex items-center justify-between py-4">
                     <div className="flex-1 lg:ml-0 flex-row flex items-center">
@@ -60,28 +60,26 @@ const NavBar = () => {
                         <Link to="/" className="btn btn-ghost normal-case sm:text-xl text-sm"><img src={logo} className="w-10 h-10 mr-2" alt="logo" />I Am Mobile Friendly</Link>
                     </div>
 
-                    <div className="tabs hidden lg:flex">
+                    <div role=" tablist" className="tabs tabs-bordered hidden lg:flex">
                         <Link to="/" className="tab tab-bordered tab-active">
                             Home
                         </Link>
-                        <Link to="/custom-web-development" className="tab tab-bordered">
+                        <Link to="/custom-web-development" className="tab">
                             Custom
                         </Link>
-                        <Link to="https://www.coachautomationdone4you.com/" className="tab tab-bordered">
+                        <Link to="https://www.coachautomationdone4you.com/" className="tab">
                             Funnels
                         </Link>
-                        <Link to="/budget-web-development" className="tab tab-bordered">
+                        <Link to="/budget-web-development" className="tab">
                             Budget
                         </Link>
-                        <Link to="/about-me" className="tab tab-bordered">
+                        <Link to="/about-me" className="tab">
                             About Me
                         </Link>
                     </div>
                     <div className="hidden lg:flex me-6">
-                        <a href="#contact" className="ml-6 btn btn-outline btn-primary rounded-lg py-0" >
-                            <span className={`${theme === 'dark' ? 'text-white' : 'text-primary hover:text-white'}`}>
-                                Get started
-                            </span>
+                        <a href="#contact" className="ml-6 btn btn-outline btn-primary text-primary hover:text-white rounded-lg py-0" >
+                            Get started
                         </a>
                     </div>
 
