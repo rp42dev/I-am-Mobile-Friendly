@@ -92,7 +92,7 @@ const ChatBot = () => {
 
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
               
-                <div className="chat-area p-3 rounded-lg h-full overflow-auto">
+                <div className="chat-area p-3 rounded-lg overflow-auto">
                     <div className="chat w-full chat-start">
                         <div className="chat-bubble bg-base-100">Hello! I'm a chatbot. Ask me anything!</div>
                     </div>
