@@ -23,6 +23,7 @@ const ChatBot = () => {
             }
             return cookieValue;
         }
+        
 
         setCsrfToken(getCookie('csrftoken'));
     }, []);
