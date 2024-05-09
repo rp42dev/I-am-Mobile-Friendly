@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const PhoneFrame = ({ key, name, title, iframe }) => {
+const PhoneFrame = ({ iframe }) => {
 
     return (
         <div className="mockup-phone border-primary">

@@ -14,5 +14,7 @@ import Hero from "./Hero";
 import Meta from "./Meta";
 import SideDrawer from "./SideDrawer";
 import Badge from "./Badge";
+import ChatBot from "./ChatBot";
+import Drawer from "./Drawer";
 
-export { Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Features4, Features5, Why, Projects, Faq, Hero, Meta, SideDrawer, Badge };
+export { Drawer, ChatBot, Features, Testimonials, Contact, Footer, NavBar, Features2, Features3, Features4, Features5, Why, Projects, Faq, Hero, Meta, SideDrawer, Badge };

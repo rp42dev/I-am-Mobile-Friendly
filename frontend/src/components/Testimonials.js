@@ -31,7 +31,7 @@ const data0 = [
     },
     {
         id: 2,
-        name: 'Ed',
+        name: 'Edit',
         title: 'CEO of riseenergy.co.uk',
         iframe: <iframe width="320" height="600" src="https://youtube.com/embed/ayG8NvNND7c?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     }
