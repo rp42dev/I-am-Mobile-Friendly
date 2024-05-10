@@ -1,4 +1,4 @@
-import { ArrowBendRightDown } from "@phosphor-icons/react";
+import { ArrowBendRightDown, CalendarDots } from "@phosphor-icons/react";
 import { useContext } from 'react';
 import ThemeContext from '../ThemeContext';
 
@@ -16,7 +16,7 @@ const Hero = ({ data }) => {
                     </div>
                     <div className="relative flex-1 fade-in sm:text-center xl:text-left">
                         <span className="w-20 h-2 mb-12"></span>
-                        <h1 className="flex flex-col text-5xl font-black leading-none font-bebas-neue sm:text-8xl text-primary">
+                        <h1 className="flex flex-col text-5xl font-black leading-none font-bebas-neue sm:text-8xl text-primary uppercase">
                             {data.title}
                             <span className="text-3xl sm:text-5xl max-w-3xl text-base-content font-bold mt-2">
                                 {data.subtitle}
@@ -27,17 +27,14 @@ const Hero = ({ data }) => {
                         </p>
                         {data.btn && (
                             <div className="mt-8 mx-auto xl:mx-0 join flex grid grid-cols-2 w-full sm:w-8/12">
-                                <a href={data.link} className="btn px-4 py-2 btn-primary border-2 join-item">
-                                    <span className='text-white'>
-                                        {data.btn ? data.btn : "Learn more"}
-                                    </span>
+                                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r" target='_blank' className="btn px-4 py-2 btn-primary border-2 join-item">
+                                    Book A Call
+                                    <CalendarDots size={32} />
                                 </a>
-                                <a href={data.link2} className="px-4 py-0 btn btn-outline btn-primary  text-primary hover:white  text-md join-item">
+                                <a href={data.link2} className="px-4 py-0 btn btn-outline btn-primary text-md join-item">
                                     <div className={`flex items-center justify-center`}>
-                                        
                                         <span className="mr-2 mt-1">{data.btn2 ? data.btn2 : "Learn more"}</span>
                                             <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
-                                       
                                     </div>
                                 </a>
                             </div>

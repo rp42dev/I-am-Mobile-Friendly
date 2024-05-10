@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import ThemeContext from '../ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
+import { LinkedinLogo } from "@phosphor-icons/react";
+
 
 import SideDrawer from './SideDrawer';
 import logo from '../logo.svg';
@@ -48,7 +50,6 @@ const NavBar = () => {
         <>
             <SideDrawer open={open} setOpen={setOpen} />
             <div className={`w-full fixed top-0 px-4 sm:px-6 z-10 bg-base-100/90 transform transition-transform ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
-
                 <div className="container mx-auto px-0 sm:px-2 flex items-center justify-between py-4">
                     <div className="flex-1 lg:ml-0 flex-row flex items-center">
                         <button className="btn lg:hidden -ml-2 px-2 btn-ghost rounded-md" onClick={handleDrawerToggle}>
@@ -64,17 +65,20 @@ const NavBar = () => {
                         <Link to="/" className="tab tab-bordered tab-active">
                             Home
                         </Link>
-                        <Link to="/custom-web-development" className="tab">
-                            Custom
-                        </Link>
-                        <Link to="https://www.coachautomationdone4you.com/" className="tab">
-                            Funnels
-                        </Link>
                         <Link to="/budget-web-development" className="tab">
-                            Budget
+                            Websites
                         </Link>
-                        <Link to="/about-me" className="tab">
-                            About Me
+                        <Link to="/custom-web-development" className="tab">
+                           Web-apps
+                        </Link>
+                        <Link to="https://www.coachautomationdone4you.com/" target='_blank' className="tab">
+                            Lead Automation
+                        </Link>
+                        <Link to="https://www.linkedin.com/in/rp42/" target='_blank' className="tab">
+                            About Me &nbsp;
+                            <span className="inline-block text-primary">
+                                <LinkedinLogo size={24} />
+                            </span>
                         </Link>
                     </div>
                     <div className="hidden lg:flex me-6">

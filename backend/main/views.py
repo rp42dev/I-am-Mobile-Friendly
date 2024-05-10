@@ -6,7 +6,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from openai import OpenAI, APIError, APIConnectionError, RateLimitError
+from openai import OpenAI
 import time
 
 # Set your OpenAI API key
@@ -54,6 +54,7 @@ def react_app_view(request):
         # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)
 
+
 def load_openai_assistant(assistant_id, vs_ID):
     """Load the OpenAI assistant and create a new thread for interaction."""
     assistant = client.beta.assistants.retrieve(assistant_id)
@@ -65,6 +66,7 @@ def load_openai_assistant(assistant_id, vs_ID):
         }
     )
     return thread, assistant
+
 
 def wait_on_run(run, thread):
     """Wait for the assistant run to complete or progress to next stage."""
@@ -78,6 +80,7 @@ def wait_on_run(run, thread):
         )
         time.sleep(0.5)
     return run
+
 
 def get_assistant_response(thread, assistant_id, userInput):
     """Interact with the assistant by sending user input and retrieving the response."""
@@ -102,6 +105,7 @@ def get_assistant_response(thread, assistant_id, userInput):
     except IndexError:
         return "No response from the assistant, please try again."
 
+
 @require_POST
 @csrf_exempt
 def openai_api(request):
@@ -119,6 +123,7 @@ def openai_api(request):
         return JsonResponse({'response': response})
     else:
         return JsonResponse({'error': 'Invalid request method'})
+
 
 @require_POST
 @csrf_exempt

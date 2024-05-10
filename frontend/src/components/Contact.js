@@ -1,10 +1,7 @@
-import image from '../assets/images/letter.svg'
-import { LinkedinLogo, Calendar } from "@phosphor-icons/react";
-
-import ContactForm from './ContactForm'
+import image from '../assets/images/meeting.svg'
+import { Calendar } from "@phosphor-icons/react";
 
 const Contact = () => {
-
     return (
         <div id="contact" className="px-4 bg-base-200 ">
             <div className="container mx-auto">
@@ -14,21 +11,12 @@ const Contact = () => {
                             <span className="block text-primary">Let's talk</span>	
                         </h2>
                         <p className="text-lg xl:text-xl lg:z-10 relative mx-auto lg:mx-0 mt-2 max-w-2xl">
-                            Book a 30 minute consultation to discuss your project for free.
+                            Schedule a free consultation to discuss your project or ask any questions you may have. I'm here to help you bring your ideas to life.
                         </p>
-
-                        <a href="https://calendly.com/i-am-mobile-friendly/30min" target="_blank" rel="noreferrer" className="btn btn-primary btn-md">Book a free consultation<Calendar size={24} weight="light" className='ml-3'/> </a>
-
-                        <p className="text-lg xl:text-xl lg:z-10 relative mx-auto lg:mx-0 mt-2 max-w-2xl">
-                            Or send me a message if you prefer. I'll get back to you within 24 hours.
-                        </p>
-
-                        <ContactForm />
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r" target="_blank" rel="noreferrer" className="btn btn-primary btn-md">Book a free consultation<Calendar size={24} weight="light" className='ml-3'/> </a>
                     </div>
-                    <div className="z-10 grid  hidden lg:block">
-
-                        <img width="300" height="100" className="object-cover mx-auto my-auto" src={image} alt="Paper plane" />
-
+                    <div className="grid  hidden lg:block">
+                        <img width="400" height="300" className="object-cover mx-auto my-auto z-0" src={image} alt="Paper plane" />
                     </div>
                 </div>
             </div>

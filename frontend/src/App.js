@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import { Home, Budget, Custom, About, NotFound, Success, Funnels } from './pages';
+import { Home, Budget, Custom, NotFound, Success } from './pages';
 import { Drawer, NavBar, Footer } from './components';
 import ThemeProvider from './ThemeProvider';
 
@@ -17,9 +17,7 @@ function App() {
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='/budget-web-development' element={<Budget />} />
-                  <Route path='/funnels' element={<Funnels />} />
                   <Route path='/custom-web-development' element={<Custom />} />
-                  <Route path='/about-me' element={<About />} />
                   <Route path='/contact-success' element={<Success />} />
                   <Route path='*' element={<NotFound />} />
                 </Routes>

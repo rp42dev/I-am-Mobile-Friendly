@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { X, ArrowBendRightDown } from "@phosphor-icons/react";
+import { X, ArrowBendRightDown, LinkedinLogo } from "@phosphor-icons/react";
 import { Link, useLocation } from 'react-router-dom';
 import ThemeContext from '../ThemeContext';
 
@@ -42,24 +42,25 @@ const SideDrawer = ({ open, setOpen }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/custom-web-development" className="tab tab-bordered text-lg h-12">
-                                    Custom
-                                </Link></li>
-                            <li>
                                 <Link to="/budget-web-development" className="tab tab-bordered text-lg h-12">
-                                    Budget
+                                    Websites
                                 </Link>
                             </li>
                             <li>
-
-                                <Link to="https://www.coachautomationdone4you.com/" className="tab tab-bordered text-lg h-12">
+                                <Link to="/custom-web-development" className="tab tab-bordered text-lg h-12">
+                                    Web-apps
+                                </Link></li>
+                            <li>
+                                <Link to="https://www.coachautomationdone4you.com/" target='_blank' className="tab tab-bordered text-lg h-12">
                                     Funnels
                                 </Link>
                             </li>
-
                             <li>
-                                <Link to="/about-me" className="tab tab-bordered text-lg h-12">
-                                    About Me
+                                <Link to="https://www.linkedin.com/in/rp42/" target='_blank' className="tab">
+                                    About Me &nbsp;
+                                    <span className="inline-block text-primary">
+                                        <LinkedinLogo size={24} />
+                                    </span>
                                 </Link>
                             </li>
 

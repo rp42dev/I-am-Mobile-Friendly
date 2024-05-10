@@ -1,17 +1,14 @@
-import { PenNib, PiggyBank, ArrowClockwise } from "@phosphor-icons/react";
-
-
 const metaProps = {
-    title: 'Budget-Friendly Web Design Services | Raivis',
-    description: 'I specialize in affordable budget web development services. I can help you create a mobile-friendly website that not only fits your budget but also drives success in the digital world.',
+    title: 'Affordable Website Development Services | Mobile-Friendly & Budget-Friendly',
+    description: 'Discover affordable web development services that establish a strong online presence without exceeding your budget. Get a mobile-friendly website using WordPress and cPanel. Learn more about our rapid launch process and user-friendly CMS.',
 }
 
 const hero = [
     {
-        title: 'Affordable',
+        title: 'Website',
         bg: 'bg-base-200',
-        subtitle: 'Website Development Services',	
-        description: 'I specialize in affordable budget web development services. I can help you create a mobile-friendly website that not only fits your budget but also drives success in the digital world.',
+        subtitle: 'Development Services',
+        description: 'Affordable web development services that help you establish a strong online presence without breaking the bank. Get a mobile-friendly website that fits your budget and drives success in the digital world.',
         image: require('../../assets/images/budget.svg').default,       
         alt: 'Budget mobile friendly website development Displaying a responsive website on a desktop, tablet, and mobile phone',
         btn: 'Get started',
@@ -26,37 +23,66 @@ const solution = [
         id: 1,
         custom: true,
         bg: 'bg-base',
-        text: 'Benefits of Budget-Friendly Web Design',
+        text: 'Benefits of Our Website Development',
         data: [
             {
                 id: 1,
                 title: 'Affordability:',
-                text: "Professional Websites at Lower Costs Obtain a professional website at a fraction of the cost of custom development, all while maintaining quality.Utilize tools like WordPress and cPanel for visually appealing websites that meet your goals within your budget."
+                text: "Obtain a professional website at a fraction of the cost of custom development, leveraging tools like WordPress and cPanel for visually appealing websites that align with your goals and budget."
             },
             {
                 id: 2,
                 title: 'Quick Turnaround:',
-                text: "Establish your online presence quickly to seize opportunities and outpace competitors. With expertise in pre-made templates, we'll get your website up and running in no time, minimizing downtime and maximizing business prospects."
+                text: "Establish your online presence swiftly with expertise in pre-made templates, minimizing downtime and maximizing business prospects."
             },
             {
                 id: 3,
                 title: 'User-Friendly CMS:',
-                text: "Manage your website effortlessly with intuitive interfaces like WordPress and cPanel. Make content updates and additions without technical expertise. Say goodbye to costly maintenance fees and hello to independence."
+                text: "Effortlessly manage your website using intuitive interfaces like WordPress and cPanel, reducing maintenance costs and enhancing independence."
             },
             {
                 id: 4,
                 title: 'Quality Designs:',
-                text: "Stand out with visually appealing and modern website designs. Choose from a range of pre-designed templates that leave a lasting impression on your target audience, representing your business effectively."
+                text: "Stand out with modern, visually appealing website designs using a variety of pre-designed templates that make a lasting impression."
             },
             {
                 id: 5,
-                title: 'Quality Designs:',
-                text: "Opt for shared hosting or managed WordPress hosting. Shared hosting offers cost-effective solutions by sharing server resources. Managed WordPress hosting provides enhanced performance and security. Find the best hosting option to suit your needs and budget."
+                title: 'Hosting Options:',
+                text: "Choose between shared hosting for cost-effective solutions or managed WordPress hosting for enhanced performance and security tailored to your needs and budget."
             },
             {
                 id: 6,
                 title: 'Scalability:',
-                text: "Start small and scale effortlessly. Our budget-friendly web development services ensure easy expansion. Add new features and functionalities as your business grows, staying equipped to meet the demands of your expanding customer base."
+                text: "Start small and expand seamlessly with budget-friendly web development services that enable easy growth and adaptation."
+            }
+        ]
+    }
+];
+
+const process = [
+    {
+        id: 1,
+        custom: false,
+        title: 'Development Process',
+        bg: 'bg-base-200',
+        button: 'Get started',
+        img: require('../../assets/images/process.svg').default,
+        description: '',
+        steps: [
+            {
+                id: 1,
+                title: 'Consultation',
+                text: "We begin by understanding your website goals and needs through detailed discussions about your business, target audience, and desired features. This process allows us to create a tailored solution that aligns with your requirements and budget."
+            },
+            {
+                id: 2,
+                title: 'Design & Development',
+                text: "We design a visually appealing website using WordPress or other builders, making sure to reflect your brand identity. We ensure it is mobile-friendly, user-friendly, and cost-effective. Throughout the process, we keep you informed and incorporate your feedback to refine the design."
+            },
+            {
+                id: 3,
+                title: 'Launch',
+                text: "After completing the website, we conduct thorough testing to ensure seamless functionality across various devices. We take care of setting up hosting and domain registration for a smooth launch. Your website is now live and poised to attract visitors and facilitate business growth."
             }
         ]
     }
@@ -66,84 +92,57 @@ const solution = [
 const faqData = [
     {
         id: 1,
-        question: "What is budget-friendly, mobile-friendly web design?",
-        answer: "Budget-friendly, mobile-friendly web design refers to the creation of visually appealing and functional websites that are accessible on various mobile devices while being cost-effective for businesses."
+        question: "What are the benefits of affordable web development services?",
+        answer: "Our affordable web development services provide you with a professional website at a fraction of the cost of custom development. We leverage tools like WordPress and cPanel to create visually appealing websites that align perfectly with your goals and budget."
     },
     {
         id: 2,
-        question: "Is budget-friendly, mobile-friendly web design of lesser quality?",
-        answer: "No, it's a misconception that budget-friendly web design compromises on quality. With the right expertise and tools, a mobile-friendly website can be developed within budget without sacrificing visual appeal or functionality."
+        question: "How quickly can I establish my online presence with your services?",
+        answer: "With our expertise in pre-made templates, we can swiftly establish your online presence, allowing you to capitalize on opportunities and stay ahead of competitors. Our rapid launch process minimizes downtime and maximizes business prospects."
     },
     {
         id: 3,
-        question: "What are pre-made templates?",
-        answer: "Pre-made templates are pre-designed website layouts that can be customized to suit your brand and content. They offer a cost-effective solution for website development, as they eliminate the need for extensive design work from scratch."
+        question: "How user-friendly are the content management systems (CMS) you use?",
+        answer: "We use intuitive interfaces like WordPress and cPanel, allowing you to effortlessly manage your website. You can make content updates and additions without technical expertise, reducing maintenance costs and enhancing your independence."
     },
     {
         id: 4,
-        question: "Can I customize a pre-made template to match my brand?",
-        answer: "Absolutely! Pre-made templates are highly customizable, allowing you to incorporate your brand colors, logo, and content to create a cohesive online presence that aligns with your brand identity."
+        question: "What kind of designs can I expect for my website?",
+        answer: "Expect modern and visually appealing designs that help your business stand out. Choose from a variety of pre-designed templates that leave a lasting impression on your target audience and effectively represent your business."
     },
     {
         id: 5,
-        question: "Is it possible to have a mobile-friendly website on a limited budget?",
-        answer: "Yes, it is possible to have a mobile-friendly website on a limited budget. By leveraging budget-friendly web development services, you can ensure that your website is accessible and optimized for mobile devices without overspending."
+        question: "What hosting options do you offer for my website?",
+        answer: "You can opt for shared hosting for cost-effective solutions by sharing server resources. Alternatively, choose managed WordPress hosting for enhanced performance and security tailored to your specific needs and budget."
     },
     {
         id: 6,
-        question: "Can I manage the content on my budget-friendly, mobile-friendly website myself?",
-        answer: "Yes, one of the advantages of modern content management systems like WordPress and cPanel is their user-friendly interfaces, empowering you to manage and update your website's content independently."
+        question: "How scalable are your budget-friendly web development services?",
+        answer: "Our services are designed to help you start small and expand seamlessly. Easily add new features and functionalities as your business grows to meet the demands of your expanding customer base."
     },
     {
         id: 7,
-        question: "What is the difference between shared hosting and managed WordPress hosting?",
-        answer: "Shared hosting involves multiple websites sharing server resources, making it a cost-effective option. Managed WordPress hosting, on the other hand, provides a dedicated environment optimized for WordPress websites, offering enhanced performance and security."
+        question: "What is involved in the consultation phase of the development process?",
+        answer: "We start by thoroughly understanding your website goals, business specifics, target audience, and desired features. This detailed discussion helps us create a tailored solution that perfectly aligns with your requirements and budget."
     },
     {
         id: 8,
-        question: "Can I upgrade my budget-friendly, mobile-friendly website in the future?",
-        answer: "Absolutely! As your business grows and your requirements change, your website can be easily upgraded to incorporate new features and functionalities. The scalability of budget-friendly web development ensures that your website can adapt to your evolving needs."
+        question: "Can you describe the design and development process?",
+        answer: "We design visually appealing websites using WordPress or other builders, ensuring that your brand identity is reflected in the design. We prioritize mobile-friendliness, user-friendliness, and cost-effectiveness throughout the process."
     },
     {
         id: 9,
-        question: "Will my budget-friendly, mobile-friendly website be responsive on all devices?",
-        answer: "Yes, one of the core principles of mobile-friendly web design is responsiveness. Your website will be optimized to automatically adapt and provide an optimal user experience on various devices, including smartphones, tablets, and desktop computers."
+        question: "What happens during the website launch phase?",
+        answer: "After completing the website, we conduct comprehensive testing to ensure seamless functionality across different devices. We also assist with setting up hosting and domain registration for a smooth and successful launch."
     },
     {
         id: 10,
-        question: "Can I integrate third-party plugins or tools into my budget-friendly, mobile-friendly website?",
-        answer: "Yes, depending on your specific needs, third-party plugins or tools can be integrated into your website to enhance its functionality and provide additional features. These integrations can be customized to align with your budget-friendly web development project."
+        question: "How will my website attract visitors and facilitate business growth?",
+        answer: "With our services, your website is now live and optimized to attract visitors. The quality design, user-friendly interface, and efficient hosting options contribute to enhancing your online presence and driving business growth."
     }
 ];
 
 
-const process = [
-    {
-        id: 1,
-        custom: false,
-        title: 'My Development Process',
-        bg: 'bg-base-200',
-        button: 'Get started',
-        img: require('../../assets/images/process.svg').default,
-        description: '',
-        steps: [
-            {
-                id: 1,
-                title: 'Consultation',
-                text: "I start by understanding your website goals and needs. Through detailed discussions, I learn about your business, target audience, and desired features. This helps me create a tailored solution that fits your requirements and budget."
-            },
-            {
-                id: 2,
-                title: 'Design & Development',
-                text: "I offer competitive pricing, with minimal upfront costs and no hidden fees. You only pay for the services you need, ensuring you get the most value for your investment."
-            },
-            {
-                id: 3,
-                title: 'Launch',
-                text: "I thoroughly test your website to ensure it works smoothly, adapts to different devices, and provides an excellent user experience. I launch your mobile-friendly website, making it fully functional and ready for use."
-            },
-        ]
-    }
-]
+
 
 export { hero, process, solution, faqData, metaProps }

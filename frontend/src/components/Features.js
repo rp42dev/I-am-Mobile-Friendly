@@ -23,6 +23,7 @@ const Features = ({ data }) => {
                                 icon={item.icon}
                                 link={item.link}
                                 check={item.check}
+                                target={item.target}
                             />
                         )
                     })}

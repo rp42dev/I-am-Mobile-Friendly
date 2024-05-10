@@ -87,7 +87,6 @@ const VideoTestimonials = () => {
                     <PhoneFrame key={item.id} name={item.name} title={item.title} iframe={item.iframe} />
                 ))}
             </div>
-
         </section>
     )
 }
@@ -96,7 +95,7 @@ const Testimonials = () => {
     return (
         <>
             <VideoTestimonials />
-        <section className="pt-24 pb-12">
+        <section className="py-24">
             
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

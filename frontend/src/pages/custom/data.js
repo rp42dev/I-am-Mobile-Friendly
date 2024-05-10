@@ -1,16 +1,16 @@
 import { PenNib, Strategy, ChatCircleDots, Code, CloudArrowUp, Bug } from "@phosphor-icons/react";
 
 const metaProps = {
-    title: 'Custom Mobile-Friendly Website Design & Development | Freelance Web Developer',
-    description: 'I specialize in custom mobile-friendly website design & development. I can help you create a mobile-friendly website that perfectly aligns with your unique needs and budget.',
+    title: 'Custom Web-App Development Services',
+    description: 'Discover custom web applications tailored to your unique business needs. Our dynamic, responsive, and user-friendly web apps offer endless customization possibilities to help your business stand out from the competition.',
 }
 
 const hero = [
     {
-        title: 'Custom tailored',
+        title: 'Custom',
         bg: 'bg-base-200',
-        subtitle: 'Mobile-friendly websites',
-        description: 'Unique Mobile-friendly websites created using modern technologies like React and Django. Whether you\'re in Ireland or anywhere in the world, I offer professional services to help you establish a strong online presence.',
+        subtitle: 'Web-app Development',
+        description: 'Custom web applications tailored to your unique business needs. Dynamic, responsive, and user-friendly web applications with endless customization possibilities to help you stand out from the competition.',
         image: require('../../assets/images/custom.svg').default,
         alt: 'Custom Website Design & Development displaying responsive design',
         btn: 'Get started',
@@ -79,7 +79,7 @@ const features = [
         id: 1,
         custom: true,
         bg: 'bg-base',
-        text: "Key Features of Custom Websites",
+        text: "Key Features of Custom Web applications",
         data: [
             {
                 id: 1,
@@ -89,7 +89,7 @@ const features = [
             {
                 id: 2,
                 title: "Utilizing Modern Technologies for Superior Performance",
-                text: "Leverage modern technologies like React, Node, and Django to create dynamic and scalable websites with exceptional functionality and performance."
+                text: "Leverage modern technologies like React, and Django to create dynamic and scalable websites with exceptional functionality and performance."
             },
             {
                 id: 3,
@@ -117,46 +117,51 @@ const features = [
 
 const faqData = [
     {
-        question: "What is custom mobile-friendly web design?",
-        answer: "I provide custom mobile-friendly web design services as a freelance developer. This involves creating visually appealing, highly functional, and user-friendly websites specifically designed for mobile devices. I use responsive design techniques, modern technologies, and optimized coding practices to ensure seamless user experiences across different screen sizes and devices."
+        question: "What is custom app development?",
+        answer: "Custom app development involves creating applications tailored to specific business needs and requirements. It goes beyond off-the-shelf solutions to provide unique functionalities and features that address specific challenges or goals."
     },
     {
-        question: "Why is custom mobile-friendly web design important?",
-        answer: "In today's digital landscape, mobile devices have become the primary means of accessing the internet. Custom mobile-friendly websites are crucial for businesses to effectively reach and engage their target audience. They improve user experience, increase search engine visibility, boost conversion rates, and enhance overall customer satisfaction."
+        question: "What is custom web app development, and why is it beneficial for my business?",
+        answer: "Custom web app development involves creating unique applications tailored to your business needs. It offers benefits such as enhanced functionality, scalability, and a personalized user experience that can address specific challenges or goals."
     },
     {
-        question: "How long does it take to develop a custom mobile-friendly website?",
-        answer: "The development timeline for a custom mobile-friendly website depends on factors such as project complexity, design requirements, and functionality scope. As a freelance developer, I prioritize delivering high-quality websites within reasonable timeframes. During the initial consultation, I provide an estimated timeline based on your specific needs."
+        question: "How do you ensure that the custom web app aligns with my business goals and audience needs?",
+        answer: "We start with a thorough consultation phase to understand your business objectives, target audience, and requirements. This helps us develop a tailored plan and prototype that aligns with your vision."
     },
     {
-        question: "What technologies are used in custom mobile-friendly web design?",
-        answer: "As a freelance developer, I utilize modern technologies like React, a popular JavaScript library for building user interfaces, and Django, a robust and scalable Python web framework. These technologies enable me to create dynamic and responsive custom mobile-friendly websites that cater to your unique business requirements."
+        question: "Can I provide feedback during the development process?",
+        answer: "Absolutely! We value your input and encourage feedback throughout the development stages, including prototyping and testing. Your insights help us refine the app to meet your expectations."
     },
     {
-        question: "Can I update the content on my custom mobile-friendly website myself?",
-        answer: "Yes, I offer user-friendly content management systems (CMS) that allow you to effortlessly update and manage your website's content. I provide guidance on effectively using the CMS, empowering you to make changes, add new content, and keep your website up-to-date without requiring technical expertise."
+        question: "What technologies do you use for custom web app development?",
+        answer: "We leverage modern technologies like React, Django, and other frameworks to ensure superior performance, scalability, and security for your custom web app."
     },
     {
-        question: "Will my custom mobile-friendly website be compatible with all mobile devices?",
-        answer: "Absolutely! I understand the importance of cross-device compatibility in today's mobile-driven world. The custom mobile-friendly websites I create are designed and developed to be compatible with a wide range of mobile devices, including smartphones and tablets. Thorough testing and optimization ensure flawless functionality on various platforms, screen sizes, and operating systems."
+        question: "How long does it typically take to develop a custom web app?",
+        answer: "The development timeline varies based on project complexity and requirements. We provide transparent timelines during the planning phase and ensure timely delivery without compromising quality."
     },
     {
-        question: "Can I integrate third-party services and tools into my custom mobile-friendly website?",
-        answer: "Certainly! I offer seamless integration of third-party services and tools to enhance the functionality and capabilities of your custom mobile-friendly website. Whether it's integrating payment gateways, social media platforms, or customer relationship management (CRM) systems, I ensure smooth integration and seamless operation."
+        question: "Do you handle app deployment and hosting?",
+        answer: "Yes, we take care of deploying your custom web app to the hosting environment of your choice. We ensure a seamless transition from development to the live environment."
     },
     {
-        question: "Will my custom mobile-friendly website be search engine optimized?",
-        answer: "Yes, search engine optimization (SEO) is an integral part of my web development process. I follow industry best practices and adhere to Google's guidelines to optimize your website for search engines. From optimized code structure and meta tags to keyword research and on-page optimization, I implement strategies that improve your website's visibility and organic search rankings."
+        question: "What measures do you take to ensure the security of custom web apps?",
+        answer: "We prioritize app security and implement industry-standard practices such as data encryption, secure authentication methods, and regular security audits to protect user data."
     },
     {
-        question: "Can I request additional features and functionalities for my custom mobile-friendly website?",
-        answer: "Certainly! I encourage clients to share specific requirements and ideas for additional features and functionalities. I carefully evaluate your requests and provide professional recommendations to enhance your website's performance and user experience. I am committed to turning your vision into reality and delivering a website that exceeds your expectations."
+        question: "Can you integrate third-party services or APIs into custom web apps?",
+        answer: "Absolutely! We have expertise in seamlessly integrating third-party services and tools to enhance your web app's functionality and user experience."
     },
     {
-        question: "How much does custom mobile-friendly web design cost?",
-        answer: "The cost of custom mobile-friendly web design varies depending on factors such as project scope, complexity, design requirements, and desired functionalities. As a freelance developer, I believe in fair and transparent pricing. After understanding your specific needs, I provide a detailed quote outlining the costs involved. My pricing structure is competitive and tailored to the requirements of small businesses."
+        question: "What support and maintenance services do you offer after the app is deployed?",
+        answer: "We provide ongoing support and maintenance services post-deployment to address any issues, implement updates, and ensure optimal performance and security of your custom web app."
+    },
+    {
+        question: "How can I get started with custom web app development services?",
+        answer: "Feel free to reach out to us for a consultation! We'll discuss your app ideas, goals, and requirements, and guide you through the development process to bring your vision to life."
     }
 ];
 
+export default faqData;
 
 export { features, faqData, hero, process, metaProps }

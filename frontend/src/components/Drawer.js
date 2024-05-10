@@ -10,7 +10,7 @@ const Drawer = ({ children }) => {
         <div className="drawer drawer-end h-dvh">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" checked={drawerOpen} onChange={() => setDrawerOpen(!drawerOpen)} />
             <div className="drawer-content h-dvh ">
-                <label htmlFor="my-drawer" className={`btn btn-primary text-white drawer-button fixed bottom-8 z-30 right-8 ${drawerOpen ? 'hidden' : ''}`}>Chat &nbsp; 
+                <label htmlFor="my-drawer" className={`btn btn-primary drawer-button fixed bottom-8 z-30 right-8 ${drawerOpen ? 'hidden' : ''}`}>Chat &nbsp; 
                     <Robot size={32} />
                 </label>
                 {children}

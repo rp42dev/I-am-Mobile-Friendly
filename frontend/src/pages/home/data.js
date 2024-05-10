@@ -1,42 +1,56 @@
-import { PiggyBank, Funnel, Devices } from "@phosphor-icons/react";
+import { AppWindow, Funnel, Devices } from "@phosphor-icons/react";
 
 const hero = [
     {
         title: "Let's build",
         bg: 'bg-base',
-        subtitle: 'your online presence',
-        description: 'I offer custom and budget-friendly web development services for small businesses and startups. Whether you need a custom website or a mobile-friendly version of your existing site, I can help. I also offer Funnel Building services for coaching and service-based businesses.',
+        subtitle: 'Your Online Presence',
+        description: "Whether you need a budget-friendly website, custom app, or want to automate your lead generation process for your online business, I can create a personalized solution tailored to your specific needs and budget.",
         image: require('../../assets/images/responsive.svg').default,
         alt: 'Responsive Website Design & Development displaying a Desktop, Tablet, Mobile Devices',
-        btn: 'Get started',
+        btn: 'Book A Call',
         btn2: 'Learn more',
-        link: '#contact',
+        link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r',
         link2: '#features'
     }
 ]
 
-const what = [
+
+const services = [
     {
         id: 1,
         custom: false,
+        title: 'My Services - What I Can Do for You!',
         bg: 'bg-base-200',
-        title: 'What is a Mobile-Friendly Website?',
-        img: require('../../assets/images/user.svg').default,
-        description: 'A mobile-friendly website adapts to various mobile devices, ensuring an optimal user experience. Statistics emphasize the importance of mobile-friendliness:',
+        description: '',
         steps: [
             {
                 id: 1,
-                text: "About 90% of users switch between different devices, like desktop computers, smartphones, and tablets, to accomplish tasks or access information. This underscores the need for websites to be compatible with all these devices to maintain a consistent user experience."
+                icon: <Devices size={32} />,
+                title: "Web-App Development",
+                text: ["Websites or applications tailored to your unique needs, featuring custom features and functionalities."],
+                link: "/custom-web-development",
+                check: false
             },
             {
                 id: 2,
-                text: "Approximately 53% of mobile users will leave a website if it loads too slowly. Mobile users expect quick access to information, and a mobile-friendly website is optimized to load swiftly on smaller screens and slower connections, reducing the risk of users leaving due to slow loading times."
+                icon: < AppWindow size={ 32} />,
+                title: "Website Development",
+                text: ["Solutions for small businesses and startups looking to establish a strong online presence on a budget."],
+                link: "/budget-web-development",
+                check: false
             },
             {
-                id: 3,
-                text: "Mobile internet usage has surpassed desktop usage, with mobile devices accounting for 54.8% of global web traffic. This shift in user behavior highlights the necessity for websites to prioritize mobile compatibility to reach and engage a significant portion of their audience effectively."
+                id: 2,
+                icon: <Funnel size={32} />,
+                title: "Lead Generation Automation",
+                text: ["Automated funnels, email sequences, and landing pages designed to generate leads for your online business."],
+                link: "https://www.coachautomationdone4you.com/",
+                target: '_blank',
+                check: false
             },
         ]
+
     }
 ]
 
@@ -50,32 +64,32 @@ const benefits = [
             {
                 id: 1,
                 title: "Direct Communication, No Middleman",
-                text: "Work directly with our experts throughout the project. No intermediaries, just clear, efficient communication."
+                text: "Work directly with me to ensure clear communication and a personalized approach to your project needs and goals."
             },
             {
                 id: 2,
-                title: "Specialized Services for coaching, or service-based business",
-                text: "We understand the uniqueness of coaching, or service-based business. Our funnels are designed to meet your specific needs and goals."
+                title: "Services for coaching, or service-based business",
+                text: "From From website design to lead generation automation, all solutions for coaching and service-based businesses."
             },
             {
                 id: 3,
                 title: "Affordable Pricing for All Budgets",
-                text: "Our transparent pricing ensures coaching, or service-based business of all sizes can benefit from our services."
+                text: "Competitive pricing for small businesses and startups to access quality development services without breaking the bank."
             },
             {
                 id: 4,
-                title: "Quick Turnaround Time",
-                text: "Quick website development to minimize downtimeWe know time is valuable. Our team works diligently to minimize downtime and maximize your online presence."
+                title: "Quick Turnaround Time for Delivery",
+                text: "Timely delivery of projects to ensure that your website is up and running as soon as possible after development."
             },
             {
                 id: 5,
                 title: "Continuous Support and Updates",
-                text: "Our commitment extends beyond the launch. We provide continuous support, updates, and enhancements to keep your coaching funnel at its best."
+                text: "Ongoing support and updates keep your website functional and up-to-date with the latest technologies and trends."
             },
             {
                 id: 6,
-                title: "Mobile-Friendly Design for Seamless User Experience",
-                text: "All our funnels are designed to be mobile-friendly, ensuring a seamless user experience across all devices."
+                title: "Mobile-Friendly Design for All Devices",
+                text: "Mobile compatibility ensures your website is accessible for various devices, including smartphones and tablets."
             }
         ]
     }
@@ -84,108 +98,56 @@ const benefits = [
 const faqData = [
     {
         id: 1,
-        question: "What is budget-friendly, mobile-friendly web design?",
-        answer: "Budget-friendly, mobile-friendly web design refers to the creation of visually appealing and functional websites that are accessible on various mobile devices while being cost-effective for businesses."
+        question: "Why should I choose your website development services?",
+        answer: "By choosing my services, you get direct communication and a personalized approach tailored to your project needs and goals."
     },
     {
         id: 2,
-        question: "Is budget-friendly, mobile-friendly web design of lesser quality?",
-        answer: "No, it's a misconception that budget-friendly web design compromises on quality. With the right expertise and tools, a mobile-friendly website can be developed within budget without sacrificing visual appeal or functionality."
+        question: "What types of businesses can benefit from your services?",
+        answer: "My services are ideal for coaching and service-based businesses, offering tailored solutions from website design to lead generation automation."
     },
     {
         id: 3,
-        question: "What are pre-made templates?",
-        answer: "Pre-made templates are pre-designed website layouts that can be customized to suit your brand and content. They offer a cost-effective solution for website development, as they eliminate the need for extensive design work from scratch."
+        question: "Are your website development solutions affordable for startups and small businesses?",
+        answer: "Yes, I provide budget-friendly options that allow startups and small businesses to establish a strong online presence without exceeding their budget."
     },
     {
         id: 4,
-        question: "Can I customize a pre-made template to match my brand?",
-        answer: "Absolutely! Pre-made templates are highly customizable, allowing you to incorporate your brand colors, logo, and content to create a cohesive online presence that aligns with your brand identity."
+        question: "How quickly can I expect my project to be delivered?",
+        answer: "I ensure timely project delivery so that your website is operational as soon as possible after development is completed."
     },
     {
         id: 5,
-        question: "Is it possible to have a mobile-friendly website on a limited budget?",
-        answer: "Yes, it is possible to have a mobile-friendly website on a limited budget. By leveraging budget-friendly web development services, you can ensure that your website is accessible and optimized for mobile devices without overspending."
+        question: "Do you offer ongoing support and updates after the website launch?",
+        answer: "Absolutely! You'll receive continuous support and updates to keep your website functional and up-to-date with the latest technologies and trends."
     },
     {
         id: 6,
-        question: "Can I manage the content on my budget-friendly, mobile-friendly website myself?",
-        answer: "Yes, one of the advantages of modern content management systems like WordPress and cPanel is their user-friendly interfaces, empowering you to manage and update your website's content independently."
+        question: "Is my website design optimized for mobile devices?",
+        answer: "Yes, I prioritize mobile-friendly design to ensure your website is accessible and user-friendly on smartphones, tablets, and other devices."
     },
     {
         id: 7,
-        question: "What is the difference between shared hosting and managed WordPress hosting?",
-        answer: "Shared hosting involves multiple websites sharing server resources, making it a cost-effective option. Managed WordPress hosting, on the other hand, provides a dedicated environment optimized for WordPress websites, offering enhanced performance and security."
+        question: "What kind of custom solutions do you offer for website development?",
+        answer: "I specialize in custom web-app development, creating websites or applications with unique features and functionalities tailored to your specific needs."
     },
     {
         id: 8,
-        question: "Can I upgrade my budget-friendly, mobile-friendly website in the future?",
-        answer: "Absolutely! As your business grows and your requirements change, your website can be easily upgraded to incorporate new features and functionalities. The scalability of budget-friendly web development ensures that your website can adapt to your evolving needs."
+        question: "How can lead generation automation benefit my online business?",
+        answer: "With automated funnels, email sequences, and landing pages, you can efficiently generate leads and grow your online business."
     },
     {
         id: 9,
-        question: "Will my budget-friendly, mobile-friendly website be responsive on all devices?",
-        answer: "Yes, one of the core principles of mobile-friendly web design is responsiveness. Your website will be optimized to automatically adapt and provide an optimal user experience on various devices, including smartphones, tablets, and desktop computers."
+        question: "How can I schedule a consultation or book your services?",
+        answer: "You can book a call directly through my calendar [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r) or learn more about my services by clicking 'Learn more'."
     },
     {
         id: 10,
-        question: "Can I integrate third-party plugins or tools into my budget-friendly, mobile-friendly website?",
-        answer: "Yes, depending on your specific needs, third-party plugins or tools can be integrated into your website to enhance its functionality and provide additional features. These integrations can be customized to align with your budget-friendly web development project."
-    },
-    {
-        id: 11,
-        question: "What is Funnel Building?",
-        answer: "Funnel Building is the process of creating automated sales funnels that help you generate leads and convert them into paying customers. It involves a series of steps that guide users through the sales process, from awareness to purchase."
-    },
-    {
-        id: 12,
-        question: "What is a sales funnel?",
-        answer: "A sales funnel is a marketing concept that describes the process of converting prospects into paying customers. It involves a series of steps that guide users through the sales process, from awareness to purchase."
-    },
-    {
-        id: 13,
-        question: "What are the stages of a sales funnel?",
-        answer: "The stages of a sales funnel are awareness, interest, decision, and action. At each stage, users are provided with relevant information and guided towards the next step in the sales process."
-    },
+        question: "What features are included in your budget website development services?",
+        answer: "My budget website development services offer affordable solutions tailored for small businesses and startups, focusing on establishing a strong online presence."
+    }
 ];
 
+export default faqData;
 
-const services = [
-    {
-        id: 1,
-        custom: false,
-        title: 'My Services - What I can do for you!',
-        bg: 'bg-base-200',
-        description: '',
-        steps: [
-            {
-                id: 1,
-                icon: <Devices size={32} />,
-                title: "Custom Web Development",
-                text: ["Embrace innovation with our unique websites crafted using modern technologies like React and Django."],
-                link: "/custom-web-development",
-                check: false
-            },
-            {
-                id: 2,
-                icon: <PiggyBank size={32} />,
-                title: "Budget Web Development",
-                text: ["Affordable solutions for small businesses, utilizing platforms like WordPress and templates to maintain quality."],
-                link: "/budget-web-development",
-                check: false
-            },
-            {
-                id: 2,
-                icon: <Funnel size={32} />,
-                title: "Automated Funnel Building",
-                text: ["Streamline your sales process with a custom-built sales funnel, designed to generate leads and convert them into paying customers."],
-                link: "https://www.coachautomationdone4you.com/",
-                check: false
-            },
-        ]
-
-    }
-]
-
-
-export { hero, services, faqData, what, benefits }
+export { hero, services, faqData, benefits }

@@ -23,8 +23,8 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-    title: 'Web Development Services | Funnel Building Services',
-    description: 'I offer custom and budget-friendly web development services for small businesses and startups. I also offer Funnel Building services for coaching and service-based businesses.',
+    title: 'Build Your Online Presence | Budget-Friendly Websites, Custom Apps, Lead Generation Automation',
+    description: "Explore budget-friendly website development, custom app solutions, and lead generation automation services tailored to your needs and budget. Let's create a personalized solution for your online business goals.",
 };
 
 export default Meta;
