@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ArrowUp } from "@phosphor-icons/react";
 import axios from 'axios';
 
+import loaderChat from '../assets/images/loader-chat.svg';
+
 
 const ChatBot = () => {
     const [csrfToken, setCsrfToken] = useState('');
@@ -103,11 +105,10 @@ const ChatBot = () => {
                             <div className={`chat-bubble ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base-200'}`}>{message.text}</div>
                         </div>
                     ))}
-                    {disabled &&
+                    {true &&
                         <div className="chat w-full chat-start">
-                            <div className="chat-bubble bg-base-100">
-                                <span className="loading loading-dots loading-md">
-                                </span>
+                            <div className="chat-bubble bg-base-100 py-1.1">
+                                <img src={loaderChat} alt="Loading..." className='w-12 h-6 grid place-items-center opacity-30' />
                             </div>
                         </div>
                     }
