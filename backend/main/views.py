@@ -1,4 +1,5 @@
 import os
+import re
 import json
 from django.shortcuts import render
 from django.http import JsonResponse
@@ -101,7 +102,10 @@ def get_assistant_response(thread, assistant_id, userInput):
         thread_id=thread.id, order="asc", after=message.id
     )
     try:
-        return messages.data[0].content[0].text.value.strip()
+        text = messages.data[0].content[0].text.value
+        # Remove any text within square brackets 【】   
+        clean_text = re.sub(r'\【.*\】', '', text)
+        return clean_text
     except IndexError:
         return "No response from the assistant, please try again."
 
