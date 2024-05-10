@@ -120,6 +120,16 @@ def openai_api(request):
         thread, assistant = load_openai_assistant(ASSISTANT_ID, VS_ID)
         response = get_assistant_response(thread, ASSISTANT_ID, userInput)
         
+        #send email
+        if userInput == "Open ChatBot":
+            send_mail(
+                subject='OpenAI Assistant Request',
+                message=f'User requested to open the OpenAI Assistant.',
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[settings.DEFAULT_FROM_EMAIL],
+                fail_silently=False,
+            )
+        
         return JsonResponse({'response': response})
     else:
         return JsonResponse({'error': 'Invalid request method'})
