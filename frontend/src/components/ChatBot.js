@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { Context } from '../ContextProvider';
 import { ArrowUp } from "@phosphor-icons/react";
 import axios from 'axios';
 
@@ -9,6 +10,7 @@ const ChatBot = () => {
     const [csrfToken, setCsrfToken] = useState('');
     const [messages, setMessages] = useState([]);
     const [disabled, setDisabled] = useState(false);
+    const { drawerOpen, setDrawerOpen } = useContext(Context);
 
     useEffect(() => {
         function getCookie(name) {
@@ -55,6 +57,14 @@ const ChatBot = () => {
         chatArea.scrollTop = chatArea.scrollHeight;
     };
 
+    useEffect(() => {
+        if (!drawerOpen) {
+            setMessages([]);
+            return;
+        }
+        setDisabled(true);
+        sendMessageToOpenAI('Open ChatBot');
+    }, [drawerOpen]);
 
     const handleSend = (event) => {
         event.preventDefault();
@@ -67,23 +77,18 @@ const ChatBot = () => {
 
         setDisabled(true);
 
-        // Add user message to chat
         setMessages((prevMessages) => [
             ...prevMessages,
             { text: userInput, response: 'user' }
         ]);
 
-        // Clear the input field
         event.target.userInput.value = '';
-
-        // Call function to send user input to OpenAI
         sendMessageToOpenAI(userInput);
     };
 
     useEffect(() => {
         scroll();
     }, [messages]);
-
 
     return (
         <div className="w-full max-w-md h-dvh p-3 bg-base-200 overflow-auto flex flex-col justify-between">
@@ -96,18 +101,16 @@ const ChatBot = () => {
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
 
                 <div className="chat-area p-3 rounded-lg overflow-auto">
-                    <div className="chat w-full chat-start">
-                        <div className="chat-bubble bg-base-100">Hello! I'm a chatbot. Ask me anything!</div>
-                    </div>
 
                     {messages.map((message, index) => (
                         <div key={index} className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
                             <div className={`chat-bubble ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base-200'}`}>{message.text}</div>
                         </div>
                     ))}
+
                     {disabled &&
                         <div className="chat w-full chat-start">
-                            <div className="chat-bubble bg-base-100 py-1.1">
+                            <div className="chat-bubble bg-base-100 py-0 grid place-items-center">
                                 <img src={loaderChat} alt="Loading..." className='w-12 h-6 grid place-items-center opacity-30' />
                             </div>
                         </div>

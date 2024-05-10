@@ -3,13 +3,13 @@ import ThemeContext from '../ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 import { LinkedinLogo } from "@phosphor-icons/react";
 
-
 import SideDrawer from './SideDrawer';
 import logo from '../logo.svg';
 
 
 const NavBar = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
+
     const location = useLocation();
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
@@ -29,6 +29,14 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [prevScrollPos]);
+
+    useEffect(() => {
+        const scrollTop = () => {
+            const app = document.querySelector('.App');
+            app.scrollTo({ behavior: 'instant', top: 0 });
+        }
+        scrollTop();
+    }, [location]);
 
     useEffect(() => {
         const tabs = document.querySelectorAll('.tab');
@@ -69,7 +77,7 @@ const NavBar = () => {
                             Websites
                         </Link>
                         <Link to="/custom-web-development" className="tab">
-                           Web-apps
+                            Web-apps
                         </Link>
                         <Link to="https://www.coachautomationdone4you.com/" target='_blank' className="tab">
                             Lead Automation

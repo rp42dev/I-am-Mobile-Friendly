@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../ContextProvider';
 import { Robot, } from "@phosphor-icons/react";
 import ChatBot from './ChatBot';
 
 const Drawer = ({ children }) => {
-    const [drawerOpen, setDrawerOpen] = useState(false);
-    
+    const { drawerOpen, setDrawerOpen } = useContext(Context);
 
     return (
         <div className="drawer drawer-end h-dvh">

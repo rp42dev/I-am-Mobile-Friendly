@@ -101,7 +101,7 @@ def get_assistant_response(thread, assistant_id, userInput):
         thread_id=thread.id, order="asc", after=message.id
     )
     try:
-        return messages.data[0].content[0].text.value
+        return messages.data[0].content[0].text.value.strip()
     except IndexError:
         return "No response from the assistant, please try again."
 
