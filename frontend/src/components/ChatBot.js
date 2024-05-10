@@ -105,7 +105,7 @@ const ChatBot = () => {
                             <div className={`chat-bubble ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base-200'}`}>{message.text}</div>
                         </div>
                     ))}
-                    {true &&
+                    {disabled &&
                         <div className="chat w-full chat-start">
                             <div className="chat-bubble bg-base-100 py-1.1">
                                 <img src={loaderChat} alt="Loading..." className='w-12 h-6 grid place-items-center opacity-30' />
