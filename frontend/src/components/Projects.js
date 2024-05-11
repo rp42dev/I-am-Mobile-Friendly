@@ -73,7 +73,7 @@ const Projects = () => {
                     </a>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a href="https://rp42dev.com/" target="_blank" rel="noreferrer">
+                    <a href="https://rp42.dev/" target="_blank" rel="noreferrer">
                         <img className="img" src={rp42dev} alt="rp42dev" />
                     </a>
                 </SwiperSlide>
