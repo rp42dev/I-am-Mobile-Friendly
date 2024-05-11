@@ -58,7 +58,6 @@ const Features3 = (props) => {
             </section>
         </>
     )
-
 }
 
 export default Features3
