@@ -15,7 +15,7 @@ const Contact = () => {
                         </p>
                         <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r" target="_blank" rel="noreferrer" className="btn btn-primary btn-md">Book a free consultation<Calendar size={24} weight="light" className='ml-3'/> </a>
                     </div>
-                    <div className="grid  hidden lg:block">
+                    <div className="grid mt-8 lg:mt-0">
                         <img width="400" height="300" className="object-cover mx-auto my-auto z-0" src={image} alt="Paper plane" />
                     </div>
                 </div>

@@ -1,4 +1,3 @@
-import os
 import re
 import json
 from django.shortcuts import render
@@ -13,8 +12,10 @@ import time
 # Set your OpenAI API key
 OPENAI_API_TOKEN = settings.OPENAI_API_TOKEN
 
+
 # Initialize the OpenAI client
 client = OpenAI(api_key=OPENAI_API_TOKEN)
+
 
 def react_app_view(request):
     # List of valid React app URLs
