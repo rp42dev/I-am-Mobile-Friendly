@@ -149,7 +149,8 @@ const ChatBot = () => {
 
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
 
-                <div className="chat-area p-3 rounded-lg overflow-auto border border-base-300">
+                <div className="chat-area p-3 rounded-lg overflow-auto border border-base-300 relative h-full flex justify-end flex-col">
+                    <img src={patternImage} alt="pattern" className="absolute top-0 left-0 w-full h-full object-cover opacity-40" />
                 
                     {messages.map((message, index) => (
                         <div key={index} className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
