@@ -14,10 +14,10 @@ const Features = ({ data }) => {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-                    {data[0].steps.map((item) => {
+                    {data[0].steps.map((item, index) => {
                         return (
                             <Card
-                                key={item.id}
+                                key={index}
                                 title={item.title}
                                 description={item.text}
                                 icon={item.icon}

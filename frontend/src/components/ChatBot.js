@@ -3,6 +3,8 @@ import { Context } from '../ContextProvider';
 import { ArrowUp } from "@phosphor-icons/react";
 import axios from 'axios';
 
+import patternImage from '../assets/images/patern_chat.webp';
+
 
 const AnimatedCircles = () => {
     return (
@@ -146,7 +148,7 @@ const ChatBot = () => {
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
 
                 <div className="chat-area p-3 rounded-lg overflow-auto border border-base-300">
-
+                
                     {messages.map((message, index) => (
                         <div key={index} className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
                             <div className={`chat-bubble ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base-200'}`}>

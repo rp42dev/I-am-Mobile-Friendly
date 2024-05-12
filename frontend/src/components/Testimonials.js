@@ -1,5 +1,6 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -18,22 +19,13 @@ import PhoneFrame from "./Phone"
 
 const data0 = [
     {
-        id: 0,
-        name: 'Karen',
-        title: 'CEO of Mayanurtures.net',
-        iframe: <iframe width="320" height="600" src="https://www.youtube.com/embed/fWM6pNApGns?si=sHeOH2x-TrcP3J76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        iframe: <iframe width="320" height="570" src="https://www.youtube.com/embed/fWM6pNApGns?si=sHeOH2x-TrcP3J76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     },
     {
-        id: 1,
-        name: 'Jeff',
-        title: 'CEO of Jeffshealthyliving.com',
-        iframe: <iframe width="320" height="600" src="https://youtube.com/embed/Wb83muatHbk?si=oI4NHT7HCnDjQeni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        iframe: <iframe width="320" height="600" src="https://youtube.com/embed/Wb83muatHbk?si=oI4NHT7HCnDjQeni" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     },
     {
-        id: 2,
-        name: 'Edit',
-        title: 'CEO of riseenergy.co.uk',
-        iframe: <iframe width="320" height="600" src="https://youtube.com/embed/ayG8NvNND7c?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        iframe: <iframe width="320" height="600" src="https://youtube.com/embed/ayG8NvNND7c?feature=share" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     }
 ]
 
@@ -72,8 +64,6 @@ const data = [
     },
 ]
 
-
-
 const VideoTestimonials = () => {
     return (
         <section className="pt-24">
@@ -82,10 +72,35 @@ const VideoTestimonials = () => {
                     What our clients say about me
                 </h2>
             </div>
-            <div className="container mx-auto w-full text-center d-flex flex-wrap justify-center sm:space-x-4 space-y-4">
-                {data0.map((item) => (
-                    <PhoneFrame key={item.id} name={item.name} title={item.title} iframe={item.iframe} />
-                ))}
+            <div className="container mx-auto w-full text-center py-24 pt-4">
+                <Swiper
+                    modules={[Navigation, Pagination ]}
+                    spaceBetween={50}
+                    grabCursor={true}
+                    loop={true}
+                    navigation={true}
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        790: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1300: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
+                >
+                    {data0.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <PhoneFrame name={item.name} title={item.title} iframe={item.iframe} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
     )
@@ -95,37 +110,51 @@ const Testimonials = () => {
     return (
         <>
             <VideoTestimonials />
-        <section className="py-24">
-            
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                spaceBetween={50}
-                slidesPerView={"auto"}
-                grabCursor={true}
-                loop={true}
-                autoplay={{ delay: 3500, disableOnInteraction: false }}
-                pagination={{ clickable: true }}
-            >
-                {data.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <div className="flex flex-col px-4 items-center justify-center w-full mx-auto text-center">
-                       
-                            <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full mx-auto" />
-                            <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
-                            <p className="text-sm xl:text-lg font-medium">{item.title}</p>
-                            <a href={item.link} target="_blank" rel="noreferrer" className="text-sm xl:text-lg font-medium text-blue-500 hover:underline">{item.link}</a>
-                            <p className="max-w-xl mt-4 text-sm xl:text-lg">{item.description}</p>
-                            <div className="flex items-center justify-center mt-4 space-x-2">
-                                <img src={star} alt="star" className='w-8 h-8' />
-                                <img src={star} alt="star" className='w-8 h-8' />
-                                <img src={star} alt="star" className='w-8 h-8' />
-                                <img src={star} alt="star" className='w-8 h-8' />
-                                <img src={star} alt="star" className='w-8 h-8' />
+            <div className="mx-auto container divider">OR</div>
+            <section className="container mx-auto py-24">
 
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={50}
+                    grabCursor={true}
+                    loop={true}
+                    autoplay={{ delay: 3000 }}
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        790: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1300: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
+                >
+                    {data.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="flex flex-col px-4 items-center justify-center mx-auto text-center">
+
+                                <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full mx-auto" />
+                                <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
+                                <p className="text-sm xl:text-lg font-medium">{item.title}</p>
+                                <a href={item.link} target="_blank" rel="noreferrer" className="text-sm xl:text-lg font-medium text-blue-500 hover:underline">{item.link}</a>
+                                <p className="max-w-xl mt-4 text-sm xl:text-lg">{item.description}</p>
+                                <div className="flex items-center justify-center mt-4 space-x-2">
+                                    <img src={star} alt="star" className='w-8 h-8' />
+                                    <img src={star} alt="star" className='w-8 h-8' />
+                                    <img src={star} alt="star" className='w-8 h-8' />
+                                    <img src={star} alt="star" className='w-8 h-8' />
+                                    <img src={star} alt="star" className='w-8 h-8' />
+
+                                </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </section>
         </>

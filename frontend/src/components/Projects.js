@@ -20,9 +20,21 @@ import rp42dev from '../assets/images/projects/rp42dev.webp';
 import rrpartners from '../assets/images/projects/rr_partners.webp';
 
 
+const images = [
+    { image: tattoo_sk, alt: "tattoo_sk", link: "https://tattooskworkshop.no/" },
+    { image: fromladstodads, alt: "from lads to dads", link: "https://fromladstodads.ie/" },
+    { image: ed_tattoo, alt: "ed tattoo", link: "https://ed-tattoo-lorenskog.netlify.app" },
+    { image: maya, alt: "maya Nurtures", link: "https://www.mayanurtures.net/" },
+    { image: andrejfineart, alt: "Andrej Fineart", link: "https://andrejfineart.com/" },
+    { image: oslorevovering, alt: "oslo renovering", link: "https://oslorenoveringbygg.com/" },
+    { image: rp42dev, alt: "rp42dev", link: "https://rp42.dev/" },
+    { image: rrpartners, alt: "rr partners LV", link: "https://rrpartners.lv/" },
+];
+
+
 const Projects = () => {
     return (
-        <div className="py-24 overflow-hidden">
+        <div className="mx-auto container py-24 overflow-hidden">
             <div className="container mx-auto w-full px-4 text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl pb-6">
                     Recent Projects and Clients
@@ -31,15 +43,19 @@ const Projects = () => {
             <Swiper
                 effect={"cube"}
                 grabCursor={true}
-                cubeEffect={{
-                    shadow: false,
-                    slideShadows: false,
-                    shadowOffset: 60,
-                    shadowScale: 0.60,
+                breakpoints={{
+                    800: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    1300: {
+                        slidesPerView: 2,
+                        spaceBetween: 50,
+                    },
                 }}
 
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 pagination={true}
@@ -47,47 +63,11 @@ const Projects = () => {
                 modules={[Pagination, Autoplay]}
                 className="swiper"
             >
-                <SwiperSlide>
-                    <a href="https://oslorenoveringbygg.com/" target="_blank" rel="noreferrer">
-                        <img className="img" src={oslorevovering} alt="oslo renovering" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://andrejfineart.com/" target="_blank" rel="noreferrer">
-                        <img className="img" src={andrejfineart} alt="Andrej Fineart" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://rrpartners.lv/" target="_blank" rel="noreferrer">
-                        <img className="img" src={rrpartners} alt="rr partners LV" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://www.mayanurtures.net/" target="_blank" rel="noreferrer">
-                        <img className="img" src={maya} alt="maya Nurtures" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://tattooskworkshop.no/" target="_blank" rel="noreferrer">
-                        <img className="img" src={tattoo_sk} alt="tattoo_sk" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://rp42.dev/" target="_blank" rel="noreferrer">
-                        <img className="img" src={rp42dev} alt="rp42dev" />
-                    </a>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <a href="https://fromladstodads.ie/" target="_blank" rel="noreferrer">
-                        <img className="img" src={fromladstodads} alt="from lads to dads" />
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://ed-tattoo-lorenskog.netlify.app" target="_blank" rel="noreferrer">
-                        <img className="img" src={ed_tattoo} alt="ed tattoo" />
-                    </a>
-                </SwiperSlide>
+                {images.map((image, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={image.image} alt={image.alt} className="mx-auto h-96" />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     )
