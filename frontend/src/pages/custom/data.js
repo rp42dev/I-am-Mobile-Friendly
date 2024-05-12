@@ -26,7 +26,6 @@ const process = [
         bg: 'bg-base-200',
         img: require('../../assets/images/prototype.svg').default,
         title: "Streamlined Development Process",
-        description: "",
         steps: [
             {
                 id: 1,

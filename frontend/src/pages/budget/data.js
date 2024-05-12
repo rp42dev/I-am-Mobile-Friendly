@@ -1,3 +1,6 @@
+import { Strategy, ChatCircleDots, Code, CloudArrowUp } from "@phosphor-icons/react";
+
+
 const metaProps = {
     title: 'Affordable Website Development Services | Mobile-Friendly & Budget-Friendly',
     description: 'Discover affordable web development services that establish a strong online presence without exceeding your budget. Get a mobile-friendly website using WordPress and cPanel. Learn more about our rapid launch process and user-friendly CMS.',
@@ -62,27 +65,39 @@ const solution = [
 const process = [
     {
         id: 1,
-        custom: false,
-        title: 'Development Process',
         bg: 'bg-base-200',
-        button: 'Get started',
         img: require('../../assets/images/process.svg').default,
-        description: '',
+        title: "Streamlined Development Process",
+        description: "",
+        button: "Get started",
         steps: [
             {
                 id: 1,
                 title: 'Consultation',
-                text: "We begin by understanding your website goals and needs through detailed discussions about your business, target audience, and desired features. This process allows us to create a tailored solution that aligns with your requirements and budget."
+                icon: <ChatCircleDots size={32} />,
+                text: "We start by understanding your website goals and needs through detailed discussions about your business, target audience, and desired features. This process allows us to create a customized solution that matches your requirements and budget.",
+                link: ""
             },
             {
                 id: 2,
-                title: 'Design & Development',
-                text: "We design a visually appealing website using WordPress or other builders, making sure to reflect your brand identity. We ensure it is mobile-friendly, user-friendly, and cost-effective. Throughout the process, we keep you informed and incorporate your feedback to refine the design."
+                title: "Planning",
+                icon: <Strategy size={32} />,
+                text: "We develop a detailed plan that outlines the project scope, timeline, and milestones. We work closely with you to ensure that all aspects of your website are considered and that the plan meets your expectations.",
+                link: ""
             },
             {
                 id: 3,
+                title: 'Design & Development',
+                icon: <Code size={32} />,
+                text: "We create a visually appealing website using WordPress or other builders, ensuring it reflects your brand identity. It's mobile-friendly, user-friendly, and cost-effective. Throughout, we keep you informed and incorporate your feedback to refine the design.",
+                link: ""
+            },
+            {
+                id: 4,
                 title: 'Launch',
-                text: "After completing the website, we conduct thorough testing to ensure seamless functionality across various devices. We take care of setting up hosting and domain registration for a smooth launch. Your website is now live and poised to attract visitors and facilitate business growth."
+                icon: <CloudArrowUp size={32} />,
+                text: "Once the website is completed, we conduct thorough testing to ensure seamless functionality across various devices. We handle hosting and domain registration for a smooth launch. Your website is now live and ready to attract visitors and support business growth.",
+                link: ""
             }
         ]
     }

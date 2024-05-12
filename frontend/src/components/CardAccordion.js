@@ -14,19 +14,10 @@ const CardAccordion = ({ title, description, icon, link, check }) => {
     const content = (
 
         <ul className="text-base text-left">
-            {description.map((item, index) => {
-                return (
-                    <li key={index} className="flex items-start lg:col-span-1 space-y-1">
-                        {check &&
-                            <div className="flex-shrink-0">
-                                <DotOutline size={20} color="green" />
-                            </div>}
-                        <p className="ml-2 text-sm lg:text-lg">
-                            {item}
-                        </p>
-                    </li>
-                )
-            })}
+            <li className="flex items-start">
+                <DotOutline size={24} />
+                <p className="ml-2">{description}</p>
+            </li>
         </ul>
 
     )
