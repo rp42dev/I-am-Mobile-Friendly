@@ -1,13 +1,10 @@
 // import Swiper core and required modules
 
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import jeff from '../assets/images/testimonials/jeff.webp';
 import ed from '../assets/images/testimonials/ed.webp';
@@ -74,7 +71,7 @@ const VideoTestimonials = () => {
             </div>
             <div className="container mx-auto w-full text-center py-24 pt-4">
                 <Swiper
-                    modules={[Navigation, Pagination ]}
+                    modules={[ Navigation, Pagination ]}
                     spaceBetween={50}
                     grabCursor={true}
                     loop={true}
@@ -118,39 +115,26 @@ const Testimonials = () => {
                     spaceBetween={50}
                     grabCursor={true}
                     loop={true}
-                    autoplay={{ delay: 3000 }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     breakpoints={{
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        790: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1300: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
+                        640: { slidesPerView: 1, spaceBetween: 20 },
+                        1200: { slidesPerView: 2, spaceBetween: 40 },
+                        // 1300: { slidesPerView: 3, spaceBetween: 50 },
                     }}
                 >
                     {data.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="flex flex-col px-4 items-center justify-center mx-auto text-center">
-
                                 <img src={item.image} alt={item.name} className="w-40 h-40 rounded-full mx-auto" />
                                 <h3 className="mt-4 text-2xl font-semibold sm:text-4xl">{item.name}</h3>
                                 <p className="text-sm xl:text-lg font-medium">{item.title}</p>
                                 <a href={item.link} target="_blank" rel="noreferrer" className="text-sm xl:text-lg font-medium text-blue-500 hover:underline">{item.link}</a>
                                 <p className="max-w-xl mt-4 text-sm xl:text-lg">{item.description}</p>
                                 <div className="flex items-center justify-center mt-4 space-x-2">
-                                    <img src={star} alt="star" className='w-8 h-8' />
-                                    <img src={star} alt="star" className='w-8 h-8' />
-                                    <img src={star} alt="star" className='w-8 h-8' />
-                                    <img src={star} alt="star" className='w-8 h-8' />
-                                    <img src={star} alt="star" className='w-8 h-8' />
-
+                                    {[1, 2, 3, 4, 5].map((starIndex) => (
+                                        <img key={starIndex} src={star} alt="star" className="w-8 h-8" />
+                                    ))}
                                 </div>
                             </div>
                         </SwiperSlide>

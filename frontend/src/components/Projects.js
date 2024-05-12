@@ -65,8 +65,8 @@ const Projects = () => {
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <a href={image.link} target="_blank" title="Visit site">
-                            <img src={image.image} alt={image.alt} className="mx-auto h-96" />
+                        <a href={image.link} target="_blank" title="Visit site flex">
+                            <img src={image.image} alt={image.alt} className="mx-auto" width={800} />
                         </a>
                     </SwiperSlide>
                 ))}
