@@ -51,7 +51,7 @@ const data = [
         image: ed,
         name: 'Ed Tattoo',
         title: 'CEO of edtattoo.no',
-        link: 'https://edtattoo.no/',
+        link: 'https://ed-tattoo-lorenskog.netlify.app/',
         description: 'Raivis was hired as our web developer. Our industry is focused on internet and social network support. Thanks to Raivis, our company has achieved incredibly high results. Through his work, we have made contact with countless customers, and our customer base continues to grow every day. We are happy to have worked with Raivis..'
     },
     {
