@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
             <Swiper
                 effect={"cube"}
-                grabCursor={true}
+                // grabCursor={true}
                 breakpoints={{
                     800: {
                         slidesPerView: 1,
@@ -65,7 +65,9 @@ const Projects = () => {
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img src={image.image} alt={image.alt} className="mx-auto h-96" />
+                        <a href={image.link} target="_blank" title="Visit site">
+                            <img src={image.image} alt={image.alt} className="mx-auto h-96" />
+                        </a>
                     </SwiperSlide>
                 ))}
             </Swiper>
