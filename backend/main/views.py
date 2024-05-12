@@ -57,9 +57,14 @@ def react_app_view(request):
         return render(request, 'react_template.html', status=404)
 
 
-def load_openai_assistant(assistant_id, vs_ID):
-    """Load the OpenAI assistant and create a new thread for interaction."""
+def load_openai_assistant(assistant_id):
+    """Load the OpenAI assistant."""
     assistant = client.beta.assistants.retrieve(assistant_id)
+    return assistant
+
+
+def create_openai_thread(vs_ID):
+    """Create a new thread for interaction with the OpenAI assistant."""
     thread = client.beta.threads.create(
         tool_resources={
             "file_search": {
@@ -67,7 +72,16 @@ def load_openai_assistant(assistant_id, vs_ID):
             }
         }
     )
-    return thread, assistant
+    return thread
+
+
+def delete_thread(thread_id):
+    """Delete the thread"""
+    try:
+        client.beta.threads.delete(thread_id=thread_id)
+    except Exception as e:
+        print(f"Error deleting thread: {e}")
+        pass
 
 
 def wait_on_run(run, thread):
@@ -116,13 +130,27 @@ def get_assistant_response(thread, assistant_id, userInput):
 def openai_api(request):
     """Handle requests to interact with OpenAI assistant."""
     if request.method == 'POST':
+
         data = json.loads(request.body)
         userInput = data.get('userInput', '')
+        
+        if userInput == "clear":
+            thread_id = request.session.get('thread_id', '')
+            delete_thread(thread_id)
+            request.session['thread_id'] = ''
+            request.session['thread_start_time'] = ''
+            print('Chat cleared.')
+            return JsonResponse({'response': 'Chat cleared.'})
 
         ASSISTANT_ID = settings.ASSISANT_ID_TOKEN
         VS_ID = settings.VS_ID_TOKEN
         
-        thread, assistant = load_openai_assistant(ASSISTANT_ID, VS_ID)
+        assistant = load_openai_assistant(ASSISTANT_ID)
+        thread = create_openai_thread(VS_ID)
+        # set thread_id and thread_start_time in session
+        request.session['thread_id'] = thread.id
+        request.session['thread_start_time'] = time.time()
+        
         response = get_assistant_response(thread, ASSISTANT_ID, userInput)
         
         #send email

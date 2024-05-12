@@ -107,6 +107,8 @@ const ChatBot = () => {
     useEffect(() => {
         if (!drawerOpen) {
             setMessages([]);
+            setDisabled(false);
+            sendMessageToOpenAI('clear');
             return;
         }
         setDisabled(true);
