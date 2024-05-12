@@ -21,14 +21,14 @@ import rrpartners from '../assets/images/projects/rr_partners.webp';
 
 
 const images = [
+    { image: oslorevovering, alt: "oslo renovering", link: "https://oslorenoveringbygg.com/" },
+    { image: rrpartners, alt: "rr partners LV", link: "https://rrpartners.lv/" },
+    { image: andrejfineart, alt: "Andrej Fineart", link: "https://andrejfineart.com/" },
+    { image: maya, alt: "maya Nurtures", link: "https://www.mayanurtures.net/" },
     { image: tattoo_sk, alt: "tattoo_sk", link: "https://tattooskworkshop.no/" },
     { image: fromladstodads, alt: "from lads to dads", link: "https://fromladstodads.ie/" },
     { image: ed_tattoo, alt: "ed tattoo", link: "https://ed-tattoo-lorenskog.netlify.app" },
-    { image: maya, alt: "maya Nurtures", link: "https://www.mayanurtures.net/" },
-    { image: andrejfineart, alt: "Andrej Fineart", link: "https://andrejfineart.com/" },
-    { image: oslorevovering, alt: "oslo renovering", link: "https://oslorenoveringbygg.com/" },
     { image: rp42dev, alt: "rp42dev", link: "https://rp42.dev/" },
-    { image: rrpartners, alt: "rr partners LV", link: "https://rrpartners.lv/" },
 ];
 
 

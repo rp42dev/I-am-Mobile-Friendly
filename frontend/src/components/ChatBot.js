@@ -149,7 +149,7 @@ const ChatBot = () => {
 
             <div className="h-full flex flex-col justify-end bg-base-300 rounded overflow-hidden">
 
-                <div className="chat-area p-3 rounded-lg overflow-auto border border-base-300 relative h-full flex justify-end flex-col">
+                <div className="chat-area p-3 rounded-lg overflow-auto border border-base-300 relative h-full flex justify-end flex-col shadow-[inset_3px_0_8px_rgba(0,0,0,0.1)]">
                     <img src={patternImage} alt="pattern" className="absolute top-0 left-0 w-full h-full object-cover opacity-40" />
                 
                     {messages.map((message, index) => (
