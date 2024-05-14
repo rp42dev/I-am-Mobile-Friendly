@@ -25,7 +25,7 @@ const Benefits = (props) => {
                             <ul className={`grid ${data[0].text === 'Frequently Asked Questions' ? 'max-w-4xl mx-auto' : 'lg:grid-cols-2'} gap-4`}>
                                 {data[0].data.map((item) => {
                                     return (
-                                        <Accordion key={item.id} icon={<CheckFat size={24} color="green" />} title={item.title} content={item.text} bg={data[0].bg} />
+                                        <Accordion key={item.id} icon={data[0].text === 'Frequently Asked Questions' ? '' : <CheckFat size={24} color="green" />} title={item.title} content={item.text} bg={data[0].bg} />
                                         
                                     )
                                 })}
