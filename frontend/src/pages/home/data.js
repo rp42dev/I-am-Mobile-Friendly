@@ -142,7 +142,7 @@ const faqData = [
             {
                 id: 9,
                 title: "How can I schedule a consultation or book your services?",
-                text: "You can book a call directly through my calendar [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r) or learn more about my services by clicking 'Learn more'."
+                text: "You can book a call directly through my calendar or learn more about my services by clicking 'Learn more and book a call' on the homepage."
             },
             {
                 id: 10,
