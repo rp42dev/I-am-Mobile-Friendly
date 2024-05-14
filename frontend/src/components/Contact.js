@@ -1,10 +1,14 @@
-import image from '../assets/images/meeting.svg'
 import { Calendar } from "@phosphor-icons/react";
+
+import image from '../assets/images/meeting.svg'
+import bookingBg from '../assets/images/booking_bg.svg'
 
 const Contact = () => {
     return (
-        <div id="contact" className="px-4 bg-base-200 ">
-            <div className="container mx-auto">
+        <div id="contact" className="px-4 bg-base-200 relative">
+                <div className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat rounded-xl opacity-70" style={{ backgroundImage: `url(${bookingBg})` }}></div>
+            <div className="container mx-auto relative">
+
                 <div className="py-24 grid gap-4 grid-cols-1 lg:grid-cols-2 place-items-center sm:text-center lg:text-left">
                     <div className='space-y-6'>
                         <h2 className="text-3xl font-extrabold sm:text-5xl max-w-2xl">

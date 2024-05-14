@@ -3,7 +3,7 @@ import { AppWindow, Funnel, Devices } from "@phosphor-icons/react";
 const hero = [
     {
         title: "Let's build",
-        bg: 'bg-base',
+        bg: 300,
         subtitle: 'Your Online Presence',
         description: "Whether you need a budget-friendly website, custom app, or want to automate your lead generation process for your online business, I can create a personalized solution tailored to your specific needs and budget.",
         image: require('../../assets/images/responsive.svg').default,
@@ -15,26 +15,25 @@ const hero = [
     }
 ]
 
-
 const services = [
     {
         id: 1,
         custom: false,
         title: 'My Services - What I Can Do for You!',
-        bg: 'bg-base-200',
+        bg: 200,
         description: '',
         steps: [
             {
                 id: 1,
                 icon: <Devices size={32} />,
                 title: "Web-App Development",
-                text: ["Websites or applications tailored to your unique needs, featuring custom features and functionalities."],
+                text: ["Websites or web applications tailored to your unique needs, featuring custom features and functionalities."],
                 link: "/custom-web-development",
                 check: false
             },
             {
                 id: 2,
-                icon: < AppWindow size={ 32} />,
+                icon: < AppWindow size={32} />,
                 title: "Website Development",
                 text: ["Solutions for small businesses and startups looking to establish a strong online presence on a budget."],
                 link: "/budget-web-development",
@@ -58,7 +57,7 @@ const benefits = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base',
+        bg: 300,
         text: "Benefits of Choosing My Services",
         data: [
             {
@@ -97,54 +96,60 @@ const benefits = [
 
 const faqData = [
     {
-        id: 1,
-        question: "Why should I choose your website development services?",
-        answer: "By choosing my services, you get direct communication and a personalized approach tailored to your project needs and goals."
-    },
-    {
-        id: 2,
-        question: "What types of businesses can benefit from your services?",
-        answer: "My services are ideal for coaching and service-based businesses, offering tailored solutions from website design to lead generation automation."
-    },
-    {
-        id: 3,
-        question: "Are your website development solutions affordable for startups and small businesses?",
-        answer: "Yes, I provide budget-friendly options that allow startups and small businesses to establish a strong online presence without exceeding their budget."
-    },
-    {
-        id: 4,
-        question: "How quickly can I expect my project to be delivered?",
-        answer: "I ensure timely project delivery so that your website is operational as soon as possible after development is completed."
-    },
-    {
-        id: 5,
-        question: "Do you offer ongoing support and updates after the website launch?",
-        answer: "Absolutely! You'll receive continuous support and updates to keep your website functional and up-to-date with the latest technologies and trends."
-    },
-    {
-        id: 6,
-        question: "Is my website design optimized for mobile devices?",
-        answer: "Yes, I prioritize mobile-friendly design to ensure your website is accessible and user-friendly on smartphones, tablets, and other devices."
-    },
-    {
-        id: 7,
-        question: "What kind of custom solutions do you offer for website development?",
-        answer: "I specialize in custom web-app development, creating websites or applications with unique features and functionalities tailored to your specific needs."
-    },
-    {
-        id: 8,
-        question: "How can lead generation automation benefit my online business?",
-        answer: "With automated funnels, email sequences, and landing pages, you can efficiently generate leads and grow your online business."
-    },
-    {
-        id: 9,
-        question: "How can I schedule a consultation or book your services?",
-        answer: "You can book a call directly through my calendar [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r) or learn more about my services by clicking 'Learn more'."
-    },
-    {
-        id: 10,
-        question: "What features are included in your budget website development services?",
-        answer: "My budget website development services offer affordable solutions tailored for small businesses and startups, focusing on establishing a strong online presence."
+        bg: 300,
+        text: 'Frequently Asked Questions',
+        data: [
+            {
+                id: 1,
+                title: "Why should I choose your website development services?",
+                text: "By choosing my services, you get direct communication and a personalized approach tailored to your project needs and goals."
+            },
+            {
+                id: 2,
+                title: "What types of businesses can benefit from your services?",
+                text: "My services are ideal for coaching and service-based businesses, offering tailored solutions from website design to lead generation automation."
+            },
+            {
+                id: 3,
+                title: "Are your website development solutions affordable for startups and small businesses?",
+                text: "Yes, I provide budget-friendly options that allow startups and small businesses to establish a strong online presence without exceeding their budget."
+            },
+            {
+                id: 4,
+                title: "How quickly can I expect my project to be delivered?",
+                text: "I ensure timely project delivery so that your website is operational as soon as possible after development is completed."
+            },
+            {
+                id: 5,
+                title: "Do you offer ongoing support and updates after the website launch?",
+                text: "Absolutely! You'll receive continuous support and updates to keep your website functional and up-to-date with the latest technologies and trends."
+            },
+            {
+                id: 6,
+                title: "Is my website design optimized for mobile devices?",
+                text: "Yes, I prioritize mobile-friendly design to ensure your website is accessible and user-friendly on smartphones, tablets, and other devices."
+            },
+            {
+                id: 7,
+                title: "What kind of custom solutions do you offer for website development?",
+                text: "I specialize in custom web-app development, creating websites or applications with unique features and functionalities tailored to your specific needs."
+            },
+            {
+                id: 8,
+                title: "How can lead generation automation benefit my online business?",
+                text: "With automated funnels, email sequences, and landing pages, you can efficiently generate leads and grow your online business."
+            },
+            {
+                id: 9,
+                title: "How can I schedule a consultation or book your services?",
+                text: "You can book a call directly through my calendar [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xMsnYixswy0OzkcailfXD_gKqYxXZwAkC_K2MkSqet2b4jb9SpQw_m8PWUou2B773NxLajf-r) or learn more about my services by clicking 'Learn more'."
+            },
+            {
+                id: 10,
+                title: "What features are included in your budget website development services?",
+                text: "My budget website development services offer affordable solutions tailored for small businesses and startups, focusing on establishing a strong online presence."
+            }
+        ]
     }
 ];
 

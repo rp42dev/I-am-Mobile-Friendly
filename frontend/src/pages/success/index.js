@@ -1,3 +1,5 @@
+
+import React, { useEffect, useRef, memo } from 'react';
 import Meta from "../../components/Meta";
 import sent from '../../assets/images/sent.svg'
 import Hero from '../../components/Hero'

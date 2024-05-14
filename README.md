@@ -55,10 +55,3 @@ React build files will be in the build folder,
 django with nginx will serve them, make sure to set the 
 static files path in production-Settings.py, and the nginx config file.
 
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/rp42/)
-
-[Email](mailto:rp43dev@gmail.com)
-
-[Portfolio](https://rp42.dev/) | [Portfolio 2](https://rp42.cloud/) | [Portfolio 3](https://iammobilefriendly.dev/)

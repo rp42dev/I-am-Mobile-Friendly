@@ -8,7 +8,7 @@ const metaProps = {
 const hero = [
     {
         title: 'Custom',
-        bg: 'bg-base-200',
+        bg: 200,
         subtitle: 'Web-app Development',
         description: 'Custom web applications tailored to your unique business needs. Dynamic, responsive, and user-friendly web applications with endless customization possibilities to help you stand out from the competition.',
         image: require('../../assets/images/custom.svg').default,
@@ -23,7 +23,7 @@ const hero = [
 const process = [
     {
         id: 1,
-        bg: 'bg-base-200',
+        bg: 200,
         img: require('../../assets/images/prototype.svg').default,
         title: "Streamlined Development Process",
         steps: [
@@ -77,7 +77,7 @@ const features = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base',
+        bg: 300,
         text: "Key Features of Custom Web applications",
         data: [
             {
@@ -116,51 +116,62 @@ const features = [
 
 const faqData = [
     {
-        question: "What is custom app development?",
-        answer: "Custom app development involves creating applications tailored to specific business needs and requirements, offering unique functionalities and features that address particular challenges or goals."
-    },
-    {
-        question: "What are the benefits of custom web app development for my business?",
-        answer: "Custom web app development offers numerous benefits, including personalized solutions, enhanced functionality, scalability, and security, ensuring that your app aligns perfectly with your business goals and audience needs."
-    },
-    {
-        question: "How do you ensure that the custom web app aligns with my business goals and audience needs?",
-        answer: "We begin with a thorough consultation to understand your business objectives, target audience, and requirements, allowing us to develop a tailored plan and prototype aligned with your vision."
-    },
-    {
-        question: "Can I provide feedback during the development process?",
-        answer: "Absolutely! Your input is valuable. We welcome feedback throughout development, including prototyping and testing, to refine the app and meet your expectations."
-    },
-    {
-        question: "What technologies do you use for custom web app development?",
-        answer: "We use modern technologies like React, Django, and other frameworks to ensure superior performance, scalability, and security for your custom web app."
-    },
-    {
-        question: "How long does it typically take to develop a custom web app?",
-        answer: "The development timeline varies based on project complexity and requirements. We provide transparent timelines during the planning phase to ensure timely delivery without compromising quality."
-    },
-    {
-        question: "Do you handle app deployment and hosting?",
-        answer: "Yes, we take care of deploying your custom web app to your chosen hosting environment, ensuring a seamless transition from development to the live environment."
-    },
-    {
-        question: "What measures do you take to ensure the security of custom web apps?",
-        answer: "We prioritize app security and implement industry-standard practices like data encryption, secure authentication methods, and regular security audits to protect user data."
-    },
-    {
-        question: "Can you integrate third-party services or APIs into custom web apps?",
-        answer: "Absolutely! We have expertise in seamlessly integrating third-party services and tools to enhance your web app's functionality and user experience."
-    },
-    {
-        question: "What support and maintenance services do you offer after the app is deployed?",
-        answer: "We provide ongoing support and maintenance post-deployment, addressing issues, implementing updates, and ensuring optimal performance and security for your custom web app."
-    },
-    {
-        question: "How can I get started with custom web app development services?",
-        answer: "Feel free to reach out for a consultation! We'll discuss your app ideas, goals, and requirements, guiding you through the development process to bring your vision to life."
+        bg: 300,
+        text: 'Frequently Asked Questions',
+        data: [
+            {
+                id: 1,
+                title: "What is custom app development?",
+                text: "Custom app development involves creating applications tailored to specific business needs and requirements, offering unique functionalities and features that address particular challenges or goals."
+            },
+            {
+                id: 2,
+                title: "What are the benefits of custom web app development for my business?",
+                text: "Custom web app development offers numerous benefits, including personalized solutions, enhanced functionality, scalability, and security, ensuring that your app aligns perfectly with your business goals and audience needs."
+            },
+            {
+                id: 3,
+                title: "How do you ensure that the custom web app aligns with my business goals and audience needs?",
+                text: "We begin with a thorough consultation to understand your business objectives, target audience, and requirements, allowing us to develop a tailored plan and prototype aligned with your vision."
+            },
+            {
+                id: 4,
+                title: "Can I provide feedback during the development process?",
+                text: "Absolutely! Your input is valuable. We welcome feedback throughout development, including prototyping and testing, to refine the app and meet your expectations."
+            },
+            {
+                id: 5,
+                title: "What technologies do you use for custom web app development?",
+                text: "We use modern technologies like React, Django, and other frameworks to ensure superior performance, scalability, and security for your custom web app."
+            },
+            {
+                id: 6,
+                title: "How long does it typically take to develop a custom web app?",
+                text: "The development timeline varies based on project complexity and requirements. We provide transparent timelines during the planning phase to ensure timely delivery without compromising quality."
+            },
+            {
+                id: 7,
+                title: "Do you handle app deployment and hosting?",
+                text: "Yes, we take care of deploying your custom web app to your chosen hosting environment, ensuring a seamless transition from development to the live environment."
+            },
+            {
+                id: 8,
+                title: "What measures do you take to ensure the security of custom web apps?",
+                text: "We prioritize app security and implement industry-standard practices like data encryption, secure authentication methods, and regular security audits to protect user data."
+            },
+            {
+                id: 9,
+                title: "Can you integrate third-party services or APIs into custom web apps?",
+                text: "Absolutely! We have expertise in seamlessly integrating third-party services and tools to enhance your web app's functionality and user experience."
+            },
+            {
+                id: 10,
+                title: "What support and maintenance services do you offer after the app is deployed?",
+                text: "We provide ongoing support and maintenance post-deployment, addressing issues, implementing updates, and ensuring optimal performance and security for your custom web app."
+            },
+        ]
     }
 ];
-
 
 export default faqData;
 

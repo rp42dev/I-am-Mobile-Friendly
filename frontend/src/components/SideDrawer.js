@@ -76,7 +76,7 @@ const SideDrawer = ({ open, setOpen }) => {
                     </nav>
                 </div>
             </div>
-                <div className={`z-30 fixed inset-0 w-screen bg-black/50 transform transition-transform ${open ? 'translate-x-0' : '-translate-x-full'}`} onClick={handleCloseDrawer}></div>
+            <div className={`z-30 fixed inset-0 w-screen bg-black/50 transform transition-transform ${open ? 'translate-x-0' : '-translate-x-full'}`} onClick={handleCloseDrawer}></div>
         </>
     )
 }

@@ -1,11 +1,10 @@
-import Features from "./Features";
+import Services from "./Services";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import NavBar from "./Navbar";
-import Features2 from "./Features2";
-import Features5 from "./Features5";
-import Faq from "./Faq";
+import Benefits from "./Benefits";
+import Process from "./Process";
 import Projects from "./Projects";
 import Hero from "./Hero";
 import Meta from "./Meta";
@@ -14,4 +13,4 @@ import Badge from "./Badge";
 import ChatBot from "./ChatBot";
 import Drawer from "./Drawer";
 
-export { Drawer, ChatBot, Features, Testimonials, Contact, Footer, NavBar, Features2, Features5, Projects, Faq, Hero, Meta, SideDrawer, Badge };
+export { Drawer, ChatBot, Services, Testimonials, Contact, Footer, NavBar, Benefits, Process, Projects, Hero, Meta, SideDrawer, Badge };

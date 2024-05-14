@@ -27,7 +27,6 @@ const PhoneFrame = ({ iframe }) => {
                     </div>
                 </div>
             </div>
-            <div className="h-24 bg-primary"></div>
         </div>
     );
 };

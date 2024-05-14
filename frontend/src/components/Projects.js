@@ -28,7 +28,7 @@ const images = [
     { image: tattoo_sk, alt: "tattoo_sk", link: "https://tattooskworkshop.no/" },
     { image: fromladstodads, alt: "from lads to dads", link: "https://fromladstodads.ie/" },
     { image: ed_tattoo, alt: "ed tattoo", link: "https://ed-tattoo-lorenskog.netlify.app" },
-    { image: rp42dev, alt: "rp42dev", link: "https://rp42.dev/" },
+    { image: rp42dev, alt: "rp42dev", link: "https://rp42dev.github.io/My-Portfolio/" },
 ];
 
 

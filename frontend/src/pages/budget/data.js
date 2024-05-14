@@ -9,7 +9,7 @@ const metaProps = {
 const hero = [
     {
         title: 'Website',
-        bg: 'bg-base-200',
+        bg: 200,
         subtitle: 'Development Services',
         description: 'Affordable web development services that help you establish a strong online presence without breaking the bank. Get a mobile-friendly website that fits your budget and drives success in the digital world.',
         image: require('../../assets/images/budget.svg').default,       
@@ -21,11 +21,11 @@ const hero = [
     }
 ]
 
-const solution = [
+const benefits = [
     {
         id: 1,
         custom: true,
-        bg: 'bg-base',
+        bg: 300,
         text: 'Benefits of Our Website Development',
         data: [
             {
@@ -65,7 +65,7 @@ const solution = [
 const process = [
     {
         id: 1,
-        bg: 'bg-base-200',
+        bg: 200,
         img: require('../../assets/images/process.svg').default,
         title: "Streamlined Development Process",
         description: "",
@@ -103,61 +103,63 @@ const process = [
     }
 ];
 
-
 const faqData = [
     {
-        id: 1,
-        question: "What are the benefits of affordable web development services?",
-        answer: "Our affordable web development services provide you with a professional website at a fraction of the cost of custom development. We leverage tools like WordPress and cPanel to create visually appealing websites that align perfectly with your goals and budget."
-    },
-    {
-        id: 2,
-        question: "How quickly can I establish my online presence with your services?",
-        answer: "With our expertise in pre-made templates, we can swiftly establish your online presence, allowing you to capitalize on opportunities and stay ahead of competitors. Our rapid launch process minimizes downtime and maximizes business prospects."
-    },
-    {
-        id: 3,
-        question: "How user-friendly are the content management systems (CMS) you use?",
-        answer: "We use intuitive interfaces like WordPress and cPanel, allowing you to effortlessly manage your website. You can make content updates and additions without technical expertise, reducing maintenance costs and enhancing your independence."
-    },
-    {
-        id: 4,
-        question: "What kind of designs can I expect for my website?",
-        answer: "Expect modern and visually appealing designs that help your business stand out. Choose from a variety of pre-designed templates that leave a lasting impression on your target audience and effectively represent your business."
-    },
-    {
-        id: 5,
-        question: "What hosting options do you offer for my website?",
-        answer: "You can opt for shared hosting for cost-effective solutions by sharing server resources. Alternatively, choose managed WordPress hosting for enhanced performance and security tailored to your specific needs and budget."
-    },
-    {
-        id: 6,
-        question: "How scalable are your budget-friendly web development services?",
-        answer: "Our services are designed to help you start small and expand seamlessly. Easily add new features and functionalities as your business grows to meet the demands of your expanding customer base."
-    },
-    {
-        id: 7,
-        question: "What is involved in the consultation phase of the development process?",
-        answer: "We start by thoroughly understanding your website goals, business specifics, target audience, and desired features. This detailed discussion helps us create a tailored solution that perfectly aligns with your requirements and budget."
-    },
-    {
-        id: 8,
-        question: "Can you describe the design and development process?",
-        answer: "We design visually appealing websites using WordPress or other builders, ensuring that your brand identity is reflected in the design. We prioritize mobile-friendliness, user-friendliness, and cost-effectiveness throughout the process."
-    },
-    {
-        id: 9,
-        question: "What happens during the website launch phase?",
-        answer: "After completing the website, we conduct comprehensive testing to ensure seamless functionality across different devices. We also assist with setting up hosting and domain registration for a smooth and successful launch."
-    },
-    {
-        id: 10,
-        question: "How will my website attract visitors and facilitate business growth?",
-        answer: "With our services, your website is now live and optimized to attract visitors. The quality design, user-friendly interface, and efficient hosting options contribute to enhancing your online presence and driving business growth."
+        bg: 300,
+        text: 'Frequently Asked Questions',
+        data: [
+            {
+                id: 1,
+                title: "What are the benefits of affordable web development services?",
+                text: "Our affordable web development services provide you with a professional website at a fraction of the cost of custom development. We leverage tools like WordPress and cPanel to create visually appealing websites that align perfectly with your goals and budget."
+            },
+            {
+                id: 2,
+                title: "How quickly can I establish my online presence with your services?",
+                text: "With our expertise in pre-made templates, we can swiftly establish your online presence, allowing you to capitalize on opportunities and stay ahead of competitors. Our rapid launch process minimizes downtime and maximizes business prospects."
+            },
+            {
+                id: 3,
+                title: "How user-friendly are the content management systems (CMS) you use?",
+                text: "We use intuitive interfaces like WordPress and cPanel, allowing you to effortlessly manage your website. You can make content updates and additions without technical expertise, reducing maintenance costs and enhancing your independence."
+            },
+            {
+                id: 4,
+                title: "What kind of designs can I expect for my website?",
+                text: "Expect modern and visually appealing designs that help your business stand out. Choose from a variety of pre-designed templates that leave a lasting impression on your target audience and effectively represent your business."
+            },
+            {
+                id: 5,
+                title: "What hosting options do you offer for my website?",
+                text: "You can opt for shared hosting for cost-effective solutions by sharing server resources. Alternatively, choose managed WordPress hosting for enhanced performance and security tailored to your specific needs and budget."
+            },
+            {
+                id: 6,
+                title: "How scalable are your budget-friendly web development services?",
+                text: "Our services are designed to help you start small and expand seamlessly. Easily add new features and functionalities as your business grows to meet the demands of your expanding customer base."
+            },
+            {
+                id: 7,
+                title: "What is involved in the consultation phase of the development process?",
+                text: "We start by thoroughly understanding your website goals, business specifics, target audience, and desired features. This detailed discussion helps us create a tailored solution that perfectly aligns with your requirements and budget."
+            },
+            {
+                id: 8,
+                title: "Can you describe the design and development process?",
+                text: "We design visually appealing websites using WordPress or other builders, ensuring that your brand identity is reflected in the design. We prioritize mobile-friendliness, user-friendliness, and cost-effectiveness throughout the process."
+            },
+            {
+                id: 9,
+                title: "What happens during the website launch phase?",
+                text: "After completing the website, we conduct comprehensive testing to ensure seamless functionality across different devices. We also assist with setting up hosting and domain registration for a smooth and successful launch."
+            },
+            {
+                id: 10,
+                title: "How will my website attract visitors and facilitate business growth?",
+                text: "With our services, your website is now live and optimized to attract visitors. The quality design, user-friendly interface, and efficient hosting options contribute to enhancing your online presence and driving business growth."
+            }
+        ]
     }
 ];
 
-
-
-
-export { hero, process, solution, faqData, metaProps }
+export { hero, process, faqData, metaProps, benefits };

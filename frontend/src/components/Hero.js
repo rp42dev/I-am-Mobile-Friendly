@@ -2,13 +2,13 @@ import { ArrowBendRightDown, CalendarDots } from "@phosphor-icons/react";
 import { useContext } from 'react';
 import ThemeContext from '../ThemeContext';
 
-import patternImage from '../assets/images/patern2.webp';
+import patternImage from '../assets/images/patern.webp';
 
 const Hero = ({ data }) => {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={`home min-h-dvh grid place-items-center py-24 px-4 relative ${data.bg}`}>
+        <div className={`home min-h-dvh grid place-items-center py-24 px-4 relative bg-base-${data.bg}`}>
             <img src={patternImage} alt="pattern" className="absolute inset-0 object-cover w-full h-full z-0 opacity-40" />
             <div className="container mx-auto mt-8">
                 <div className="max-w-full hero-content flex-col xl:flex-row-reverse justify-between mx-auto p-0">
@@ -37,7 +37,7 @@ const Hero = ({ data }) => {
                                 <a href={data.link2} className="px-4 py-0 btn btn-outline btn-primary text-md join-item">
                                     <div className={`flex items-center justify-center`}>
                                         <span className="mr-2 mt-1">{data.btn2 ? data.btn2 : "Learn more"}</span>
-                                            <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
+                                        <ArrowBendRightDown size={22} weight="bold"></ArrowBendRightDown>
                                     </div>
                                 </a>
                             </div>

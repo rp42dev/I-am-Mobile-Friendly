@@ -103,9 +103,10 @@ const VideoTestimonials = () => {
     )
 }
 
-const Testimonials = () => {
+const Testimonials = (bg) => {
+    bg = bg.bg
     return (
-        <>
+        <div className={`bg-base-${bg}`}>
             <VideoTestimonials />
             <div className="mx-auto container divider">OR</div>
             <section className="container mx-auto py-24">
@@ -141,7 +142,7 @@ const Testimonials = () => {
                     ))}
                 </Swiper>
             </section>
-        </>
+        </div>
     )
 }
 

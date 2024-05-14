@@ -1,15 +1,28 @@
 import { CaretUp } from "@phosphor-icons/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function Accordion({ icon, title, content }) {
+function Accordion({ icon, title, content, bg}) {
     const [expanded, setExpanded] = useState(false)
+    const [bgColor, setBgColor] = useState(bg)
+    const [borderColor, setBorderColor] = useState(bg)
+
+    useEffect(() => {
+        if (bg === 300) {
+            setBgColor(200)
+            setBorderColor(100)
+        } else {
+            setBgColor(300)
+            setBorderColor(200)
+        }
+    }, [bg])
+
     const toggleExpanded = () => {
         setExpanded((current) => !current)
     }
 
     return (
         <div className="cursor-pointer" onClick={toggleExpanded}>
-            <div className="bg-base-200 border border-base-300 rounded-md px-6 py-4 text-left items-center select-none flex justify-between flex-row">
+        <div className={`bg-base-${bgColor} border border-base-100 rounded-md px-6 py-4 text-left items-center select-none flex justify-between flex-row`}>
                 <h3 className={`flex flex-1 text-md xl:text-lg font-semibold text-left ${expanded ? "text-primary" : ""}`}>
                     {icon && (
                         <span className="mr-3 inline-block text-primary">
@@ -28,7 +41,7 @@ function Accordion({ icon, title, content }) {
                     </label>
                 </div>
             </div>
-            <div className={`bg-base-200 rounded-md flex-none px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-80" : "max-h-0"}`}>
+            <div className={`bg-base-${bg} rounded-md flex-none px-6 pt-0 overflow-hidden transition-[max-height] duration-300 ease-in ${expanded ? "max-h-80" : "max-h-0"}`}>
                 <p className="py-4 text-left text-sm sm:text-base">
                     {content}
                 </p>
