@@ -18,9 +18,11 @@ import andrejfineart from '../assets/images/projects/andrejsfinert.webp';
 import oslorevovering from '../assets/images/projects/oslo_renovering.webp';
 import rp42dev from '../assets/images/projects/rp42dev.webp';
 import rrpartners from '../assets/images/projects/rr_partners.webp';
+import tanja from '../assets/images/projects/tanja.webp';
 
 
 const images = [
+    { image: tanja, alt: "tanja", link: "https://www.tanjaewert.com/" },
     { image: oslorevovering, alt: "oslo renovering", link: "https://oslorenoveringbygg.com/" },
     { image: rrpartners, alt: "rr partners LV", link: "https://rrpartners.lv/" },
     { image: andrejfineart, alt: "Andrej Fineart", link: "https://andrejfineart.com/" },
@@ -42,7 +44,7 @@ const Projects = () => {
             </div>
             <Swiper
                 effect={"cube"}
-                // grabCursor={true}
+                grabCursor={true}
                 breakpoints={{
                     800: {
                         slidesPerView: 1,

@@ -26,7 +26,6 @@ const Benefits = (props) => {
                                 {data[0].data.map((item) => {
                                     return (
                                         <Accordion key={item.id} icon={data[0].text === 'Frequently Asked Questions' ? '' : <CheckFat size={24} color="green" />} title={item.title} content={item.text} bg={data[0].bg} />
-                                        
                                     )
                                 })}
                             </ul>
