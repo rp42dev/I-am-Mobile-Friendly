@@ -1,68 +1,95 @@
 import { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
 import { Context } from '../../ContextProvider';
+
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
 
 const useChatBotLogic = () => {
     const [csrfToken, setCsrfToken] = useState('');
     const [messages, setMessages] = useState([]);
+    const [message, setMessage] = useState();
     const [disabled, setDisabled] = useState(false);
-    const { drawerOpen, setDrawerOpen } = useContext(Context);
+    const { drawerOpen } = useContext(Context);
+    const [initialLoad, setInitialLoad] = useState(true);
 
     useEffect(() => {
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i++) {
-                    const cookie = cookies[i].trim();
-                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
+        if (drawerOpen && !initialLoad) {
+            openChatBot();
         }
+    }, [drawerOpen, initialLoad]);
 
+    useEffect(() => {
+            setInitialLoad(false);
+    }, []);
+
+    useEffect(() => {
         setCsrfToken(getCookie('csrftoken'));
     }, []);
 
     const sendMessageToOpenAI = async (userInput) => {
-
         setDisabled(true);
-        
-        if (userInput !== 'clear' && userInput !== 'Open ChatBot'){
+
+        if (userInput !== 'clear' && userInput !== 'Open ChatBot') {
             setMessages((prevMessages) => [...prevMessages, { text: userInput, response: 'user' }]);
         }
+        let fullText = '';
         try {
-            const response = await axios.post('/openai', { userInput }, {
+            const response = await fetch('/assistant', {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'X-CSRFToken': csrfToken,
                 },
+                body: JSON.stringify({ userInput }),
             });
 
-            if (response.data.response === 'Chat cleared.') {
-                setMessages([]);
+            if (!response.body) {
+                throw new Error('ReadableStream not supported by this browser.');
+            }
+            if (response.status === 204) {
+                clearMessages();
                 return;
             }
 
-            setMessages((prevMessages) => [
-                ...prevMessages,
-                { text: response.data.response, response: 'assistant' }
-            ]);
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+
+            while (true) {
+                const { value, done } = await reader.read();
+                if (done) break;
+
+                const chunk = decoder.decode(value, { stream: true });
+                fullText += chunk;
+
+                setMessage(fullText);
+            }       
         } catch (error) {
             console.error('Error sending message to OpenAI:', error);
-            // Handle error gracefully (e.g., display error message to the user)
         } finally {
-            setDisabled(false);
+            if (fullText) {
+                setMessages((prevMessages) => [...prevMessages, { text: fullText, response: 'assistant' }]);
+                setMessage();
+                setDisabled(false);
+            }
         }
     };
 
     const clearMessages = () => {
+        setMessage();
         setMessages([]);
         setDisabled(false);
-        sendMessageToOpenAI('clear');
     };
 
     const openChatBot = () => {
@@ -71,6 +98,7 @@ const useChatBotLogic = () => {
     };
 
     return {
+        message,
         messages,
         disabled,
         drawerOpen,

@@ -13,7 +13,6 @@ import { Pagination, Autoplay } from "swiper";
 import tattoo_sk from '../assets/images/projects/tattoo_sk.webp';
 import fromladstodads from '../assets/images/projects/fromladstodads.webp';
 import ed_tattoo from '../assets/images/projects/ed_tattoo.webp';
-import maya from '../assets/images/projects/maya.webp';
 import andrejfineart from '../assets/images/projects/andrejsfinert.webp';
 import oslorevovering from '../assets/images/projects/oslo_renovering.webp';
 import rp42dev from '../assets/images/projects/rp42dev.webp';
@@ -26,7 +25,6 @@ const images = [
     { image: oslorevovering, alt: "oslo renovering", link: "https://oslorenoveringbygg.com/" },
     { image: rrpartners, alt: "rr partners LV", link: "https://rrpartners.lv/" },
     { image: andrejfineart, alt: "Andrej Fineart", link: "https://andrejfineart.com/" },
-    { image: maya, alt: "maya Nurtures", link: "https://www.mayanurtures.net/" },
     { image: tattoo_sk, alt: "tattoo_sk", link: "https://tattooskworkshop.no/" },
     { image: fromladstodads, alt: "from lads to dads", link: "https://fromladstodads.ie/" },
     { image: ed_tattoo, alt: "ed tattoo", link: "https://ed-tattoo-lorenskog.netlify.app" },

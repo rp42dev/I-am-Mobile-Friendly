@@ -5,18 +5,8 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from openai import OpenAI
 
-import time
-
-from .openai_assistant import OpenAIAssistant
-
-# Set your OpenAI API key
-OPENAI_API_TOKEN = settings.OPENAI_API_TOKEN
-
-
-# Initialize the OpenAI client
-client = OpenAI(api_key=OPENAI_API_TOKEN)
+from ai.views import assistant
 
 
 def react_app_view(request):
@@ -52,63 +42,11 @@ def react_app_view(request):
         return render(request, 'robots.txt')
     elif requested_path.startswith('/send-email'):
         return send_email(request)
-    elif requested_path.startswith('/openai'):
-        return openai_api(request)
+    elif requested_path.startswith('/assistant'):
+        return assistant(request)
     else:
         # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)
-
-
-@require_POST
-@csrf_exempt
-def openai_api(request):
-    """
-    Handle requests to interact with OpenAI assistant.
-
-    POST Parameters:
-    - userInput (str): User input for the OpenAI assistant.
-
-    Returns:
-    - JsonResponse: Response containing the assistant's reply or error message.
-    """
-    openai_assistant = OpenAIAssistant(client)
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        userInput = data.get('userInput', '')
-        print(f'User input: {userInput}')
-
-        if userInput == "clear":
-            thread_id = request.session.get('thread_id', '')
-            openai_assistant.delete_thread(thread_id)
-            request.session['thread_id'] = ''
-            request.session['thread_start_time'] = ''
-            print('Chat cleared.')
-            return JsonResponse({'response': 'Chat cleared.'})
-        
-        ASSISTANT_ID = settings.ASSISTANT_ID_TOKEN
-        VS_ID = settings.VS_ID_TOKEN
-
-        assistant = openai_assistant.load_openai_assistant(ASSISTANT_ID)
-        thread = openai_assistant.create_openai_thread(VS_ID)
-        # set thread_id and thread_start_time in session
-        request.session['thread_id'] = thread.id
-        request.session['thread_start_time'] = time.time()
-
-        response = openai_assistant.get_assistant_response(thread, ASSISTANT_ID, userInput)
-
-        # send email
-        if userInput == "Open ChatBot":
-            send_mail(
-                subject='OpenAI Assistant Request',
-                message=f'User requested to open the OpenAI Assistant.',
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[settings.DEFAULT_FROM_EMAIL],
-                fail_silently=False,
-            )
-
-        return JsonResponse({'response': response})
-    else:
-        return JsonResponse({'error': 'Invalid request method'})
 
 
 @require_POST

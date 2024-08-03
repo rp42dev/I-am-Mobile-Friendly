@@ -28,14 +28,6 @@ const data0 = [
 
 const data = [
     {
-        id: 0,
-        image: karen,
-        name: 'Karen',
-        title: 'CEO of Mayanurtures.net',
-        link: 'https://www.mayanurtures.net/',
-        description: 'One word to describe Raivis’ service is overdeliver. A kind person recommended him. Raivis gets to know his customers to get the job done quickly and with excellent quality. The service was supposed to be for creating a funnel and helping me out with my website. But, it’s more than just that. He fixed my logo which fits what my brand. But, above all, he is easy to work with. Highly recommended!'
-    },
-    {
         id: 1,
         image: jeff,
         name: 'Jeff',
@@ -107,7 +99,7 @@ const Testimonials = (bg) => {
     bg = bg.bg
     return (
         <div className={`bg-base-${bg}`}>
-            <VideoTestimonials />
+            {/* <VideoTestimonials /> */}
             <div className="mx-auto container divider">OR</div>
             <section className="container mx-auto py-24">
 
