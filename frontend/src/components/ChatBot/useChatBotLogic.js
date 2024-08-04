@@ -22,17 +22,17 @@ const useChatBotLogic = () => {
     const [message, setMessage] = useState();
     const [disabled, setDisabled] = useState(false);
     const { drawerOpen } = useContext(Context);
-    const [initialLoad, setInitialLoad] = useState(true);
+    const [drawerWasOpen, setDrawerWasOpen] = useState(false);
 
     useEffect(() => {
-        if (drawerOpen && !initialLoad) {
+        if (drawerOpen && !drawerWasOpen) {
             openChatBot();
+            setDrawerWasOpen(true);
+        } else if (!drawerOpen && drawerWasOpen) {
+            sendMessageToOpenAI('clear');
+            setDrawerWasOpen(false);
         }
-    }, [drawerOpen, initialLoad]);
-
-    useEffect(() => {
-            setInitialLoad(false);
-    }, []);
+    }, [drawerOpen, drawerWasOpen]);
 
     useEffect(() => {
         setCsrfToken(getCookie('csrftoken'));

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { ArrowUp } from "@phosphor-icons/react";
 import useChatBotLogic from './useChatBotLogic';
 import { scrollChatArea, getUserInput } from './utils';
@@ -39,9 +39,9 @@ const ChatInput = ({ handleSend, disabled }) => {
 
 
 const ChatArea = ({ message, messages, disabled }) => {
+    console.log(message);
     return (
         <div className="chat-area p-3 rounded-lg border border-base-300 h-full flex flex-col shadow-[inset_3px_0_8px_rgba(0,0,0,0.1)] overflow-y-auto overflow-x-hidden">
-
             <div className="flex-grow flex flex-col justify-end relative">
                 {messages.map((message, index) => (
                     <ChatMessage key={index} message={message} />
@@ -94,8 +94,8 @@ const ChatBot = () => {
     return (
         <div className="w-full max-w-md h-dvh p-3 bg-base-200 flex flex-col justify-between overflow-hidden">
             <div className=" bg-base-200 pb-3">
-                <button className="btn btn-circle btn-sm m-2 tooltip tooltip-left" onClick={() => handleClearMessages()} aria-label="Close chat">
-                    <label htmlFor="my-drawer" aria-label="close sidebar" className=""><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg></label>
+                <button className="btn btn-circle btn-sm m-2 tooltip tooltip-left" aria-label="Close chat">
+                    <label htmlFor="my-drawer" aria-label="close sidebar" className="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg></label>
                 </button>
             </div>
 
