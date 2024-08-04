@@ -63,7 +63,7 @@ const VideoTestimonials = () => {
             </div>
             <div className="container mx-auto w-full text-center py-24 pt-4">
                 <Swiper
-                    modules={[ Navigation, Pagination ]}
+                    modules={[Navigation, Pagination]}
                     spaceBetween={50}
                     grabCursor={true}
                     loop={true}
@@ -99,9 +99,13 @@ const Testimonials = (bg) => {
     bg = bg.bg
     return (
         <div className={`bg-base-${bg}`}>
-            {/* <VideoTestimonials /> */}
-            <div className="mx-auto container divider">OR</div>
             <section className="container mx-auto py-24">
+
+                <div className="container mx-auto w-full text-center">
+                    <h2 className="text-3xl font-extrabold sm:text-4xl mb-4">
+                        What our clients say about me
+                    </h2>
+                </div>
 
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
