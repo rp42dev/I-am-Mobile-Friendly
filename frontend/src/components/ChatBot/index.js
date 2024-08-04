@@ -39,7 +39,6 @@ const ChatInput = ({ handleSend, disabled }) => {
 
 
 const ChatArea = ({ message, messages, disabled }) => {
-    console.log(message);
     return (
         <div className="chat-area p-3 rounded-lg border border-base-300 h-full flex flex-col shadow-[inset_3px_0_8px_rgba(0,0,0,0.1)] overflow-y-auto overflow-x-hidden">
             <div className="flex-grow flex flex-col justify-end relative">
