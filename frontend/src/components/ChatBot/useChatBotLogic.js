@@ -100,9 +100,6 @@ const useChatBotLogic = () => {
         message,
         messages,
         disabled,
-        drawerOpen,
-        clearMessages,
-        openChatBot,
         sendMessageToOpenAI
     };
 };

@@ -54,14 +54,6 @@ def react_app_view(request):
 def send_email(request):
     """
     Handle requests to send emails.
-
-    POST Parameters:
-    - name (str): Sender's name.
-    - fromEmail (str): Sender's email address.
-    - message (str): Email message.
-
-    Returns:
-    - JsonResponse: Response indicating whether the email was sent successfully or not.
     """
     if request.method == 'POST':
         data = json.loads(request.body)

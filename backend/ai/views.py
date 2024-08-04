@@ -49,6 +49,14 @@ def assistant(request):
             # set thread_id and thread_start_time in session
             request.session['thread_id'] = thread.id
             request.session['thread_start_time'] = time.time()
+            
+            send_mail(
+                'New ChatBot Session',
+                'A new chatbot session has been started.',
+                settings.EMAIL_HOST_USER,
+                [settings.EMAIL_HOST_USER],
+                fail_silently=False,
+            )
 
         thread = openai_assistant.get_openai_thread(request.session.get('thread_id', ''))
         stream = openai_assistant.get_assistant_response(thread, ASSISTANT_ID, userInput)

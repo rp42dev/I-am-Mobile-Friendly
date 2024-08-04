@@ -81,11 +81,7 @@ const ChatBot = () => {
 
         sendMessageToOpenAI(userInput);
     };
-
-    const handleClearMessages = () => {
-        sendMessageToOpenAI('clear');
-    };
-
+    
     useEffect(() => {
         scrollChatArea();
     }, [messages, message]);
