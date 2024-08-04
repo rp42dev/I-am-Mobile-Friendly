@@ -72,7 +72,7 @@ const useChatBotLogic = () => {
 
                 const chunk = decoder.decode(value, { stream: true });
                 fullText += chunk;
-                console.log('fullText:', chunk);
+                console.log('chunk:', chunk);
                 setMessage(fullText);
             }       
         } catch (error) {
