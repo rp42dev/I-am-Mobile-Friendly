@@ -54,6 +54,7 @@ def assistant(request):
         stream = openai_assistant.get_assistant_response(thread, ASSISTANT_ID, userInput)
         response = StreamingHttpResponse(stream, status=200, content_type='text/event-stream')
         response['Cache-Control'] = 'no-cache'
+        response['X-Accel-Buffering'] = 'no'
         return response
 
     # Return a 405 Method Not Allowed response for non-POST requests
