@@ -12,7 +12,7 @@ import AnimatedCircles from '../../assets/images/animated-circles.svg';
 const ChatMessage = ({ message }) => {
     return (
         <div className={`chat w-full pb-0 ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
-            <div className={`chat-bubble pb-0 text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base'}`}>
+            <div className={`chat-bubble pb-0 text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-bas-200'}`}>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>
             </div>
         </div>
