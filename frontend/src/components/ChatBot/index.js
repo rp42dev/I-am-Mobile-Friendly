@@ -11,8 +11,8 @@ import AnimatedCircles from '../../assets/images/animated-circles.svg';
 
 const ChatMessage = ({ message }) => {
     return (
-        <div className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
-            <div className={`chat-bubble text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base'}`}>
+        <div className={`chat w-full pb-0 ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
+            <div className={`chat-bubble pb-0 text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base'}`}>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>
             </div>
         </div>
@@ -47,8 +47,8 @@ const ChatArea = ({ message, messages, disabled }) => {
                     <ChatMessage key={index} message={message} />
                 ))}
                 {(disabled || message) && (
-                    <div className="chat w-full chat-start">
-                        <div className="chat-bubble bg-base-100 py-0 grid place-items-center text-base-content">
+                    <div className="chat w-full pb-0 chat-start">
+                        <div className="chat-bubble bg-base-100 pb-0  grid place-items-center text-base-content">
                             {message ? (
                                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{message}</ReactMarkdown>
                             ) : (

@@ -70,7 +70,7 @@ body {
 .chat-area p {
     font-size: var(--font-sm);
     /* Base paragraph size */
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 .chat-area ul {
