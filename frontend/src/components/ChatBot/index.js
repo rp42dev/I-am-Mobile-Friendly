@@ -12,7 +12,7 @@ import AnimatedCircles from '../../assets/images/animated-circles.svg';
 const ChatMessage = ({ message }) => {
     return (
         <div className={`chat w-full pb-0 ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
-            <div className={`chat-bubble pb-0 text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-bas-200'}`}>
+            <div className="chat-bubble pb-0 text-base-content bg-base-100">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>
             </div>
         </div>
@@ -42,7 +42,7 @@ const ChatInput = ({ handleSend, disabled }) => {
 const ChatArea = ({ message, messages, disabled }) => {
     return (
         <div className="chat-area p-3 rounded-lg border border-base-300 h-full flex flex-col shadow-[inset_3px_0_8px_rgba(0,0,0,0.1)] overflow-y-auto overflow-x-hidden">
-            <div className="flex-grow flex flex-col justify-end relative">
+            <div className="flex-grow flex flex-col justify-end relative gap-2">
                 {messages.map((message, index) => (
                     <ChatMessage key={index} message={message} />
                 ))}
