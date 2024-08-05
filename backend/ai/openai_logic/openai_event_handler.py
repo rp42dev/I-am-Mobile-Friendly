@@ -9,10 +9,10 @@ class EventHandler(AssistantEventHandler):
         """Function to handle the text created event."""
         print(f"\nASSISTANT:", end="\n", flush=True)
 
-    @override
-    def on_text_delta(self, delta, snapshot):
-        """Function to handle the text delta event."""
-        print(delta.value, end="", flush=True)
+    # @override
+    # def on_text_delta(self, delta, snapshot):
+    #     """Function to handle the text delta event."""
+    #     print(delta.value, end="", flush=True)
 
     @override
     def on_message_done(self, message):

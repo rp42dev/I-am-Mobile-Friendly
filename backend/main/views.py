@@ -1,8 +1,8 @@
 import json
+from django.conf import settings
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.core.mail import send_mail
-from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 
@@ -10,7 +10,7 @@ from ai.views import assistant
 
 
 def react_app_view(request):
-    # List of valid React app URLs
+    """Serve the React app."""
     valid_urls = [
         '/',
         '/custom-web-development',
@@ -30,10 +30,8 @@ def react_app_view(request):
         '/robots.txt/',
     ]
 
-    # Get the requested URL path
     requested_path = request.path
 
-    # Check if the requested path is in the list of valid URLs
     if requested_path in valid_urls:
         return render(request, 'react_template.html')
     elif requested_path in sitemap_urls:
@@ -45,16 +43,13 @@ def react_app_view(request):
     elif requested_path.startswith('/assistant'):
         return assistant(request)
     else:
-        # If the requested path is not valid, raise a 404 error
         return render(request, 'react_template.html', status=404)
 
 
 @require_POST
 @csrf_exempt
 def send_email(request):
-    """
-    Handle requests to send emails.
-    """
+    """Handle requests to send emails."""
     if request.method == 'POST':
         data = json.loads(request.body)
         name = data.get('name', '')

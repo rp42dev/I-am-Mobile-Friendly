@@ -3,6 +3,7 @@ import { ArrowUp } from "@phosphor-icons/react";
 import useChatBotLogic from './useChatBotLogic';
 import { scrollChatArea, getUserInput } from './utils';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm'
 
 import patternImage from '../../assets/images/patern_chat.webp';
 import AnimatedCircles from '../../assets/images/animated-circles.svg';
@@ -12,7 +13,7 @@ const ChatMessage = ({ message }) => {
     return (
         <div className={`chat w-full ${message.response === 'assistant' ? 'chat-start' : 'chat-end'}`}>
             <div className={`chat-bubble text-base-content ${message.response === 'assistant' ? 'bg-base-100' : 'bg-base'}`}>
-                <ReactMarkdown>{message.text}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>
             </div>
         </div>
     );
@@ -45,12 +46,11 @@ const ChatArea = ({ message, messages, disabled }) => {
                 {messages.map((message, index) => (
                     <ChatMessage key={index} message={message} />
                 ))}
-
                 {(disabled || message) && (
                     <div className="chat w-full chat-start">
                         <div className="chat-bubble bg-base-100 py-0 grid place-items-center text-base-content">
                             {message ? (
-                                <ReactMarkdown>{message}</ReactMarkdown>
+                                <ReactMarkdown remarkPlugins={[remarkGfm]}>{message}</ReactMarkdown>
                             ) : (
                                 <img
                                     src={AnimatedCircles}
@@ -72,9 +72,7 @@ const ChatBot = () => {
     const handleSend = (event) => {
         event.preventDefault();
         const userInput = getUserInput(event);
-
         event.target.userInput.value = '';
-
         if (!userInput) {
             return;
         }

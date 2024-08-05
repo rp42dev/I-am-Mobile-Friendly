@@ -1,77 +1,69 @@
 import re
+from .decorators import _handle_api_exceptions
 from .openai_event_handler import EventHandler
+from openai import OpenAI
 
-class OpenAIAssistant:
-    """A class for interacting with the OpenAI assistant."""
+class OpenAIClient:
+    """
+    Client for interacting with OpenAI's GPT API.
+    Methods: load_assistant, create_vs_thread, create_thread, get_thread, delete_thread, create_message, stream_run
+    """
+    def __init__(self, config=None, api_key=None, assistant_id=None, VS_ID=None):
+        self.config = config
+        self.api_key = api_key
+        self.assistant_id = assistant_id
+        self.VS_ID = VS_ID
+        self.client = OpenAI(api_key=self.api_key)
 
-    def __init__(self, client):
-        self.client = client
-
-    def load_openai_assistant(self, assistant_id):
-        """
-        Load the OpenAI assistant.
-        """
-        assistant = self.client.beta.assistants.retrieve(assistant_id)
+    @_handle_api_exceptions
+    def load_assistant(self):
+        """Load the OpenAI assistant."""
+        assistant = self.client.beta.assistants.retrieve(self.assistant_id)
         return assistant
 
-    def create_openai_thread(self, vs_ID):
-        """
-        Create a new thread for interaction with the OpenAI assistant.
-        """
+    @_handle_api_exceptions
+    def create_vs_thread(self):
+        """Create a new thread for interaction with the OpenAI assistant using a vector store."""
         thread = self.client.beta.threads.create(
             tool_resources={
                 "file_search": {
-                    "vector_store_ids": [vs_ID]
+                    "vector_store_ids": [self.VS_ID]
                 }
             }
         )
         return thread
 
-    def get_openai_thread(self, thread_id):
-        """
-        Retrieve the thread for interaction with the OpenAI assistant.
-        """
-        thread = self.client.beta.threads.retrieve(thread_id)
-       
+    @_handle_api_exceptions
+    def create_thread(self):
+        """Create a new thread for interaction with the OpenAI assistant."""
+        thread = self.client.beta.threads.create()
         return thread
 
+    @_handle_api_exceptions
+    def get_thread(self, thread_id):
+        """Retrieve the thread for interaction with the OpenAI assistant."""
+        thread = self.client.beta.threads.retrieve(thread_id=thread_id)
+        return thread
+
+    @_handle_api_exceptions
     def delete_thread(self, thread_id):
-        """
-        Delete the thread.
-        """
-        try:
-            self.client.beta.threads.delete(thread_id=thread_id)
-        except Exception as e:
-            print(f"Error deleting thread: {e}")
-            pass
-        
-    def create_message(self, thread_id: str, content: str, role: str):
+        """Delete the thread."""
+        self.client.beta.threads.delete(thread_id=thread_id)
+
+    @_handle_api_exceptions
+    def create_message(self, thread_id, content: str, role: str):
         """Create a new message in the thread with the specified content and role."""
         message = self.client.beta.threads.messages.create(thread_id=thread_id, content=content, role=role)
         return message
-    
-    def stream_run(self, thread_id: str, assistant_id: str, task_instructions: str):
-        """Stream the assistant's run process."""
-        def strip_text(text):
-            """Strip the text of any square brackets."""
-            return re.sub(r'\【.*\】', '', text)
 
+    @_handle_api_exceptions
+    def stream_run(self, thread_id, assistant_id, task_instructions):
+        """Stream the assistant's run process."""
         with self.client.beta.threads.runs.stream(
-            thread_id=thread_id, 
-            assistant_id=assistant_id, 
-            
+            thread_id=thread_id,
+            assistant_id=assistant_id,
+            instructions=task_instructions,
             event_handler=EventHandler()
             ) as stream:
                 for delta in stream.text_deltas:
-                    clean_text = strip_text(delta)
-                    yield clean_text
-
-    def get_assistant_response(self, thread, assistant_id, userInput):
-        """
-        Interact with the assistant by sending user input and retrieving the response.
-        """
-        message = self.create_message(thread.id, userInput, "user")
-
-        delta = self.stream_run(thread.id, assistant_id, 'process user input')
-        
-        return delta
+                    yield delta
